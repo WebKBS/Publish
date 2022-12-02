@@ -2,4 +2,46 @@ body {
   color: #222;
 }
 
+.min-h100px {
+  min-height: 100px;
+}
+
+.quixnav .metismenu .has-arrow[aria-expanded=true]:after, .quixnav .metismenu .mm-active > .has-arrow:after {
+  transform: rotate(-225deg) translateY(-50%);
+}
+
+.table {
+  color: #222;
+}
+
+.item_list {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.item_list li button {
+  max-width: 80px;
+  width: 80px;
+  height: 60px;
+  padding: 8px;
+  border: 1px solid #eaeaea;
+  background-color: transparent;
+}
+.item_list li.on button {
+  border-color: #593bdb;
+}
+.item_list li img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.custom_table tbody th {
+  width: 14%;
+}
+
+.upload_wrap {
+  min-height: 500px;
+}
+
 /*# sourceMappingURL=custom.css.map */

@@ -465,6 +465,26 @@
       "PackagePath": "staticwebassets\\images\\favicon.png"
     },
     {
+      "Id": "D:\\git\\Publish\\Equipment\\Equipment_Admin\\wwwroot\\images\\img\\img1.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\img1.jpg"
+    },
+    {
+      "Id": "D:\\git\\Publish\\Equipment\\Equipment_Admin\\wwwroot\\images\\img\\sub_img1.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\sub_img1.jpg"
+    },
+    {
+      "Id": "D:\\git\\Publish\\Equipment\\Equipment_Admin\\wwwroot\\images\\img\\sub_img2.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\sub_img2.jpg"
+    },
+    {
+      "Id": "D:\\git\\Publish\\Equipment\\Equipment_Admin\\wwwroot\\images\\img\\sub_img3.jpg",
+      "PackagePath": "staticwebassets\\images\\img\\sub_img3.jpg"
+    },
+    {
+      "Id": "D:\\git\\Publish\\Equipment\\Equipment_Admin\\wwwroot\\images\\login_logo.png",
+      "PackagePath": "staticwebassets\\images\\login_logo.png"
+    },
+    {
       "Id": "D:\\git\\Publish\\Equipment\\Equipment_Admin\\wwwroot\\images\\logo-text.png",
       "PackagePath": "staticwebassets\\images\\logo-text.png"
     },
@@ -1355,6 +1375,10 @@
     {
       "Id": "D:\\git\\Publish\\Equipment\\Equipment_Admin\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\git\\Publish\\Equipment\\Equipment_Admin\\wwwroot\\lib\\qrcode\\qrcode.min.js",
+      "PackagePath": "staticwebassets\\lib\\qrcode\\qrcode.min.js"
     },
     {
       "Id": "D:\\git\\Publish\\Equipment\\Equipment_Admin\\wwwroot\\scss\\_preloader.scss",

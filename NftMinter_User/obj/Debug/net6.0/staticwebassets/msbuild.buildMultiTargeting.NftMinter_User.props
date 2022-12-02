@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\NftMinter_User.props" />
+</Project>

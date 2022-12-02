@@ -1,0 +1,101 @@
+﻿@{
+    ViewData["title"] = "공지사항";
+}
+
+
+<section class="cont1 notice">
+    <div class="inner">
+        <h2>공지사항</h2>
+        <div class="input_wrap">
+            <select>
+                <option>제목</option>
+                <option>내용</option>
+            </select>
+            <input type="search" />
+        </div>
+        <div class="table_wrap">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>내용</th>
+                        <th>등록일</th>
+                        <th>조회수</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @*<tr class="no_data"> <!-- 내용이 없을때 -->
+                    <td colspan="5">내용이 없습니다.</td>
+                    </tr>*@
+                    <tr onclick="location.href='/Notice/NoticeView'">
+                        <td>
+                            10
+                        </td>
+                        <td>오픈 기념 이벤트</td>
+                        <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gal</td>
+                        <td>2022-10-30</td>
+                        <td>123</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- on 추가시 display -->
+        <div class="table_navi on">
+            <ul>
+                <li class="max_prev_btn">
+                    <button type="button">
+                        <img src="~/images/icons/table_max_prev.svg" alt="처음페이지 버튼" />
+                    </button>
+                </li>
+                <li class="prev_btn">
+                    <button type="button">
+                        <img src="~/images/icons/table_prev.svg" alt="이전페이지 버튼" />
+                    </button>
+                </li>
+                <li class="on">
+                    <button type="button">1</button>
+                </li>
+                <li>
+                    <button type="button">2</button>
+                </li>
+                <li>
+                    <button type="button">3</button>
+                </li>
+                <li class="max_next_btn">
+                    <button type="button">
+                        <img src="~/images/icons/table_next.svg" alt="다음페이지 버튼" />
+                    </button>
+                </li>
+                <li class="next_btn">
+                    <button type="button">
+                        <img src="~/images/icons/table_max_next.svg" alt="마지막페이지 버튼" />
+                    </button>
+                </li>
+            </ul>
+            <!-- on 추가시 display-->
+            <div class="navi_pages on">
+                총
+                <span>10</span>
+                페이지
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+@section Heads{
+    <link rel="stylesheet" href="~/css/ChangeHeader.css" />
+    <link rel="stylesheet" href="~/css/NoticeCommon.css" />
+    <link rel="stylesheet" href="~/css/Notice.css" />
+}

@@ -1,0 +1,118 @@
+/* font color */
+/* family */
+.profile .info_wrap {
+  margin-bottom: 80px;
+}
+.profile .info_wrap .user_email {
+  border-top: 1px solid #AFBFC6;
+  padding: 30px 20px 0;
+}
+.profile .info_wrap .join_date {
+  border-bottom: 1px solid #AFBFC6;
+  padding: 0 20px 30px;
+}
+.profile .info_wrap > div:not(.user_email, .join_date, .user_pw) {
+  padding: 0 20px;
+}
+.profile .info_wrap > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  align-items: center;
+}
+.profile .info_wrap > div:last-child {
+  margin-bottom: 0;
+}
+.profile .info_wrap .text_wrap {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.profile .info_wrap .title {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "noto_medium";
+  min-width: 102px;
+}
+.profile .info_wrap .info {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "noto_regular";
+}
+.profile .info_wrap .change_btn {
+  padding: 10px 0;
+  width: 120px;
+  border: 1px solid #1273eb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: "noto_medium";
+  color: #1273eb;
+  text-align: center;
+  min-width: 120px;
+}
+.profile .info_wrap .change_btn:hover {
+  color: #fff;
+  background: #1273eb;
+  transition: var(--hover-transition);
+}
+.profile .info_wrap .join_date {
+  border-bottom: 1px solid #AFBFC6;
+  margin-bottom: 0;
+}
+.profile .info_wrap .user_pw {
+  padding: 30px 20px;
+  border-bottom: 1px solid #AFBFC6;
+}
+.profile .btn_wrap {
+  display: flex;
+  gap: 12px;
+}
+.profile .btn_wrap a {
+  width: 200px;
+  display: block;
+  padding: 16px 0;
+  border: 1px solid #1273eb;
+  border-radius: 8px;
+  text-align: center;
+  color: #1273eb;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "noto_medium";
+}
+.profile .btn_wrap a:hover {
+  background: #1273eb;
+  color: #fff;
+  transition: var(--hover-transition);
+}
+
+@media screen and (max-width: 768px) {
+  .profile .info_wrap > div {
+    margin-bottom: 40px;
+    align-items: flex-start;
+    position: relative;
+  }
+  .profile .info_wrap .text_wrap {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 16px;
+  }
+  .profile .info_wrap .change_btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .profile .info_wrap .user_email .change_btn {
+    top: 30px;
+  }
+  .profile .info_wrap .user_pw .change_btn {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .profile .btn_wrap {
+    justify-content: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=Profile.css.map */

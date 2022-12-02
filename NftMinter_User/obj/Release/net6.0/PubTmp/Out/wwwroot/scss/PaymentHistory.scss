@@ -1,0 +1,94 @@
+﻿@charset "UTF-8";
+@import "./Setting.scss";
+
+.payment_history {
+
+    .inner {
+        max-width: 880px;
+    }
+
+    .table_wrap {
+        overflow-x: auto;
+        max-width: 880px;
+        border: 1px solid $gray9;
+        border-radius: 8px;
+        padding-bottom: 20px;
+        min-height: 236px;
+        margin-bottom: 80px;
+    }
+
+    table {
+        width: 838px;
+        text-align: center;
+    }
+
+    thead {
+        background: $theme2;
+    }
+
+    th {
+        width: 20%;
+        line-height: 1.5;
+        font-family: $noto_medium;
+        font-size: 14px;
+        padding: 13px 0;
+    }
+
+    tbody {
+        tr:nth-of-type(even) {
+            background: $gray12;
+        }
+    }
+
+    td {
+        width: 20%;
+        line-height: 1.5;
+        font-size: 14px;
+        font-family: $noto_regular;
+        padding: 13px 0;
+
+
+        .cancel_btn {
+            color: $blue_main;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+
+    .no_data {
+        td {
+            padding: 72px 0;
+        }
+    }
+
+    .back_btn {
+        max-width: 200px;
+        border: 1px solid $blue_main;
+        width: 100%;
+        border-radius: 8px;
+        padding: 16px;
+        color: $blue_main;
+
+        &:hover {
+            transition: var(--hover-transition);
+            background: $blue_main;
+            color: #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .payment_history {
+
+        .no_data {
+            td {
+                padding: 72px 0 72px 40px;
+                text-align: left;
+            }
+        }
+
+        .back_btn {
+            margin: 0 auto;
+        }
+    }
+}

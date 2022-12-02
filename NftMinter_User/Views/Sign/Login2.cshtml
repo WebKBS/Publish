@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["title"] = "로그인";
+}
+
+
+<section class="cont cont1">
+    <div class="inner">
+        <div class="login_wrap">
+            @*<img class="logo" alt="로그인" />*@
+            <h2>LOGIN</h2>
+            <form>
+                <div class="input_wrap">
+                    <input type="email" class="email" name="email" placeholder="아이디(E-MAIL)" />
+                    <input type="password" class="password" name="password" placeholder="비밀번호" />
+                </div>
+                <div class="auto_login">
+                    <input type="checkbox" id="auto_check" />
+                    <label class="auto_label" for="auto_check">
+                        <span class="check_btn"></span>
+                        <span>자동 로그인</span>
+                    </label>
+                </div>
+                <button type="submit" id="signInBtn">로그인</button>
+            </form>
+            <div class="link_wrap">
+                <ul>
+                    <li>
+                        <a href="/Sign/Password2">비밀번호 찾기</a>
+                    </li>
+                    <li>
+                        <a href="/Sign/SignUp">회원가입</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="info_wrap">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a href="#">책임의 한계와 법적고지</a>
+                    </li>
+                    <li>
+                        <a href="#">회원정보</a>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <p class="logo">
+                    <img src="~/images/icons/pentabreed.png" alt="pentabreed" />
+                </p>
+                <p class="copy">
+                    Copyright © PENTABREED All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+@section Heads{
+    <link rel="stylesheet" href="~/css/ChangeHeader.css" />
+    <link rel="stylesheet" href="~/css/SignCommon.css" />
+    <link rel="stylesheet" href="~/css/Login2.css" />
+
+    <script src="~/js/SignIn.js" defer></script>
+}

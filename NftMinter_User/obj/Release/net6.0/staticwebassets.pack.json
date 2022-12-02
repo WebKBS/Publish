@@ -1,0 +1,2089 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\LoadingScreen\\Loading.svg",
+      "PackagePath": "staticwebassets\\LoadingScreen\\Loading.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\LoadingScreen\\LoadingScreen.css",
+      "PackagePath": "staticwebassets\\LoadingScreen\\LoadingScreen.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\LoadingScreen\\LoadingScreen.js",
+      "PackagePath": "staticwebassets\\LoadingScreen\\LoadingScreen.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\ChangeHeader.css",
+      "PackagePath": "staticwebassets\\css\\ChangeHeader.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\ChangeHeader.css.map",
+      "PackagePath": "staticwebassets\\css\\ChangeHeader.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\ChangePassword.css",
+      "PackagePath": "staticwebassets\\css\\ChangePassword.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\ChangePassword.css.map",
+      "PackagePath": "staticwebassets\\css\\ChangePassword.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Complete.css",
+      "PackagePath": "staticwebassets\\css\\Complete.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Complete.css.map",
+      "PackagePath": "staticwebassets\\css\\Complete.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Contact.css",
+      "PackagePath": "staticwebassets\\css\\Contact.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Contact.css.map",
+      "PackagePath": "staticwebassets\\css\\Contact.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\ContractSetting.css",
+      "PackagePath": "staticwebassets\\css\\ContractSetting.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\ContractSetting.css.map",
+      "PackagePath": "staticwebassets\\css\\ContractSetting.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\CostInfo.css",
+      "PackagePath": "staticwebassets\\css\\CostInfo.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\CostInfo.css.map",
+      "PackagePath": "staticwebassets\\css\\CostInfo.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Create.css",
+      "PackagePath": "staticwebassets\\css\\Create.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Create.css.map",
+      "PackagePath": "staticwebassets\\css\\Create.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Edit.css",
+      "PackagePath": "staticwebassets\\css\\Edit.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Edit.css.map",
+      "PackagePath": "staticwebassets\\css\\Edit.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\FAQ.css",
+      "PackagePath": "staticwebassets\\css\\FAQ.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\FAQ.css.map",
+      "PackagePath": "staticwebassets\\css\\FAQ.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Generator.css",
+      "PackagePath": "staticwebassets\\css\\Generator.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Generator.css.map",
+      "PackagePath": "staticwebassets\\css\\Generator.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\GeneratorCommon.css",
+      "PackagePath": "staticwebassets\\css\\GeneratorCommon.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\GeneratorCommon.css.map",
+      "PackagePath": "staticwebassets\\css\\GeneratorCommon.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\GeneratorMain.css",
+      "PackagePath": "staticwebassets\\css\\GeneratorMain.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\GeneratorMain.css.map",
+      "PackagePath": "staticwebassets\\css\\GeneratorMain.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Login.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Login.css.map",
+      "PackagePath": "staticwebassets\\css\\Login.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Login2.css",
+      "PackagePath": "staticwebassets\\css\\Login2.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Login2.css.map",
+      "PackagePath": "staticwebassets\\css\\Login2.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\MetaData.css",
+      "PackagePath": "staticwebassets\\css\\MetaData.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\MetaData.css.map",
+      "PackagePath": "staticwebassets\\css\\MetaData.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Minting.css",
+      "PackagePath": "staticwebassets\\css\\Minting.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Minting.css.map",
+      "PackagePath": "staticwebassets\\css\\Minting.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\MintingCommon.css",
+      "PackagePath": "staticwebassets\\css\\MintingCommon.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\MintingCommon.css.map",
+      "PackagePath": "staticwebassets\\css\\MintingCommon.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\MintingComplete.css",
+      "PackagePath": "staticwebassets\\css\\MintingComplete.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\MintingComplete.css.map",
+      "PackagePath": "staticwebassets\\css\\MintingComplete.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\MyGallery.css",
+      "PackagePath": "staticwebassets\\css\\MyGallery.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\MyGallery.css.map",
+      "PackagePath": "staticwebassets\\css\\MyGallery.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\MyInfoCommon.css",
+      "PackagePath": "staticwebassets\\css\\MyInfoCommon.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\MyInfoCommon.css.map",
+      "PackagePath": "staticwebassets\\css\\MyInfoCommon.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Notice.css",
+      "PackagePath": "staticwebassets\\css\\Notice.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Notice.css.map",
+      "PackagePath": "staticwebassets\\css\\Notice.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\NoticeCommon.css",
+      "PackagePath": "staticwebassets\\css\\NoticeCommon.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\NoticeCommon.css.map",
+      "PackagePath": "staticwebassets\\css\\NoticeCommon.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\NoticeView.css",
+      "PackagePath": "staticwebassets\\css\\NoticeView.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\NoticeView.css.map",
+      "PackagePath": "staticwebassets\\css\\NoticeView.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Password.css",
+      "PackagePath": "staticwebassets\\css\\Password.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Password.css.map",
+      "PackagePath": "staticwebassets\\css\\Password.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Password2.css",
+      "PackagePath": "staticwebassets\\css\\Password2.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Password2.css.map",
+      "PackagePath": "staticwebassets\\css\\Password2.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\PaymentHistory.css",
+      "PackagePath": "staticwebassets\\css\\PaymentHistory.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\PaymentHistory.css.map",
+      "PackagePath": "staticwebassets\\css\\PaymentHistory.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Practice - 복사.css.map",
+      "PackagePath": "staticwebassets\\css\\Practice - 복사.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Practice.css",
+      "PackagePath": "staticwebassets\\css\\Practice.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Practice.css.map",
+      "PackagePath": "staticwebassets\\css\\Practice.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Profile.css",
+      "PackagePath": "staticwebassets\\css\\Profile.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Profile.css.map",
+      "PackagePath": "staticwebassets\\css\\Profile.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\PublishNFT.css",
+      "PackagePath": "staticwebassets\\css\\PublishNFT.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\PublishNFT.css.map",
+      "PackagePath": "staticwebassets\\css\\PublishNFT.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Setting.css",
+      "PackagePath": "staticwebassets\\css\\Setting.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Setting.css.map",
+      "PackagePath": "staticwebassets\\css\\Setting.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\SignCommon.css",
+      "PackagePath": "staticwebassets\\css\\SignCommon.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\SignCommon.css.map",
+      "PackagePath": "staticwebassets\\css\\SignCommon.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\SignUp.css",
+      "PackagePath": "staticwebassets\\css\\SignUp.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\SignUp.css.map",
+      "PackagePath": "staticwebassets\\css\\SignUp.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\SignUpInfo.css",
+      "PackagePath": "staticwebassets\\css\\SignUpInfo.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\SignUpInfo.css.map",
+      "PackagePath": "staticwebassets\\css\\SignUpInfo.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Withdrawal.css",
+      "PackagePath": "staticwebassets\\css\\Withdrawal.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\Withdrawal.css.map",
+      "PackagePath": "staticwebassets\\css\\Withdrawal.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\common.css",
+      "PackagePath": "staticwebassets\\css\\common.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\common.css.map",
+      "PackagePath": "staticwebassets\\css\\common.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\font.css",
+      "PackagePath": "staticwebassets\\css\\font.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\font.css.map",
+      "PackagePath": "staticwebassets\\css\\font.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\index.css.map",
+      "PackagePath": "staticwebassets\\css\\index.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\reset.css",
+      "PackagePath": "staticwebassets\\css\\reset.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\css\\reset.css.map",
+      "PackagePath": "staticwebassets\\css\\reset.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\font\\NotoSansKR\\NotoSansKR-Black.otf",
+      "PackagePath": "staticwebassets\\font\\NotoSansKR\\NotoSansKR-Black.otf"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\font\\NotoSansKR\\NotoSansKR-Bold.otf",
+      "PackagePath": "staticwebassets\\font\\NotoSansKR\\NotoSansKR-Bold.otf"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\font\\NotoSansKR\\NotoSansKR-Light.otf",
+      "PackagePath": "staticwebassets\\font\\NotoSansKR\\NotoSansKR-Light.otf"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\font\\NotoSansKR\\NotoSansKR-Medium.otf",
+      "PackagePath": "staticwebassets\\font\\NotoSansKR\\NotoSansKR-Medium.otf"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\font\\NotoSansKR\\NotoSansKR-Regular.otf",
+      "PackagePath": "staticwebassets\\font\\NotoSansKR\\NotoSansKR-Regular.otf"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\font\\NotoSansKR\\NotoSansKR-Thin.otf",
+      "PackagePath": "staticwebassets\\font\\NotoSansKR\\NotoSansKR-Thin.otf"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\font\\SpoqaHanSansNeo\\SpoqaHanSansNeo-Bold.otf",
+      "PackagePath": "staticwebassets\\font\\SpoqaHanSansNeo\\SpoqaHanSansNeo-Bold.otf"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\font\\SpoqaHanSansNeo\\SpoqaHanSansNeo-Light.otf",
+      "PackagePath": "staticwebassets\\font\\SpoqaHanSansNeo\\SpoqaHanSansNeo-Light.otf"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\font\\SpoqaHanSansNeo\\SpoqaHanSansNeo-Medium.otf",
+      "PackagePath": "staticwebassets\\font\\SpoqaHanSansNeo\\SpoqaHanSansNeo-Medium.otf"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\font\\SpoqaHanSansNeo\\SpoqaHanSansNeo-Regular.otf",
+      "PackagePath": "staticwebassets\\font\\SpoqaHanSansNeo\\SpoqaHanSansNeo-Regular.otf"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\font\\SpoqaHanSansNeo\\SpoqaHanSansNeo-Thin.otf",
+      "PackagePath": "staticwebassets\\font\\SpoqaHanSansNeo\\SpoqaHanSansNeo-Thin.otf"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\Generator_web\\bg.png",
+      "PackagePath": "staticwebassets\\images\\Generator_web\\bg.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\Generator_web\\blur.png",
+      "PackagePath": "staticwebassets\\images\\Generator_web\\blur.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\Generator_web\\generator_file_upload_banner_back_1024_1920px.png",
+      "PackagePath": "staticwebassets\\images\\Generator_web\\generator_file_upload_banner_back_1024_1920px.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\Generator_web\\generator_file_upload_banner_back_320_640px.png",
+      "PackagePath": "staticwebassets\\images\\Generator_web\\generator_file_upload_banner_back_320_640px.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\Generator_web\\generator_file_upload_banner_back_640_1024px.png",
+      "PackagePath": "staticwebassets\\images\\Generator_web\\generator_file_upload_banner_back_640_1024px.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\Generator_web\\generator_main_banner_back.png",
+      "PackagePath": "staticwebassets\\images\\Generator_web\\generator_main_banner_back.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\Generator_web\\generator_main_banner_img.png",
+      "PackagePath": "staticwebassets\\images\\Generator_web\\generator_main_banner_img.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\Generator_web\\generator_main_img.png",
+      "PackagePath": "staticwebassets\\images\\Generator_web\\generator_main_img.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\Generator_web\\generator_main_img2.png",
+      "PackagePath": "staticwebassets\\images\\Generator_web\\generator_main_img2.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\Generator_web\\generator_main_img2_m.png",
+      "PackagePath": "staticwebassets\\images\\Generator_web\\generator_main_img2_m.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\Generator_web\\generator_main_img3.png",
+      "PackagePath": "staticwebassets\\images\\Generator_web\\generator_main_img3.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\attention.png",
+      "PackagePath": "staticwebassets\\images\\icons\\attention.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\attention.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\attention.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\change_name_btn.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\change_name_btn.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\check-gray.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\check-gray.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\check-mark.png",
+      "PackagePath": "staticwebassets\\images\\icons\\check-mark.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\check-mark2-off.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\check-mark2-off.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\check-mark2.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\check-mark2.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\check-mark_off.png",
+      "PackagePath": "staticwebassets\\images\\icons\\check-mark_off.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\check.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\check.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\check_icon.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\check_icon.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\copy_btn.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\copy_btn.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\cycle_dropdown.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\cycle_dropdown.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\cycle_dropdown2.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\cycle_dropdown2.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\drop_down.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\drop_down.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\drop_down2.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\drop_down2.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\ethereum.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\ethereum.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\eye_close.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\eye_close.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\eye_open.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\eye_open.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\icon.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\icon_01.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon_01.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\icon_02.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon_02.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\icon_03.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon_03.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\icon_04.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon_04.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\icon_05.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon_05.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\icon_caption.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon_caption.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\icon_generator.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon_generator.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\icon_minting.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon_minting.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\kaikas.png",
+      "PackagePath": "staticwebassets\\images\\icons\\kaikas.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\klaytn.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\klaytn.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\metamask.png",
+      "PackagePath": "staticwebassets\\images\\icons\\metamask.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\next_btn.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\next_btn.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\next_btn_w.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\next_btn_w.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\padlock.png",
+      "PackagePath": "staticwebassets\\images\\icons\\padlock.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\pentabreed.png",
+      "PackagePath": "staticwebassets\\images\\icons\\pentabreed.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\prev_btn.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\prev_btn.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\prev_btn_w.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\prev_btn_w.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\search.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\search.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\table_max_next.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\table_max_next.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\table_max_prev.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\table_max_prev.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\table_next.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\table_next.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\table_prev.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\table_prev.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\upload.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\upload.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\upload_success.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\upload_success.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\user.png",
+      "PackagePath": "staticwebassets\\images\\icons\\user.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\user.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\user.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\icons\\user_home.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\user_home.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\logos\\pala_logo.svg",
+      "PackagePath": "staticwebassets\\images\\logos\\pala_logo.svg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\main\\back1.png",
+      "PackagePath": "staticwebassets\\images\\main\\back1.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\main\\back2.png",
+      "PackagePath": "staticwebassets\\images\\main\\back2.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\main\\blur.png",
+      "PackagePath": "staticwebassets\\images\\main\\blur.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\main\\computer_icon.png",
+      "PackagePath": "staticwebassets\\images\\main\\computer_icon.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\main\\ethereum.png",
+      "PackagePath": "staticwebassets\\images\\main\\ethereum.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\main\\img_image_generator.png",
+      "PackagePath": "staticwebassets\\images\\main\\img_image_generator.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\main\\klaytn.png",
+      "PackagePath": "staticwebassets\\images\\main\\klaytn.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\main\\layer_img.png",
+      "PackagePath": "staticwebassets\\images\\main\\layer_img.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\main\\main_banner_1024px.jpg",
+      "PackagePath": "staticwebassets\\images\\main\\main_banner_1024px.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\main\\main_banner_768px.jpg",
+      "PackagePath": "staticwebassets\\images\\main\\main_banner_768px.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\main\\pic.png",
+      "PackagePath": "staticwebassets\\images\\main\\pic.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\main\\pic_minter.png",
+      "PackagePath": "staticwebassets\\images\\main\\pic_minter.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\main\\puzle.png",
+      "PackagePath": "staticwebassets\\images\\main\\puzle.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\main\\sample_img.png",
+      "PackagePath": "staticwebassets\\images\\main\\sample_img.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\main\\visual_01.png",
+      "PackagePath": "staticwebassets\\images\\main\\visual_01.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\main\\visual_02.png",
+      "PackagePath": "staticwebassets\\images\\main\\visual_02.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\background1\\background.png",
+      "PackagePath": "staticwebassets\\images\\sample\\background1\\background.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\background2\\background.png",
+      "PackagePath": "staticwebassets\\images\\sample\\background2\\background.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\background3\\background.png",
+      "PackagePath": "staticwebassets\\images\\sample\\background3\\background.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\background4\\background.png",
+      "PackagePath": "staticwebassets\\images\\sample\\background4\\background.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\cap1\\cap.png",
+      "PackagePath": "staticwebassets\\images\\sample\\cap1\\cap.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\cap2\\cap.png",
+      "PackagePath": "staticwebassets\\images\\sample\\cap2\\cap.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\cap3\\cap.png",
+      "PackagePath": "staticwebassets\\images\\sample\\cap3\\cap.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\cap4\\cap.png",
+      "PackagePath": "staticwebassets\\images\\sample\\cap4\\cap.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\cap5\\cap.png",
+      "PackagePath": "staticwebassets\\images\\sample\\cap5\\cap.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\cloth1\\cloth.png",
+      "PackagePath": "staticwebassets\\images\\sample\\cloth1\\cloth.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\cloth2\\cloth.png",
+      "PackagePath": "staticwebassets\\images\\sample\\cloth2\\cloth.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\cloth3\\cloth.png",
+      "PackagePath": "staticwebassets\\images\\sample\\cloth3\\cloth.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\cloth4\\cloth.png",
+      "PackagePath": "staticwebassets\\images\\sample\\cloth4\\cloth.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\cloth5\\cloth.png",
+      "PackagePath": "staticwebassets\\images\\sample\\cloth5\\cloth.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\gear1\\gear.png",
+      "PackagePath": "staticwebassets\\images\\sample\\gear1\\gear.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\gear2\\gear.png",
+      "PackagePath": "staticwebassets\\images\\sample\\gear2\\gear.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\gear3\\gear.png",
+      "PackagePath": "staticwebassets\\images\\sample\\gear3\\gear.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection1.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection1.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection10.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection10.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection11.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection11.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection12.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection12.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection13.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection13.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection14.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection14.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection15.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection15.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection16.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection16.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection17.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection17.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection18.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection18.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection19.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection19.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection2.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection2.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection20.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection20.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection21.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection21.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection22.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection22.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection23.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection23.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection24.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection24.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection25.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection25.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection3.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection3.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection4.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection4.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection5.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection5.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection6.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection6.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection7.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection7.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection8.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection8.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\sample_collection9.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\sample_collection9.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection1.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection1.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection10.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection10.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection11.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection11.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection12.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection12.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection13.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection13.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection14.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection14.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection15.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection15.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection16.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection16.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection17.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection17.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection18.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection18.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection19.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection19.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection2.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection2.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection20.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection20.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection21.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection21.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection22.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection22.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection23.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection23.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection24.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection24.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection25.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection25.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection3.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection3.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection4.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection4.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection5.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection5.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection6.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection6.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection7.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection7.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection8.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection8.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\generator\\trial_collection9.jpg",
+      "PackagePath": "staticwebassets\\images\\sample\\generator\\trial_collection9.jpg"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\glasses1\\glasses.png",
+      "PackagePath": "staticwebassets\\images\\sample\\glasses1\\glasses.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\glasses2\\glasses.png",
+      "PackagePath": "staticwebassets\\images\\sample\\glasses2\\glasses.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\glasses3\\glasses.png",
+      "PackagePath": "staticwebassets\\images\\sample\\glasses3\\glasses.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\glasses4\\glasses.png",
+      "PackagePath": "staticwebassets\\images\\sample\\glasses4\\glasses.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\glasses5\\glasses.png",
+      "PackagePath": "staticwebassets\\images\\sample\\glasses5\\glasses.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\glasses6\\glasses.png",
+      "PackagePath": "staticwebassets\\images\\sample\\glasses6\\glasses.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\mink1\\mink.png",
+      "PackagePath": "staticwebassets\\images\\sample\\mink1\\mink.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\mink2\\mink.png",
+      "PackagePath": "staticwebassets\\images\\sample\\mink2\\mink.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\mink3\\mink.png",
+      "PackagePath": "staticwebassets\\images\\sample\\mink3\\mink.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\mink4\\mink.png",
+      "PackagePath": "staticwebassets\\images\\sample\\mink4\\mink.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\images\\sample\\mink5\\mink.png",
+      "PackagePath": "staticwebassets\\images\\sample\\mink5\\mink.png"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\js\\ChangePassword.js",
+      "PackagePath": "staticwebassets\\js\\ChangePassword.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\js\\Contact.js",
+      "PackagePath": "staticwebassets\\js\\Contact.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\js\\Create.js",
+      "PackagePath": "staticwebassets\\js\\Create.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\js\\FAQ.js",
+      "PackagePath": "staticwebassets\\js\\FAQ.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\js\\FindPassword.js",
+      "PackagePath": "staticwebassets\\js\\FindPassword.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\js\\MyGallery.js",
+      "PackagePath": "staticwebassets\\js\\MyGallery.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\js\\Pagination\\PostJs.js",
+      "PackagePath": "staticwebassets\\js\\Pagination\\PostJs.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\js\\PublishNFT.js",
+      "PackagePath": "staticwebassets\\js\\PublishNFT.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\js\\SignIn.js",
+      "PackagePath": "staticwebassets\\js\\SignIn.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\js\\SignUp.js",
+      "PackagePath": "staticwebassets\\js\\SignUp.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\js\\common.js",
+      "PackagePath": "staticwebassets\\js\\common.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\js\\index.js",
+      "PackagePath": "staticwebassets\\js\\index.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\font\\summernote.eot",
+      "PackagePath": "staticwebassets\\lib\\summernote\\font\\summernote.eot"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\font\\summernote.ttf",
+      "PackagePath": "staticwebassets\\lib\\summernote\\font\\summernote.ttf"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\font\\summernote.woff",
+      "PackagePath": "staticwebassets\\lib\\summernote\\font\\summernote.woff"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\font\\summernote.woff2",
+      "PackagePath": "staticwebassets\\lib\\summernote\\font\\summernote.woff2"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-ar-AR.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-ar-AR.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-ar-AR.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-ar-AR.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-ar-AR.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-ar-AR.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-az-AZ.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-az-AZ.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-az-AZ.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-az-AZ.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-az-AZ.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-az-AZ.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-bg-BG.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-bg-BG.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-bg-BG.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-bg-BG.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-bg-BG.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-bg-BG.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-ca-ES.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-ca-ES.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-ca-ES.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-ca-ES.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-ca-ES.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-ca-ES.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-cs-CZ.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-cs-CZ.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-cs-CZ.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-cs-CZ.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-cs-CZ.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-cs-CZ.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-da-DK.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-da-DK.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-da-DK.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-da-DK.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-da-DK.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-da-DK.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-de-DE.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-de-DE.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-de-DE.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-de-DE.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-de-DE.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-de-DE.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-el-GR.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-el-GR.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-el-GR.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-el-GR.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-el-GR.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-el-GR.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-es-ES.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-es-ES.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-es-ES.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-es-ES.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-es-ES.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-es-ES.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-es-EU.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-es-EU.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-es-EU.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-es-EU.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-es-EU.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-es-EU.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-fa-IR.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-fa-IR.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-fa-IR.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-fa-IR.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-fa-IR.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-fa-IR.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-fi-FI.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-fi-FI.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-fi-FI.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-fi-FI.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-fi-FI.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-fi-FI.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-fr-FR.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-fr-FR.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-fr-FR.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-fr-FR.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-fr-FR.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-fr-FR.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-gl-ES.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-gl-ES.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-gl-ES.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-gl-ES.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-gl-ES.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-gl-ES.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-he-IL.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-he-IL.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-he-IL.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-he-IL.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-he-IL.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-he-IL.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-hr-HR.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-hr-HR.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-hr-HR.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-hr-HR.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-hr-HR.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-hr-HR.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-hu-HU.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-hu-HU.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-hu-HU.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-hu-HU.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-hu-HU.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-hu-HU.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-id-ID.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-id-ID.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-id-ID.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-id-ID.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-id-ID.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-id-ID.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-it-IT.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-it-IT.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-it-IT.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-it-IT.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-it-IT.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-it-IT.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-ja-JP.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-ja-JP.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-ja-JP.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-ja-JP.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-ja-JP.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-ja-JP.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-ko-KR.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-ko-KR.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-ko-KR.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-ko-KR.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-ko-KR.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-ko-KR.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-lt-LT.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-lt-LT.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-lt-LT.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-lt-LT.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-lt-LT.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-lt-LT.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-lt-LV.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-lt-LV.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-lt-LV.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-lt-LV.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-lt-LV.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-lt-LV.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-mn-MN.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-mn-MN.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-mn-MN.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-mn-MN.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-mn-MN.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-mn-MN.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-nb-NO.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-nb-NO.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-nb-NO.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-nb-NO.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-nb-NO.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-nb-NO.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-nl-NL.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-nl-NL.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-nl-NL.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-nl-NL.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-nl-NL.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-nl-NL.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-pl-PL.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-pl-PL.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-pl-PL.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-pl-PL.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-pl-PL.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-pl-PL.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-pt-BR.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-pt-BR.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-pt-BR.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-pt-BR.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-pt-BR.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-pt-BR.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-pt-PT.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-pt-PT.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-pt-PT.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-pt-PT.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-pt-PT.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-pt-PT.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-ro-RO.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-ro-RO.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-ro-RO.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-ro-RO.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-ro-RO.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-ro-RO.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-ru-RU.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-ru-RU.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-ru-RU.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-ru-RU.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-ru-RU.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-ru-RU.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-sk-SK.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-sk-SK.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-sk-SK.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-sk-SK.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-sk-SK.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-sk-SK.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-sl-SI.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-sl-SI.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-sl-SI.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-sl-SI.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-sl-SI.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-sl-SI.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-sr-RS-Latin.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-sr-RS-Latin.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-sr-RS-Latin.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-sr-RS-Latin.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-sr-RS-Latin.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-sr-RS-Latin.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-sr-RS.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-sr-RS.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-sr-RS.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-sr-RS.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-sr-RS.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-sr-RS.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-sv-SE.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-sv-SE.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-sv-SE.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-sv-SE.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-sv-SE.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-sv-SE.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-ta-IN.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-ta-IN.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-ta-IN.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-ta-IN.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-ta-IN.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-ta-IN.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-th-TH.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-th-TH.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-th-TH.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-th-TH.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-th-TH.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-th-TH.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-tr-TR.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-tr-TR.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-tr-TR.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-tr-TR.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-tr-TR.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-tr-TR.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-uk-UA.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-uk-UA.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-uk-UA.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-uk-UA.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-uk-UA.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-uk-UA.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-uz-UZ.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-uz-UZ.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-uz-UZ.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-uz-UZ.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-uz-UZ.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-uz-UZ.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-vi-VN.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-vi-VN.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-vi-VN.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-vi-VN.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-vi-VN.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-vi-VN.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-zh-CN.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-zh-CN.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-zh-CN.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-zh-CN.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-zh-CN.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-zh-CN.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-zh-TW.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-zh-TW.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-zh-TW.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-zh-TW.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\lang\\summernote-zh-TW.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\lang\\summernote-zh-TW.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\plugin\\databasic\\summernote-ext-databasic.css",
+      "PackagePath": "staticwebassets\\lib\\summernote\\plugin\\databasic\\summernote-ext-databasic.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\plugin\\databasic\\summernote-ext-databasic.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\plugin\\databasic\\summernote-ext-databasic.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\plugin\\hello\\summernote-ext-hello.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\plugin\\hello\\summernote-ext-hello.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\plugin\\specialchars\\summernote-ext-specialchars.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\plugin\\specialchars\\summernote-ext-specialchars.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\summernote-bs4.css",
+      "PackagePath": "staticwebassets\\lib\\summernote\\summernote-bs4.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\summernote-bs4.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\summernote-bs4.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\summernote-bs4.js.map",
+      "PackagePath": "staticwebassets\\lib\\summernote\\summernote-bs4.js.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\summernote-bs4.min.css",
+      "PackagePath": "staticwebassets\\lib\\summernote\\summernote-bs4.min.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\summernote-bs4.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\summernote-bs4.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\summernote-bs4.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\summernote-bs4.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\summernote-bs4.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\summernote\\summernote-bs4.min.js.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\summernote-lite.css",
+      "PackagePath": "staticwebassets\\lib\\summernote\\summernote-lite.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\summernote-lite.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\summernote-lite.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\summernote-lite.js.map",
+      "PackagePath": "staticwebassets\\lib\\summernote\\summernote-lite.js.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\summernote-lite.min.css",
+      "PackagePath": "staticwebassets\\lib\\summernote\\summernote-lite.min.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\summernote-lite.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\summernote-lite.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\summernote-lite.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\summernote-lite.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\summernote-lite.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\summernote\\summernote-lite.min.js.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\summernote.css",
+      "PackagePath": "staticwebassets\\lib\\summernote\\summernote.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\summernote.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\summernote.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\summernote.js.map",
+      "PackagePath": "staticwebassets\\lib\\summernote\\summernote.js.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\summernote.min.css",
+      "PackagePath": "staticwebassets\\lib\\summernote\\summernote.min.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\summernote.min.js",
+      "PackagePath": "staticwebassets\\lib\\summernote\\summernote.min.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\summernote.min.js.LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\summernote\\summernote.min.js.LICENSE.txt"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\summernote\\summernote.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\summernote\\summernote.min.js.map"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\swiper\\css\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\css\\swiper-bundle.min.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\swiper\\css\\swiper-custom.css",
+      "PackagePath": "staticwebassets\\lib\\swiper\\css\\swiper-custom.css"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\swiper\\js\\swiper.js",
+      "PackagePath": "staticwebassets\\lib\\swiper\\js\\swiper.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\lib\\swiper\\js\\swiperUse.js",
+      "PackagePath": "staticwebassets\\lib\\swiper\\js\\swiperUse.js"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\ChangeHeader.scss",
+      "PackagePath": "staticwebassets\\scss\\ChangeHeader.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\ChangePassword.scss",
+      "PackagePath": "staticwebassets\\scss\\ChangePassword.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\Complete.scss",
+      "PackagePath": "staticwebassets\\scss\\Complete.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\Contact.scss",
+      "PackagePath": "staticwebassets\\scss\\Contact.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\ContractSetting.scss",
+      "PackagePath": "staticwebassets\\scss\\ContractSetting.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\CostInfo.scss",
+      "PackagePath": "staticwebassets\\scss\\CostInfo.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\Create.scss",
+      "PackagePath": "staticwebassets\\scss\\Create.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\Edit.scss",
+      "PackagePath": "staticwebassets\\scss\\Edit.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\FAQ.scss",
+      "PackagePath": "staticwebassets\\scss\\FAQ.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\Generator.scss",
+      "PackagePath": "staticwebassets\\scss\\Generator.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\GeneratorCommon.scss",
+      "PackagePath": "staticwebassets\\scss\\GeneratorCommon.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\GeneratorMain.scss",
+      "PackagePath": "staticwebassets\\scss\\GeneratorMain.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\Login.scss",
+      "PackagePath": "staticwebassets\\scss\\Login.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\Login2.scss",
+      "PackagePath": "staticwebassets\\scss\\Login2.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\MetaData.scss",
+      "PackagePath": "staticwebassets\\scss\\MetaData.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\Minting.scss",
+      "PackagePath": "staticwebassets\\scss\\Minting.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\MintingCommon.scss",
+      "PackagePath": "staticwebassets\\scss\\MintingCommon.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\MintingComplete.scss",
+      "PackagePath": "staticwebassets\\scss\\MintingComplete.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\MyGallery.scss",
+      "PackagePath": "staticwebassets\\scss\\MyGallery.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\MyInfoCommon.scss",
+      "PackagePath": "staticwebassets\\scss\\MyInfoCommon.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\Notice.scss",
+      "PackagePath": "staticwebassets\\scss\\Notice.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\NoticeCommon.scss",
+      "PackagePath": "staticwebassets\\scss\\NoticeCommon.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\NoticeView.scss",
+      "PackagePath": "staticwebassets\\scss\\NoticeView.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\Password.scss",
+      "PackagePath": "staticwebassets\\scss\\Password.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\Password2.scss",
+      "PackagePath": "staticwebassets\\scss\\Password2.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\PaymentHistory.scss",
+      "PackagePath": "staticwebassets\\scss\\PaymentHistory.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\Practice.scss",
+      "PackagePath": "staticwebassets\\scss\\Practice.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\Profile.scss",
+      "PackagePath": "staticwebassets\\scss\\Profile.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\PublishNFT.scss",
+      "PackagePath": "staticwebassets\\scss\\PublishNFT.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\Setting.scss",
+      "PackagePath": "staticwebassets\\scss\\Setting.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\SignCommon.scss",
+      "PackagePath": "staticwebassets\\scss\\SignCommon.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\SignUp.scss",
+      "PackagePath": "staticwebassets\\scss\\SignUp.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\SignUpInfo.scss",
+      "PackagePath": "staticwebassets\\scss\\SignUpInfo.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\Withdrawal.scss",
+      "PackagePath": "staticwebassets\\scss\\Withdrawal.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\common.scss",
+      "PackagePath": "staticwebassets\\scss\\common.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\font.scss",
+      "PackagePath": "staticwebassets\\scss\\font.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\index.scss",
+      "PackagePath": "staticwebassets\\scss\\index.scss"
+    },
+    {
+      "Id": "D:\\vstro_repository\\vstroSVN\\Generator\\NftMinter\\NftMinter_User\\wwwroot\\scss\\reset.scss",
+      "PackagePath": "staticwebassets\\scss\\reset.scss"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.NftMinter_User.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.build.NftMinter_User.props",
+      "PackagePath": "build\\NftMinter_User.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.NftMinter_User.props",
+      "PackagePath": "buildMultiTargeting\\NftMinter_User.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\staticwebassets\\msbuild.buildTransitive.NftMinter_User.props",
+      "PackagePath": "buildTransitive\\NftMinter_User.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

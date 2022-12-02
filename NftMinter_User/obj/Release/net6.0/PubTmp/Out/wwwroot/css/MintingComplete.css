@@ -1,0 +1,80 @@
+/* font color */
+/* family */
+.complete .inner {
+  padding: 200px 20px;
+}
+.complete h2 {
+  font-size: 24px;
+  line-height: 1.5;
+  font-family: "noto_bold";
+  margin-bottom: 8px;
+  color: #1273eb;
+  text-align: center;
+}
+.complete .sub_title {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "noto_regular";
+  margin-bottom: 40px;
+  text-align: center;
+}
+.complete .table_wrap {
+  border-top: 2px solid #1273eb;
+  border-bottom: 2px solid #1273eb;
+  padding: 22px 20px;
+  margin-bottom: 60px;
+}
+.complete .table tr th {
+  min-width: 130px;
+  text-align: left;
+  font-size: 16px;
+  font-family: "noto_medium";
+  line-height: 1.5;
+  padding: 8px 0;
+  color: #777777;
+}
+.complete .table tr td {
+  width: 100%;
+  padding: 8px 0;
+  font-size: 16px;
+  font-family: "noto_regular";
+  line-height: 1.5;
+  text-align: center;
+}
+.complete .table tr td .contract_wrap {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.complete .table tr td .copy_text {
+  min-width: 36px;
+  height: 36px;
+  display: inline-block;
+}
+.complete .bottom_text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "noto_regular";
+  margin-bottom: 60px;
+}
+.complete .pala_btn {
+  display: flex;
+  width: 320px;
+  padding: 38px 0;
+  border: 1px solid #AFBFC6;
+  border-radius: 12px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.complete .pala_btn:hover {
+  border: 2px solid #1273eb;
+}
+.complete .pala_btn img {
+  width: auto;
+  height: 24px;
+}
+
+/*# sourceMappingURL=MintingComplete.css.map */

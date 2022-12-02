@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NFT MINTER" />
+    <meta property="og:title" content="NFT MINTER" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="NFT MINTER" />
+    <title>NFT MINTER - @ViewData["Title"]</title>
+
+    <link rel="stylesheet" href="~/css/font.css" />
+    <link rel="stylesheet" href="~/css/reset.css" />
+    <link rel="stylesheet" href="~/css/common.css" />
+
+    <!-- 로딩 -->
+    <script src="~/LoadingScreen/LoadingScreen.js" defer></script>
+    <link href="~/LoadingScreen/LoadingScreen.css" rel="stylesheet" />
+    <!-- JS -->
+    <script src="~/js/common.js" defer></script>
+
+    @await RenderSectionAsync("Heads", required: false)
+</head>
+<body>
+    <div class="loading" id="loading">
+        <img src="~/Loadingscreen/Loading.svg" alt="Loading" />
+        <p id="LoadingText"></p>
+    </div>
+    <div id="wrap">
+        <header class="header">
+            <div class="headerIn">
+                <h1 class="logo">
+                    <a href="/">
+                        <img src="~/images/logo.png" alt="NFT MINTER" />
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="/">HOME</a>
+                        </li>
+                        <li>
+                            <a href="/Generator/Main">GENERATOR</a>
+                            <ul class="sub_gnb">
+                                <li>
+                                    <a href="/Generator/Practice" data-isMobile>연습하기</a>
+                                </li>
+                                <li>
+                                    <a href="/Generator/Create" data-isMobile>이미지 생성</a>
+                                </li>
+                                <li>
+                                    <a href="/Generator/MetaData" data-isMobile>메타데이터 설정</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/Minting/Main">MINTING</a>
+                        </li>
+                        <li>
+                            <a href="#">공지&문의</a>
+                            <ul class="sub_gnb">
+                                <li>
+                                    <a href="/Notice/Notice">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="/Notice/FAQ">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="/Notice/Contact">문의하기</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="sign_wrap">
+                    <div class="my_page">
+                        <button type="button" id="myPageListOpen" title="마이페이지 버튼"></button>
+                        <!-- on 클래스 추가시 show -->
+                        <ul>
+                            <li><a href="/MyInfo/Profile">내 정보</a></li>
+                            <li><a href="/MyInfo/MyGallery">마이 갤러리</a></li>
+                            <li><a href="/MyInfo/PaymentHistory">결제관리</a></li>
+                            <li><a href="/MyInfo/Withdrawal">회원탈퇴</a></li>
+                        </ul>
+                    </div>
+                    <ul class="link">
+                        <li class="sign_in on"><a href="/Sign/Login2">로그인</a></li>
+                        <li class="sign_up on"><a href="/Sign/SignUp">회원가입</a></li>
+                        <li class="sign_up"><a href="/Sign/SignUp">로그아웃</a></li>
+                    </ul>
+                    <div class="mobile_menu">
+                        <button type="button" class="side_open_btn">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        @await RenderSectionAsync("Banner", required: false)
+
+        <main class="container">
+            @RenderBody()
+        </main>
+        <footer class="footer">
+            <div class="inner">
+                <div class="box box1">
+                    <ul>
+                        <li>
+                            <p class="head">NFT MINTER</p>
+                        </li>
+                        <li>
+                            <a href="https://www.pentabreed.com/" target="_blank">COMPANY</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p class="head">PRODUCT</p>
+                        </li>
+                        <li>
+                            <a href="/Generator/Main">IMAGE GENERATOR</a>
+                        </li>
+                        <li>
+                            <a href="/Minting/Main">MINTING</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p class="head">RESOURCES</p>
+                        </li>
+                        <li>
+                            <a href="#">GUIDE BOOK</a>
+                        </li>
+                        <li>
+                            <a href="/Notice/FAQ">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="/Notice/Notice">NEWSLETTER</a>
+                        </li>
+                        <li>
+                            <a href="http://www.gighub.kr/main" target="_blank">GIGHUB</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box box2">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <div>
+                                    <span class="value">
+                                        (주)펜타브리드
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    주소 :
+                                    <span class="value">서울특별시 서초구 서운로26길 9 펜타타워</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    대표이사 :
+                                    <span class="value">박태희, 김영진</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    사업자 등록번호 :
+                                    <span class="value">114-86-12129</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    통신판매업 신고:
+                                    <span class="value">2018-서울서초-0638</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    개인정보관리책임자 :
+                                    <span class="value">배제협</span>
+                                </div>
+                            </li>
+
+                            <!-- 고객센터 차후 추가 -->
+                            @*        <li>
+                            <div>
+                            고객센터 :
+                            <span class="value">02-000-0000</span>
+                            </div>
+                            </li>*@
+                        </ul>
+                    </div>
+                    <div class="right_box">
+                        <ul>
+                            <li><a href="#">개인정보취급방침</a></li>
+                            <li><a href="#">서비스 약관</a></li>
+                        </ul>
+                        <p class="copy">NFT MINTER Copyrights &copy; All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    @await RenderSectionAsync("Modals", required: false)
+
+    @*<script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>*@
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    <script>
+        console.log("%cNFT-MINTER", "font-size: 120px; color: #cfffa5; border: 1px solid #fff; padding: 0 30px; border-radius: 12px;");
+    </script>
+    <div class="side_menu">
+        <button type="button" class="side_close_btn">
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+        <nav class="side_gnb">
+            <ul>
+                <!-- on 클래스 추가시 a태그 컬러 -->
+                <li class="on">
+                    <a href="/">HOME</a>
+                </li>
+                <li>
+                    <a href="/Generator/Main">GENERATOR</a>
+                </li>
+                <li>
+                    <a href="/Minting/Main">MINTING</a>
+                </li>
+                <li>
+                    <a href="#" class="notice_btn">공지&문의</a>
+                    <ul class="side_sub_gnb">
+                        <li>
+                            <a href="/Notice/Notice">공지사항</a>
+                        </li>
+                        <li>
+                            <a href="/Notice/FAQ">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="/Notice/Contact">문의하기</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="side_sign_wrap">
+            <ul>
+                <li class="sign_in on"><a href="/Sign/Login2">로그인</a></li>
+                <li class="sign_up"><a href="/Sign/SignUp">회원가입</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

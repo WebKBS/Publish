@@ -1,0 +1,82 @@
+﻿@charset "UTF-8";
+@import "./Setting.scss";
+
+.header {
+    box-shadow: 0 5px 9.3px 0.7px rgba(9, 18, 45, 0.15);
+    background: #fff;
+    position: fixed;
+}
+
+.logo {
+    a {
+        img {
+            filter: invert(1);
+        }
+    }
+}
+
+.gnb {
+
+    li {
+        a {
+            color: #222;
+
+            &:hover {
+                color: $sec1;
+                transition: var(--hover-transition);
+            }
+        }
+
+    }
+}
+
+.sign_wrap {
+
+    .link {
+
+        li {
+            a {
+                color: #222;
+                border: 1px solid #222;
+                transition: var(--hover-transition);
+
+                &:hover {
+                    background: #222;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.side_open_btn {
+    .line {
+        background: #6F5CFB;
+    }
+}
+
+.sub_gnb {
+    background: #fff;
+    display: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 20%);
+
+    li {
+
+        a {
+            width: 100%;
+            font-size: 18px;
+            line-height: 20px;
+            color: #222;
+            font-family: $spoqa_medium;
+        }
+    }
+}
+
+.my_page {
+
+    > #myPageListOpen {
+        width: 24px;
+        height: 24px;
+        background: url(../images/icons/user.svg) no-repeat center center / contain;
+    }
+}

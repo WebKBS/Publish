@@ -1,0 +1,116 @@
+/* font color */
+/* family */
+.item_list .drag_btn {
+  width: 36px;
+  height: 36px;
+  padding: 11px 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.item_list .drag_btn .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #1273eb;
+}
+.item_list > ul {
+  display: flex;
+  flex-direction: column;
+}
+.item_list > ul > li {
+  padding: 10px 10px 10px 66px;
+  height: 292px;
+  position: relative;
+}
+.item_list .box_wrap {
+  border: 1px solid #D6DAE1;
+  border-radius: 12px;
+  height: 100%;
+}
+.item_list .title_wrap {
+  display: flex;
+  justify-content: space-between;
+  background: #F8F8F8;
+  border-bottom: 1px solid #D6DAE1;
+  padding: 10px 16px;
+  border-radius: 12px 12px 0 0;
+}
+.item_list .title_wrap .title {
+  display: flex;
+  align-items: center;
+}
+.item_list .title_wrap .title p {
+  font-size: 15px;
+  font-family: "noto_bold";
+  line-height: 1.5;
+}
+.item_list .title_wrap .title .name {
+  margin-right: 4px;
+  max-width: 10.3515vw;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.item_list .title_wrap .title .item_amount {
+  margin-right: 8px;
+}
+.item_list .title_wrap .title .change_name_btn {
+  width: 20px;
+  height: 20px;
+  background: url(../images/icons/change_name_btn.svg) no-repeat center center/contain;
+}
+.item_list .input_wrap {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.item_list .input_wrap > div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: "noto_medium";
+  color: #798CA8;
+}
+.item_list .input_wrap > div input {
+  width: 48px;
+  background: #fff;
+  padding: 7px 6px;
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: "noto_regular";
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #D6DAE1;
+}
+.item_list .list_wrap {
+  padding: 20px 8px 20px 14px;
+  overflow-x: auto;
+}
+.item_list .list_wrap .remain_text {
+  font-size: 12px;
+  font-family: "noto_medium";
+  line-height: 1.5;
+  color: #798CA8;
+  margin-bottom: 12px;
+}
+.item_list .list_wrap .list {
+  display: flex;
+  gap: 4px;
+}
+.item_list .list_wrap .list li {
+  width: 100px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+/*# sourceMappingURL=Practice.css.map */

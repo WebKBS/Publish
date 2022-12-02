@@ -1,0 +1,95 @@
+/* font color */
+/* family */
+.withdrawal h2 {
+  margin-bottom: 12px;
+}
+.withdrawal .sub_title {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "noto_medium";
+  margin-bottom: 60px;
+  color: #798CA8;
+}
+.withdrawal .info_inner {
+  border: 1px solid #D6DAE1;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.withdrawal .info_title {
+  padding: 16px 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "noto_medium";
+}
+.withdrawal .info_title p {
+  word-break: keep-all;
+}
+.withdrawal .info_text {
+  padding: 30px 20px;
+  background: #F3F5F8;
+}
+.withdrawal .info_text p {
+  font-size: 16px;
+  font-family: "noto_regular";
+  line-height: 1.5;
+  word-break: keep-all;
+}
+.withdrawal .info_text p strong {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "noto_medium";
+  color: #1273eb;
+  word-break: keep-all;
+}
+.withdrawal .check_wrap {
+  margin-bottom: 60px;
+}
+.withdrawal .check_wrap input {
+  display: none;
+}
+.withdrawal .check_wrap input + label {
+  display: inline-flex;
+  gap: 12px;
+  cursor: pointer;
+}
+.withdrawal .check_wrap input + label img {
+  width: 20px;
+}
+.withdrawal .check_wrap input + label img:nth-child(2) {
+  display: none;
+}
+.withdrawal .check_wrap input + label span {
+  color: #798CA8;
+}
+.withdrawal .check_wrap input:checked + label img:nth-child(1) {
+  display: none;
+}
+.withdrawal .check_wrap input:checked + label img:nth-child(2) {
+  display: block;
+}
+.withdrawal .withdrawal_btn {
+  width: 200px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "noto_medium";
+  border-radius: 8px;
+  padding: 16px 0;
+  background: #1273eb;
+  color: #fff;
+}
+.withdrawal .withdrawal_btn[disabled] {
+  background: #D6DAE1;
+  color: #798CA8;
+}
+
+@media screen and (max-width: 768px) {
+  .withdrawal .withdrawal_btn {
+    margin: 0 auto;
+  }
+  .withdrawal .info_text {
+    padding: 20px;
+  }
+}
+
+/*# sourceMappingURL=Withdrawal.css.map */

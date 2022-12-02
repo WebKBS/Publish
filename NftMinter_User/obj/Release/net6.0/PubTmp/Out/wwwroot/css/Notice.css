@@ -1,0 +1,185 @@
+/* font color */
+/* family */
+.notice .input_wrap {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+.notice .input_wrap select {
+  min-width: 92px;
+  border: 1px solid #D6DAE1;
+  border-radius: 8px;
+  padding: 10px 32px 10px 16px;
+  color: #798CA8;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "noto_regular";
+  background: url(../images/icons/drop_down.svg) no-repeat right 12px center/auto 20px;
+  cursor: pointer;
+}
+.notice .input_wrap select:focus {
+  outline-width: 2px;
+  outline-color: #1273eb;
+}
+.notice .input_wrap input[type=search] {
+  max-width: 300px;
+  border-radius: 8px;
+  border: 1px solid #D6DAE1;
+  padding: 10px 42px 10px 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "noto_regular";
+  background: url(../images/icons/search.svg) no-repeat right 12px center/20px auto;
+}
+.notice .input_wrap input[type=search]:focus {
+  outline-width: 2px;
+  outline-color: #1273eb;
+}
+.notice .table_wrap {
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  max-height: 524px;
+  min-height: 242px;
+  margin-bottom: 30px;
+}
+.notice .table_wrap .table {
+  width: 100%;
+}
+.notice .table_wrap thead {
+  border-bottom: 1px solid #AFBFC6;
+}
+.notice .table_wrap thead th {
+  padding: 11px 0;
+}
+.notice .table_wrap tbody tr {
+  cursor: pointer;
+}
+.notice .table_wrap tbody tr:hover {
+  background: #F3F5F8;
+}
+.notice .table_wrap tbody .no_data {
+  cursor: inherit;
+}
+.notice .table_wrap tbody .no_data:hover {
+  background: transparent;
+}
+.notice .table_wrap tbody td {
+  padding: 11px 16px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "noto_regular";
+  box-sizing: border-box;
+}
+.notice .table_wrap tbody td:nth-child(1) {
+  min-width: 80px;
+}
+.notice .table_wrap tbody td:nth-child(2) {
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 240px;
+  min-width: 180px;
+}
+.notice .table_wrap tbody td:nth-child(3) {
+  max-width: 280px;
+  padding: 13px 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #798CA8;
+}
+.notice .table_wrap tbody td:nth-child(4) {
+  min-width: 120px;
+}
+.notice .table_wrap tbody td:nth-child(5) {
+  min-width: 120px;
+}
+.notice .table_navi {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.notice .table_navi.on {
+  display: flex;
+}
+.notice .table_navi .navi_pages {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #1273eb;
+  line-height: 1.5;
+  font-family: "noto_regular";
+  display: none;
+}
+.notice .table_navi .navi_pages span {
+  margin: 0 6px;
+}
+.notice .table_navi .navi_pages.on {
+  display: flex;
+}
+.notice .table_navi ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notice .table_navi li button {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: "noto_medium";
+  color: #AFBFC6;
+  padding: 10px;
+}
+.notice .table_navi li.on button {
+  color: initial;
+}
+.notice .table_navi .max_prev_btn button,
+.notice .table_navi .prev_btn button,
+.notice .table_navi .max_next_btn button,
+.notice .table_navi .next_btn button {
+  padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .notice .table_wrap {
+    overflow-x: auto;
+  }
+  .notice .table_wrap .table {
+    width: 880px;
+  }
+  .notice .table_wrap tbody td:nth-child(1) {
+    min-width: 48px;
+  }
+  .notice .table_wrap tbody td:nth-child(2) {
+    max-width: 160px;
+    min-width: 120px;
+  }
+  .notice .table_wrap tbody td:nth-child(3) {
+    max-width: 160px;
+  }
+  .notice .table_wrap tbody td:nth-child(4) {
+    min-width: 100px;
+  }
+  .notice .table_wrap tbody td:nth-child(5) {
+    min-width: 90px;
+  }
+  .notice .table_navi .navi_pages {
+    top: auto;
+    bottom: -30px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .notice .input_wrap {
+    flex-direction: column;
+  }
+  .notice .input_wrap input[type=search] {
+    max-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=Notice.css.map */

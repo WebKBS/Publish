@@ -1,0 +1,111 @@
+﻿@{
+    ViewData["title"] = "Generator";
+}
+
+
+<section class="cont1">
+    <div class="inner">
+        <p class="sub_title">GENERATOR</p>
+        <h2>이미지 생성하기</h2>
+    </div>
+</section>
+
+<section class="cont2">
+    <div class="inner">
+        <div class="box">
+            <div class="left_box">
+                <img src="~/images/main/computer_icon.png" alt="NFT 컴퓨터 이미지" />
+                <h2>
+                    <b>어려운 작업은 이제 그만!</b><br />
+                    NFT MINTER를 통해<br />
+                    단
+                    <strong>10분 만에 NFT를</strong>
+                    만들어보세요!
+                </h2>
+                <div class="text_box">
+                    JSON, 메타데이터, 스마트컨트랙트, NFT를 발행하기 위해 공부해야 할까요?<br />
+                    NFT MINTER를 이용하시면<br class="pc_br" />
+                    저렴한 가격에 몇 번의 클릭만으로<br class="tab_br" />
+                    NFT를 발행하기 위해 필요한 모든 것을 구비하실 수 있습니다.
+                </div>
+                <p class="copy">ALL in one services - NFT Minter</p>
+            </div>
+            <div class="right_box">
+                <img src="~/images/Generator_web/generator_main_img.png" alt="NFT제작 이미지" />
+            </div>
+        </div>
+        <div class="link_wrap">
+            <a href="/Generator/Practice" data-isMobile>연습하기</a>
+            <a href="/Generator/Generator" data-isMobile>바로만들기</a>
+        </div>
+        <div class="ps_wrap">
+            <p class="ps">※ 회원당 50개까지는 이미지 생성이 무료이나 50개 초과시에는 유료입니다.</p>
+            <p class="ps">※ Genorator, Minter 서비스는 PC환경에서만 지원됩니다.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cont3">
+    <div class="inner">
+        <p class="sub_title">
+            합성하고자 하는 각 파츠별 이미지(Parts)는 캔버스 크기가 모두 동일해야 하며,<br class="pc_br" />
+            합성 후의 이미지 내에서 각 파츠별 원하는 위치와 동일하게 파츠 이미지가 만들어져야 합니다.
+        </p>
+        <img src="~/images/main/puzle.png" class="puzzle_img" alt="퍼즐 이미지" />
+        <h2>Parts 작성 예시</h2>
+        <picture>
+            <source srcset="~/images/Generator_web/generator_main_img2_m.png" media="(max-width: 1024px)" />
+            <img src="~/images/Generator_web/generator_main_img2.png" class="ex_img" alt="Parts 작성 예시 이미지" />
+        </picture>
+    </div>
+</section>
+
+<section class="cont4">
+    <div class="inner">
+        <div class="box">
+            <div class="left_box">
+                <h2>이미지 폴더 업로드하기</h2>
+                <p class="sub_text">
+                    여러 이미지를 합성하여 NFT를 만들기 위해서는 다음과 같이 이미지 폴더를 만들고 이를 업로드해야 합니다.<br />
+                    만약, 이미지 합성이 불필요한 경우, 상단 메뉴에서 <strong>‘MINTING’</strong> 을 클릭하거나<br />
+                    화면 하단의 <strong>‘바로 민팅하기’</strong> 버튼을 클릭하여 민팅 화면으로 이동하시면 됩니다.
+                </p>
+            </div>
+            <div class="right_box">
+                <img src="~/images/Generator_web/generator_main_img3.png" alt="업로드 이미지" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cont5">
+    <div class="inner">
+        <div class="box">
+            <div class="text">
+                간편한 이미지 생성을 위해<br />
+                <strong>1개의 컬렉션당 1개의 폴더(마더폴더)</strong>를 만들고,<br />
+                각 레이어 별로 하위 폴더를 만든 후<br />
+                해당 파츠 이미지들을 폴더에 저장하면 됩니다.
+                <br /><br />
+                폴더 정리가 완료되면 해당 마더폴더를 업로드합니다.<br />
+                마더폴더의 이름은 컬렉션 이름으로,<br />
+                하위 폴더의 이름은 레이어 이름으로 만들면<br />
+                그대로 반영됩니다.<br />
+                Parts 이미지 파일의 이름도 각 파츠의 이름으로 반영됩니다.
+            </div>
+            <img src="~/images/main//layer_img.png" alt="제네레이터 가이드 이미지" />
+        </div>
+        <div class="button_wrap">
+            <a href="/Generator/Practice" data-isMobile>연습하기</a>
+            <a href="/Generator/Generator" data-isMobile>이미지 생성하기</a>
+        </div>
+    </div>
+</section>
+
+
+
+@section Heads{
+    <link rel="stylesheet" href="~/css/ChangeHeader.css" />
+    <link rel="stylesheet" href="~/css/GeneratorMain.css" />
+
+}

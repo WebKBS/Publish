@@ -117,13 +117,124 @@
                                     <div class="custom upload_wrap">
                                         <ul>
                                             <li>
-                                                <input type="file" hidden/>
-                                                <label>
-                                                    <span class="title">세금 계산서</span>
-                                                    <img />
-                                                    <span>Drag & Drop</span>
-                                                    <span>640*640 png</span>
+                                                <input id="tax" type="file" hidden accept=".png" multiple />
+                                                <label for="tax" class="drop">
+                                                    <span class="text_wrap">
+                                                        <span class="title">세금 계산서</span>
+                                                        <span>Drag & Drop</span>
+                                                        <span>640*640 png</span>
+                                                    </span>
+                                                    <span class="label_img_wrap"></span>
                                                 </label>
+                                                <button type="button" class="file_delete">
+                                                    <span class="line"></span>
+                                                    <span class="line"></span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <input id="specification" type="file" hidden accept=".png" multiple />
+                                                <label for="specification">
+                                                    <span class="text_wrap">
+                                                        <span class="title">거래 명세서</span>
+                                                        <span>Drag & Drop</span>
+                                                        <span>640*640 png</span>
+                                                    </span>
+                                                    <span class="label_img_wrap"></span>
+                                                </label>
+                                                <button type="button" class="file_delete">
+                                                    <span class="line"></span>
+                                                    <span class="line"></span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <input type="file" hidden id="estimate" accept=".png, .pdf" multiple />
+                                                <label for="estimate">
+                                                    <span class="text_wrap">
+                                                        <span class="title">견적서</span>
+                                                        <span>Drag & Drop</span>
+                                                        <span>png or pdf</span>
+                                                    </span>
+                                                    <span class="label_img_wrap"></span>
+                                                </label>
+                                                <button type="button" class="file_delete">
+                                                    <span class="line"></span>
+                                                    <span class="line"></span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <input id="contract" type="file" hidden accept=".png, .pdf" multiple />
+                                                <label for="contract">
+                                                    <span class="text_wrap">
+                                                        <span class="title">계약서</span>
+                                                        <span>Drag & Drop</span>
+                                                        <span>png or pdf</span>
+                                                    </span>
+                                                    <span class="label_img_wrap"></span>
+                                                </label>
+                                                <button type="button" class="file_delete">
+                                                    <span class="line"></span>
+                                                    <span class="line"></span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <input id="equipment" type="file" hidden accept=".png" multiple />
+                                                <label for="equipment">
+                                                    <span class="text_wrap">
+                                                        <span class="title">장비사진</span>
+                                                        <span>Drag & Drop</span>
+                                                        <span>640*640 png</span>
+                                                    </span>
+                                                    <span class="label_img_wrap"></span>
+                                                </label>
+                                                <button type="button" class="file_delete">
+                                                    <span class="line"></span>
+                                                    <span class="line"></span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <input id="place" type="file" hidden accept=".png" multiple />
+                                                <label for="place">
+                                                    <span class="text_wrap">
+                                                        <span class="title">설치 장소 사진</span>
+                                                        <span>Drag & Drop</span>
+                                                        <span>640*640 png</span>
+                                                    </span>
+                                                    <span class="label_img_wrap"></span>
+                                                </label>
+                                                <button type="button" class="file_delete">
+                                                    <span class="line"></span>
+                                                    <span class="line"></span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <input id="receipt" type="file" hidden accept=".png, .pdf" multiple />
+                                                <label for="receipt">
+                                                    <span class="text_wrap">
+                                                        <span class="title">영수증</span>
+                                                        <span>Drag & Drop</span>
+                                                        <span>png or pdf</span>
+                                                    </span>
+                                                    <span class="label_img_wrap"></span>
+                                                </label>
+                                                <button type="button" class="file_delete">
+                                                    <span class="line"></span>
+                                                    <span class="line"></span>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <input id="etc" type="file" hidden accept=".png, .pdf" multiple />
+                                                <label for="etc">
+                                                    <span class="text_wrap">
+                                                        <span class="title">기타</span>
+                                                        <span>Drag & Drop</span>
+                                                        <span>png or pdf</span>
+                                                    </span>
+                                                    <span class="label_img_wrap"></span>
+                                                </label>
+                                                <button type="button" class="file_delete">
+                                                    <span class="line"></span>
+                                                    <span class="line"></span>
+                                                </button>
                                             </li>
                                         </ul>
                                     </div>
@@ -132,35 +243,125 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="d-flex justify-content-center">
+                    <div>
+                        <button type="button" class="btn btn-danger">삭제</button>
+                    </div>
+                    <div class="ml-auto">
+                        <button type="button" class="btn btn-outline-primary">이전</button>
+                        <button type="button" class="btn btn-primary">저장</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-
-
 <script>
-    let qrcode = new QRCode(document.getElementById('qrcode'), {
-        width: 100,
-        height: 100,
+    const fileInput = document.querySelectorAll('input[type=file]')
+    const taxLabel = document.querySelector("[for='tax']");
+    const label = document.querySelectorAll('label');
+    const deleteFileBtn = document.querySelectorAll('.file_delete');
+
+    deleteFileBtn.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const input = btn.parentElement.querySelector('input[type=file]');
+            const imgWrap = btn.parentElement.querySelector('.label_img_wrap');
+            const textWrap = btn.parentElement.querySelector('.text_wrap');
+            input.value = "";
+            while (imgWrap.firstChild) {
+                imgWrap.removeChild(imgWrap.firstChild);
+            }
+            textWrap.style.display = "flex";
+            btn.style.display = "none";
+            imgWrap.style.position = "absolute";
+        })
+    })
+
+    fileInput.forEach(ev => {
+        ev.addEventListener('change', (event) => {
+            const files = changeEvent(event);
+            handleUpdate(files, event.target);
+        })
+    })
+
+
+    label.forEach(event => {
+        event.addEventListener('mouseover', (ev) => {
+            ev.preventDefault();
+            ev.currentTarget.parentElement.classList.add('on')
+        })
+
+        event.addEventListener('mouseout', (ev) => {
+            ev.preventDefault();
+            ev.currentTarget.parentElement.classList.remove('on')
+        })
+    })
+
+    document.addEventListener("dragenter", (event) => {
+        event.preventDefault();
     });
 
-    function makeCode() {
-        qrcode.makeCode('https://sharewbs.com/');
+    document.addEventListener("dragover", (event) => {
+        event.preventDefault();
+
+        if (event.target.className === "label_img_wrap") {
+            event.target.closest('li').classList.add('on');
+        }
+    });
+
+    document.addEventListener("dragleave", (event) => {
+        event.preventDefault();
+        if (event.target.className === "label_img_wrap") {
+            event.target.closest('li').classList.remove('on');
+        }
+    });
+
+    document.addEventListener("drop", (event) => {
+        event.preventDefault();
+        const files = event.dataTransfer?.files;
+        console.log("drop");
+        if (event.target.className === "label_img_wrap") {
+            handleUpdate([...files], event.target);
+        }
+
+    });
+
+    function changeEvent(event) {
+        const { target } = event;
+        return [...target.files];
+    };
+
+    function handleUpdate(fileList, target) {
+        fileList.forEach((file) => {
+            const reader = new FileReader();
+            reader.addEventListener("load", (event) => {
+                const preview = createElement(event, file);
+                const ele = target.closest('li').querySelector('.label_img_wrap');
+                const textWrap = target.closest('li').querySelector('.text_wrap');
+                const button = target.closest('li').querySelector('.file_delete');
+                button.style.display = "block";
+                textWrap.style.display = "none";
+                ele.style.position = "static";
+                ele.appendChild(preview);
+
+            });
+            reader.readAsDataURL(file);
+        });
+    };
+
+    const createElement = (e, file) => {
+        const fragment = document.createDocumentFragment();
+        const img = document.createElement('img');
+        img.setAttribute('src', e.target.result);
+        img.setAttribute('data-file', file.name);
+        fragment.appendChild(img)
+        return fragment;
     }
 
-    makeCode();
 
-    $('#text')
-        .on('blur', function () {
-            makeCode();
-        })
-        .on('keydown', function (e) {
-            if (e.keyCode == 13) {
-                makeCode();
-            }
-        });
 </script>
+
 
 @section Heads{
     <script src="~/lib/qrcode/qrcode.min.js"></script>

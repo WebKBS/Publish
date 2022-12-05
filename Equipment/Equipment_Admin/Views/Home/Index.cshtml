@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Main";
+    ViewData["Title"] = "장비 대장";
 }
 <div class="content-body">
     <!-- row -->
@@ -186,15 +186,6 @@
 
     makeCode();
 
-    $('#text')
-        .on('blur', function () {
-            makeCode();
-        })
-        .on('keydown', function (e) {
-            if (e.keyCode == 13) {
-                makeCode();
-            }
-        });
 </script>
 
 @section Heads{

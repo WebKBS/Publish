@@ -1,0 +1,197 @@
+﻿@{
+    ViewData["Title"] = "결제 현황";
+}
+<div class="content-body">
+    <!-- row -->
+    <div class="container-fluid">
+        <div class="row page-titles mx-0">
+            <div class="col-sm-6">
+                <div class="welcome-text">
+                    <h4 class="font-weight-bold">결제 현황</h4>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="form-group col-4">
+                                            <select id="" class="form-control">
+                                                <option selected="">상태 전체</option>
+                                                <option>보유</option>
+                                                <option>반출</option>
+                                                <option>폐기</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-4">
+                                            <select id="" class="form-control">
+                                                <option selected="">결제 전체</option>
+                                                <option>과제(세액별도)</option>
+                                                <option>과제</option>
+                                                <option>법인</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="row justify-content-end">
+                                        <div class="form-group col-2">
+                                            <select id="" class="form-control">
+                                                <option selected="">명칭</option>
+                                                <option>공급처</option>
+                                                <option>관리부서</option>
+                                                <option>관리 담당자</option>
+                                                <option>과제명</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-6">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-primary" type="button">검색</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <a href="/Post/Modify" class="btn btn-primary">+ 추가</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header d-block">
+                        <div class="row">
+                            <div class="col-8">
+                                <h4 class="card-title mb-2">Dell PowerEdge R740 S4208 32G/300G BTO</h4>
+                                <div class="d-flex">
+                                    <p class="mb-0 mr-1 subtitle p-0">
+                                        구매 :
+                                        <time class="mr-2">2011.11.12</time>
+                                        등록 :
+                                        <time class="mr-2">2011.12.12 12:32</time>
+                                        반출 :
+                                        <time class="mr-2">2011.12.12 12:32</time>
+                                    </p>
+                                    <a href="javascript:void()" class="badge badge-primary">수정</a>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="row align-items-start">
+                                    <div class="col-8 d-flex flex-wrap justify-content-end">
+                                        <a href="javascript:void()" class="badge badge-light col-3 m-1">세금계산서</a>
+                                        <a href="javascript:void()" class="badge badge-light col-3 m-1">거래명세서</a>
+                                        <a href="javascript:void()" class="badge badge-light col-3 m-1">영수증</a>
+                                        <a href="javascript:void()" class="badge badge-light col-3 m-1">견적서</a>
+                                        <a href="javascript:void()" class="badge badge-light col-3 m-1">계약서</a>
+                                        <a href="javascript:void()" class="badge badge-light col-3 m-1">메모</a>
+                                    </div>
+                                    <div class="col-4">
+                                        <div id="qrcode"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-3 d-flex flex-column align-items-center">
+                                <div class="img_wrap">
+                                    <img src="~/images/img/img1.jpg" />
+                                </div>
+                                <ul class="item_list">
+                                    <li class="on">
+                                        <button>
+                                            <img src="~/images/img/sub_img1.jpg" />
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            <img src="~/images/img/sub_img2.jpg" />
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            <img src="~/images/img/sub_img3.jpg" />
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="table-responsive col-9">
+                                <table class="table table-responsive-sm custom_table">
+                                    <tbody>
+                                        <tr>
+                                            <th>상태</th>
+                                            <td>보유</td>
+                                            <th>결제방법</th>
+                                            <td>법인 [1232 1231 32132]</td>
+                                        </tr>
+                                        <tr>
+                                            <th>구매 개수</th>
+                                            <td>1</td>
+                                            <th>금액</th>
+                                            <td>253,000 원 공급 230,000 원 , VAT 23,000 원</td>
+                                        </tr>
+                                        <tr>
+                                            <th>사용 용도</th>
+                                            <td>데이터 보관용</td>
+                                            <th>관리번호</th>
+                                            <td>1231-312312</td>
+                                        </tr>
+                                        <tr>
+                                            <th>보관 / 설치</th>
+                                            <td>분당 IDC</td>
+                                            <th>관리 부서</th>
+                                            <td>개발부</td>
+                                        </tr>
+                                        <tr>
+                                            <th>공급처</th>
+                                            <td>㈜ 삼흥 에너지</td>
+                                            <th>관리 담당자</th>
+                                            <td>이미도</td>
+                                        </tr>
+                                        <tr>
+                                            <th>규격</th>
+                                            <td>SSSSS-aaaaaaa</td>
+                                            <th>과제명</th>
+                                            <td>IITP 멋진 연구</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    let qrcode = new QRCode(document.getElementById('qrcode'), {
+        width: 100,
+        height: 100,
+    });
+
+    function makeCode() {
+        qrcode.makeCode('https://sharewbs.com/');
+    }
+
+    makeCode();
+
+</script>
+
+@section Heads{
+    <script src="~/lib/qrcode/qrcode.min.js"></script>
+}
+
+@section Scripts{
+
+}

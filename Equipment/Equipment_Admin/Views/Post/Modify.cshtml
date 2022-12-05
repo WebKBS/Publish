@@ -268,10 +268,13 @@
             const input = btn.parentElement.querySelector('input[type=file]');
             const imgWrap = btn.parentElement.querySelector('.label_img_wrap');
             const textWrap = btn.parentElement.querySelector('.text_wrap');
+            
             input.value = "";
+
             while (imgWrap.firstChild) {
                 imgWrap.removeChild(imgWrap.firstChild);
             }
+
             textWrap.style.display = "flex";
             btn.style.display = "none";
             imgWrap.style.position = "absolute";

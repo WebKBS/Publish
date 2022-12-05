@@ -75,8 +75,21 @@
                 <button type="button" class="save_btn wallet_btn">지갑 연결하기</button>
             </div>
         </div>
-
-        <button type="button" class="save_btn nft_btn">NFT 발행하기</button>
+        <div class="text_wrap">
+            <p class="info_text padding_left">
+                <span>*</span>
+                ERC721(KIP17)의 경우 안정적인 NFT발행을 위해 일정수량 단위(이더리움은 500개, 클레이튼은 300개)로 트랜잭션 컨펌을 하셔야합니다. 메타마스크나 카이카스에서 계속 컨펌요청이 진행되므로, 요청시마다 컨펌하셔야 하며, 모든 컨펌이 완료될 때까지 지갑을 닫지 마십시오.
+            </p>
+            <p class="info_text padding_left">
+                <span>*</span>
+                ERC1155(KIP37)의 경우 1개의 이미지로 다수의 NFT발행시는 한번만 컨펌하시면 됩니다.<br />
+                모든 컨펌이 완료될떄까지 지갑뿐만아니라 본화면도 닫지 마십시오.
+            </p>
+        </div>
+        <div class="button_wrap">
+            <button type="button" class="save_btn nft_btn">NFT 발행하기</button>
+            <button type="button" class="back_btn" onclick="history.back()">뒤로가기</button>
+        </div>
     </div>
 </section>
 

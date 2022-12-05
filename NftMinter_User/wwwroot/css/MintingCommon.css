@@ -38,6 +38,22 @@
   transition: var(--hover-transition);
 }
 
+.back_btn {
+  width: 200px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: "noto_medium";
+  border: 1px solid #1273eb;
+  color: #1273eb;
+  padding: 16px;
+  line-height: 1.5;
+}
+.back_btn:hover {
+  background: #1273eb;
+  transition: var(--hover-transition);
+  color: #fff;
+}
+
 .contract_setting h2, .publish_nft h2 {
   margin-bottom: 40px;
 }
@@ -115,6 +131,14 @@
   font-family: "noto_regular";
   color: #798CA8;
   margin-bottom: 4px;
+  word-break: keep-all;
+}
+.contract_setting .info_text strong, .publish_nft .info_text strong {
+  color: #1273eb;
+}
+.contract_setting .button_wrap, .publish_nft .button_wrap {
+  display: flex;
+  gap: 12px;
 }
 
 .cont1 .inner {

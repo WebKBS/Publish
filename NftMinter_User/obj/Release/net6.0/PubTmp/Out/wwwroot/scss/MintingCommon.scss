@@ -44,6 +44,23 @@
     }
 }
 
+.back_btn {
+    width: 200px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: $noto_medium;
+    border: 1px solid $blue_main;
+    color: $blue_main;
+    padding: 16px;
+    line-height: 1.5;
+
+    &:hover {
+        background: $blue_main;
+        transition: var(--hover-transition);
+        color: #fff;
+    }
+}
+
 .contract_setting, .publish_nft {
 
     h2 {
@@ -136,6 +153,16 @@
         font-family: $noto_regular;
         color: $gray5;
         margin-bottom: 4px;
+        word-break: keep-all;
+
+        strong {
+            color: $blue_main;
+        }
+    }
+
+    .button_wrap {
+        display: flex;
+        gap: 12px;
     }
 }
 

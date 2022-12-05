@@ -1,19 +1,12 @@
-﻿using DataStructure;
+﻿
 using Microsoft.AspNetCore.Mvc;
 using NftMinter_User.Models;
 using System.Diagnostics;
 
 namespace NftMinter_User.Controllers
 {
-    public class HomeController : BaseController
+    public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(DatabaseContext _Tables, ILogger<HomeController> logger)
-        {
-            _logger = logger;
-            Tables = _Tables;
-        }
 
         public IActionResult Index()
         {

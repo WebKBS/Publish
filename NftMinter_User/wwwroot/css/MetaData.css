@@ -92,6 +92,9 @@
   color: #798CA8;
   margin-bottom: 4px;
 }
+.meatadata .info_text strong {
+  color: #1273eb;
+}
 .meatadata .loading_wrap, .meatadata .token_name_wrap, .meatadata .token_explain_wrap {
   margin-bottom: 40px;
 }

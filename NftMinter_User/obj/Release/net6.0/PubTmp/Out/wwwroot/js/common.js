@@ -28,12 +28,18 @@ sideCloseBtn.addEventListener('click', closeSideMenu);
 
 /* 마이 메뉴 클릭시 */
 document.addEventListener('click', (e) => {
+    if (document.getElementById('myPageListOpen') === null) {
+        return
+    }
+
     if (e.target.id === "myPageListOpen") {
         myPageList.classList.add('on');
     } else {
         myPageList.classList.remove('on');
+        return
     }
 });
+
 
 
 

@@ -108,6 +108,10 @@
         font-family: $noto_regular;
         color: $gray5;
         margin-bottom: 4px;
+
+        strong {
+            color: $blue_main;
+        }
     }
 
     .loading_wrap, .token_name_wrap, .token_explain_wrap {

@@ -79,13 +79,19 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  justify-content: center;
+  justify-items: center;
   align-items: center;
-  gap: 10px;
+  gap: 4px;
 }
 .upload_wrap ul li .label_img_wrap img {
   width: 100%;
   object-fit: contain;
+  pointer-events: none;
+  padding: 10px;
+}
+.upload_wrap ul li .label_img_wrap i {
+  text-align: center;
+  padding: 20px 6px;
 }
 .upload_wrap ul li .file_delete {
   display: none;
@@ -113,6 +119,18 @@ body {
 }
 .upload_wrap ul li .file_delete .line:nth-child(2) {
   transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.img_wrap {
+  height: 176px;
+}
+.img_wrap img {
+  width: auto;
+  height: 100%;
+}
+
+#barChart {
+  max-height: 300px;
 }
 
 /*# sourceMappingURL=custom.css.map */

@@ -340,10 +340,26 @@
                 const ele = target.closest('li').querySelector('.label_img_wrap');
                 const textWrap = target.closest('li').querySelector('.text_wrap');
                 const button = target.closest('li').querySelector('.file_delete');
-                button.style.display = "block";
-                textWrap.style.display = "none";
-                ele.style.position = "static";
-                ele.appendChild(preview);
+                console.log(file)
+
+                if (file.type === "image/png") {
+                    button.style.display = "block";
+                    textWrap.style.display = "none";
+                    ele.style.position = "static";
+                    ele.appendChild(preview);
+                    return;
+                } else if (file.type === "application/pdf") {
+                    const createEle = document.createElement('i');
+                    createEle.textContent = file.name;
+                    button.style.display = "block";
+                    textWrap.style.display = "none";
+                    ele.style.position = "static";
+                    ele.appendChild(createEle);
+                    return;
+                } else{
+                    alert('지정된 파일형식이 아닙니다.');
+                }
+
 
             });
             reader.readAsDataURL(file);

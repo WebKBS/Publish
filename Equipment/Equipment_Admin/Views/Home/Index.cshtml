@@ -186,6 +186,20 @@
 
     makeCode();
 
+
+    const itemList = document.querySelectorAll('.item_list li');
+    const viewEle = document.querySelector('.img_wrap img')
+    itemList.forEach(event => {
+        event.addEventListener('click', (e) => {
+            const target = e.currentTarget;
+            itemList.forEach(all => {
+                all.classList.remove('on');
+            })
+            target.classList.add('on');
+            viewEle.src = target.querySelector('img').src;
+
+        })
+    })
 </script>
 
 @section Heads{

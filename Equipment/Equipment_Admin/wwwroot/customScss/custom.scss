@@ -99,13 +99,19 @@ body {
                 height: 100%;
                 display: grid;
                 grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
-                justify-content: center;
+                justify-items: center;
                 align-items: center;
-                gap: 10px;
+                gap: 4px;
 
                 img {
                     width: 100%;
                     object-fit: contain;
+                    pointer-events: none;
+                    padding: 10px;
+                }
+                i{
+                    text-align: center;
+                    padding: 20px 6px; 
                 }
             }
 
@@ -141,4 +147,16 @@ body {
             }
         }
     }
+}
+.img_wrap{
+    height: 176px;
+    img{
+        width: auto;
+        height: 100%;
+    }
+}
+
+#barChart {
+    //max-width: 800px;
+    max-height: 300px;
 }

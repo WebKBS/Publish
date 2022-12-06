@@ -6,10 +6,6 @@ body {
   min-height: 100px;
 }
 
-.quixnav .metismenu .has-arrow[aria-expanded=true]:after, .quixnav .metismenu .mm-active > .has-arrow:after {
-  transform: rotate(-225deg) translateY(-50%);
-}
-
 .table {
   color: #222;
 }
@@ -131,6 +127,86 @@ body {
 
 #barChart {
   max-height: 300px;
+}
+
+.modal_upload {
+  padding-bottom: 30px;
+  height: 100%;
+}
+.modal_upload .inner {
+  border: 3px dashed #ccc;
+  border-radius: 20px;
+  position: relative;
+  height: 100%;
+}
+.modal_upload .inner.on {
+  border-color: #f66e6e;
+}
+.modal_upload label {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.modal_upload .text_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 60px 0;
+  height: 100%;
+  color: #aaa;
+}
+.modal_upload .label_img_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-items: center;
+  align-items: center;
+  gap: 4px;
+}
+.modal_upload .label_img_wrap img {
+  width: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  padding: 10px;
+}
+.modal_upload .label_img_wrap i {
+  text-align: center;
+  padding: 20px 6px;
+}
+.modal_upload .file_delete {
+  display: none;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  appearance: none;
+  border: none;
+  background: #dd2c2c;
+  border-radius: 50%;
+}
+.modal_upload .file_delete .line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.modal_upload .file_delete .line:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.modal_upload .file_delete .line:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 
 /*# sourceMappingURL=custom.css.map */

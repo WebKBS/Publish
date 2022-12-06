@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "결제 현황";
+    ViewData["Title"] = "담당자";
 }
 <div class="content-body">
     <!-- row -->
@@ -7,17 +7,12 @@
         <div class="row page-titles mx-0">
             <div class="col-sm-6">
                 <div class="welcome-text">
-                    <h4 class="font-weight-bold">결제 현황</h4>
+                    <h4 class="font-weight-bold">담당자</h4>
                 </div>
             </div>
         </div>
         <div class="form-row">
             <div class="col-xl-12">
-                <div class="card">
-                    <div class="card-body">
-                        <canvas id="barChart" height="300"></canvas>
-                    </div>
-                </div>
                 <div class="card">
                     <div class="card-header">
                         <div class="card-body">
@@ -58,6 +53,9 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="form-group">
+                                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">+ 추가</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -71,25 +69,21 @@
                                 <thead>
                                     <tr>
                                         <th>번호</th>
-                                        <th>구매 일시</th>
+                                        <th>수정 일시</th>
                                         <th>상태</th>
-                                        <th>과제명</th>
-                                        <th>명칭</th>
-                                        <th>결제</th>
-                                        <th>총액</th>
-                                        <th>기능</th>
+                                        <th>부서</th>
+                                        <th>직급</th>
+                                        <th>이름</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <th>231</th>
                                         <td>2011.11.12</td>
-                                        <td>보유</td>
-                                        <td>비대면 EX</td>
-                                        <td>Dell PowerEdge R740 S4208</td>
-                                        <td>법인</td>
-                                        <td>323,000</td>
-                                        <td><span class="badge badge-success">통계</span></td>
+                                        <td>사용</td>
+                                        <td>개발부</td>
+                                        <td>대리</td>
+                                        <td>김길동</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -121,37 +115,6 @@
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-    const ctx = document.getElementById('barChart');
-
-    new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: [10.2, 10.3, 10.4, 10.5, 10.6, 10.7, 10.8],
-            datasets: [
-                {
-                    label: '월간',
-                    data: [49, 124, 127, 70, 117, 146, 96],
-                    borderColor: '#36A2EB',
-                    backgroundColor: '#9BD0F5',
-                },
-                {
-                    label: '주간',
-                    data: [25, 54, 45, 37, 21, 73, 68],
-                    backgroundColor: '#FFB1C1',
-                    borderColor: '#FF6384',
-                },
-            ],
-        },
-    });
-</script>
-
-@section Heads{
-
-
-}
-
-@section Scripts{
-
-}
+@section PostModal{
+    @await Html.PartialAsync("~/Views/Management/ManagerPost.cshtml")
+};

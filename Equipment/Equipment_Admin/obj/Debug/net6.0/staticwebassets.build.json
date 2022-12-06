@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FkZf45VpEaNJEe/QgbcXtfLGfbi/HLJyn9joL4o70ZU=",
+  "Hash": "LjL5zi42MyhIO4OaCGHS35DKwtQ0rqVUVSbTKExuY6M=",
   "Source": "Equipment_Admin",
   "BasePath": "_content/Equipment_Admin",
   "Mode": "Default",
@@ -16,6 +16,40 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "D:\\git\\Publish\\Equipment\\Equipment_Admin\\wwwroot\\css\\main.css",
+      "SourceId": "Equipment_Admin",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\git\\Publish\\Equipment\\Equipment_Admin\\wwwroot\\",
+      "BasePath": "_content/Equipment_Admin",
+      "RelativePath": "css/main.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\main.css"
+    },
+    {
+      "Identity": "D:\\git\\Publish\\Equipment\\Equipment_Admin\\wwwroot\\css\\main.css.map",
+      "SourceId": "Equipment_Admin",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\git\\Publish\\Equipment\\Equipment_Admin\\wwwroot\\",
+      "BasePath": "_content/Equipment_Admin",
+      "RelativePath": "css/main.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\main.css.map"
+    },
     {
       "Identity": "D:\\git\\Publish\\Equipment\\Equipment_Admin\\wwwroot\\css\\perfect-scrollbar.css",
       "SourceId": "Equipment_Admin",

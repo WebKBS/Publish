@@ -1,6 +1,14 @@
 {
   "Files": [
     {
+      "Id": "D:\\git\\Publish\\Equipment\\Equipment_Admin\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "D:\\git\\Publish\\Equipment\\Equipment_Admin\\wwwroot\\css\\main.css.map",
+      "PackagePath": "staticwebassets\\css\\main.css.map"
+    },
+    {
       "Id": "D:\\git\\Publish\\Equipment\\Equipment_Admin\\wwwroot\\css\\perfect-scrollbar.css",
       "PackagePath": "staticwebassets\\css\\perfect-scrollbar.css"
     },

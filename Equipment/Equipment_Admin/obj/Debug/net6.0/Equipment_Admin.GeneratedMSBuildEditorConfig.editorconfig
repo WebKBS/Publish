@@ -20,6 +20,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/git/Publish/Equipment/Equipment_Admin/Views/Home/IndexPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleFBvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/git/Publish/Equipment/Equipment_Admin/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -32,8 +36,36 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cU2lnblVwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/git/Publish/Equipment/Equipment_Admin/Views/Post/Modify.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdFxNb2RpZnkuY3NodG1s
+[D:/git/Publish/Equipment/Equipment_Admin/Views/Management/Assignment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlbWVudFxBc3NpZ25tZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/git/Publish/Equipment/Equipment_Admin/Views/Management/AssignmentPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlbWVudFxBc3NpZ25tZW50UG9zdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/git/Publish/Equipment/Equipment_Admin/Views/Management/Manager.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlbWVudFxNYW5hZ2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/git/Publish/Equipment/Equipment_Admin/Views/Management/ManagerPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlbWVudFxNYW5hZ2VyUG9zdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/git/Publish/Equipment/Equipment_Admin/Views/Management/Payment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlbWVudFxQYXltZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/git/Publish/Equipment/Equipment_Admin/Views/Management/PaymentPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlbWVudFxQYXltZW50UG9zdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/git/Publish/Equipment/Equipment_Admin/Views/Management/Supplier.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlbWVudFxTdXBwbGllci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/git/Publish/Equipment/Equipment_Admin/Views/Management/SupplierPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlbWVudFxTdXBwbGllclBvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/git/Publish/Equipment/Equipment_Admin/Views/Shared/Error.cshtml]

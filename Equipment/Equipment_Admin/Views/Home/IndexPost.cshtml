@@ -259,7 +259,6 @@
 
 <script>
     const fileInput = document.querySelectorAll('input[type=file]')
-    const taxLabel = document.querySelector("[for='tax']");
     const label = document.querySelectorAll('label');
     const deleteFileBtn = document.querySelectorAll('.file_delete');
 
@@ -379,11 +378,19 @@
     }
 
 
+    // URL 주소 확인하고 네비게이션 클래스 넣기
+    window.addEventListener('DOMContentLoaded', () => {
+        const href = window.location.href;
+
+        if (href.includes('Home/IndexPost')) {
+            document.querySelector('a[href="/Home/index"]').parentElement.classList.add('mm-active');
+        }
+    })
 </script>
 
 
 @section Heads{
-    <script src="~/lib/qrcode/qrcode.min.js"></script>
+    
 }
 
 @section Scripts{

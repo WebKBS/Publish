@@ -1,0 +1,239 @@
+﻿@{
+    Layout = null;
+}
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">공급처 추가 / 수정</h4>
+                <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <div class="card-body">
+                    <div class="basic-form">
+                        <form>
+                            <div class="row">
+                                <div class="col-7">
+                                    <div class="form-group row">
+                                        <label class="col-form-label col-sm-3 pt-0">상태</label>
+                                        <div class="col-sm-9 d-flex">
+                                            <div class="form-check mr-3">
+                                                <input class="form-check-input" type="radio" id="check1" name="gridRadios" value="" checked />
+                                                <label class="form-check-label" for="check1"> 사용 </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" id="check2" name="gridRadios" value="" />
+                                                <label class="form-check-label" for="check2"> 정지 </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-form-label col-sm-3 pt-0">구분</label>
+                                        <div class="col-sm-9 d-flex">
+                                            <div class="form-check mr-3">
+                                                <input class="form-check-input" type="radio" id="check3" name="gridRadios2" value="" checked />
+                                                <label class="form-check-label" for="check3"> 법인 </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" id="check4" name="gridRadios2" value="" />
+                                                <label class="form-check-label" for="check4"> 개인 사업자 </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">사업자번호</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" placeholder="" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">업체명</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" placeholder="" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">담당자</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" placeholder="" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">연락처</label>
+                                        <div class="col-sm-9">
+                                            <input type="tel" class="form-control" placeholder="" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Email</label>
+                                        <div class="col-sm-9">
+                                            <input type="email" class="form-control" placeholder="" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Site URL</label>
+                                        <div class="col-sm-9">
+                                            <input type="url" class="form-control" placeholder="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="custom modal_upload">
+                                        <div class="inner">
+                                            <input id="upload" type="file" hidden accept=".png, .jpg, .jpeg" />
+                                            <label for="upload" class="drop">
+                                                <span class="text_wrap">
+                                                    <span class="title">사업자 등록증</span>
+                                                    <span>Drag & Drop</span>
+                                                    <span>png, jpg, jpeg</span>
+                                                </span>
+                                                <span class="label_img_wrap"></span>
+                                            </label>
+                                            <button type="button" class="file_delete">
+                                                <span class="line"></span>
+                                                <span class="line"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">주요 거래 상품</label>
+                                <div class="col-sm-10 pl-0">
+                                    <input type="text" class="form-control" placeholder="" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Memo</label>
+                                <div class="col-sm-10 pl-0">
+                                    <textarea class="form-control" rows="4" id=""></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger mr-auto">삭제</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                <button type="button" class="btn btn-primary">저장</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const fileInput = document.querySelectorAll('input[type=file]');
+    const label = document.querySelectorAll('.modal_upload label');
+    const deleteFileBtn = document.querySelectorAll('.file_delete');
+
+    deleteFileBtn.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const input = btn.parentElement.querySelector('input[type=file]');
+            const imgWrap = btn.parentElement.querySelector('.label_img_wrap');
+            const textWrap = btn.parentElement.querySelector('.text_wrap');
+
+            input.value = "";
+
+            while (imgWrap.firstChild) {
+                imgWrap.removeChild(imgWrap.firstChild);
+            }
+
+            textWrap.style.display = "flex";
+            btn.style.display = "none";
+            imgWrap.style.position = "absolute";
+        })
+    })
+
+    fileInput.forEach(ev => {
+        ev.addEventListener('change', (event) => {
+            const files = changeEvent(event);
+            handleUpdate(files, event.target);
+        })
+    })
+
+
+    label.forEach(event => {
+        event.addEventListener('mouseover', (ev) => {
+            ev.preventDefault();
+            ev.currentTarget.parentElement.classList.add('on')
+        })
+
+        event.addEventListener('mouseout', (ev) => {
+            ev.preventDefault();
+            ev.currentTarget.parentElement.classList.remove('on')
+        })
+    })
+
+    document.addEventListener("dragenter", (event) => {
+        event.preventDefault();
+    });
+
+    document.addEventListener("dragover", (event) => {
+        event.preventDefault();
+
+        if (event.target.className === "label_img_wrap") {
+            event.target.closest('.inner').classList.add('on');
+        }
+    });
+
+    document.addEventListener("dragleave", (event) => {
+        event.preventDefault();
+        if (event.target.className === "label_img_wrap") {
+            event.target.closest('.inner').classList.remove('on');
+        }
+    });
+
+    document.addEventListener("drop", (event) => {
+        event.preventDefault();
+        const files = event.dataTransfer?.files;
+        console.log("drop");
+        if (event.target.className === "label_img_wrap") {
+            handleUpdate([...files], event.target);
+        }
+
+    });
+
+    function changeEvent(event) {
+        const { target } = event;
+        return [...target.files];
+    };
+
+    function handleUpdate(fileList, target) {
+        fileList.forEach((file) => {
+            const reader = new FileReader();
+            reader.addEventListener("load", (event) => {
+                const preview = createElement(event, file);
+                const ele = target.closest('.inner').querySelector('.label_img_wrap');
+                const textWrap = target.closest('.inner').querySelector('.text_wrap');
+                const button = target.closest('.inner').querySelector('.file_delete');
+                console.log(file)
+
+                if (file.type === "image/png" || file.type === "image/jpg" || file.type === "image/jpeg") {
+                    button.style.display = "block";
+                    textWrap.style.display = "none";
+                    ele.style.position = "static";
+                    ele.appendChild(preview);
+                    return;
+                } else {
+                    alert('지정된 파일형식이 아닙니다.');
+                }
+
+
+            });
+            reader.readAsDataURL(file);
+        });
+    };
+
+    const createElement = (e, file) => {
+        const fragment = document.createDocumentFragment();
+        const img = document.createElement('img');
+        img.setAttribute('src', e.target.result);
+        img.setAttribute('data-file', file.name);
+        fragment.appendChild(img)
+        return fragment;
+    }
+
+
+</script>

@@ -3,10 +3,10 @@
 }
 
 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">담당자 추가 / 수정</h4>
+                <h4 class="modal-title">1:1 문의 추가</h4>
                 <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
             </div>
             <div class="modal-body">
@@ -17,45 +17,35 @@
                                 <label class="col-form-label col-sm-2 pt-0">상태</label>
                                 <div class="col-sm-10 d-flex">
                                     <div class="form-check mr-3">
-                                        <input class="form-check-input" type="radio" id="check1" name="gridRadios" value="" checked />
-                                        <label class="form-check-label" for="check1"> 사용 </label>
+                                        <input class="form-check-input" type="radio" id="check1" name="check" value="" checked />
+                                        <label class="form-check-label" for="check1"> 오류 </label>
+                                    </div>
+                                    <div class="form-check mr-3">
+                                        <input class="form-check-input" type="radio" id="check2" name="check" value="" />
+                                        <label class="form-check-label" for="check2"> 건의 </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" id="check2" name="gridRadios" value="" />
-                                        <label class="form-check-label" for="check2"> 정지 </label>
+                                        <input class="form-check-input" type="radio" id="check3" name="check" value="" />
+                                        <label class="form-check-label" for="check3"> 문의 </label>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">부서</label>
-                                <div class="col-sm-10">
-                                    <select class="form-control">
-                                        <option selected="">선택</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">직급</label>
+                                <label class="col-sm-2 col-form-label">제목</label>
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" placeholder="" />
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">이름</label>
+                                <label class="col-sm-2 col-form-label">문의 내용</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" placeholder="" />
+                                    <textarea class="form-control" rows="4" readonly></textarea>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">연락처</label>
+                                <label class="col-sm-2 col-form-label">답변</label>
                                 <div class="col-sm-10">
-                                    <input type="tel" class="form-control" placeholder="" />
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-sm-2 col-form-label">Email</label>
-                                <div class="col-sm-10">
-                                    <input type="email" class="form-control" placeholder="" />
+                                    <textarea class="form-control" rows="4"></textarea>
                                 </div>
                             </div>
                         </form>

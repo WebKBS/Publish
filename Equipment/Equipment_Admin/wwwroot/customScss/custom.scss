@@ -11,9 +11,9 @@ body {
 
 .table {
     color: #222;
-
 }
-.table-hover tbody tr:hover{
+
+.table-hover tbody tr:hover {
     color: #222;
 }
 
@@ -258,3 +258,28 @@ body {
         }
     }
 }
+
+
+/*@media screen and (max-width: 768px) {
+    [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .quixnav .metismenu .nav-label, [data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .quixnav .metismenu .nav-badge {
+        display: none;
+    }
+
+    [data-sidebar-position="fixed"][data-layout="vertical"] .menu-toggle .quixnav {
+    }
+
+     .quixnav {
+        position: absolute;
+        width: 3.75rem;
+        overflow: visible;
+        .nav-text{
+            display: none;
+        }
+
+    }
+
+   .content-body {
+        margin-left: 0;
+    }
+}
+*/

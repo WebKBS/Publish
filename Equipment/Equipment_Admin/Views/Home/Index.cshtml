@@ -85,12 +85,12 @@
                             <div class="col-4">
                                 <div class="row align-items-start">
                                     <div class="col-8 d-flex flex-wrap justify-content-end">
-                                        <a href="javascript:void()" class="badge badge-light col-3 m-1">세금계산서</a>
-                                        <a href="javascript:void()" class="badge badge-light col-3 m-1">거래명세서</a>
-                                        <a href="javascript:void()" class="badge badge-light col-3 m-1">영수증</a>
-                                        <a href="javascript:void()" class="badge badge-light col-3 m-1">견적서</a>
-                                        <a href="javascript:void()" class="badge badge-light col-3 m-1">계약서</a>
-                                        <a href="javascript:void()" class="badge badge-light col-3 m-1">메모</a>
+                                        <button type="button" class="badge badge-light border-0 col-3 m-1" data-toggle="modal" data-target=".bd-example-modal-lg">세금계산서</button>
+                                        <button type="button" class="badge badge-light border-0 col-3 m-1" data-toggle="modal" data-target=".bd-example-modal-lg">거래명세서</button>
+                                        <button type="button" class="badge badge-light border-0 col-3 m-1" data-toggle="modal" data-target=".bd-example-modal-lg">영수증</button>
+                                        <button type="button" class="badge badge-light border-0 col-3 m-1" data-toggle="modal" data-target=".bd-example-modal-lg">견적서</button>
+                                        <button type="button" class="badge badge-light border-0 col-3 m-1" data-toggle="modal" data-target=".bd-example-modal-lg">계약서</button>
+                                        <button type="button" class="badge badge-light border-0 col-3 m-1" data-toggle="modal" data-target=".bd-example-modal-lg">메모</button>
                                     </div>
                                     <div class="col-4">
                                         <div id="qrcode"></div>
@@ -210,6 +210,29 @@
         }
     })
 </script>
+
+<!-- 리사이즈 조정 -->
+<script>
+    window.addEventListener('resize', () => {
+        console.log('resize!!!')
+        if (window.innerWidth < 768) {
+            document.querySelector('#main-wrapper').classList.add('menu-toggle');
+        } else {
+            document.querySelector('#main-wrapper').classList.remove('menu-toggle');
+        }
+
+        if (window.innerWidth < 1200) {
+            document.querySelector('#main-wrapper').classList.add('menu-toggle');
+        } else {
+            document.querySelector('#main-wrapper').classList.remove('menu-toggle');
+        }
+
+
+    })
+</script>
+@section PostModal{
+    @await Html.PartialAsync("~/Views/Home/Post.cshtml")
+};
 
 @section Heads{
     <script src="~/lib/qrcode/qrcode.min.js"></script>

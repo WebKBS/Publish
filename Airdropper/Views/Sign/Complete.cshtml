@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["title"] = "비밀번호 변경완료";
+}
+
+
+
+<section class="cont1 complete">
+    <div class="inner">
+        <h2>
+            축하합니다!
+            <span>회원가입이 완료되었습니다.</span>
+        </h2>
+        <p class="sub_text"><span class="count">5</span>초 뒤 로그인 화면으로 이동합니다.</p>
+        <a href="/Sign/Login" class="by_login">로그인 화면으로</a>
+    </div>
+</section>
+
+
+<script>
+    const count = document.querySelector('.count');
+
+    let timeInit = 5;
+    window.addEventListener('load', () => {
+
+        let time = setInterval(e => {
+            timeInit--;
+            count.textContent = timeInit;
+
+            if (timeInit === 0) {
+                clearInterval(time);
+                location.href = "/Sign/Login"; // 주소
+            }
+
+        }, 1000)
+    })
+
+
+</script>
+
+@section Heads{
+    <link rel="stylesheet" href="~/css/ChangeHeader.css"/>
+    <link rel="stylesheet" href="~/css/SignCommon.css" />
+    <link rel="stylesheet" href="~/css/Complete.css" />
+
+
+}

@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/* Jost */
+@font-face {
+    src: url(../../font/Jost/Jost-Bold.ttf) format('TrueType');
+    font-family: 'jost_bold';
+    font-display: swap;
+}
+
+@font-face {
+    src: url(../../font/Jost/Jost-Medium.ttf) format('TrueType');
+    font-family: 'jost_medium';
+    font-display: swap;
+}
+
+@font-face {
+    src: url(../../font/Jost/Jost-Regular.ttf) format('TrueType');
+    font-family: 'jost_regular';
+    font-display: swap;
+}
+
+/*@font-face {
+    src: url(../../font/Jost/Jost-Bold.ttf) format('TrueType');
+    font-family: 'jost_bold';
+    font-display: swap;
+}
+*/
+
+
+// Suit
+@font-face {
+    src: url(../../font/suit/SUIT-Bold.otf) format('opentype');
+    font-family: 'suit_bold';
+    font-display: swap;
+}
+
+@font-face {
+    src: url(../../font/suit/SUIT-Medium.otf) format('opentype');
+    font-family: 'suit_medium';
+    font-display: swap;
+}
+
+@font-face {
+    src: url(../../font/suit/SUIT-Regular.otf) format('opentype');
+    font-family: 'suit_regular';
+    font-display: swap;
+}
+
+
+// font family
+.jost_r {
+    font-family: 'jost_regular';
+}
+
+// header font
+.navi_1 {
+    font-size: 16px;
+    line-height: 1.5;
+}

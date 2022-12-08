@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["title"] = "민팅 비용 안내";
+}
+
+
+<section class="cont1 cost_info">
+    <div class="inner">
+        <h2>
+            <strong>민팅</strong>
+            비용 안내
+        </h2>
+        <p class="sub_title">보유하신 이미지를 NFT로 발행하기 위해서는 다음과 같이 소정의 비용이 발생됩니다.</p>
+        <div class="table_wrap">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>회당 NFT 발행 개수</th>
+                        <th>요금</th>
+                        <th>비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 ~ 5</td>
+                        <td>무료</td>
+                        <td>2회 제한</td>
+                    </tr>
+                    <tr>
+                        <td>무료 회차 초과</td>
+                        <td>300,000 원</td>
+                        <td>1회 발행 NFT 개수 1만 개 단위</td>
+                    </tr>
+                    <tr>
+                        <td>6개 이상</td>
+                        <td>300,000 원</td>
+                        <td>1회 발행 NFT 개수 1만 개 단위</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="button_wrap">
+            <a href="/Minting/ContractSetting" data-isMobile>민팅 시작하기</a>
+            <a href="/Minting/Main">뒤로 돌아가기</a>
+        </div>
+    </div>
+</section>
+
+
+@section Heads{
+    <link rel="stylesheet" href="~/css/ChangeHeader.css" />
+    <link rel="stylesheet" href="~/css//CostInfo.css"/>
+}

@@ -1,0 +1,63 @@
+﻿@charset "UTF-8";
+@import "../base/_setting.scss";
+
+.header {
+    
+    .gnb {
+
+        li {
+            a {
+
+                &:hover {
+                    transition: var(--hover-transition);
+                }
+            }
+        }
+    }
+
+    .sign_wrap {
+
+        .link {
+
+            li {
+                a {
+                    border: 1px solid #222;
+                    transition: var(--hover-transition);
+
+                    &:hover {
+                        background: #222;
+                    }
+                }
+            }
+        }
+    }
+
+    .side_open_btn {
+        .line {
+            background: #6F5CFB;
+        }
+    }
+
+    .sub_gnb {
+        background: #fff;
+        display: none;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 20%);
+
+        li {
+
+            a {
+                width: 100%;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .my_page {
+
+        > #myPageListOpen {
+            width: 24px;
+            height: 24px;
+            background: url(../../images/icons/user.svg) no-repeat center center / contain;
+        }
+    }
+}

@@ -1,0 +1,96 @@
+﻿@charset "UTF-8";
+@import "../base/_setting.scss";
+
+.faq {
+
+    .table_wrap {
+        padding: 20px 0;
+        border-top: 1px solid $gray8;
+        border-bottom: 1px solid $gray8;
+
+        > ul {
+            > li {
+                padding: 0 20px 0 20px;
+
+                button {
+                    display: flex;
+                    width: 100%;
+                    gap: 8px;
+                    align-items: center;
+                    background: url(../images/icons/drop_down2.svg) no-repeat right center / 20px auto;
+                    padding: 20px 20px 20px 0;
+
+
+                    .num {
+                        font-size: 16px;
+                        line-height: 1.5;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        line-height: 1.5;
+                        padding-bottom: 2px;
+                        flex: 1;
+                        text-align: left;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+
+        .content {
+            height: 0;
+            visibility: hidden;
+            transition: opacity .2s;
+            opacity: 0;
+
+            &.on {
+                height: auto;
+                visibility: visible;
+                opacity: 1;
+
+                .box_inner {
+                    .text {
+                        transition: all 1s;
+                        height: auto;
+                    }
+                }
+            }
+
+            ul {
+
+
+
+                li {
+                }
+            }
+
+            .box_inner {
+                padding: 0 0 20px 0;
+
+                .text {
+                    height: 0;
+                    overflow: hidden;
+                    padding: 20px 30px;
+                    border-radius: 16px;
+                    font-size: 14px;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+
+    .faq .table_wrap > ul > li{
+        padding: 0 ;
+    }
+
+
+    .faq .table_wrap .content .box_inner{
+        padding: 0;
+    }
+}

@@ -9,9 +9,9 @@
     <meta property="og:description" content="NFT MINTER" />
     <title>NFT MINTER - @ViewData["Title"]</title>
 
-    <link rel="stylesheet" href="~/css/font.css" />
-    <link rel="stylesheet" href="~/css/reset.css" />
-    <link rel="stylesheet" href="~/css/common.css" />
+    <link rel="stylesheet" href="~/css/base/font.css" />
+    <link rel="stylesheet" href="~/css/base/reset.css" />
+    <link rel="stylesheet" href="~/css/common/common.css" />
 
     <!-- 로딩 -->
     <script src="~/LoadingScreen/LoadingScreen.js" defer></script>
@@ -27,33 +27,28 @@
             <div class="headerIn">
                 <h1 class="logo">
                     <a href="/">
-                        <img src="~/images/logo.png" alt="NFT MINTER" />
+                        <img src="~/images/logo.svg" alt="Airdropper" />
                     </a>
                 </h1>
                 <nav class="gnb">
                     <ul>
                         <li>
-                            <a href="/">HOME</a>
+                            <a href="/" class="navi_1 jost_r">HOME</a>
                         </li>
                         <li>
-                            <a href="/Generator/Main">GENERATOR</a>
-                            <ul class="sub_gnb">
-                                <li>
-                                    <a href="/Generator/Practice" data-isMobile>연습하기</a>
-                                </li>
-                                <li>
-                                    <a href="/Generator/Create" data-isMobile>이미지 생성</a>
-                                </li>
-                                <li>
-                                    <a href="/Generator/MetaData" data-isMobile>메타데이터 설정</a>
-                                </li>
-                            </ul>
+                            <a href="/Airdrop/Main" class="navi_1 jost_r">AIRDROP</a>
                         </li>
                         <li>
-                            <a href="/Minting/Main">MINTING</a>
+                            <a href="/Minting/Main" class="navi_1 jost_r">PRICING</a>
                         </li>
                         <li>
-                            <a href="#">공지&문의</a>
+                            <a href="/Minting/Main" class="navi_1 jost_r">GUIDE</a>
+                        </li>
+                        <li>
+                            <a href="/Minting/Main" class="navi_1 jost_r">NOTICE</a>
+                        </li>
+                        <li>
+                            <a href="#" class="navi_1 jost_r">FAQ</a>
                             <ul class="sub_gnb">
                                 <li>
                                     <a href="/Notice/Notice">공지사항</a>
@@ -69,8 +64,13 @@
                     </ul>
                 </nav>
                 <div class="sign_wrap">
+                    <a href="#" class="telegram" title="텔레그램 바로가기">
+                        <span class="visually_hidden">텔레그램 바로가기</span>
+                    </a>
                     <div class="my_page">
-                        <button type="button" id="myPageListOpen" title="마이페이지 버튼"></button>
+                        <button type="button" id="myPageListOpen" class="my_page_btn" title="마이페이지 버튼">
+                            <span class="visually_hidden">마이페이지 버튼</span>
+                        </button>
                         <!-- on 클래스 추가시 show -->
                         <ul>
                             <li><a href="/MyInfo/Profile">내 정보</a></li>
@@ -80,9 +80,7 @@
                         </ul>
                     </div>
                     <ul class="link">
-                        <li class="sign_in on"><a href="/Sign/Login2">로그인</a></li>
-                        <li class="sign_up on"><a href="/Sign/SignUp">회원가입</a></li>
-                        <li class="sign_up"><a href="/Sign/SignUp">로그아웃</a></li>
+                        <li class="on"><a href="/Sign/SignUp" class="link sign_up_btn">회원가입</a></li>
                     </ul>
                     <div class="mobile_menu">
                         <button type="button" class="side_open_btn">
@@ -247,7 +245,7 @@
         </nav>
         <div class="side_sign_wrap">
             <ul>
-                <li class="sign_in on"><a href="/Sign/Login2">로그인</a></li>
+                <li class="sign_in on"><a href="/Sign/Login">로그인</a></li>
                 <li class="sign_up"><a href="/Sign/SignUp">회원가입</a></li>
             </ul>
         </div>

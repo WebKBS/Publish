@@ -1,5 +1,14 @@
 ﻿@charset "UTF-8";
 /* font color */
+$background: #212121;
+$black1: #141414;
+$black2: #1B1B1B;
+
+$theme: #2ECDFF;
+
+
+
+//////////////////////////
 $fc000: #000;
 $fc333: #333;
 $fc444: #444;
@@ -29,16 +38,6 @@ $sec1: #6F5CFB;
 
 
 /* family */
-$noto_black: 'noto_black';
-$noto_bold: 'noto_bold';
-$noto_demi: 'noto_demi_light';
-$noto_light: 'noto_light';
-$noto_medium: 'noto_medium';
-$noto_regular: 'noto_regular';
-$noto_thin: 'noto_thin';
-
-$spoqa_bold: 'spoqa_bold';
-$spoqa_light: 'spoqa_light';
-$spoqa_medium: 'spoqa_medium';
-$spoqa_regular: 'spoqa_regular';
-$spoqa_thin: 'spoqa_thin';
+$suit_bold: 'suit_bold';
+$suit_medium: 'suit_medium';
+$suit_regular: 'suit_regular';

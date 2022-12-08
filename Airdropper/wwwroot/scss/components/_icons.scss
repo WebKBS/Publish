@@ -1,0 +1,26 @@
+﻿@charset "UTF-8";
+@import '../base/_setting.scss';
+
+
+.telegram {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: $black1 url(../../images/icons/telegram.svg) no-repeat center / auto 16px;
+
+    &:hover {
+        transition: background .2s;
+        background-image: url(../../images/icons/telegram_on.svg)
+    }
+}
+
+.my_page_btn {
+    width: 40px;
+    height: 40px;
+    background: url(../../images/icons/user_home.svg) no-repeat center center / auto 20px;
+
+    &.on {
+        background: url(../../images/icons/user_on.svg) no-repeat center center / auto 40px;
+    }
+}

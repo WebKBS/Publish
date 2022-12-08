@@ -1,0 +1,234 @@
+﻿@{
+    ViewData["title"] = "회원가입";
+}
+
+<div class="top_title_wrap">
+    <div class="inner">
+        <h2>회원가입</h2>
+        <p class="sub_title">NFT MINTER는 ‘Chrome’ 웹브라우저에 최적화 되어있으며, 모바일 서비스가 일부 제한됩니다.</p>
+    </div>
+</div>
+
+<section class="cont1">
+    <div class="inner">
+        <h2>본인인증 및 정보입력</h2>
+        <div class="form_wrap">
+            <form>
+                <div class="input_wrap id">
+                    <label for="userId">아이디</label>
+                    <div class="box">
+                        <!-- 각 Input error 클래스 추가시 백그라운드, 포커스 색상 변경 -->
+                        <input type="email" id="userId" placeholder="Email 주소 입력" />
+                        <button type="button" class="check_btn" id="check_email_btn" data-type="email">중복확인</button>
+                    </div>
+                    <p class="success_msg"></p>
+                    <p class="error_msg"></p>
+                    @*<p class="success_msg">사용 가능한 아이디입니다.</p>
+                    <p class="error_msg">이미 사용중인 ID입니다.</p>*@
+                </div>
+                <div class="input_wrap certification">
+                    <label for="certification">이메일 인증</label>
+                    <div class="box">
+                        <!-- 각 Input error 클래스 추가시 백그라운드, 포커스 색상 변경 -->
+                        <input type="text" placeholder="Email 인증번호 입력" />
+                        <button type="button" class="send_btn">인증번호 전송</button>
+                    </div>
+                    <div class="box">
+                        <button type="button" class="check_btn" data-type="email_auth">인증번호 확인</button>
+                    </div>
+                    <p class="success_msg">이메일 인증이 완료되었습니다.</p>
+                    <p class="error_msg">인증번호를 입력하세요.</p>
+                </div>
+                <div class="input_wrap pw">
+                    <label for="pw">비밀번호</label>
+                    <div class="pos_box">
+                        <!-- 각 Input error 클래스 추가시 백그라운드, 포커스 색상 변경 -->
+                        <input type="password" id="pw" placeholder="영문, 숫자, 특수문자 조합 8~16자리" />
+                        <button type="button" class="view_btn" data-eye>
+                            <img src="~/images/icons/eye_close.svg" class="close" alt="비밀번호 보지않기" />
+                            <img src="~/images/icons/eye_open.svg" class="open" alt="비밀번호 보기" />
+                        </button>
+
+                    </div>
+                    <div class="pos_box">
+                        <!-- 각 Input error 클래스 추가시 백그라운드, 포커스 색상 변경 -->
+                        <input type="password" id="rePw" placeholder="비밀번호 재입력" />
+                        <button type="button" class="view_btn" data-eye>
+                            <img src="~/images/icons/eye_close.svg" class="close" alt="비밀번호 보지않기" />
+                            <img src="~/images/icons/eye_open.svg" class="open" alt="비밀번호 보기" />
+                        </button>
+                    </div>
+                    <p class="error_msg">비밀번호 양식이 올바르지 않습니다.</p>
+                </div>
+                <div class="input_wrap nickname">
+                    <label for="nickName">닉네임</label>
+                    <div class="box">
+                        <!-- 각 Input error 클래스 추가시 백그라운드, 포커스 색상 변경 -->
+                        <input type="text" id="nickName" />
+                        <button type="button" class="check_btn" id="check_nickname_btn" data-type="nickname">중복확인</button>
+                    </div>
+                    <p class="success_msg"></p>
+                    <p class="error_msg"></p>
+                    @*<p class="success_msg">사용 가능한 닉네임입니다.</p>
+                    <p class="error_msg">닉네임을 입력해주세요.</p>*@
+                </div>
+            </form>
+        </div>
+        <button type="button" class="next_btn">회원가입 완료</button>
+    </div>
+</section>
+
+
+@section Heads{
+    <link rel="stylesheet" href="~/css/ChangeHeader.css" />
+    <link rel="stylesheet" href="~/css/SignCommon.css" />
+    <link rel="stylesheet" href="~/css/SignUpInfo.css" />
+}
+
+    @section Scripts{
+    <script>
+        /**
+         * 중복 혹은 인증번호 확인 버튼 클릭 이벤트
+         */
+        document.querySelectorAll(".check_btn").forEach(el => {
+            el.addEventListener("click", e => {
+                let wrapEl = e.target.parentElement.parentElement;
+                ClickValidBtn(e.target.dataset.type, wrapEl);
+            });
+        })
+
+        document.querySelector(".send_btn").addEventListener("click", () => {
+            let email = document.getElementById("userId").value;
+            SendEmailAuth(email);
+        });
+
+        document.getElementById("pw").addEventListener("change", e => {
+            let wrapEl = e.target.parentElement.parentElement;
+            let input = e.target.value;
+            
+            CheckValidPass(input, wrapEl);
+        });
+
+        /**
+         * 중복 혹은 인증번호 확인 버튼 클릭시 실행
+         */
+        const ClickValidBtn = (valueType, wrapEl) => {
+            LoadingScreen();
+            let input = wrapEl.querySelector("input").value;
+
+            let ReqParam = ValidateReqParamByValueTYpe(valueType, input);
+
+            if (!input) {
+                console.log(ReqParam.emptyValueMsg);
+                wrapEl.querySelector("input").classList.add("error");
+                wrapEl.querySelector(".error_msg").classList.add("on");
+                wrapEl.querySelector(".error_msg").textContent = ReqParam.emptyValueMsg;
+                UnLoadingScreen();
+                return;
+            }
+
+            CheckValid(ReqParam.method, ReqParam.data, wrapEl)
+        };
+
+        const CheckValidPass = (pass, wrapEl) => {
+            let passRegex = new RegExp("^(?=.*[a-zA-Z])(?=.*[!@@#$%^*+=-])(?=.*[0-9]).{8,16}$");
+
+            let result = passRegex.exec(pass);
+
+            console.log(result);
+
+            if (result) {
+
+            } else {
+                document.getElementById("pw").classList.add("error");
+                wrapEl.querySelector(".error_msg").classList.add("on");
+                wrapEl.querySelector(".error_msg").textContent = "비밀번호 양식이 올바르지 않습니다.";
+            }
+
+        }
+
+        /**
+         * 타입별 유효성 검사에 필요한 정보 가져오기
+         * 빈 값 에러메시지, 요청 함수, 요청 파라미터를 가져옴
+         */
+        const ValidateReqParamByValueTYpe = (valueType, input) => {
+            let result = {};
+            switch (valueType) {
+                case "email": {
+                    result.emptyValueMsg = "이메일 주소를 입력해주세요.";
+                    result.method = "CheckValidEmail";
+                    result.data = { email: input }
+                    break;
+                }
+                case "nickname": {
+                    result.emptyValueMsg = "사용할 닉네임을 입력해주세요.";
+                    result.method = "CheckValidNickname";
+                    result.data = { nickname: input }
+                    break;
+                }
+                case "email_auth": {
+                    result.emptyValueMsg = "인증번호를 입력해주세요.";
+                    result.method = "CheckValidEmailAuth";
+                    result.data = {
+                        emailAuth: input,
+                        email: document.getElementById("userId").value
+                    }
+                    break;
+                }
+            }
+            return result;
+        }
+
+        /**
+         * 유효성 성공/실패시 변하는 스타일 초기화
+         */
+        const ClearValidResult = (wrapEl) => {
+            wrapEl.querySelector("input").classList.remove("error");
+            wrapEl.querySelector(".error_msg").classList.remove("on");
+            wrapEl.querySelector(".success_msg").classList.remove("on");
+        }
+
+        /**
+         * 유효성 검사 요청 함수
+         */
+        const CheckValid = (method, data, wrapEl) => {
+            $.ajax({
+                url: `/Sign/${method}`,
+                type: 'Post',
+                data: data,
+                success: function (data, textStatus, jQxhr) {
+                    UnLoadingScreen();
+                    ClearValidResult(wrapEl);
+                    console.log(data);
+                    if (data.result) {
+                        wrapEl.querySelector(".success_msg").classList.add("on");
+                        wrapEl.querySelector(".success_msg").textContent = data.sData;
+                    } else {
+                        wrapEl.querySelector("input").classList.add("error");
+                        wrapEl.querySelector(".error_msg").classList.add("on");
+                        wrapEl.querySelector(".error_msg").textContent = data.sData;
+                    }
+                },
+                error: function (jqXhr, textStatus, errorThrown) {
+                    swal("Error", 'Data Exception', 'error');
+                }
+            })
+        };
+
+        const SendEmailAuth = (email) => {
+            $.ajax({
+                url: "/Sign/SendEmailAuth",
+                type: 'Post',
+                data: {
+                    email: email
+                },
+                success: function (data, textStatus, jQxhr) {
+                    console.log(data);
+                },
+                error: function (jqXhr, textStatus, errorThrown) {
+                    swal("Error", 'Data Exception', 'error');
+                }
+            })
+        };
+    </script>
+}

@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["title"] = "결제내역";
+}
+
+
+<section class="cont1 payment_history">
+    <div class="inner">
+        <h2>결제내역 관리</h2>
+        <div class="table_wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>일시</th>
+                        <th>구매품목</th>
+                        <th>결제금액</th>
+                        <th>컬렉션명</th>
+                        <th>비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2022.11.11 14:20</td>
+                        <td>이미지 생성 1만 개</td>
+                        <td>₩ 100,000</td>
+                        <td>Conmink</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2022.11.01 12:00</td>
+                        <td>민팅 1만 개</td>
+                        <td>₩ 100,000</td>
+                        <td>Mink Star</td>
+                        <td>
+                            <button type="button" class="cancel_btn">결제취소</button>
+                        </td>
+                    </tr>
+                    <tr class="no_data">
+                        <td colspan="5">결제 내역이 존재하지 않습니다. </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button type="button" class="back_btn" onclick="history.back()">이전으로</button>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+@section Heads{
+    <link rel="stylesheet" href="~/css/ChangeHeader.css" />
+    <link rel="stylesheet" href="~/css/MyInfoCommon.css" />
+    <link rel="stylesheet" href="~/css/PaymentHistory.css" />
+}

@@ -1,0 +1,640 @@
+﻿@{
+    ViewData["title"] = "연습하기";
+}
+
+<div class="top_title_wrap">
+    <div class="inner">
+        <h2>Generator Trial</h2>
+        <p class="sub_title">이미지 생성 연습은 1일 2회만 가능하며, 저장이 불가능합니다.</p>
+    </div>
+</div>
+
+<section class="cont1 practice">
+    <div class="inner">
+        <div class="user_view">
+            <div class="img_box">
+
+                <!-- on 클래스 추가시 블럭 -->
+                <div class="no_image">
+                    <p class="title">미리보기가 불가능합니다.</p>
+                    <p class="text">최소 하나의 특성 이미지를 선택하세요.</p>
+                </div>
+                <img src="~/images/sample/cap2/cap.png" alt="" />
+                <img src="~/images/sample/gear3/gear.png" alt="" />
+                <img src="~/images/sample/glasses2/glasses.png" alt="" />
+                <img src="~/images/sample/mink1/mink.png" alt="" />
+
+            </div>
+            <div class="info_wrap">
+                <ul>
+                    <li>
+                        <label>컬렉션명</label>
+                        <div class="info">
+                            Conmink
+                        </div>
+                    </li>
+                    <li>
+                        <label>컬렉션 수량</label>
+                        <div class="info">
+                            <input type="number" />
+                            <span>개</span>
+                        </div>
+                    </li>
+                    <li>
+                        <label>해상도</label>
+                        <div class="info">
+                            <input type="number" />
+                            <span>&#215;</span>
+                            <input type="number" />
+                            <span>px</span>
+                        </div>
+                    </li>
+                    <li>
+                        <label>파일 형식</label>
+                        <div class="info">
+                            <span>PNG</span>
+                            <span class="alert_text">* PNG 파일만 지원됩니다.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="make_btn">연습 이미지 만들기</button>
+        </div>
+        <div class="setting_box">
+            <div class="top_text">
+                <h3>
+                    LAYER SETTING
+                    <span>
+                        총
+                        <i class="all_layer">5</i>개
+                        레이어(<i class="type_num">243</i>가지 조합)
+                    </span>
+                </h3>
+                <ul>
+                    <li>
+                        <span>*</span>
+                        레이어 별 상단 탭에 있는 희귀도는 해당 레이어의 조합 확률을 의미하며, 항상 100%가 아니어도 됩니다.
+                    </li>
+                    <li>
+                        <span>*</span>
+                        레이어 내 파츠 이미지의 희귀도 합은 100%여야만 합니다.
+                    </li>
+                    <li>
+                        <span>*</span>
+                        파츠 레이어 옆의 아이콘을 드래그하여 레이어의 순서를 변경할 수 있습니다. 가장 밑의 레이어가 최하단에 위치합니다.
+                    </li>
+                </ul>
+            </div>
+            <div class="item_list">
+                <ul>
+                    <li>
+                        <button class="drag_btn">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </button>
+                        <div class="box_wrap">
+                            <div class="title_wrap">
+                                <div class="title">
+                                    <p class="name">Cap</p>
+                                    <p class="item_amount">(5개)</p>
+                                    <button type="button" class="change_name_btn"></button>
+                                </div>
+                                <div class="input_wrap">
+                                    <div class="rare">
+                                        <p>희귀도</p>
+                                        <input type="number" value="100" />
+                                        <span class="unit">%</span>
+                                    </div>
+                                    <div class="input_amount">
+                                        <p>개수</p>
+                                        <input type="number" value="1000" />
+                                        <span class="unit">개</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list_wrap">
+                                <p class="remain_text">
+                                    파츠 이미지 잔여 희귀도:
+                                    <span class="num">0</span>
+                                    %
+                                </p>
+                                <ul class="list">
+                                    <li>
+                                        <div class="image_wrap on">
+                                            <img src="~/images/sample/cap1/cap.png" loading="lazy" />
+                                            <button type="button" class="hidden_guide">
+                                                <span class="visually_hidden">View Cap1</span>
+                                            </button>
+                                        </div>
+                                        <p class="item_name">Cap1</p>
+                                        <div class="rare_input">
+                                            <input type="number" step="0.01" value="0.00" />
+                                            %
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="image_wrap">
+                                            <img src="~/images/sample/cap2/cap.png" loading="lazy" />
+                                            <button type="button" class="hidden_guide">
+                                                <span class="visually_hidden">View Cap2</span>
+                                            </button>
+                                        </div>
+                                        <p class="item_name">Cap2</p>
+                                        <div class="rare_input">
+                                            <input type="number" step="0.01" value="0.00" />
+                                            %
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="image_wrap">
+                                            <img src="~/images/sample/cap3/cap.png" loading="lazy" />
+                                            <button type="button" class="hidden_guide">
+                                                <span class="visually_hidden">View Cap3</span>
+                                            </button>
+                                        </div>
+                                        <p class="item_name">Cap3</p>
+                                        <div class="rare_input">
+                                            <input type="number" step="0.01" value="0.00" />
+                                            %
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="image_wrap">
+                                            <img src="~/images/sample/cap4/cap.png" loading="lazy" />
+                                            <button type="button" class="hidden_guide">
+                                                <span class="visually_hidden">View Cap4</span>
+                                            </button>
+                                        </div>
+                                        <p class="item_name">Cap4</p>
+                                        <div class="rare_input">
+                                            <input type="number" step="0.01" value="0.00" />
+                                            %
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="image_wrap">
+                                            <img src="~/images/sample/cap5/cap.png" loading="lazy" />
+                                            <button type="button" class="hidden_guide">
+                                                <span class="visually_hidden">View Cap5</span>
+                                            </button>
+                                        </div>
+                                        <p class="item_name">Cap5</p>
+                                        <div class="rare_input">
+                                            <input type="number" step="0.01" value="0.00" />
+                                            %
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="drag_btn">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </button>
+                        <div class="box_wrap">
+                            <div class="title_wrap">
+                                <div class="title">
+                                    <p class="name">Gear</p>
+                                    <p class="item_amount">(3개)</p>
+                                    <button type="button" class="change_name_btn"></button>
+                                </div>
+                                <div class="input_wrap">
+                                    <div class="rare">
+                                        <p>희귀도</p>
+                                        <input type="number" />
+                                        <span class="unit">%</span>
+                                    </div>
+                                    <div class="input_amount">
+                                        <p>개수</p>
+                                        <input type="number" />
+                                        <span class="unit">개</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list_wrap">
+                                <p class="remain_text">
+                                    파츠 이미지 잔여 희귀도:
+                                    <span class="num">0</span>
+                                    %
+                                </p>
+                                <ul class="list">
+                                    <li>
+                                        <div class="image_wrap on">
+                                            <img src="~/images/sample/gear1/gear.png" loading="lazy" />
+                                            <button type="button" class="hidden_guide">
+                                                <span class="visually_hidden">View gear1</span>
+                                            </button>
+                                        </div>
+                                        <p class="item_name">Gear1</p>
+                                        <div class="rare_input">
+                                            <input type="number" step="0.01" />
+                                            %
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="image_wrap">
+                                            <img src="~/images/sample/gear2/gear.png" loading="lazy" />
+                                            <button type="button" class="hidden_guide">
+                                                <span class="visually_hidden">View gear2</span>
+                                            </button>
+                                        </div>
+                                        <p class="item_name">Gear2</p>
+                                        <div class="rare_input">
+                                            <input type="number" step="0.01" />
+                                            %
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="image_wrap">
+                                            <img src="~/images/sample/gear3/gear.png" loading="lazy" />
+                                            <button type="button" class="hidden_guide">
+                                                <span class="visually_hidden">View gear3</span>
+                                            </button>
+                                        </div>
+                                        <p class="item_name">Gear3</p>
+                                        <div class="rare_input">
+                                            <input type="number" step="0.01" />
+                                            %
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="drag_btn">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </button>
+                        <div class="box_wrap">
+                            <div class="title_wrap">
+                                <div class="title">
+                                    <p class="name">Cloth</p>
+                                    <p class="item_amount">(5개)</p>
+                                    <button type="button" class="change_name_btn"></button>
+                                </div>
+                                <div class="input_wrap">
+                                    <div class="rare">
+                                        <p>희귀도</p>
+                                        <input type="number" />
+                                        <span class="unit">%</span>
+                                    </div>
+                                    <div class="input_amount">
+                                        <p>개수</p>
+                                        <input type="number" />
+                                        <span class="unit">개</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list_wrap">
+                                <p class="remain_text">
+                                    파츠 이미지 잔여 희귀도:
+                                    <span class="num">0</span>
+                                    %
+                                </p>
+                                <ul class="list">
+                                    <li>
+                                        <div class="image_wrap on">
+                                            <img src="~/images/sample/cloth1/cloth.png" loading="lazy" />
+                                            <button type="button" class="hidden_guide">
+                                                <span class="visually_hidden">View Cloth1</span>
+                                            </button>
+                                        </div>
+                                        <p class="item_name">Cloth1</p>
+                                        <div class="rare_input">
+                                            <input type="number" step="0.01" />
+                                            %
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="image_wrap">
+                                            <img src="~/images/sample/cloth2/cloth.png" loading="lazy" />
+                                            <button type="button" class="hidden_guide">
+                                                <span class="visually_hidden">View Cloth2</span>
+                                            </button>
+                                        </div>
+                                        <p class="item_name">Cloth2</p>
+                                        <div class="rare_input">
+                                            <input type="number" step="0.01" />
+                                            %
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="image_wrap">
+                                            <img src="~/images/sample/cloth3/cloth.png" loading="lazy" />
+                                            <button type="button" class="hidden_guide">
+                                                <span class="visually_hidden">View Cloth3</span>
+                                            </button>
+                                        </div>
+                                        <p class="item_name">Cloth3</p>
+                                        <div class="rare_input">
+                                            <input type="number" step="0.01" />
+                                            %
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="image_wrap">
+                                            <img src="~/images/sample/cloth4/cloth.png" loading="lazy" />
+                                            <button type="button" class="hidden_guide">
+                                                <span class="visually_hidden">View Cloth4</span>
+                                            </button>
+                                        </div>
+                                        <p class="item_name">Cloth4</p>
+                                        <div class="rare_input">
+                                            <input type="number" step="0.01" />
+                                            %
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="image_wrap">
+                                            <img src="~/images/sample/cloth5/cloth.png" loading="lazy" />
+                                            <button type="button" class="hidden_guide">
+                                                <span class="visually_hidden">View Cloth5</span>
+                                            </button>
+                                        </div>
+                                        <p class="item_name">Cloth5</p>
+                                        <div class="rare_input">
+                                            <input type="number" step="0.01" />
+                                            %
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="drag_btn">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </button>
+                        <div class="box_wrap">
+                            <div class="title_wrap">
+                                <div class="title">
+                                    <p class="name">Mink</p>
+                                    <p class="item_amount">(5개)</p>
+                                    <button type="button" class="change_name_btn"></button>
+                                </div>
+                                <div class="input_wrap">
+                                    <div class="rare">
+                                        <p>희귀도</p>
+                                        <input type="number" />
+                                        <span class="unit">%</span>
+                                    </div>
+                                    <div class="input_amount">
+                                        <p>개수</p>
+                                        <input type="number" />
+                                        <span class="unit">개</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list_wrap">
+                                <p class="remain_text">
+                                    파츠 이미지 잔여 희귀도:
+                                    <span class="num">0</span>
+                                    %
+                                </p>
+                                <ul class="list">
+                                    <li>
+                                        <div class="image_wrap on">
+                                            <img src="~/images/sample/mink1/mink.png" loading="lazy" />
+                                            <button type="button" class="hidden_guide">
+                                                <span class="visually_hidden">View Mink1</span>
+                                            </button>
+                                        </div>
+                                        <p class="item_name">Mink1</p>
+                                        <div class="rare_input">
+                                            <input type="number" step="0.01" />
+                                            %
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="image_wrap">
+                                            <img src="~/images/sample/mink2/mink.png" loading="lazy" />
+                                            <button type="button" class="hidden_guide">
+                                                <span class="visually_hidden">View Mink2</span>
+                                            </button>
+                                        </div>
+                                        <p class="item_name">Mink2</p>
+                                        <div class="rare_input">
+                                            <input type="number" step="0.01" />
+                                            %
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="image_wrap">
+                                            <img src="~/images/sample/mink3/mink.png" loading="lazy" />
+                                            <button type="button" class="hidden_guide">
+                                                <span class="visually_hidden">View Mink3</span>
+                                            </button>
+                                        </div>
+                                        <p class="item_name">Mink3</p>
+                                        <div class="rare_input">
+                                            <input type="number" step="0.01" />
+                                            %
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="image_wrap">
+                                            <img src="~/images/sample/mink4/mink.png" loading="lazy" />
+                                            <button type="button" class="hidden_guide">
+                                                <span class="visually_hidden">View Mink4</span>
+                                            </button>
+                                        </div>
+                                        <p class="item_name">Mink4</p>
+                                        <div class="rare_input">
+                                            <input type="number" step="0.01" />
+                                            %
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="image_wrap">
+                                            <img src="~/images/sample/mink5/mink.png" loading="lazy" />
+                                            <button type="button" class="hidden_guide">
+                                                <span class="visually_hidden">View Mink5</span>
+                                            </button>
+                                        </div>
+                                        <p class="item_name">Mink5</p>
+                                        <div class="rare_input">
+                                            <input type="number" step="0.01" />
+                                            %
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+@section Modals{
+
+    <div class="modal">
+        <div class="modal_bg"></div>
+        <div class="modal_input_box">
+            <button type="button" class="modal_close_btn">
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            <h3>변경할 파츠 레이어의 이름을 입력해주세요.</h3>
+            <input type="text" class="change_input" />
+            <button type="button" class="confirm_btn">확인</button>
+        </div>
+    </div>
+
+    <div class="collection_modal">
+        <div class="collection_inner">
+            <div class="title_wrap">
+                <p>Trial Collection</p>
+                <button type="button" class="collection_close_btn">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+            <div class="content">
+                <div class="navi">
+                    <div class="input_wrap">
+                        <input type="search" placeholder="컬렉션 번호를 입력하세요." />
+                        <button type="button" class="search">
+                            <img src="~/images/icons/search.svg" alt="아이템 찾기 버튼" />
+                        </button>
+                    </div>
+                    <div class="pagination">
+                        <div class="page">
+                            <p>page</p>
+                            <input type="number" class="num" value="1" />
+                            <p>of</p>
+                            <p class="max_num">4</p>
+                        </div>
+                        <div class="navi_btn">
+                            <button type="button" class="prev_btn">이전 글</button>
+                            <button type="button" class="next_btn">다음 글</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal_item_list">
+                    <div class="inner">
+                        <ul>
+                            <li>
+                                <div class="img_wrap">
+                                    <img src="~/images/sample/generator/sample_collection2.jpg" loading="lazy" alt="" />
+                                </div>
+                                <div class="img_name">
+                                    <p>Conmink #1</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_wrap">
+                                    <img src="~/images/sample/generator/sample_collection3.jpg" loading="lazy" alt="" />
+                                </div>
+                                <div class="img_name">
+                                    <p>Conmink #1</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_wrap">
+                                    <img src="~/images/sample/generator/sample_collection4.jpg" loading="lazy" alt="" />
+                                </div>
+                                <div class="img_name">
+                                    <p>Conmink #1</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_wrap">
+                                    <img src="~/images/sample/generator/sample_collection5.jpg" loading="lazy" alt="" />
+                                </div>
+                                <div class="img_name">
+                                    <p>Conmink #1</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_wrap">
+                                    <img src="~/images/sample/generator/sample_collection6.jpg" loading="lazy" alt="" />
+                                </div>
+                                <div class="img_name">
+                                    <p>Conmink #1</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_wrap">
+                                    <img src="~/images/sample/generator/sample_collection7.jpg" loading="lazy" alt="" />
+                                </div>
+                                <div class="img_name">
+                                    <p>Conmink #1</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_wrap">
+                                    <img src="~/images/sample/generator/sample_collection8.jpg" loading="lazy" alt="" />
+                                </div>
+                                <div class="img_name">
+                                    <p>Conmink #1</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_wrap">
+                                    <img src="~/images/sample/generator/sample_collection8.jpg" loading="lazy" alt="" />
+                                </div>
+                                <div class="img_name">
+                                    <p>Conmink #1</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_wrap">
+                                    <img src="~/images/sample/generator/sample_collection8.jpg" loading="lazy" alt="" />
+                                </div>
+                                <div class="img_name">
+                                    <p>Conmink #1</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_wrap">
+                                    <img src="~/images/sample/generator/sample_collection8.jpg" loading="lazy" alt="" />
+                                </div>
+                                <div class="img_name">
+                                    <p>Conmink #1</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_wrap">
+                                    <img src="~/images/sample/generator/sample_collection8.jpg" loading="lazy" alt="" />
+                                </div>
+                                <div class="img_name">
+                                    <p>Conmink #1</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+
+
+
+
+
+
+
+
+
+@section Heads{
+    <link rel="stylesheet" href="~/css/ChangeHeader.css" />
+    <link rel="stylesheet" href="~/css/GeneratorCommon.css" />
+    <link rel="stylesheet" href="~/css/Practice.css" />
+    <link rel="stylesheet" href="~/css/Generator.css" />
+}

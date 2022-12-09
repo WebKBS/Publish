@@ -1,43 +1,32 @@
 ﻿@charset "UTF-8";
 /* font color */
-$background: #212121;
+$background: #282828;
 $black1: #141414;
-$black2: #1B1B1B;
+$black2: #212121;
+$black3: #1B1B1B;
+$black4: rgba(27, 27, 27, .9);
+
+$white: #fff;
+$white2: rgba(255,255,255, .55);
+$white3: rgba(255,255,255, .35);
+$white4: rgba(255,255,255, .25);
+$white5: rgba(255,255,255, .15);
+$white6: rgba(255,255,255, .08);
+$white7: rgba(255,255,255, .2);
 
 $theme: #2ECDFF;
 
+$gray1: #2D2D2D;
+$gray2: #343434;
 
-
-//////////////////////////
-$fc000: #000;
-$fc333: #333;
-$fc444: #444;
-$fc777: #777;
-$fff: #fff;
-$blue_main: #1273eb;
-$blue_main2: #1362C3;
-$blue_sub: #798ca8;
-
-
-$gray3: #444444;
-$gray4: #777777;
-$gray5: #798CA8;
-$gray7: #F8F8F8;
-$gray8: #AFBFC6;
-$gray9: #D6DAE1;
-$gray10: #E7E9EC;
-$gray11: #F3F5F8;
-$gray12: #F3F5F8;
-
-$alert: #E57373;
-$alert2: #FAF2F2;
-
-$theme2: #F1F5FB;
-
-$sec1: #6F5CFB;
-
+$alert: #FF962E;
 
 /* family */
 $suit_bold: 'suit_bold';
 $suit_medium: 'suit_medium';
 $suit_regular: 'suit_regular';
+$suit_light: 'suit_light';
+
+$jost_bold: 'jost_bold';
+$jost_medium: 'jost_medium';
+$jost_regular: 'jost_regular';

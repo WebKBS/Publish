@@ -2,88 +2,59 @@
 @import "../base/_setting.scss";
 @import "../layout/_header.scss";
 @import "../layout/_footer.scss";
-@import "../layout/_sideMenu.scss";
-@import "../common/_SignCommon.scss";
+@import "../components/_inputs.scss";
+@import "../components/_buttons.scss";
 
-html, body, #wrap{
+
+html, body, #wrap {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.container {
     width: 100%;
     height: 100%;
 }
-.container{
+
+.login {
     width: 100%;
     height: 100%;
-}
-.login{
-    width: 100%;
-    height: 100%;
-}
 
-.login_wrap {
-    max-width: 520px;
-    padding: 40px 80px;
-    border-radius: 16px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, .1);
-    margin: 0 auto 50px;
-
-    h2 {
-        text-align: center;
-        margin-bottom: 30px;
-        color: $blue_main;
+    .inner {
+        padding: 268px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
+    .login_wrap {
+        max-width: 520px;
+        width: 100%;
+        padding: 40px 80px;
+        background: $black4;
+        border-radius: 16px;
+        box-shadow: 0 0 12px rgba(0, 0, 0, .1);
+        margin: 0 auto;
 
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .input_wrap {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+    }
 
     form {
         margin-bottom: 20px;
-    }
-
-    .input_wrap {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        margin-bottom: 16px;
-
-        input {
-            width: 100%;
-            border: 1px solid $gray9;
-            border-radius: 8px;
-            padding: 10px 16px;
-
-            &::placeholder {
-                color: $gray8;
-                /*                background-repeat: no-repeat;
-                background-size: 18px auto;
-                background-position: 1px center;*/
-            }
-        }
-        /*        .email {
-            &::placeholder {
-                background-image: url(../images/icons/user.png);
-            }
-        }
-
-        .password {
-            &::placeholder {
-                background-image: url(../images/icons/padlock.png);
-            }
-        }*/
-    }
-
-    button[type="submit"] {
-        width: 100%;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        background: $blue_main;
-        padding: 16px 0;
-
-        &:hover {
-            background: $blue_main2;
-            transition: var(--hover-transition);
-        }
     }
 
     .auto_login {
@@ -95,32 +66,27 @@ html, body, #wrap{
             + label {
                 display: inline-flex;
                 gap: 6px;
-                color: $blue_main;
                 align-items: center;
-
-                .check_btn {
-                    display: block;
-                    width: 24px;
-                    height: 24px;
-                    background: url(../../images/icons/check-mark2-off.svg) no-repeat center center / auto 20px;
-                }
             }
 
             &:checked + label {
-
                 .check_btn {
                     background: url(../../images/icons/check-mark2.svg) no-repeat center center / auto 20px;
                 }
             }
         }
+    }
 
-        .auto_label {
-            cursor: pointer;
+
+    .link_wrap {
+        ul {
+            display: flex;
+            justify-content: space-between;
         }
     }
 }
 
-
+/*
 @media screen and (max-width: 1024px) {
     .login_wrap {
         max-width: 440px;
@@ -128,3 +94,4 @@ html, body, #wrap{
         padding: 0;
     }
 }
+*/

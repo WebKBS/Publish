@@ -11,7 +11,7 @@ namespace Airdropper.Controllers
             return View();
         }
 
-        public IActionResult Password()
+        public IActionResult FindPw()
         {
             return View();
         }

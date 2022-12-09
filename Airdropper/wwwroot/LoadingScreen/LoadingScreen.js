@@ -1,6 +1,3 @@
-
-window.addEventListener('DOMContentLoaded', AddElement);
-
 function LoadingScreen(text = null) {
     AddElement();
     document.getElementById('loading').style.cssText = `

@@ -9,11 +9,7 @@ namespace Airdropper.Controllers
             return View();
         }
 
-        public IActionResult Password()
-        {
-            return View();
-        }
-        public IActionResult NickName()
+        public IActionResult EditPw()
         {
             return View();
         }

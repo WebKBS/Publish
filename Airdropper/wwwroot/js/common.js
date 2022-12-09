@@ -1,11 +1,11 @@
-const sideOpenBtn = document.querySelector('.side_open_btn');
-const sideCloseBtn = document.querySelector('.side_close_btn');
+//const sideOpenBtn = document.querySelector('.side_open_btn');
+//const sideCloseBtn = document.querySelector('.side_close_btn');
 const sideMenu = document.querySelector('.side_menu');
 const myPageBtn = document.querySelector('.my_page button');
 const myPageList = document.querySelector('.my_page ul');
 
 
-/* 모바일 사이드 메뉴 */
+/* 모바일 사이드 메뉴 *//*
 const openSideMenu = () => {
     sideMenu.classList.add('on');
     document.body.classList.add('on');
@@ -20,7 +20,7 @@ const closeSideMenu = () => {
 
 sideOpenBtn.addEventListener('click', openSideMenu);
 sideCloseBtn.addEventListener('click', closeSideMenu);
-
+*/
 
 /*myPageBtn.addEventListener('click', () => {
     myPageList.classList.add('on');
@@ -45,12 +45,12 @@ document.addEventListener('click', (e) => {
 
 
 
-const sideNoticeBtn = document.querySelector('.notice_btn');
+/*const sideNoticeBtn = document.querySelector('.notice_btn');
 sideNoticeBtn.addEventListener('click', (e) => {
     e.preventDefault();
     e.currentTarget.nextElementSibling.classList.toggle('on');
     console.dir(e.currentTarget.nextElementSibling);
-})
+})*/
 
 
 

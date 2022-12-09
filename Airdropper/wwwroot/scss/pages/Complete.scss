@@ -1,5 +1,8 @@
 ﻿@charset "UTF-8";
-@import "./Setting.scss";
+@import "../base/_setting.scss";
+@import "../layout/_header.scss";
+@import "../layout/_footer.scss";
+@import "../components/_buttons.scss";
 
 .complete {
 
@@ -7,21 +10,16 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
-        padding: 240px 0 220px;
+        padding: 174px 0;
     }
 
     h2 {
-        font-size: 24px;
-        font-family: $noto_bold;
-        font-size: 24px;
-        line-height: 1.5;
         text-align: center;
-        padding-top: 140px;
-        background: url(../images/icons/check_icon.svg) no-repeat center 0 / 100px auto;
+        padding-top: 88px;
+        background: url(../../images/icons/check_icon.svg) no-repeat center 0 / 68px auto;
 
         span {
             display: block;
-            color: $blue_main;
         }
     }
 
@@ -29,38 +27,22 @@
         text-align: center;
         font-size: 18px;
         line-height: 1.5;
-        font-family: $noto_medium;
-        color: $gray5;
     }
 
     .sub_text {
         text-align: center;
         font-size: 16px;
         line-height: 1.5;
-        font-family: $noto_regular;
     }
 
     .by_login {
-        max-width: 220px;
-        width: 100%;
-        background: $blue_main;
-        font-size: 16px;
-        line-height: 1.5;
-        font-family: $noto_medium;
-        padding: 16px 0;
-        text-align: center;
-        color: #fff;
-        border-radius: 8px;
         margin: 0 auto;
 
-        &:hover {
-            background: $blue_main2;
-            transition: var(--hover-transition);
-        }
+        
     }
 }
 
-@media screen and (max-width: 1024px) {
+/*@media screen and (max-width: 1024px) {
     .complete {
 
         .inner {
@@ -80,3 +62,4 @@
         }
     }
 }
+*/

@@ -11,13 +11,18 @@
   margin-bottom: 60px;
 }
 
-@media screen and (max-width: 1024px) {
-  .cont1 .inner {
-    padding: 120px 20px 100px;
-  }
-  .cont1 h2 {
-    margin-bottom: 40px;
-  }
+/*@media screen and (max-width: 1024px) {
+    .cont1 {
+
+        .inner {
+            padding: 120px 20px 100px;
+        }
+
+        h2{
+            margin-bottom: 40px;
+        }
+    }
 }
+*/
 
 /*# sourceMappingURL=NoticeCommon.css.map */

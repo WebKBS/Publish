@@ -2,22 +2,3 @@
 @import '../base/_setting.scss';
 
 
-.sign_up_btn {
-    display: block;
-    width: 92px;
-    border: 1px solid $theme;
-    border-radius: 30px;
-    text-align: center;
-    padding: 0 20px;
-    transition: var(--hover-transition);
-    color: $theme;
-    padding: 8px 0;
-    font-size: 14px;
-    line-height: 1.5;
-    font-family: $suit_medium;
-
-    &:hover {
-        color: $black2;
-        background: $theme;
-    }
-}

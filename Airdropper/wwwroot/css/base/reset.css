@@ -8,6 +8,7 @@
 html,
 body {
   touch-action: pan-y;
+  background: #282828;
 }
 html.on,
 body.on {
@@ -108,19 +109,20 @@ video {
   word-break: break-all;
   letter-spacing: -0.01rem;
   /* letter space */
+  line-height: 1.5;
 }
 
 body {
-  line-height: 1;
+  line-height: 1.5;
   word-break: keep-all;
-  color: #222;
+  color: #fff;
   background: #fff;
   font-family: "suit_regular";
   letter-spacing: normal;
 }
 
 a {
-  color: #222;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -172,7 +174,7 @@ button {
   background: none;
   font-family: "suit_regular";
   cursor: pointer;
-  color: #222;
+  color: #fff;
   display: block;
   box-sizing: border-box;
   margin: 0;
@@ -186,7 +188,6 @@ input {
   box-sizing: border-box;
 }
 input:focus {
-  outline-color: #1273eb;
   outline-width: thin;
 }
 
@@ -198,7 +199,7 @@ select {
   background-color: #fff;
   -webkit-appearance: none;
   appearance: none;
-  color: #222;
+  color: #fff;
 }
 
 table {

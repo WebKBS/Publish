@@ -109,13 +109,17 @@
   display: none;
 }
 
-@media screen and (max-width: 1024px) {
-  .top_title_wrap .inner {
-    padding: 80px 20px 20px;
-  }
-  .top_title_wrap h2 {
-    font-size: 20px;
-  }
+/*@media screen and (max-width: 1024px) {
+    .top_title_wrap {
+        .inner {
+            padding: 80px 20px 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+    }
 }
+*/
 
 /*# sourceMappingURL=MintingCommon.css.map */

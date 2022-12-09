@@ -365,7 +365,7 @@ html, body, #wrap, .container {
 }
 
 
-@media screen and (max-width: 1024px) {
+/*@media screen and (max-width: 1024px) {
 
     .header{
         box-shadow: none;
@@ -398,11 +398,11 @@ html, body, #wrap, .container {
 
             .collection_list {
                 overflow: initial;
-                padding: 0;
+                padding: 0;*/
                 /*               border-bottom-left-radius: 12px;
                 border-bottom-right-radius: 12px;
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 12%);*/
-                display: none;
+                /*display: none;
                 height: 50vh;
                 overflow-y: auto;
 
@@ -447,7 +447,7 @@ html, body, #wrap, .container {
                 width: 100%;
                 display: flex;
                 padding: 10px 20px;
-                justify-content: space-between;
+                justify-content: space-between;*/
                 /*             &.on {
                     border-bottom-left-radius: 12px;
                     border-bottom-right-radius: 12px;
@@ -455,7 +455,7 @@ html, body, #wrap, .container {
                 }
 
 */
-                .right_box {
+                /*.right_box {
                     display: flex;
                     align-items: center;
                     gap: 12px;
@@ -526,4 +526,4 @@ html, body, #wrap, .container {
             }
         }
     }
-}
+}*/

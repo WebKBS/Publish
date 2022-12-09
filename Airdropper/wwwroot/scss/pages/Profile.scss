@@ -1,27 +1,36 @@
 ﻿@charset "UFT-8";
-@import "./Setting.scss";
-
+@import "../base/_setting.scss";
+@import "../layout/_header.scss";
+@import "../layout/_footer.scss";
+@import "../components/_inputs.scss";
+@import "../components/_buttons.scss";
 
 .profile {
+    .inner {
+        max-width: 668px;
+        padding: 80px 0;
+        margin: 0 auto;
+    }
+
+    h2 {
+        margin-bottom: 40px;
+    }
 
     .info_wrap {
-        //border-top: 1px solid $gray8;
-        //border-bottom: 1px solid $gray8;
-        //padding: 30px 20px;
-        margin-bottom: 80px;
+        margin-bottom: 12px;
+        background: $black3;
+        border-radius: 16px;
 
         .user_email {
-            border-top: 1px solid $gray8;
-            padding: 30px 20px 0;
+            padding: 16px 24px 0;
         }
 
         .join_date {
-            border-bottom: 1px solid $gray8;
-            padding: 0 20px 30px;
+            padding: 13px 24px 25px;
         }
 
-        & > div:not(.user_email, .join_date, .user_pw) {
-            padding: 0 20px;
+        & > div:not(.user_email, .join_date) {
+            padding: 0 24px;
         }
 
         > div {
@@ -42,73 +51,28 @@
         }
 
         .title {
-            font-size: 16px;
-            line-height: 1.5;
-            font-family: $noto_medium;
             min-width: 102px;
         }
 
-        .info {
-            font-size: 16px;
-            line-height: 1.5;
-            font-family: $noto_regular;
-        }
-
-        .change_btn {
-            padding: 10px 0;
-            width: 120px;
-            border: 1px solid $blue_main;
-            border-radius: 8px;
-            font-size: 14px;
-            font-family: $noto_medium;
-            color: $blue_main;
-            text-align: center;
-            min-width: 120px;
-
-            &:hover {
-                color: #fff;
-                background: $blue_main;
-                transition: var(--hover-transition);
-            }
-        }
-
         .join_date {
-            border-bottom: 1px solid $gray8;
             margin-bottom: 0;
         }
-
-        .user_pw {
-            padding: 30px 20px;
-            border-bottom: 1px solid $gray8;
-        }
     }
 
-    .btn_wrap {
+    .user_pw {
+        background: $black3;
+        border-radius: 16px;
+        padding: 12px 20px;
         display: flex;
-        gap: 12px;
-
-        a {
-            width: 200px;
-            display: block;
-            padding: 16px 0;
-            border: 1px solid $blue_main;
-            border-radius: 8px;
-            text-align: center;
-            color: $blue_main;
-            font-size: 16px;
-            line-height: 1.5;
-            font-family: $noto_medium;
-
-            &:hover {
-                background: $blue_main;
-                color: #fff;
-                transition: var(--hover-transition);
-            }
-        }
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 80px;
     }
+
+
 }
 
-
+/*
 @media screen and (max-width: 768px) {
     .profile {
 
@@ -154,3 +118,4 @@
         }
     }
 }
+*/

@@ -1,21 +1,22 @@
 @charset "utf-8";
+@import "../base/_setting.scss";
 
 /* Jost */
 @font-face {
     src: url(../../font/Jost/Jost-Bold.ttf) format('TrueType');
-    font-family: 'jost_bold';
+    font-family: $jost_bold;
     font-display: swap;
 }
 
 @font-face {
     src: url(../../font/Jost/Jost-Medium.ttf) format('TrueType');
-    font-family: 'jost_medium';
+    font-family: $jost_medium;
     font-display: swap;
 }
 
 @font-face {
     src: url(../../font/Jost/Jost-Regular.ttf) format('TrueType');
-    font-family: 'jost_regular';
+    font-family: $jost_regular;
     font-display: swap;
 }
 
@@ -30,30 +31,123 @@
 // Suit
 @font-face {
     src: url(../../font/suit/SUIT-Bold.otf) format('opentype');
-    font-family: 'suit_bold';
+    font-family: $suit_bold;
     font-display: swap;
 }
 
 @font-face {
     src: url(../../font/suit/SUIT-Medium.otf) format('opentype');
-    font-family: 'suit_medium';
+    font-family: $suit_medium;
     font-display: swap;
 }
 
 @font-face {
     src: url(../../font/suit/SUIT-Regular.otf) format('opentype');
-    font-family: 'suit_regular';
+    font-family: $suit_regular;
+    font-display: swap;
+}
+
+@font-face {
+    src: url(../../font/suit/SUIT-Light.otf) format('opentype');
+    font-family: $suit_light;
     font-display: swap;
 }
 
 
+
+
 // font family
-.jost_r {
-    font-family: 'jost_regular';
+.jost_m {
+    font-family: $jost_medium;
 }
+
+.jost_r {
+    font-family: $jost_regular;
+}
+
+.suit_m {
+    font-family: $suit_medium;
+}
+
+.suit_r {
+    font-family: $suit_regular;
+}
+
+.suit_l {
+    font-family: $suit_light;
+}
+
+
+// title
+.h1 {
+    font-size: 22px;
+}
+
+.h2 {
+    font-size: 18px;
+}
+
 
 // header font
 .navi_1 {
     font-size: 16px;
-    line-height: 1.5;
+}
+
+
+// sub title
+.subtitle_1 {
+    font-size: 24px;
+}
+
+// body
+.body_1{
+    font-size: 16px;
+}
+
+.body_2 {
+    font-size: 14px;
+}
+
+.body_3 {
+    font-size: 13px;
+}
+
+
+// button
+.button_2 {
+    font-size: 14px;
+}
+
+// caption
+
+.caption_2{
+    font-size: 12px;
+}
+
+
+// font color
+.color_theme {
+    color: $theme;
+}
+
+.color_white_2 {
+    color: $white2;
+}
+
+.color_white_3 {
+    color: $white3;
+}
+
+
+.color_alert {
+    color: $alert;
+}
+
+
+.font_hover {
+
+    &:hover {
+        transition: color .2s;
+        color: $theme;
+    }
 }

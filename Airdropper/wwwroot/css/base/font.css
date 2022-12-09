@@ -1,3 +1,5 @@
+/* font color */
+/* family */
 /* Jost */
 @font-face {
   src: url(../../font/Jost/Jost-Bold.ttf) format("TrueType");
@@ -35,13 +37,86 @@
   font-family: "suit_regular";
   font-display: swap;
 }
+@font-face {
+  src: url(../../font/suit/SUIT-Light.otf) format("opentype");
+  font-family: "suit_light";
+  font-display: swap;
+}
+.jost_m {
+  font-family: "jost_medium";
+}
+
 .jost_r {
   font-family: "jost_regular";
 }
 
+.suit_m {
+  font-family: "suit_medium";
+}
+
+.suit_r {
+  font-family: "suit_regular";
+}
+
+.suit_l {
+  font-family: "suit_light";
+}
+
+.h1 {
+  font-size: 22px;
+}
+
+.h2 {
+  font-size: 18px;
+}
+
 .navi_1 {
   font-size: 16px;
-  line-height: 1.5;
+}
+
+.subtitle_1 {
+  font-size: 24px;
+}
+
+.body_1 {
+  font-size: 16px;
+}
+
+.body_2 {
+  font-size: 14px;
+}
+
+.body_3 {
+  font-size: 13px;
+}
+
+.button_2 {
+  font-size: 14px;
+}
+
+.caption_2 {
+  font-size: 12px;
+}
+
+.color_theme {
+  color: #2ECDFF;
+}
+
+.color_white_2 {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.color_white_3 {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.color_alert {
+  color: #FF962E;
+}
+
+.font_hover:hover {
+  transition: color 0.2s;
+  color: #2ECDFF;
 }
 
 /*# sourceMappingURL=font.css.map */

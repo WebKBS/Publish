@@ -1,17 +1,16 @@
 @charset "UTF-8";
 @import '../base/_setting.scss';
 @import '../components/_icons.scss';
-@import '../components/_links.scss';
 
 
 .header {
     width: 100%;
     height: 76px;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 300;
-    background: $background;
+    background: $black3;
     border-bottom: 1px solid transparent;
     border-image: linear-gradient(to right, rgba(42, 176, 255, 1), rgba(103, 84, 255, 1), rgba(231, 84, 255, 1));
     border-image-slice: 1;
@@ -94,14 +93,11 @@
         align-items: center;
         gap: 12px;
 
-        .link {
+        li {
+            display: none;
 
-            li {
-                display: none;
-
-                &.on {
-                    display: block;
-                }
+            &.on {
+                display: block;
             }
         }
     }
@@ -109,6 +105,11 @@
     .my_page {
         margin-right: 6px;
         position: relative;
+        display: none;
+
+        &.on {
+            display: block;
+        }
 
         ul {
             display: none;
@@ -134,7 +135,7 @@
                 padding: 10px 20px;
 
                 &:hover {
-                    background: $theme2;
+                    
                 }
             }
         }
@@ -143,7 +144,7 @@
 
 
 
-//
+/*
 @media screen and (max-width: 1024px) {
     .header {
         height: 60px;
@@ -161,3 +162,4 @@
         }
     }
 }
+*/

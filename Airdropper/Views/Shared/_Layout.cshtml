@@ -7,15 +7,15 @@
     <meta property="og:title" content="NFT MINTER" />
     <meta property="og:image" content="" />
     <meta property="og:description" content="NFT MINTER" />
-    <title>NFT MINTER - @ViewData["Title"]</title>
+    <title>AirDropper - @ViewData["Title"]</title>
 
     <link rel="stylesheet" href="~/css/base/font.css" />
     <link rel="stylesheet" href="~/css/base/reset.css" />
     <link rel="stylesheet" href="~/css/common/common.css" />
 
     <!-- 로딩 -->
-    <script src="~/LoadingScreen/LoadingScreen.js" defer></script>
-    <link href="~/LoadingScreen/LoadingScreen.css" rel="stylesheet" />
+    <script src="~/LoadingScreen/LoadingScreen.js"></script>
+
     <!-- JS -->
     <script src="~/js/common.js" defer></script>
 
@@ -64,14 +64,15 @@
                     </ul>
                 </nav>
                 <div class="sign_wrap">
-                    <a href="#" class="telegram" title="텔레그램 바로가기">
-                        <span class="visually_hidden">텔레그램 바로가기</span>
-                    </a>
+                    @*<a href="#" class="telegram" title="텔레그램 바로가기">
+                    <span class="visually_hidden">텔레그램 바로가기</span>
+                    </a>*@
+                    <!-- on 클래스 추가시 display -->
                     <div class="my_page">
                         <button type="button" id="myPageListOpen" class="my_page_btn" title="마이페이지 버튼">
                             <span class="visually_hidden">마이페이지 버튼</span>
                         </button>
-                        <!-- on 클래스 추가시 show -->
+                        <!-- on 클래스 추가시 display -->
                         <ul>
                             <li><a href="/MyInfo/Profile">내 정보</a></li>
                             <li><a href="/MyInfo/MyGallery">마이 갤러리</a></li>
@@ -79,16 +80,19 @@
                             <li><a href="/MyInfo/Withdrawal">회원탈퇴</a></li>
                         </ul>
                     </div>
-                    <ul class="link">
-                        <li class="on"><a href="/Sign/SignUp" class="link sign_up_btn">회원가입</a></li>
+                    <ul class="sign_wrap">
+                        <!-- on 클래스 추가시 display -->
+                        <li class="on"><a href="/Sign/Login" class="sign_btn sign_in_btn">로그인</a></li>
+                        <li class="on"><a href="/Sign/SignUp" class="sign_btn sign_up_btn">회원가입</a></li>
+                        <li><a href="/" class="sign_btn log_out_btn">로그아웃</a></li>
                     </ul>
-                    <div class="mobile_menu">
+ @*                   <div class="mobile_menu">
                         <button type="button" class="side_open_btn">
                             <span class="line"></span>
                             <span class="line"></span>
                             <span class="line"></span>
                         </button>
-                    </div>
+                    </div>*@
                 </div>
 
             </div>
@@ -210,7 +214,7 @@
     <script>
         console.log("%cAirDropper", "font-size: 120px; color: #cfffa5; border: 1px solid #fff; padding: 0 30px; border-radius: 12px;");
     </script>
-    <div class="side_menu">
+    @*<div class="side_menu">
         <button type="button" class="side_close_btn">
             <span class="line"></span>
             <span class="line"></span>
@@ -249,6 +253,6 @@
                 <li class="sign_up"><a href="/Sign/SignUp">회원가입</a></li>
             </ul>
         </div>
-    </div>
+    </div>*@
 </body>
 </html>

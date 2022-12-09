@@ -3,36 +3,36 @@
 }
 
 
-<section class="cont1">
+<section class="cont edit_email">
     <div class="inner">
-        <h2>내 정보 변경</h2>
-        <p class="sub_title">아이디(Email) 변경</p>
+        <h2 class="h2 suit_m">내 정보 변경</h2>
+        <p class="sub_title body_1 suit_r color_theme">아이디(Email) 변경</p>
         <div class="form_wrap">
             <form>
                 <div class="input_wrap id">
-                    <label for="userId">아이디</label>
+                    <label for="userId" class="body_2 suit_m color_white_2">아이디</label>
                     <div class="box">
                         <!-- 각 Input error 클래스 추가시 백그라운드, 포커스 색상 변경 -->
                         <input type="email" id="userId" placeholder="Email 주소 입력" />
-                        <button type="button" class="check_btn">중복확인</button>
+                        <button type="button" class="button_112">중복확인</button>
                     </div>
                     <p class="success_msg">사용 가능한 아이디입니다.</p>
                     <p class="error_msg">이미 사용중인 ID입니다.</p>
                 </div>
                 <div class="input_wrap certification">
-                    <label for="certification">이메일 인증</label>
+                    <label for="certification" class="body_2 suit_m color_white_2">이메일 인증</label>
                     <div class="box">
                         <!-- 각 Input error 클래스 추가시 백그라운드, 포커스 색상 변경 -->
                         <input type="text" placeholder="Email 인증번호 입력" />
-                        <button type="button" class="send_btn">인증번호 전송</button>
+                        <button type="button" class="button_112">인증번호 전송</button>
                     </div>
-                    <button type="button" class="check_btn">인증번호 확인</button>
+                    <button type="button" class="button_140">인증번호 확인</button>
                     <p class="success_msg">이메일 인증이 완료되었습니다.</p>
                     <p class="error_msg">인증번호를 입력하세요.</p>
                 </div>
             </form>
         </div>
-        <button type="button" class="next_btn">변경하기</button>
+        <button type="button" class="next_btn button_160">변경하기</button>
     </div>
 </section>
 
@@ -42,6 +42,5 @@
 
 
 @section Heads{
-    <link rel="stylesheet" href="~/css/ChangeHeader.css" />
-    <link rel="stylesheet" href="~/css/Edit.css" />
+    <link rel="stylesheet" href="~/css/pages/EditEmail.css" />
 }

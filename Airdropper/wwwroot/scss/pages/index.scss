@@ -2,7 +2,6 @@
 @import "../base/_setting.scss";
 @import "../layout/_header.scss";
 @import "../layout/_footer.scss";
-@import "../layout/_sideMenu.scss";
 
 .mobile_h2 {
     display: none;
@@ -556,7 +555,7 @@
 
 
 /* ======= 태블릿 ======= */
-@media screen and (max-width: 1024px) {
+/*@media screen and (max-width: 1024px) {
   
 
   .main_slider {
@@ -1013,3 +1012,4 @@
     }
   }
 }
+*/

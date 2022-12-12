@@ -387,13 +387,16 @@ button[type=submit].next_btn:hover {
   text-align: center;
 }
 
-.modal_confirm_btn {
+.modal_confirm_btn, .modal_close_btn {
   padding: 13px 0;
   width: 180px;
   border-radius: 8px;
   color: #fff;
   background: #1B1B1B;
   text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "suit_medium";
 }
 
 .send_btn {
@@ -408,32 +411,49 @@ button[type=submit].next_btn:hover {
   text-align: center;
 }
 
-.complete .inner {
+.download_btn {
+  width: 152px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #2ECDFF;
+  color: #2ECDFF;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "suit_medium";
+}
+
+.complete .inner, .withdrawal_comp .inner {
   display: flex;
   flex-direction: column;
   gap: 40px;
   padding: 174px 0;
 }
-.complete h2 {
+.complete h2, .withdrawal_comp h2 {
   text-align: center;
   padding-top: 88px;
   background: url(../../images/icons/check_icon.svg) no-repeat center 0/68px auto;
 }
-.complete h2 span {
+.complete h2 span, .withdrawal_comp h2 span {
   display: block;
 }
-.complete .sub_title {
+.complete .sub_title, .withdrawal_comp .sub_title {
   text-align: center;
-  font-size: 18px;
-  line-height: 1.5;
 }
-.complete .sub_text {
+.complete .sub_text, .withdrawal_comp .sub_text {
   text-align: center;
-  font-size: 16px;
-  line-height: 1.5;
 }
-.complete .by_login {
+.complete .by_login, .withdrawal_comp .by_login {
   margin: 0 auto;
+}
+
+.withdrawal_comp .inner {
+  gap: 4px;
+}
+.withdrawal_comp .sub_title {
+  margin-bottom: 40px;
+}
+.withdrawal_comp .sub_text {
+  margin-bottom: 40px;
 }
 
 /*@media screen and (max-width: 1024px) {

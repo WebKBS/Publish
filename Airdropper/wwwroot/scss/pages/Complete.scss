@@ -4,7 +4,7 @@
 @import "../layout/_footer.scss";
 @import "../components/_buttons.scss";
 
-.complete {
+.complete, .withdrawal_comp {
 
     .inner {
         display: flex;
@@ -25,20 +25,28 @@
 
     .sub_title {
         text-align: center;
-        font-size: 18px;
-        line-height: 1.5;
     }
 
     .sub_text {
         text-align: center;
-        font-size: 16px;
-        line-height: 1.5;
     }
 
     .by_login {
         margin: 0 auto;
+    }
+}
 
-        
+.withdrawal_comp {
+    .inner {
+        gap: 4px;
+    }
+
+    .sub_title {
+        margin-bottom: 40px;
+    }
+
+    .sub_text {
+        margin-bottom: 40px;
     }
 }
 

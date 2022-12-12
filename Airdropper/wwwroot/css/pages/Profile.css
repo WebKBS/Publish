@@ -437,13 +437,16 @@ button[type=submit].next_btn:hover {
   text-align: center;
 }
 
-.modal_confirm_btn {
+.modal_confirm_btn, .modal_close_btn {
   padding: 13px 0;
   width: 180px;
   border-radius: 8px;
   color: #fff;
   background: #1B1B1B;
   text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "suit_medium";
 }
 
 .send_btn {
@@ -456,6 +459,17 @@ button[type=submit].next_btn:hover {
   border: 1px solid #2ECDFF;
   border-radius: 8px;
   text-align: center;
+}
+
+.download_btn {
+  width: 152px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #2ECDFF;
+  color: #2ECDFF;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "suit_medium";
 }
 
 .profile .inner {

@@ -3,44 +3,77 @@
 }
 
 
-<section class="cont1 payment_history">
+<section class="cont payment_history">
     <div class="inner">
-        <h2>결제내역 관리</h2>
+        <h2 class="h2 suit_m">사용내역</h2>
         <div class="table_wrap">
-            <table>
-                <thead>
+            <table class="table_1">
+                <thead class="suit_r">
                     <tr>
                         <th>일시</th>
-                        <th>구매품목</th>
-                        <th>결제금액</th>
-                        <th>컬렉션명</th>
-                        <th>비고</th>
+                        <th>구분</th>
+                        <th>네트워크</th>
+                        <th>토큰형식</th>
+                        <th>토큰명</th>
+                        <th>스마트컨트랙트</th>
+                        <th>Tx 갯수</th>
+                        <th>Tx ID</th>
+                        <th>서비스 이용료</th>
+                        <th>보고서</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="suit_l color_white_2">
                     <tr>
-                        <td>2022.11.11 14:20</td>
-                        <td>이미지 생성 1만 개</td>
-                        <td>₩ 100,000</td>
-                        <td>Conmink</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>2022.11.01 12:00</td>
-                        <td>민팅 1만 개</td>
-                        <td>₩ 100,000</td>
-                        <td>Mink Star</td>
                         <td>
-                            <button type="button" class="cancel_btn">결제취소</button>
+                            <time datetime="2022-11-11">22.11.11</time>
+                            <time datetime="14:20">14:20</time>
+                        </td>
+                        <td>에어드롭</td>
+                        <td>Ethereum</td>
+                        <td>ERC20</td>
+                        <td>ABCD</td>
+                        <td><button type="button" class="contract">0x538437e64e851e73edd1bbb2d00526a3c830d31b</button></td>
+                        <td>9,999</td>
+                        <td><button type="button" class="tx_id color_theme">0x12e4a99d65fa91779905378b54bdd66f7b130de1f71354f78beb25618289f774</button></td>
+                        <td>
+                            <span class="price">0.3</span>
+                            <span class="unit">ETH</span>
+                        </td>
+                        <!-- on 클래스 추가시 display -->
+                        <td class="on">
+                            <button type="button" class="font_hover print_modal_btn">출력</button>
                         </td>
                     </tr>
+                    <tr>
+                        <td>
+                            <time datetime="2022-11-11">22.12.28</time>
+                            <time datetime="14:20">12:00</time>
+                        </td>
+                        <td>토큰발행</td>
+                        <td>Klaytn</td>
+                        <td>ERC20</td>
+                        <td>DFG</td>
+                        <td><button type="button" class="contract">0x538437e64e851e73edd1bbb2d00526a3c830d31b</button></td>
+                        <td>2,500</td>
+                        <td><button type="button" class="tx_id color_theme">0x12e4a99d65fa91779905378b54bdd66f7b130de1f71354f78beb25618289f774</button></td>
+                        <td>
+                            <span class="price">999.99</span>
+                            <span class="unit">Klay</span>
+                        </td>
+                        <!-- on 클래스 추가시 display -->
+                        <td>
+                            <button type="button" class="font_hover print_modal_btn">출력</button>
+                        </td>
+                    </tr>
+
+                    <!-- on 클래스 추가시 display -->
                     <tr class="no_data">
-                        <td colspan="5">결제 내역이 존재하지 않습니다. </td>
+                        <td colspan="10">결제 내역이 존재하지 않습니다. </td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <button type="button" class="back_btn" onclick="history.back()">이전으로</button>
+        <button type="button" class="back_btn button_160" onclick="history.back()">이전으로</button>
     </div>
 </section>
 
@@ -48,6 +81,75 @@
 
 
 
+@section Modals{
+    <!-- on 클래스 추가시 visible-->
+    <div class="modal print_modal">
+        <div class="inner">
+            <div class="content">
+                <div class="modal_header">
+                    <h3>
+                        <img src="~/images/logo_icon.svg" />
+                        <span class="body_1 suit_m">에어드롭 결과 보고서</span>
+                    </h3>
+                    <a href="#" download="" class="download_btn">Excel(CSV) 다운로드</a>
+                </div>
+                <div class="modal_body">
+                    <div class="table_wrap">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th>회원 ID</th>
+                                    <td>airdropper2022</td>
+                                </tr>
+                                <tr>
+                                    <th>날짜</th>
+                                    <td>2022.11.27</td>
+                                </tr>
+                                <tr>
+                                    <th>네트워크</th>
+                                    <td>Ethereum</td>
+                                </tr>
+                                <tr>
+                                    <th>토큰형식</th>
+                                    <td>ERC-20</td>
+                                </tr>
+                                <tr>
+                                    <th>토큰명</th>
+                                    <td>DRP</td>
+                                </tr>
+                                <tr>
+                                    <th>전송요청 수</th>
+                                    <td>6,500 건</td>
+                                </tr>
+                                <tr>
+                                    <th>토큰 수</th>
+                                    <td>2,000,000 개</td>
+                                </tr>
+                                <tr>
+                                    <th>가스비</th>
+                                    <td>1.54 ETH</td>
+                                </tr>
+                                <tr>
+                                    <th>서비스 이용료</th>
+                                    <td>0.7 ETH</td>
+                                </tr>
+                                <tr>
+                                    <th>거래 TxID</th>
+                                    <td>
+                                        <button type="button" class="tx_id color_theme">0x12e4a99d65fa91779905378b54bdd66f7b130de1f71354f78beb25618289f774</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal_footer">
+                    <button type="button" class="modal_close_btn">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
 
 
 
@@ -56,7 +158,27 @@
 
 
 @section Heads{
-    <link rel="stylesheet" href="~/css/ChangeHeader.css" />
-    <link rel="stylesheet" href="~/css/MyInfoCommon.css" />
-    <link rel="stylesheet" href="~/css/PaymentHistory.css" />
+    <link rel="stylesheet" href="~/css/pages/PaymentHistory.css" />
 }
+
+
+<script>
+
+    window.addEventListener('DOMContentLoaded', () => {
+        const modalOpenBtn = document.querySelectorAll('.print_modal_btn');
+        modalOpenBtn.forEach(event => {
+            event.addEventListener('click', () => {
+                document.querySelector('.print_modal').classList.add('on');
+            })
+        })
+
+
+        const printCloseBtn = document.querySelector('.modal_close_btn');
+        printCloseBtn.addEventListener('click', (e) => {
+            console.log(e)
+            e.target.closest('.modal').classList.remove('on');
+        })
+    })
+
+</script>
+

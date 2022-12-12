@@ -80,13 +80,20 @@
 
 // title
 .h1 {
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .h2 {
-    font-size: 18px;
+    font-size: 22px;
 }
 
+.h3 {
+    font-size: 20px;
+}
+
+.h4 {
+    font-size: 18px;
+}
 
 // header font
 .navi_1 {
@@ -112,6 +119,10 @@
     font-size: 13px;
 }
 
+.table_1{
+    font-size: 14px;
+}
+
 
 // button
 .button_2 {
@@ -127,20 +138,20 @@
 
 // font color
 .color_theme {
-    color: $theme;
+    color: $theme !important;
 }
 
 .color_white_2 {
-    color: $white2;
+    color: $white2 !important;
 }
 
 .color_white_3 {
-    color: $white3;
+    color: $white3 !important;
 }
 
 
 .color_alert {
-    color: $alert;
+    color: $alert !important;
 }
 
 
@@ -148,6 +159,6 @@
 
     &:hover {
         transition: color .2s;
-        color: $theme;
+        color: $theme !important;
     }
 }

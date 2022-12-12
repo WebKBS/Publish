@@ -1,55 +1,46 @@
 ﻿@charset "UTF-8";
-@import "./Setting.scss";
-
+@import "../base/_setting.scss";
+@import "../layout/_header.scss";
+@import "../layout/_footer.scss";
+@import "../components/_inputs.scss";
+@import "../components/_buttons.scss";
 
 .withdrawal {
-    h2 {
-        margin-bottom: 12px;
+    .inner {
+        max-width: 668px;
+        margin: 0 auto;
+        padding: 80px 0;
     }
-
 
     .sub_title {
-        font-size: 18px;
-        line-height: 1.5;
-        font-family: $noto_medium;
-        margin-bottom: 60px;
-        color: $gray5;
+        margin-bottom: 40px;
     }
 
+
     .info_inner {
-        border: 1px solid $gray9;
         border-radius: 12px;
-        overflow: hidden;
         margin-bottom: 20px;
+        background: $black2;
     }
 
     .info_title {
-        padding: 16px 20px;
-        font-size: 16px;
-        line-height: 1.5;
-        font-family: $noto_medium;
+        padding: 10px 16px;
+        border-bottom: 1px solid $white6;
 
-        p{
+        p {
             word-break: keep-all;
         }
     }
 
     .info_text {
-        padding: 30px 20px;
-        background: $gray12;
+        padding: 20px;
 
         p {
-            font-size: 16px;
-            font-family: $noto_regular;
-            line-height: 1.5;
             word-break: keep-all;
 
             strong {
-                font-size: 16px;
-                line-height: 1.5;
-                font-family: $noto_medium;
-                color: $blue_main;
                 word-break: keep-all;
+                color: $theme;
             }
         }
     }
@@ -62,7 +53,7 @@
 
             + label {
                 display: inline-flex;
-                gap: 12px;
+                gap: 8px;
                 cursor: pointer;
 
                 img {
@@ -73,8 +64,8 @@
                     display: none;
                 }
 
-                span{
-                    color: $gray5;
+                span {
+                    color: $white2;
                 }
             }
 
@@ -88,24 +79,23 @@
                     img:nth-child(2) {
                         display: block;
                     }
+
+                    span {
+                        color: $theme;
+                    }
                 }
             }
         }
     }
 
+    .button_wrap {
+        display: flex;
+        gap: 8px;
+    }
+
     .withdrawal_btn {
-        width: 200px;
-        font-size: 16px;
-        line-height: 1.5;
-        font-family: $noto_medium;
-        border-radius: 8px;
-        padding: 16px 0;
-        background: $blue_main;
-        color: #fff;
 
         &[disabled] {
-            background: $gray9;
-            color: $gray5;
         }
     }
 }

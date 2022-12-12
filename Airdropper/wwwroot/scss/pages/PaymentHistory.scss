@@ -1,16 +1,25 @@
 ﻿@charset "UTF-8";
-@import "./Setting.scss";
+@import "../base/_setting.scss";
+@import "../layout/_header.scss";
+@import "../layout/_footer.scss";
+@import "../components/_inputs.scss";
+@import "../components/_buttons.scss";
 
 .payment_history {
 
     .inner {
-        max-width: 880px;
+        max-width: 976px;
+        margin: 0 auto;
+        padding: 80px 0;
+    }
+
+    h2 {
+        margin-bottom: 40px;
     }
 
     .table_wrap {
-        overflow-x: auto;
-        max-width: 880px;
-        border: 1px solid $gray9;
+        overflow: hidden;
+        background: $black3;
         border-radius: 8px;
         padding-bottom: 20px;
         min-height: 236px;
@@ -18,62 +27,161 @@
     }
 
     table {
-        width: 838px;
+        width: 100%;
         text-align: center;
     }
 
     thead {
-        background: $theme2;
+        border-bottom: 1px solid $white7;
     }
 
     th {
-        width: 20%;
-        line-height: 1.5;
-        font-family: $noto_medium;
-        font-size: 14px;
-        padding: 13px 0;
-    }
-
-    tbody {
-        tr:nth-of-type(even) {
-            background: $gray12;
-        }
+        padding: 12px;
+        text-align: center;
     }
 
     td {
-        width: 20%;
-        line-height: 1.5;
-        font-size: 14px;
-        font-family: $noto_regular;
-        padding: 13px 0;
+        padding: 12px;
 
+        time:nth-child(1) {
+            margin-right: 4px;
+        }
 
-        .cancel_btn {
-            color: $blue_main;
-            text-align: center;
+        button {
+            color: inherit;
             margin: 0 auto;
         }
+
+        &.on {
+            button {
+                color: $white;
+            }
+        }
+    }
+
+    .contract {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 120px;
+        color: inherit;
+    }
+
+    .tx_id {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 120px;
     }
 
     .no_data {
+        display: none;
+
         td {
             padding: 72px 0;
         }
+
+
+
+        &.on {
+            display: block;
+        }
+    }
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    visibility: hidden;
+
+    &.on{
+        visibility: visible;
     }
 
-    .back_btn {
-        max-width: 200px;
-        border: 1px solid $blue_main;
+    .inner {
         width: 100%;
-        border-radius: 8px;
-        padding: 16px;
-        color: $blue_main;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-        &:hover {
-            transition: var(--hover-transition);
-            background: $blue_main;
-            color: #fff;
+    .content {
+        max-width: 568px;
+        width: 100%;
+        background: $gray2;
+        box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+        border-radius: 16px;
+        padding: 20px 30px;
+    }
+
+    .modal_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+
+        h3 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            img {
+                width: 40px;
+            }
         }
+    }
+
+    .modal_body {
+        padding: 10px 0;
+
+        .table_wrap {
+            background: $black2;
+            border-radius: 16px;
+            padding: 10px;
+        }
+
+        .table {
+            width: 100%;
+
+            tbody {
+                width: 100%;
+            }
+
+            th {
+                font-size: 14px;
+                font-family: $suit_regular;
+                min-width: 100px;
+                text-align: left;
+                padding: 10px 16px;
+            }
+
+            td {
+                width: calc(100% - 100px);
+                font-size: 14px;
+                font-family: $suit_light;
+                color: $white2;
+                text-align: center;
+                padding: 10px 16px;
+            }
+
+            .tx_id {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                width: 300px;
+            }
+        }
+    }
+
+    .modal_footer{
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
     }
 }
 

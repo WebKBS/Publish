@@ -63,10 +63,18 @@
 }
 
 .h1 {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .h2 {
+  font-size: 22px;
+}
+
+.h3 {
+  font-size: 20px;
+}
+
+.h4 {
   font-size: 18px;
 }
 
@@ -90,6 +98,10 @@
   font-size: 13px;
 }
 
+.table_1 {
+  font-size: 14px;
+}
+
 .button_2 {
   font-size: 14px;
 }
@@ -99,24 +111,24 @@
 }
 
 .color_theme {
-  color: #2ECDFF;
+  color: #2ECDFF !important;
 }
 
 .color_white_2 {
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.55) !important;
 }
 
 .color_white_3 {
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.35) !important;
 }
 
 .color_alert {
-  color: #FF962E;
+  color: #FF962E !important;
 }
 
 .font_hover:hover {
   transition: color 0.2s;
-  color: #2ECDFF;
+  color: #2ECDFF !important;
 }
 
 /*# sourceMappingURL=font.css.map */

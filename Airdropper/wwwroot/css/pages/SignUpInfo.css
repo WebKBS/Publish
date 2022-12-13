@@ -245,7 +245,7 @@
 */
 /* font color */
 /* family */
-input {
+input:not([type=checkbox]) {
   padding: 10px 16px;
   font-size: 14px;
   line-height: 1.5;
@@ -258,28 +258,42 @@ input {
   border-radius: 8px;
   flex: 1;
 }
-input::placeholder {
+input:not([type=checkbox])::placeholder {
   color: rgba(255, 255, 255, 0.25);
 }
-input:focus {
+input:not([type=checkbox]):focus {
   outline: 0;
   border-color: #fff;
 }
-input:-webkit-autofill {
+input:not([type=checkbox]):-webkit-autofill {
   -webkit-box-shadow: 0 0 0 100px #494949 inset;
   -webkit-text-fill-color: #fff;
 }
-input[type=email] {
+input:not([type=checkbox])[type=email] {
   max-width: 100%;
   width: 100%;
 }
-input[type=password] {
+input:not([type=checkbox])[type=password] {
   max-width: 100%;
   width: 100%;
 }
-input[type=text] {
+input:not([type=checkbox])[type=text] {
   max-width: 100%;
   width: 100%;
+}
+
+input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+  background: #464646 url(../../images/icons/checkbox_icon.svg) no-repeat center center/auto 7px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=checkbox]:checked {
+  background: #2ECDFF url(../../images/icons/checkbox_icon.svg) no-repeat center center/auto 7px;
+}
+input[type=checkbox] + label {
+  cursor: pointer;
 }
 
 .check_btn {

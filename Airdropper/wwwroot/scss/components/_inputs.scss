@@ -1,7 +1,7 @@
 ﻿@charset "UTF-8";
 @import "../base/_setting.scss";
 
-input {
+input:not([type=checkbox]) {
     padding: 10px 16px;
     font-size: 14px;
     line-height: 1.5;
@@ -44,6 +44,22 @@ input {
     }
 }
 
+input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+    background: $gray3 url(../../images/icons/checkbox_icon.svg) no-repeat center center / auto 7px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:checked {
+        background: $theme url(../../images/icons/checkbox_icon.svg) no-repeat center center / auto 7px;
+    }
+
+    & + label{
+        cursor: pointer;
+    }
+}
+
 
 .check_btn {
     display: block;
@@ -51,7 +67,7 @@ input {
     height: 24px;
     background: url(../../images/icons/check-mark2-off.svg) no-repeat center center / auto 20px;
 }
-   
+
 
 .auto_label {
     cursor: pointer;

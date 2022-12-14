@@ -238,14 +238,83 @@
     })
 
 
-    // 체크박스
-    const checkBtn = document.querySelectorAll('input[type=checkbox]');
-    
-    
+                    // 체크박스
+                    //const checkBtn = document.querySelectorAll('input[type=checkbox]');
+                    //const paymentBtn = document.querySelector('.payment_btn');
+
+                    //const updateCheck = () => {
+                    //    let checkCount = 0;
+                    //    for (let check of checkBtn) {
+                    //        if (check.checked) {
+                    //            checkCount++
+                    //        }
+                    //        console.log(checkCount)
+                    //    }
+                    //    if(checkCount === checkBtn.length){
+                    //        paymentBtn.disabled = false;
+                    //    }else{
+                    //        paymentBtn.disabled = true;
+                    //    }
+                    //}
+
+                    //for (let check of checkBtn) {
+                    //    check.addEventListener('click', updateCheck)
+                    //}
+
 </script>
 
 
+@section Modals{
+    <!-- on 추가시 display -->
+    <div class="modal connection">
+        <!--data-modal-close 모달 닫기 -->
+        <button type="button" class="modal_x_btn" data-modal-close>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+        <div class="inner">
+            <h4 class="h1 jost_m color_theme">Wallet Connection</h4>
+            <p class="sub_title body_2 suit_m">
+                NFT 생성 시 사용하는 블록체인 네트워크에 해당하는<br />
+                지갑을 선택해주세요.
+            </p>
+            <ul>
+                <li>
+                    <button type="button">
+                        <img src="~/images/icons/metamask.png" alt="metamask" />
+                        <span>Connect Metamask</span>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <img src="~/images/icons/kaikas.png" alt="kaikas" />
+                        <span>Connect KaiKas</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
 
+    <div class="modal issuing">
+        <!--data-modal-close 모달 닫기 -->
+        <div class="inner">
+            <h4 class="h1 jost_m color_theme">ISSUING</h4>
+            <p class="sub_title body_2 suit_m">
+                현재 연결된 지갑 주소는<br />
+                <strong class="color_theme">0x7dE7bAa83766D413D7fE382e14c72178CC5695a3</strong><br />
+                입니다. 이 주소를 오너지갑으로 지정하신다면 ‘발행하기’를 클릭하시고, 다른 지갑주소로 오너지갑을 지정하고자 하시면 화면을 닫고 해당 지갑을 연결하시기 바랍니다.
+            </p>
+            <ul>
+                <li>
+                    <button type="button" class="button_140">발행하기</button>
+                </li>
+                <li>
+                    <button type="button" class="button_140" data-modal-close>닫기</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+}
 @section Heads{
     <link rel="stylesheet" href="~/css/pages/Issuing.css" />
 }

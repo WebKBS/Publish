@@ -22,6 +22,7 @@
 
     <!-- JS -->
     <script src="~/js/common.js" defer></script>
+    @*<script src="~/js/windowCheck.js" async></script>*@
 
     @await RenderSectionAsync("Heads", required: false)
 </head>
@@ -93,12 +94,12 @@
                         <li class="on"><a href="/Sign/SignUp" class="sign_btn sign_up_btn">회원가입</a></li>
                         <li><a href="/" class="sign_btn log_out_btn">로그아웃</a></li>
                     </ul>
- @*                   <div class="mobile_menu">
-                        <button type="button" class="side_open_btn">
-                            <span class="line"></span>
-                            <span class="line"></span>
-                            <span class="line"></span>
-                        </button>
+                    @*                   <div class="mobile_menu">
+                    <button type="button" class="side_open_btn">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    </button>
                     </div>*@
                 </div>
 
@@ -111,101 +112,30 @@
         </main>
         <footer class="footer">
             <div class="inner">
-                <div class="box box1">
-                    <ul>
-                        <li>
-                            <p class="head">NFT MINTER</p>
-                        </li>
-                        <li>
-                            <a href="https://www.pentabreed.com/" target="_blank">COMPANY</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <p class="head">PRODUCT</p>
-                        </li>
-                        <li>
-                            <a href="/Generator/Main">IMAGE GENERATOR</a>
-                        </li>
-                        <li>
-                            <a href="/Minting/Main">MINTING</a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <p class="head">RESOURCES</p>
-                        </li>
-                        <li>
-                            <a href="#">GUIDE BOOK</a>
-                        </li>
-                        <li>
-                            <a href="/Notice/FAQ">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="/Notice/Notice">NEWSLETTER</a>
-                        </li>
-                        <li>
-                            <a href="http://www.gighub.kr/main" target="_blank">GIGHUB</a>
-                        </li>
-                    </ul>
+                <div class="img_wrap">
+                    <img src="~/images/logo_icon.svg" alt="Airdropper" />
                 </div>
-                <div class="box box2">
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <div>
-                                    <span class="value">
-                                        (주)펜타브리드
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    주소 :
-                                    <span class="value">서울특별시 서초구 서운로26길 9 펜타타워</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    대표이사 :
-                                    <span class="value">박태희, 김영진</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    사업자 등록번호 :
-                                    <span class="value">114-86-12129</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    통신판매업 신고:
-                                    <span class="value">2018-서울서초-0638</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    개인정보관리책임자 :
-                                    <span class="value">배제협</span>
-                                </div>
-                            </li>
-
-                            <!-- 고객센터 차후 추가 -->
-                            @*        <li>
-                            <div>
-                            고객센터 :
-                            <span class="value">02-000-0000</span>
-                            </div>
-                            </li>*@
-                        </ul>
+                <div class="f_info">
+                    <h2 class="body_2 suit_r">브이스트로 주식회사</h2>
+                    <address class="body_2 suit_r color_white_3">주소 : 서울특별시 강남구 도산대로25길 27 2층</address>
+                    <p class="body_2 suit_r color_white_3">
+                        <span>대표이사 김덕중</span>
+                        <span>사업자등록번호 : 758-87-00551</span>
+                    </p>
+                    <p class="body_2 suit_r color_white_3">
+                        <span>개인정보관리책임자: 황교찬</span>
+                        <span>통신판매업신고 : 2022-서울강남-06405</span>
+                    </p>
+                </div>
+                <div class="sub">
+                    <a href="#" class="telegram">
+                        <img src="~/images/icons/f_telegram.svg" />
+                    </a>
+                    <div class="notice body_2 suit_r color_white_3">
+                        <a href="#" class="body_2 suit_r color_white_3">개인정보취급방침</a>
+                        <a href="#" class="body_2 suit_r color_white_3">서비스 약관</a>
                     </div>
-                    <div class="right_box">
-                        <ul>
-                            <li><a href="#">개인정보취급방침</a></li>
-                            <li><a href="#">서비스 약관</a></li>
-                        </ul>
-                        <p class="copy">NFT MINTER Copyrights &copy; All rights reserved.</p>
-                    </div>
+                    <p class="copy body_2 suit_r color_white_3">NFT MINTOR Copyrights &copy; All rights reserved.</p>
                 </div>
             </div>
         </footer>
@@ -222,44 +152,44 @@
         console.log("%cAirDropper", "font-size: 120px; color: #cfffa5; border: 1px solid #fff; padding: 0 30px; border-radius: 12px;");
     </script>
     @*<div class="side_menu">
-        <button type="button" class="side_close_btn">
-            <span class="line"></span>
-            <span class="line"></span>
-        </button>
-        <nav class="side_gnb">
-            <ul>
-                <!-- on 클래스 추가시 a태그 컬러 -->
-                <li class="on">
-                    <a href="/">HOME</a>
-                </li>
-                <li>
-                    <a href="/Generator/Main">GENERATOR</a>
-                </li>
-                <li>
-                    <a href="/Minting/Main">MINTING</a>
-                </li>
-                <li>
-                    <a href="#" class="notice_btn">공지&문의</a>
-                    <ul class="side_sub_gnb">
-                        <li>
-                            <a href="/Notice/Notice">공지사항</a>
-                        </li>
-                        <li>
-                            <a href="/Notice/FAQ">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="/Notice/Contact">문의하기</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <div class="side_sign_wrap">
-            <ul>
-                <li class="sign_in on"><a href="/Sign/Login">로그인</a></li>
-                <li class="sign_up"><a href="/Sign/SignUp">회원가입</a></li>
-            </ul>
-        </div>
+    <button type="button" class="side_close_btn">
+    <span class="line"></span>
+    <span class="line"></span>
+    </button>
+    <nav class="side_gnb">
+    <ul>
+    <!-- on 클래스 추가시 a태그 컬러 -->
+    <li class="on">
+    <a href="/">HOME</a>
+    </li>
+    <li>
+    <a href="/Generator/Main">GENERATOR</a>
+    </li>
+    <li>
+    <a href="/Minting/Main">MINTING</a>
+    </li>
+    <li>
+    <a href="#" class="notice_btn">공지&문의</a>
+    <ul class="side_sub_gnb">
+    <li>
+    <a href="/Notice/Notice">공지사항</a>
+    </li>
+    <li>
+    <a href="/Notice/FAQ">FAQ</a>
+    </li>
+    <li>
+    <a href="/Notice/Contact">문의하기</a>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </nav>
+    <div class="side_sign_wrap">
+    <ul>
+    <li class="sign_in on"><a href="/Sign/Login">로그인</a></li>
+    <li class="sign_up"><a href="/Sign/SignUp">회원가입</a></li>
+    </ul>
+    </div>
     </div>*@
 </body>
 </html>

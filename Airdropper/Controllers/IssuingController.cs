@@ -8,5 +8,10 @@ namespace Airdropper.Controllers
         {
             return View();
         }
+
+        public IActionResult Complete()
+        {
+            return View();
+        }
     }
 }

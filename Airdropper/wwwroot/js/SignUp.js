@@ -77,7 +77,7 @@ detailViews.forEach(e => {
         modal.classList.add('on');
     })
 })
-modalCloseBtn.addEventListener('click', (e) => {
-    e.currentTarget.closest('.modal').classList.remove('on');
-})
+//modalCloseBtn.addEventListener('click', (e) => {
+//    e.currentTarget.closest('.modal').classList.remove('on');
+//})
 

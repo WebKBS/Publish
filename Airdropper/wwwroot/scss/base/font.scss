@@ -30,25 +30,25 @@
 
 // Suit
 @font-face {
-    src: url(../../font/suit/SUIT-Bold.otf) format('opentype');
+    src: url(../../font/suit/SUIT-Bold.woff2) format('woff2');
     font-family: $suit_bold;
     font-display: swap;
 }
 
 @font-face {
-    src: url(../../font/suit/SUIT-Medium.otf) format('opentype');
+    src: url(../../font/suit/SUIT-Medium.woff2) format('woff2');
     font-family: $suit_medium;
     font-display: swap;
 }
 
 @font-face {
-    src: url(../../font/suit/SUIT-Regular.otf) format('opentype');
+    src: url(../../font/suit/SUIT-Regular.woff2) format('woff2');
     font-family: $suit_regular;
     font-display: swap;
 }
 
 @font-face {
-    src: url(../../font/suit/SUIT-Light.otf) format('opentype');
+    src: url(../../font/suit/SUIT-Light.woff2) format('woff2');
     font-family: $suit_light;
     font-display: swap;
 }

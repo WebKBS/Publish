@@ -3,126 +3,48 @@
 
 .footer {
     width: 100%;
-    max-width: 1920px;
     margin: 0 auto;
-    background: #222;
+    background: $black3;
 
     .inner {
         max-width: 1400px;
+        width: 100%;
         margin: 0 auto;
-        padding: 80px 20px 54px;
-    }
-
-    .box1 {
+        padding: 24px 20px;
         display: flex;
-        flex-wrap: wrap;
-        gap: 85px;
-        padding-bottom: 90px;
-        border-bottom: 1px solid rgb(85, 85, 85, 0.6);
+        gap: 60px;
+        align-items: center;
+    }
 
-        ul {
+    .img_wrap {
+        width: 60px;
+    }
+
+    h2 {
+        margin-bottom: 12px;
+    }
+
+    .f_info{
+        p{
             display: flex;
-            flex-direction: column;
-        }
-
-        li {
-            .head {
-                margin-bottom: 20px;
-                line-height: 24px;
-            }
-
-            a {
-                line-height: 24px;
-            }
+            gap: 16px;
         }
     }
 
-    .right_box {
+    .sub {
+        margin-left: auto;
         display: flex;
         flex-direction: column;
-        gap: 20px;
-
-        > ul {
-            display: flex;
-            gap: 30px;
-        }
-    }
-
-    .box2 {
-        padding: 28px 0 0;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 20px;
         align-items: flex-end;
 
-        .info {
-            > ul {
-                display: flex;
-                flex-direction: column;
-            }
-
-            li {
-                line-height: 24px;
-            }
+        .telegram{
+            width: 44px;
+            margin-bottom: 14px;
         }
 
-        .copy {
-            line-height: 24px;
-            word-break: keep-all;
-        }
-
-
-        li {
-            a {
-                line-height: 24px;
-            }
+        .notice{
+            display: flex;
+            gap: 20px;
         }
     }
 }
-
-/*
-@media screen and (max-width: 1024px) {
-    // 태블릿 푸터
-    .footer {
-        .box1 {
-            gap: 60px;
-
-            li {
-                .head {
-                }
-
-                a {
-                }
-            }
-        }
-
-        .box2 {
-            .copy {
-            }
-
-            li {
-                a {
-                }
-            }
-        }
-    }
-}*/
-
-
-/*@media screen and (max-width: 640px) {
-
-
-
-    .footer {
-        .right_box {
-            gap: 10px;
-        }
-
-        .box2 {
-            .copy {
-            }
-        }
-    }
-}
-*/

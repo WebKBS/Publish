@@ -185,7 +185,7 @@ button[type=submit] {
     text-align: center;
 }
 
-.download_btn{
+.download_btn {
     width: 152px;
     padding: 10px;
     border-radius: 8px;
@@ -194,4 +194,31 @@ button[type=submit] {
     font-size: 14px;
     line-height: 1.5;
     font-family: $suit_medium;
+}
+
+
+.modal_x_btn {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    .line {
+        display: block;
+        width: 20px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: $white2;
+
+        &:nth-child(1) {
+            transform: translate(-50%) rotate(-45deg);
+        }
+
+        &:nth-child(2) {
+            transform: translate(-50%) rotate(45deg);
+        }
+    }
 }

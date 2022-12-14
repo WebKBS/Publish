@@ -64,7 +64,7 @@ const toggleClassHandler = (button, target) => {
 
 
 /* 모바일 인지 아닌지 체크 */
-const mobileCheck = document.querySelectorAll('[data-isMobile=""]');
+/*const mobileCheck = document.querySelectorAll('[data-isMobile=""]');
 let mobileReg = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i
 
 const checkEventListener = (e) => {
@@ -80,7 +80,7 @@ const checkEventListener = (e) => {
 for (mobile of mobileCheck) {
     mobile.addEventListener('click', checkEventListener);
 }
-
+*/
 
 /* 이메일 정규식 체크 */
 const EmailRegExp = (emailInput, success = null) => {
@@ -138,3 +138,18 @@ const removeClassList = (button, target) => {
         target.classList.remove('on');
     })
 }
+
+
+/* 모달 닫기 */
+const closeModal = () => {
+    const closeBtn = document.querySelectorAll('[data-modal-close]');
+    for (let btn of closeBtn) {
+        btn.addEventListener('click', (event) => {
+            const target = event.currentTarget;
+            target.closest('.modal').classList.remove('on');
+            console.log(target)
+        })
+    }
+
+}
+closeModal();

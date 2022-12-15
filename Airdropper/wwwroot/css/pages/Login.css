@@ -372,6 +372,12 @@ button[type=submit].next_btn:hover {
   color: #fff;
 }
 
+.button_120 {
+  width: 120px;
+  padding: 10px 0;
+  background: url(../../images/icons/right_arrow.svg) no-repeat right 12px center/20px auto;
+}
+
 .button_200 {
   width: 200px;
   padding: 13px 0;

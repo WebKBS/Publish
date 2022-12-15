@@ -42,12 +42,20 @@
   font-family: "suit_light";
   font-display: swap;
 }
+.jost_b {
+  font-family: "jost_bold";
+}
+
 .jost_m {
   font-family: "jost_medium";
 }
 
 .jost_r {
   font-family: "jost_regular";
+}
+
+.suit_b {
+  font-family: "suit_bold";
 }
 
 .suit_m {
@@ -63,23 +71,31 @@
 }
 
 .h1 {
-  font-size: 24px;
+  font-size: 38px;
 }
 
 .h2 {
-  font-size: 22px;
+  font-size: 26px;
 }
 
 .h3 {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .h4 {
+  font-size: 22px;
+}
+
+.h5 {
+  font-size: 20px;
+}
+
+.h6 {
   font-size: 18px;
 }
 
 .navi_1 {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .subtitle_1 {

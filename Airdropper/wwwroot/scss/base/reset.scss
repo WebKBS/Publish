@@ -9,7 +9,7 @@
 
 html,
 body {
-    touch-action: pan-y;
+    /*touch-action: pan-y;*/
     background: $background;
 
     &.on {
@@ -117,7 +117,6 @@ body {
     line-height: 1.5;
     word-break: keep-all;
     color: #fff;
-    background: #fff;
     font-family: $suit_regular;
     letter-spacing: normal;
 }

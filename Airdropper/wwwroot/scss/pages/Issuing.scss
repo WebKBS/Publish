@@ -115,7 +115,7 @@
             }
 
             button {
-                color: $white4;
+                color: $white3;
             }
         }
 
@@ -216,6 +216,7 @@
     transform: translate(-50%, -50%);
     max-width: 480px;
     width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 
     &.on {
         display: block;

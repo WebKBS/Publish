@@ -65,6 +65,10 @@
   color: #fff;
   display: block;
 }
+.header .gnb li a:hover {
+  color: #2ECDFF;
+  transition: var(--hover-transition);
+}
 .header .gnb li:hover .sub_gnb {
   display: block;
 }
@@ -251,35 +255,21 @@ input[type=checkbox] + label {
 
 .sign_btn {
   display: block;
-  width: 92px;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 30px;
-  text-align: center;
   transition: var(--hover-transition);
-  padding: 8px 0;
   font-size: 14px;
   line-height: 1.5;
   font-family: "suit_medium";
 }
 .sign_btn.sign_up_btn {
-  border-color: #2ECDFF;
   color: #2ECDFF;
 }
-.sign_btn.sign_up_btn:hover {
-  color: #212121;
-  background: #2ECDFF;
-}
 .sign_btn.sign_in_btn {
-  border-color: rgba(255, 255, 255, 0.55);
   color: rgba(255, 255, 255, 0.55);
 }
 .sign_btn.sign_in_btn:hover {
-  color: #212121;
-  background: rgba(255, 255, 255, 0.55);
+  color: #2ECDFF;
 }
 .sign_btn.log_out_btn {
-  border-color: rgba(255, 255, 255, 0.55);
   color: rgba(255, 255, 255, 0.55);
 }
 .sign_btn.log_out_btn:hover {
@@ -325,7 +315,7 @@ button[type=submit].next_btn:hover {
   border: 1px solid rgba(255, 255, 255, 0.15);
   font-size: 14px;
   line-height: 1.5;
-  font-family: "suit_regular";
+  font-family: "suit_medium";
   color: #fff;
   background: #1B1B1B;
   text-align: center;
@@ -344,7 +334,7 @@ button[type=submit].next_btn:hover {
   border: 1px solid rgba(255, 255, 255, 0.15);
   font-size: 14px;
   line-height: 1.5;
-  font-family: "suit_regular";
+  font-family: "suit_medium";
   background: #1B1B1B;
 }
 .button_160:hover {
@@ -363,19 +353,14 @@ button[type=submit].next_btn:hover {
   border: 1px solid rgba(255, 255, 255, 0.15);
   font-size: 14px;
   line-height: 1.5;
-  font-family: "suit_regular";
-  color: rgba(255, 255, 255, 0.55);
+  font-family: "suit_medium";
+  color: #fff;
   background: #1B1B1B;
   text-align: center;
 }
 .button_112:hover {
-  color: #fff;
-}
-
-.button_120 {
-  width: 120px;
-  padding: 10px 0;
-  background: url(../../images/icons/right_arrow.svg) no-repeat right 12px center/20px auto;
+  border-color: #fff;
+  transition: var(--hover-transition);
 }
 
 .button_200 {
@@ -385,7 +370,7 @@ button[type=submit].next_btn:hover {
   border: 1px solid rgba(255, 255, 255, 0.15);
   font-size: 14px;
   line-height: 1.5;
-  font-family: "suit_regular";
+  font-family: "suit_medium";
   color: #fff;
   background: #1B1B1B;
   text-align: center;
@@ -447,6 +432,23 @@ button[type=submit].next_btn:hover {
 }
 .modal_x_btn .line:nth-child(2) {
   transform: translate(-50%) rotate(45deg);
+}
+
+.token_btn {
+  width: 120px;
+  padding: 10px 0;
+  background: url(../../images/icons/right_arrow.svg) no-repeat right 12px center/20px auto;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  text-align: left;
+  padding-left: 18px;
+  font-size: 14px;
+  font-family: "suit_medium";
+}
+.token_btn:hover {
+  color: #1B1B1B;
+  background: #fff url(../../images/icons/next_btn.svg) no-repeat right 12px center/20px auto;
+  transition: var(--hover-transition);
 }
 
 .profile .inner {

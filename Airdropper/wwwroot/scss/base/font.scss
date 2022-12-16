@@ -9,6 +9,12 @@
 }
 
 @font-face {
+    src: url(../../font/Jost/Jost-SemiBold.ttf) format('TrueType');
+    font-family: $jost_semibold;
+    font-display: swap;
+}
+
+@font-face {
     src: url(../../font/Jost/Jost-Medium.ttf) format('TrueType');
     font-family: $jost_medium;
     font-display: swap;
@@ -32,6 +38,12 @@
 @font-face {
     src: url(../../font/suit/SUIT-Bold.woff2) format('woff2');
     font-family: $suit_bold;
+    font-display: swap;
+}
+
+@font-face {
+    src: url(../../font/suit/SUIT-SemiBold.woff2) format('woff2');
+    font-family: $suit_semibold;
     font-display: swap;
 }
 
@@ -61,6 +73,11 @@
     font-family: $jost_bold;
 }
 
+.jost_sb {
+    font-family: $jost_semibold;
+}
+
+
 .jost_m {
     font-family: $jost_medium;
 }
@@ -71,6 +88,10 @@
 
 .suit_b {
     font-family: $suit_bold;
+}
+
+.suit_sb {
+    font-family: $suit_semibold;
 }
 
 .suit_m {
@@ -89,14 +110,17 @@
 // title
 .h1 {
     font-size: 38px;
+    line-height: 1.3;
 }
 
 .h2 {
     font-size: 26px;
+    line-height: 1.3;
 }
 
 .h3 {
     font-size: 24px;
+    line-height: 1.3;
 }
 
 .h4 {
@@ -122,8 +146,20 @@
     font-size: 24px;
 }
 
+.subtitle_3 {
+    font-size: 18px;
+}
+
+.subtitle_4 {
+    font-size: 16px;
+}
+
+.subtitle_5 {
+    font-size: 16px;
+}
+
 // body
-.body_1{
+.body_1 {
     font-size: 16px;
 }
 
@@ -135,7 +171,7 @@
     font-size: 13px;
 }
 
-.table_1{
+.table_1 {
     font-size: 14px;
 }
 
@@ -147,7 +183,7 @@
 
 // caption
 
-.caption_2{
+.caption_2 {
     font-size: 12px;
 }
 

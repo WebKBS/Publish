@@ -22,12 +22,14 @@ function LoadingScreen(text = null) {
     color: #fff;
     font-size: 1.2rem;
     font-family: inherit;
+    white-space: pre;
+    text-align: center;
+    line-height: 1.5;
+
     `;
 
     if (text === null) (document.getElementById('LoadingText').textContent = '')
     else (document.getElementById('LoadingText').textContent = text);
-
-
 }
 
 function UnLoadingScreen() {

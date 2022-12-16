@@ -56,6 +56,11 @@
             a {
                 color: #fff;
                 display: block;
+
+                &:hover{
+                    color: $theme;
+                    transition: var(--hover-transition);
+                }
             }
 
 

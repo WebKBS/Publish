@@ -234,6 +234,14 @@ input[type=checkbox] + label {
   cursor: pointer;
 }
 
+input[readonly] {
+  background: #1B1B1B;
+  color: rgba(255, 255, 255, 0.55);
+}
+input[readonly]:focus {
+  border-color: transparent;
+}
+
 .check_btn {
   display: block;
   width: 24px;
@@ -362,6 +370,24 @@ button[type=submit].next_btn:hover {
   border-color: #fff;
   transition: var(--hover-transition);
 }
+.button_112[disabled] {
+  color: rgba(255, 255, 255, 0.25) !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+}
+.button_112.error {
+  border-color: #FF962E;
+  color: #FF962E;
+}
+
+.button_180 {
+  width: 180px;
+  padding: 13px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "suit_medium";
+  background: #1B1B1B;
+  border-radius: 8px;
+}
 
 .button_200 {
   width: 200px;
@@ -449,6 +475,65 @@ button[type=submit].next_btn:hover {
   color: #1B1B1B;
   background: #fff url(../../images/icons/next_btn.svg) no-repeat right 12px center/20px auto;
   transition: var(--hover-transition);
+}
+
+.table_nav {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+.table_nav > a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-size: 20px auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #1B1B1B;
+  border-radius: 8px;
+}
+.table_nav > a:nth-of-type(1) {
+  background-image: url(../../images/icons/all_prev.svg);
+}
+.table_nav > a:nth-of-type(1).on {
+  background-image: url(../../images/icons/all_prev_on.svg);
+}
+.table_nav > a:nth-of-type(2) {
+  background-image: url(../../images/icons/prev.svg);
+}
+.table_nav > a:nth-of-type(2).on {
+  background-image: url(../../images/icons/prev_on.svg);
+}
+.table_nav > a:nth-of-type(3) {
+  background-image: url(../../images/icons/next.svg);
+}
+.table_nav > a:nth-of-type(3).on {
+  background-image: url(../../images/icons/next_on.svg);
+}
+.table_nav > a:nth-of-type(4) {
+  background-image: url(../../images/icons/all_next.svg);
+}
+.table_nav > a:nth-of-type(4).on {
+  background-image: url(../../images/icons/all_next_on.svg);
+}
+.table_nav ol {
+  display: flex;
+  background: #1B1B1B;
+  border-radius: 8px;
+  align-items: center;
+  padding: 6px 8px;
+}
+.table_nav ol li a {
+  display: block;
+  padding: 0 4px;
+  background: #1B1B1B;
+  font-size: 13px;
+  line-height: 1.5;
+  font-family: "suit_regular";
+  color: rgba(255, 255, 255, 0.55);
+}
+.table_nav ol li.on a {
+  color: #fff;
 }
 
 .edit_pw .inner, .edit_email .inner {

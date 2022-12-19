@@ -132,6 +132,26 @@ button[type=submit] {
         border-color: $white;
         transition: var(--hover-transition);
     }
+
+    &[disabled] {
+        color: $white4 !important;
+        border-color: $white4 !important;
+    }
+
+    &.error {
+        border-color: $alert;
+        color: $alert;
+    }
+}
+
+.button_180 {
+    width: 180px;
+    padding: 13px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: $suit_medium;
+    background: $black3;
+    border-radius: 8px;
 }
 
 .button_200 {
@@ -145,7 +165,6 @@ button[type=submit] {
     color: $white;
     background: $black3;
     text-align: center;
-
 }
 
 .modal_confirm_btn, .modal_close_btn {
@@ -226,5 +245,83 @@ button[type=submit] {
         color: $black3;
         background: $white url(../../images/icons/next_btn.svg) no-repeat right 12px center / 20px auto;
         transition: var(--hover-transition);
+    }
+}
+
+
+.table_nav {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+
+    > a {
+        display: block;
+        width: 32px;
+        height: 32px;
+        background-size: 20px auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: $black3;
+        border-radius: 8px;
+
+        &:nth-of-type(1) {
+            background-image: url(../../images/icons/all_prev.svg);
+
+            &.on {
+                background-image: url(../../images/icons/all_prev_on.svg);
+            }
+        }
+
+        &:nth-of-type(2) {
+            background-image: url(../../images/icons/prev.svg);
+
+            &.on {
+                background-image: url(../../images/icons/prev_on.svg);
+            }
+        }
+
+        &:nth-of-type(3) {
+            background-image: url(../../images/icons/next.svg);
+
+            &.on {
+                background-image: url(../../images/icons/next_on.svg);
+            }
+        }
+
+        &:nth-of-type(4) {
+            background-image: url(../../images/icons/all_next.svg);
+
+            &.on {
+                background-image: url(../../images/icons/all_next_on.svg);
+            }
+        }
+    }
+
+    ol {
+        display: flex;
+        background: $black3;
+        border-radius: 8px;
+        align-items: center;
+        padding: 6px 8px;
+
+
+        li {
+
+            a {
+                display: block;
+                padding: 0 4px;
+                background: $black3;
+                font-size: 13px;
+                line-height: 1.5;
+                font-family: $suit_regular;
+                color: $white2;
+            }
+
+            &.on {
+                a {
+                    color: $white;
+                }
+            }
+        }
     }
 }

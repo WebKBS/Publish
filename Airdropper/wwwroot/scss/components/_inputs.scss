@@ -60,6 +60,14 @@ input[type=checkbox] {
     }
 }
 
+input[readonly]{
+    background: $black3;
+    color: $white2;
+
+    &:focus{
+        border-color: transparent;
+    }
+}
 
 .check_btn {
     display: block;

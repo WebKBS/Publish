@@ -9,14 +9,10 @@ function windowSizeCheck() {
     const elementMsg = `<div id="windowCheckErrorMsg" style="text-align: center; padding: 100px 24px; word-break: keep-all">1024p이하 해상도 및 모바일에서는 접속 하실수 없습니다.
                 <br>
                 PC를 이용해주시길 바랍니다.
-                <br>
-                <span class="timer">10</span>초뒤 이전페이지로 이동합니다.
                 <br><br>
                 1024p or lower resolution and cannot be accessed on mobile devices.
                 <br>
                 Please use a PC.
-                <br>
-                Go to the previous page after <span class="timer">10</span> seconds.
                 </div>`
 
 
@@ -29,18 +25,18 @@ function windowSizeCheck() {
         alert('1024p이하 해상도 및 모바일에서는 접속 하실수 없습니다.\nPC를 이용해주시길 바랍니다.');
         document.body.insertAdjacentHTML('beforeend', elementMsg);
 
-        document.querySelectorAll('.timer').forEach(ev => {
-            let num = 10;
+        //document.querySelectorAll('.timer').forEach(ev => {
+        //    let num = 10;
 
-            const timer = setInterval(() => {
-                num -= 1;
-                ev.textContent = num;
-                if (num === 0) {
-                    window.location.href = history.back();
-                    clearInterval(timer);
-                }
-            }, 1000)
-        })
+        //    const timer = setInterval(() => {
+        //        num -= 1;
+        //        ev.textContent = num;
+        //        if (num === 0) {
+        //            window.location.href = history.back();
+        //            clearInterval(timer);
+        //        }
+        //    }, 1000)
+        //})
 
     } else {
         document.getElementById("wrap").style.display = "block";

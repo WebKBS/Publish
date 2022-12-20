@@ -1,190 +1,190 @@
 ﻿@charset "UTF-8";
-@import "Setting.scss";
+@import "../base/_setting.scss";
+@import "../layout/_header.scss";
+@import "../layout/_footer.scss";
+@import "../components/_inputs.scss";
+@import "../components/_buttons.scss";
 
 .notice {
 
-    .input_wrap {
-        display: flex;
-        gap: 12px;
-        margin-bottom: 30px;
-
-        select {
-            min-width: 92px;
-            border: 1px solid $gray9;
-            border-radius: 8px;
-            padding: 10px 32px 10px 16px;
-            color: #798CA8;
-            font-size: 14px;
-            line-height: 1.5;
-            font-family: $noto_regular;
-            background: url(../images/icons/drop_down.svg) no-repeat right 12px center / auto 20px;
-            cursor: pointer;
-
-            &:focus {
-                outline-width: 2px;
-                outline-color: $blue_main;
-            }
-        }
-
-        input[type=search] {
-            max-width: 300px;
-            border-radius: 8px;
-            border: 1px solid $gray9;
-            padding: 10px 42px 10px 16px;
-            font-size: 14px;
-            line-height: 1.5;
-            font-family: $noto_regular;
-            background: url(../images/icons/search.svg) no-repeat right 12px center / 20px auto;
-
-            &:focus {
-                outline-width: 2px;
-                outline-color: $blue_main;
-            }
-        }
+    .inner {
+        max-width: 840px;
+        margin: 0 auto;
+        padding: 80px 0;
     }
 
+    h2 {
+        margin-bottom: 40px;
+    }
 
-    .table_wrap {
-        border-top: 1px solid #222;
-        border-bottom: 1px solid #222;
-        max-height: 524px;
-        min-height: 242px;
+    .input_group {
+        display: flex;
+        gap: 8px;
         margin-bottom: 30px;
+    }
 
-        .table {
+    .select_wrap {
+        max-width: 96px;
+        height: 100%;
+        font-size: 14px;
+        font-family: $suit_regular;
+        border-radius: 8px;
+        background: $black3 url(../../images/icons/select_drop.svg) no-repeat right 12px center / 20px auto;
+        border: 1px solid transparent;
+
+        &.default {
+            .select {
+                color: $white;
+            }
+        }
+
+        button {
             width: 100%;
-        }
+            padding: 7px 24px 7px 14px;
+            height: 100%;
+            text-align: left;
+            display: flex;
+            gap: 4px;
+            align-items: center;
+            font-size: 14px;
+            line-height: 1.5;
 
-        thead {
-            border-bottom: 1px solid $gray8;
-
-            th {
-                padding: 11px 0;
-            }
-        }
-
-        tbody {
-
-            tr {
-                cursor: pointer;
-
-                &:hover {
-                    background: $gray12;
-                }
-            }
-
-            .no_data {
-                cursor: inherit;
-
-                &:hover {
-                    background: transparent;
-                }
-            }
-
-
-
-            td {
-                padding: 11px 16px;
-                text-align: center;
-                font-size: 14px;
-                line-height: 1.5;
-                font-family: $noto_regular;
-                box-sizing: border-box;
-            }
-
-            td:nth-child(1) {
-                min-width: 80px;
-            }
-
-            td:nth-child(2) {
-                text-align: left;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                overflow: hidden;
-                max-width: 240px;
-                min-width: 180px;
-            }
-
-            td:nth-child(3) {
-                max-width: 280px;
-                padding: 13px 16px;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                overflow: hidden;
-                color: $gray5;
-            }
-
-            td:nth-child(4) {
-                min-width: 120px;
-            }
-
-            td:nth-child(5) {
-                min-width: 120px;
+            img {
+                display: none;
+                width: auto;
+                height: 24px;
             }
         }
     }
 
-    .table_navi {
+    .search_wrap {
         position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        display: none;
+    }
 
-        &.on {
-            display: flex;
-        }
+    .select_list {
+        width: 96px;
+        position: relative;
+        height: 40px;
 
-        .navi_pages {
-            position: absolute;
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%);
-            font-size: 14px;
-            color: $blue_main;
-            line-height: 1.5;
-            font-family: $noto_regular;
+        ul {
             display: none;
-
-            span {
-                margin: 0 6px;
-            }
+            max-width: 96px;
+            width: 100%;
+            flex-direction: column;
+            background: $black3;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, .6);
+            overflow: hidden;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            max-height: 164px;
+            overflow-y: auto;
 
             &.on {
                 display: flex;
             }
         }
 
-
-        ul {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
         li {
+            width: 100%;
 
             button {
-                font-size: 16px;
-                line-height: 1.6;
-                font-family: $noto_medium;
-                color: $gray8;
-                padding: 10px;
+                width: 100%;
+                display: flex;
+                padding: 8px 14px;
+                align-items: center;
+                gap: 6px;
+
+                &:hover {
+                    background: $theme2;
+                }
+            }
+        }
+    }
+
+    .table_wrap {
+        background: $black3;
+        border-radius: 16px;
+        margin-bottom: 20px;
+        overflow: hidden;
+
+        .no_data {
+            text-align: center;
+        }
+
+        .table {
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        thead {
+
+            tr {
+                border-bottom: 1px solid $white4;
             }
 
-            &.on {
-                button {
-                    color: initial;
+            th {
+                font-size: 14px;
+                line-height: 1.5;
+                font-family: $suit_medium;
+                padding: 10px;
+
+                &:nth-child(1) {
+                    width: 10%;
+                }
+
+                &:nth-child(2) {
+                    width: 25%;
+                }
+
+                &:nth-child(3) {
+                    width: 35%;
+                }
+
+                &:nth-child(4) {
+                    width: 20%;
+                }
+
+                &:nth-child(5) {
+                    width: 10%;
                 }
             }
         }
 
-        .max_prev_btn,
-        .prev_btn,
-        .max_next_btn,
-        .next_btn {
-            button {
-                padding: 0;
+        tbody {
+            tr {
+                &:not(.no_data) {
+                    cursor: pointer;
+
+                    &:hover{
+                        background: $white5;
+                    }
+                }
+            }
+
+            td {
+                padding: 10px;
+                font-size: 14px;
+                line-height: 1.5;
+                color: $white2;
+                text-align: center;
+
+
+
+                &:nth-child(2) {
+                    text-align: left;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+
+                &:nth-child(3) {
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-align: left;
+                }
             }
         }
     }

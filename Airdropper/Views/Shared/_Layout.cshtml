@@ -47,25 +47,22 @@
                             <a href="/Airdrop/Airdrop" class="navi_1 jost_r">AIRDROP</a>
                         </li>
                         <li>
-                            <a href="/Minting/Main" class="navi_1 jost_r">PRICING</a>
+                            <a href="/Minting/Main" class="navi_1 jost_r" data-comming>PRICING</a>
                         </li>
                         <li>
-                            <a href="/Minting/Main" class="navi_1 jost_r">GUIDE</a>
+                            <a href="/Minting/Main" class="navi_1 jost_r" data-comming>GUIDE</a>
                         </li>
                         <li>
-                            <a href="/Minting/Main" class="navi_1 jost_r">NOTICE</a>
+                            <a href="/Notice/Notice" class="navi_1 jost_r">NOTICE</a>
                         </li>
                         <li>
                             <a href="#" class="navi_1 jost_r">SUPPORT</a>
                             <ul class="sub_gnb">
                                 <li>
-                                    <a href="/Notice/Notice">공지사항</a>
+                                    <a href="/Support/FAQ" class="navi_1 jost_l">FAQ</a>
                                 </li>
                                 <li>
-                                    <a href="/Notice/FAQ">FAQ</a>
-                                </li>
-                                <li>
-                                    <a href="/Notice/Contact">문의하기</a>
+                                    <a href="/Support/Contact" class="navi_1 jost_l">Contact</a>
                                 </li>
                             </ul>
                         </li>
@@ -151,6 +148,19 @@
     <script>
         console.log("%cAirDropper", "font-size: 120px; color: #cfffa5; border: 1px solid #fff; padding: 0 30px; border-radius: 12px;");
     </script>
+
+    <script>
+        const comming = document.querySelectorAll('[data-comming]');
+        comming.forEach(event => {
+            
+            event.addEventListener('click', (e) => {
+                e.preventDefault();
+                Swal.fire({ icon: 'warning', text: "준비중입니다." })
+            })
+        })
+    </script>
+
+
     @*<div class="side_menu">
     <button type="button" class="side_close_btn">
     <span class="line"></span>

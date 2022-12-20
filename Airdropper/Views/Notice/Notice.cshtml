@@ -3,15 +3,36 @@
 }
 
 
-<section class="cont1 notice">
+<section class="cont notice">
     <div class="inner">
-        <h2>공지사항</h2>
-        <div class="input_wrap">
-            <select>
-                <option>제목</option>
-                <option>내용</option>
-            </select>
-            <input type="search" />
+        <h2 class="subtitle_3 suit_m">공지사항</h2>
+        <div class="input_group">
+            <div class="select_list">
+                <!-- on 추가시 style 변경 -->
+                <div class="select_wrap default">
+                    <button type="button" id="selectChain">
+                        <img src="" />
+                        <span class="select">제목</span>
+                    </button>
+                </div>
+                <!-- on 추가시 display -->
+                <ul class="chain_list">
+                    <li>
+                        <button type="button">
+                            <span class="select">제목</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span class="select">내용</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="search_wrap">
+                <input type="search" placeholder="검색어를 입력하세요." />
+                <button type="button" class="search_btn"></button>
+            </div>
         </div>
         <div class="table_wrap">
             <table class="table">
@@ -25,8 +46,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @*<tr class="no_data"> <!-- 내용이 없을때 -->
-                    <td colspan="5">내용이 없습니다.</td>
+                    @*<tr class="no_data">
+                        <!-- 내용이 없을때 -->
+                        <td colspan="5">내용이 없습니다.</td>
                     </tr>*@
                     <tr onclick="location.href='/Notice/NoticeView'">
                         <td>
@@ -40,53 +62,70 @@
                 </tbody>
             </table>
         </div>
-        <!-- on 추가시 display -->
-        <div class="table_navi on">
-            <ul>
-                <li class="max_prev_btn">
-                    <button type="button">
-                        <img src="~/images/icons/table_max_prev.svg" alt="처음페이지 버튼" />
-                    </button>
-                </li>
-                <li class="prev_btn">
-                    <button type="button">
-                        <img src="~/images/icons/table_prev.svg" alt="이전페이지 버튼" />
-                    </button>
-                </li>
+        <div class="table_nav">
+            <!-- a태그 on 추가시 색 변경 -->
+            <a href="#" title="처음 페이지로"></a>
+            <a href="#" title="이전 페이지로"></a>
+            <ol>
+                <!-- li 태그 on 추가시 색 변경 -->
                 <li class="on">
-                    <button type="button">1</button>
+                    <a href="#">1</a>
                 </li>
                 <li>
-                    <button type="button">2</button>
+                    <a href="#">2</a>
                 </li>
                 <li>
-                    <button type="button">3</button>
+                    <a href="#">3</a>
                 </li>
-                <li class="max_next_btn">
-                    <button type="button">
-                        <img src="~/images/icons/table_next.svg" alt="다음페이지 버튼" />
-                    </button>
-                </li>
-                <li class="next_btn">
-                    <button type="button">
-                        <img src="~/images/icons/table_max_next.svg" alt="마지막페이지 버튼" />
-                    </button>
-                </li>
-            </ul>
-            <!-- on 추가시 display-->
-            <div class="navi_pages on">
-                총
-                <span>10</span>
-                페이지
-            </div>
+            </ol>
+            <a href="#" title="다음 페이지로" class="on"></a>
+            <a href="#" title="마지막 페이지로" class="on"></a>
         </div>
     </div>
 </section>
 
+<script>
+    const chainSelectBtn = document.getElementById('selectChain');
+
+    chainSelectBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openMenu(e);
+
+    });
 
 
+    const removeClassSelectList = () => {
+        document.querySelectorAll('.select_list > ul').forEach(ev => {
+            ev.classList.remove('on');
+        })
+    }
 
+    // select 열기
+    const openMenu = (event) => {
+        const target = event.currentTarget;
+        const nextElement = target.parentElement.nextElementSibling;
 
+        removeClassSelectList();
+
+        nextElement.classList.add('on');
+    }
+
+    // select 닫기
+    document.body.addEventListener('click', (e) => {
+        const target = e.target
+        const isSelect = target.classList.contains('select_list') || target.closest('.select_list');
+
+        if (isSelect) return;
+        removeClassSelectList();
+    })
+
+    document.querySelectorAll('.chain_list li button').forEach(ev => {
+        ev.addEventListener('click', (e) => {
+            removeClassSelectList();
+            chainSelectBtn.querySelector('.select').textContent = ev.children[0].textContent;
+        })
+    })
+</script>
 
 
 
@@ -95,7 +134,9 @@
 
 
 @section Heads{
-    <link rel="stylesheet" href="~/css/ChangeHeader.css" />
-    <link rel="stylesheet" href="~/css/NoticeCommon.css" />
-    <link rel="stylesheet" href="~/css/Notice.css" />
+    <link rel="stylesheet" href="~/css/pages/Notice.css" />
 }
+
+@section scripts{
+
+        }

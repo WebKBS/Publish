@@ -74,7 +74,7 @@
 }
 .header .sub_gnb {
   position: absolute;
-  top: 100px;
+  top: 76px;
   left: -20px;
   width: 170px;
   display: none;
@@ -253,6 +253,19 @@ input[readonly]:focus {
   cursor: pointer;
 }
 
+input[type=search] {
+  max-width: 300px;
+  border-radius: 8px;
+  padding: 8.5px 42px 8.5px 16px;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "suit_regular";
+}
+input[type=search]:focus {
+  outline-width: 2px;
+}
+
 /* font color */
 /* family */
 .my_page_btn {
@@ -316,6 +329,16 @@ button[type=submit].next_btn:hover {
   color: #1B1B1B;
 }
 
+.search_btn {
+  width: 20px;
+  height: 20px;
+  background: url(../../images/icons/search.svg) no-repeat center/20px auto;
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+}
+
 .button_140 {
   width: 140px;
   padding: 13px 0;
@@ -355,7 +378,7 @@ button[type=submit].next_btn:hover {
 }
 
 .button_112 {
-  width: 112px;
+  width: 112px !important;
   padding: 10px 0;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -536,16 +559,50 @@ button[type=submit].next_btn:hover {
   color: #fff;
 }
 
-.top_title_wrap {
-  background: #343434;
+.notice_prev_btn {
+  width: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 10px 16px 10px 38px;
+  background: #1B1B1B url(../../images/icons/prev_btn_white.svg) no-repeat left 10px center/20px auto;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "suit_medium";
 }
-.top_title_wrap .inner {
-  max-width: 976px;
-  padding: 20px 0;
-  margin: 0 auto;
+.notice_prev_btn:hover {
+  border-color: #fff;
+  transition: var(--hover-transition);
 }
-.top_title_wrap .sub_title {
-  word-break: keep-all;
+
+.notice_next_btn {
+  width: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 10px 38px 10px 16px;
+  background: #1B1B1B url(../../images/icons/next_btn_white.svg) no-repeat right 10px center/20px auto;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "suit_medium";
+}
+.notice_next_btn:hover {
+  border-color: #fff;
+  transition: var(--hover-transition);
+}
+
+.notice_home_btn {
+  width: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "suit_medium";
+  background: #1B1B1B;
+  text-align: center;
+  padding: 10px 0;
+}
+.notice_home_btn:hover {
+  border-color: #fff;
+  transition: var(--hover-transition);
 }
 
 .sign_up_info .inner {

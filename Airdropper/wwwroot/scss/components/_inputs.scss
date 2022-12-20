@@ -80,3 +80,19 @@ input[readonly]{
 .auto_label {
     cursor: pointer;
 }
+
+
+
+input[type=search] {
+    max-width: 300px;
+    border-radius: 8px;
+    padding: 8.5px 42px 8.5px 16px;
+    background: $white6;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: $suit_regular;
+    
+    &:focus {
+        outline-width: 2px;
+    }
+}

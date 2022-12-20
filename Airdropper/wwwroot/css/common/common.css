@@ -9,6 +9,75 @@
   background: #282828;
 }
 
+.top_title_wrap {
+  background: #343434;
+}
+.top_title_wrap .inner {
+  max-width: 976px;
+  padding: 20px 24px;
+  margin: 0 auto;
+}
+.top_title_wrap .sub_title {
+  word-break: keep-all;
+}
+
+.connection.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.connection.modal.on {
+  display: block;
+}
+.connection.modal .inner {
+  max-width: 480px;
+  width: 100%;
+  padding: 40px 40px 50px;
+  background: #343434;
+  border-radius: 12px;
+}
+.connection.modal h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.connection.modal .sub_title {
+  text-align: center;
+  margin-bottom: 30px;
+  word-break: keep-all;
+}
+.connection.modal ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.connection.modal ul li {
+  max-width: 220px;
+  width: 100%;
+}
+.connection.modal ul button {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  background: #1B1B1B;
+  border-radius: 8px;
+  padding: 13px 0;
+}
+.connection.modal ul button img {
+  width: auto;
+  height: 22px;
+}
+.connection.modal .modal_x_btn .line {
+  background: #2ECDFF;
+}
+
 /* ======= 태블릿 ======= */
 /*@media screen and (max-width: 1024px) {
 

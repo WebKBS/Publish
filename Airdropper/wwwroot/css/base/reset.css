@@ -2,7 +2,7 @@
 /* font color */
 /* family */
 :root {
-  --hover-transition: background .25s, color .25s;
+  --hover-transition: background .25s, color .25s, border .25s;
 }
 
 html,

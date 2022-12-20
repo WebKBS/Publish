@@ -5,15 +5,19 @@ const content = document.querySelectorAll('.content');
 for (btn of accordionBtn) {
 
     btn.addEventListener('click', (e) => {
-        const target = e.currentTarget
+        const target = e.currentTarget;
         const nextElement = target.nextElementSibling;
 
         if (!nextElement.classList.contains('on')) {
+            document.querySelectorAll('.table_wrap li > button p').forEach(ev => {
+                ev.classList.remove('on');
+            })
             content.forEach(cont => {
                 cont.classList.remove('on');
             })
         }
-        nextElement.classList.add("on");
+        nextElement.classList.toggle("on");
+        target.querySelector('p').classList.toggle('on');
     })
 
 }

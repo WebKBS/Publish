@@ -5,20 +5,6 @@
 @import "../components/_inputs.scss";
 @import "../components/_buttons.scss";
 
-.top_title_wrap {
-    background: $gray2;
-
-    .inner {
-        max-width: 976px;
-        padding: 20px 24px;
-        margin: 0 auto;
-    }
-
-    .sub_title {
-        word-break: keep-all;
-    }
-}
-
 .sign_up_wrap {
 
     .inner {

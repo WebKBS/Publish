@@ -60,6 +60,12 @@
 
             button{
                 margin-left: auto;
+
+                &.on{
+                    &[disabled]{
+                        border: none;
+                    }
+                }
             }
         }
     }

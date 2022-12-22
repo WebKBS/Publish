@@ -27,25 +27,25 @@
                     <ul class="chain_list">
                         <li>
                             <button type="button">
-                                <img src="~/images/coin_icon/ethereum.svg" />
+                                <img src="~/images/coin_icon/ethereum.svg" alt="ethereum" />
                                 <span class="select">Ethereum</span>
                             </button>
                         </li>
                         <li>
                             <button type="button">
-                                <img src="~/images/coin_icon/polygon.svg" />
+                                <img src="~/images/coin_icon/polygon.svg" alt="polygon" />
                                 <span class="select">Polygon</span>
                             </button>
                         </li>
                         <li>
                             <button type="button">
-                                <img src="~/images/coin_icon/bsc.svg" />
+                                <img src="~/images/coin_icon/bsc.svg" alt="bsc" />
                                 <span class="select">Bsc</span>
                             </button>
                         </li>
                         <li>
                             <button type="button">
-                                <img src="~/images/coin_icon/klaytn.svg" />
+                                <img src="~/images/coin_icon/klaytn.svg" alt="klaytn" />
                                 <span class="select">Klaytn</span>
                             </button>
                         </li>
@@ -75,7 +75,7 @@
             <h3 class="body_2 suit_m color_white_2">스마트 컨트랙트</h3>
             <div class="box">
                 <input type="text" placeholder="스마트 컨트랙트 주소 입력" />
-                <button type="button" class="button_112">데이터 연동</button>
+                <button type="button" class="button_112" data-comming>데이터 연동</button>
             </div>
         </div>
         <div class="token_box">
@@ -94,8 +94,8 @@
                 <p class="body_2 suit_r color_white_2">* 설정한 토큰 형식에 따라 업로드 양식이 달라집니다.</p>
                 <div class="button_wrap">
                     <!-- disabled 제거, on클래스 추가시 색상 변경 -->
-                    <button type="button" class="button_112" disabled>양식 다운로드</button>
-                    <button type="button" class="button_112" disabled>업로드 확인</button>
+                    <a href="#" download="" class="button_112 on" data-comming>양식 다운로드</a>
+                    <button id="check_upload_btn" type="button" class="button_112" disabled>업로드 확인</button>
                 </div>
             </div>
             <div class="box">
@@ -131,48 +131,6 @@
                 <p><span>*</span>자세한 내용은 ‘Guide’ 참고</p>
             </div>
         </div>
-        <script>
-            const fileSelector = document.getElementById('upload');
-            const uploadLabel = document.querySelector('.upload_label');
-            const fileName = document.getElementById('file_name');
-            const fileMsg = document.getElementById('file_msg');
-
-            fileSelector.addEventListener('change', (event) => {
-                const fileList = event.target.files;
-                fileName.textContent = fileList[0].name;
-                fileMsg.textContent = "파일 업로드 완료"
-                uploadLabel.classList.add('on');
-            })
-
-
-            uploadLabel.addEventListener('dragover', (event) => {
-                event.stopPropagation();
-                event.preventDefault();
-                uploadLabel.style.border = "1px dashed #2ECDFF";
-                event.dataTransfer.dropEffect = 'copy';
-
-            });
-
-            uploadLabel.addEventListener('dragleave', (event) => {
-                event.stopPropagation();
-                event.preventDefault();
-                uploadLabel.style.border = "1px dashed transparent";
-            });
-
-            uploadLabel.addEventListener('drop', (event) => {
-                event.stopPropagation();
-                event.preventDefault();
-                uploadLabel.style.border = "1px solid #2ECDFF";
-                const fileList = event.dataTransfer.files;
-                fileName.textContent = fileList[0].name;
-                fileMsg.textContent = "파일 업로드 완료"
-                uploadLabel.classList.add('on');
-
-            });
-
-
-
-        </script>
         <div class="button_wrap">
             <button type="button" class="button_160 payment_btn" disabled>다 음</button>
         </div>
@@ -246,7 +204,84 @@
         })
     })
 
-    
+
+
+</script>
+
+
+
+<script>
+    // 파일 업로드
+    const fileSelector = document.getElementById('upload');
+    const uploadLabel = document.querySelector('.upload_label');
+    const fileName = document.getElementById('file_name');
+    const fileMsg = document.getElementById('file_msg');
+    const checkUploadBtn = document.getElementById('check_upload_btn');
+
+    const fileExtention = ["text/csv"];
+
+    const fileHandler = (fileList, target) => {
+        if (fileList[0].type === fileExtention[0]) {
+            fileName.textContent = fileList[0].name;
+            fileMsg.textContent = "파일 업로드 완료"
+            uploadLabel.classList.add('on');
+            checkUploadBtn.disabled = false;
+            checkUploadBtn.classList.add('on');
+        } else {
+            errorMsg();
+        }
+
+    }
+
+    checkUploadBtn.addEventListener('click', () => {
+        document.querySelector('.airdrop_modal').classList.add('on');
+    })
+
+    const errorMsg = () => {
+        uploadLabel.classList.remove('on');
+        uploadLabel.classList.add('error');
+        fileName.textContent = '올바르지 않은 파일입니다.'
+        fileMsg.textContent = "다시 업로드 해주세요."
+        fileSelector.value = "";
+    }
+
+    fileSelector.addEventListener('change', (event) => {
+        const fileList = event.target.files;
+        fileHandler(fileList, event.target);
+    })
+
+
+    uploadLabel.addEventListener('dragover', (event) => {
+        event.stopPropagation();
+        event.preventDefault();
+        uploadLabel.classList.add('move');
+        event.dataTransfer.dropEffect = 'copy';
+
+    });
+
+    uploadLabel.addEventListener('dragleave', (event) => {
+        event.stopPropagation();
+        event.preventDefault();
+        uploadLabel.classList.remove('move');
+    });
+
+    uploadLabel.addEventListener('drop', (event) => {
+        event.stopPropagation();
+        event.preventDefault();
+        uploadLabel.classList.remove('move');
+        const fileList = event.dataTransfer?.files;
+        const data = new DataTransfer();
+        data.items.add(fileList[0]);
+
+        if (data.files[0].type === fileExtention[0]) {
+            fileSelector.files = data.files;
+            fileHandler(fileList, event.target);
+        } else {
+            data.items.clear();
+            errorMsg();
+        }
+    });
+
 
 </script>
 
@@ -334,19 +369,61 @@
                 <a href="#" title="다음 페이지로" class="on"></a>
                 <a href="#" title="마지막 페이지로" class="on"></a>
             </div>
-            <button type="button" class="button_180">확 인</button>
+            <button type="button" class="button_180" data-modal-close>확 인</button>
         </div>
     </div>
 
     <div class="modal list_modal">
         <div class="inner">
-            <h3>Incorrect List</h3>
-            <p class="sub_title">
+            <h3 class="h3 jost_m color_alert">Incorrect List</h3>
+            <p class="sub_title body_2 suit_r">
                 아래의 항목에 올바르지 않은 정보가 존재합니다.<br />
                 지갑 주소, 총 발행량, 토큰 ID를 재확인하세요.
             </p>
-            <div class="list">1, 8, 10, 24, 32, 95, 122, 523, 345, 432, 763, 1263, 1623, 3421, 3452, 3451, 4276, 5345, 6881, 8991, 1, 8, 10, 24, 32, 95, 122, 523, 345, 432, 763, 1263, 1623, 3421, 3452, 3451, 4276, 5345, 6881, 8991, 1, 8, 10, 24, 32, 95, 122, 523, 345, 432, 763, 1263, 1623, 3421, 3452, 3451, 4276, 5345, 6881, 8991, 1, 8, 10, 24, 32, 95, 122, 523, 345, 432, 763, 1263, 1623, 3421, 3452, 3451, 4276, 5345, 6881, 8991, 1, 8, 10, 24, 32, 95, 122, 523, 345, 432, 763, 1263, 1623, 3421, 3452, 3451, 4276, 5345, 6881, 8991, 1, 8, 10, 24, 32, 95, 122, 523, 345, 432, 763, 1263, 1623, 3421, 3452, 3451, 4276, 5345, 6881, 8991, 1, 8, 10, 24, 32, 95, 122, 523, 345, 432, 763, 1263, 1623, 3421, 3452, 3451, 4276, 5345, 6881, 8991, 1, 8, 10, 24, 32, 95, 122, 523, 345, 432, 763, 1263, </div>
-            <button type="button" class="button_180">닫 기</button>
+
+            <div class="table_wrap">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>99</td>
+                            <td>
+                                지갑 주소 미입력
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>999</td>
+                            <td>
+                                지갑 주소 양식 불일치
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9999</td>
+                            <td>
+                                지갑 주소, 토큰 ID, 발행량 미입력
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>99999</td>
+                            <td>
+                                지갑 주소, 발행량 양식 불일치
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>999999</td>
+                            <td>
+                                지갑 주소, 토큰 ID, 발행량 미입력 / 지갑 주소, 발행량 양식 불일치
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button type="button" class="button_180" data-modal-close>닫 기</button>
         </div>
     </div>
 }

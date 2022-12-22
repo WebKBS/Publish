@@ -1,12 +1,18 @@
 @charset "UTF-8";
 @import "../base/_setting.scss";
 
+html, body {
+    height: 100%;
+}
+
 #wrap {
     position: relative;
+    height: 100%;
 }
 
 .container {
     background: $background;
+    min-height: calc( 100% - 76px - 150px);
 }
 
 .top_title_wrap {
@@ -23,7 +29,26 @@
     }
 }
 
+// 유효하지 않은
+.invalid {
+    font-size: 12px;
+    line-height: 1.5;
+    color: $alert;
+    position: absolute;
+    left: 0;
+    bottom: -26px;
+    display: none;
 
+    img {
+        width: auto;
+        height: 18px;
+        margin-right: 4px;
+    }
+
+    &.on{
+        display: block;
+    }
+}
 
 .connection.modal {
     display: none;
@@ -86,12 +111,13 @@
         }
     }
 
-    .modal_x_btn{
-        .line{
+    .modal_x_btn {
+        .line {
             background: $theme;
         }
     }
 }
+
 /* ======= 태블릿 ======= */
 /*@media screen and (max-width: 1024px) {
 

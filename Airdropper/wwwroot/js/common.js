@@ -1,7 +1,7 @@
 //const sideOpenBtn = document.querySelector('.side_open_btn');
 //const sideCloseBtn = document.querySelector('.side_close_btn');
 const sideMenu = document.querySelector('.side_menu');
-const myPageBtn = document.querySelector('.my_page button');
+//const myPageBtn = document.querySelector('.my_page button');
 const myPageList = document.querySelector('.my_page ul');
 
 
@@ -27,20 +27,20 @@ sideCloseBtn.addEventListener('click', closeSideMenu);
 });*/
 
 /* 마이 메뉴 클릭시 */
-document.addEventListener('click', (e) => {
-    if (document.getElementById('myPageListOpen') === null) {
-        return
-    }
+//document.addEventListener('click', (e) => {
+//    if (document.getElementById('myPageListOpen') === null) {
+//        return
+//    }
 
-    if (e.target.id === "myPageListOpen") {
-        myPageList.classList.add('on');
-        document.getElementById('myPageListOpen').classList.add('on')
-    } else {
-        myPageList.classList.remove('on');
-        document.getElementById('myPageListOpen').classList.remove('on')
-        return
-    }
-});
+//    if (e.target.id === "myPageListOpen") {
+//        myPageList.classList.add('on');
+//        document.getElementById('myPageListOpen').classList.add('on')
+//    } else {
+//        myPageList.classList.remove('on');
+//        document.getElementById('myPageListOpen').classList.remove('on')
+//        return
+//    }
+//});
 
 
 

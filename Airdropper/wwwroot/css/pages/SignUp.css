@@ -78,7 +78,7 @@
   left: -20px;
   width: 170px;
   display: none;
-  background: rgba(0, 0, 0, 0.3);
+  background: #1B1B1B;
 }
 .header .sub_gnb li a {
   padding: 12px 20px;
@@ -95,7 +95,6 @@
   display: block;
 }
 .header .my_page {
-  margin-right: 6px;
   position: relative;
   display: none;
 }
@@ -294,8 +293,7 @@ input[type=search]:focus {
   color: rgba(255, 255, 255, 0.55);
 }
 .sign_btn.log_out_btn:hover {
-  color: #212121;
-  background: rgba(255, 255, 255, 0.55);
+  color: #2ECDFF;
 }
 
 button[type=submit].login_btn {
@@ -371,6 +369,7 @@ button[type=submit].next_btn:hover {
 .button_160:hover {
   color: #2ECDFF;
   border-color: #2ECDFF;
+  transition: var(--hover-transition);
 }
 .button_160[disabled] {
   color: rgba(255, 255, 255, 0.25);
@@ -616,6 +615,7 @@ button[type=submit].next_btn:hover {
 .sign_up_wrap .form_wrap {
   border-radius: 12px;
   margin-bottom: 80px;
+  background: #1B1B1B;
 }
 .sign_up_wrap .all_select_wrap {
   padding: 14px 20px;
@@ -698,7 +698,7 @@ button[type=submit].next_btn:hover {
   transform: translateX(-50%);
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(255, 255, 255, 0.15);
   border-radius: 16px;
-  background: #2D2D2D;
+  background: #212121;
   overflow: hidden;
 }
 .modal.on {
@@ -706,7 +706,7 @@ button[type=submit].next_btn:hover {
 }
 .modal .modal_head {
   padding: 16px 0;
-  background: rgba(255, 255, 255, 0.15);
+  background: #343434;
 }
 .modal .modal_head h2 {
   text-align: center;
@@ -715,10 +715,11 @@ button[type=submit].next_btn:hover {
   padding: 30px;
   max-height: 480px;
   overflow-y: auto;
+  color: rgba(255, 255, 255, 0.55);
 }
 .modal .modal_foot {
   padding: 30px 0;
-  background: rgba(255, 255, 255, 0.15);
+  background: #343434;
 }
 .modal .modal_foot button {
   margin: 0 auto;

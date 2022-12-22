@@ -24,6 +24,7 @@
     <script src="~/js/common.js" defer></script>
     <script src="~/js/windowCheck.js" async></script>
 
+
     @await RenderSectionAsync("Heads", required: false)
 </head>
 <body>
@@ -45,9 +46,6 @@
                         </li>
                         <li>
                             <a href="/Airdrop/Airdrop" class="navi_1 jost_r">AIRDROP</a>
-                        </li>
-                        <li>
-                            <a href="/Minting/Main" class="navi_1 jost_r" data-comming>PRICING</a>
                         </li>
                         <li>
                             <a href="/Minting/Main" class="navi_1 jost_r" data-comming>GUIDE</a>
@@ -73,23 +71,23 @@
                     <span class="visually_hidden">텔레그램 바로가기</span>
                     </a>*@
                     <!-- on 클래스 추가시 display -->
-                    <div class="my_page">
-                        <button type="button" id="myPageListOpen" class="my_page_btn" title="마이페이지 버튼">
+                    <div class="my_page on">
+                        <button type="button" class="my_page_btn" title="마이페이지 버튼" onclick="window.location.href='/Myinfo/Profile'">
                             <span class="visually_hidden">마이페이지 버튼</span>
                         </button>
                         <!-- on 클래스 추가시 display -->
-                        <ul>
+                        @*<ul>
                             <li><a href="/MyInfo/Profile">내 정보</a></li>
                             <li><a href="/MyInfo/MyGallery">마이 갤러리</a></li>
                             <li><a href="/MyInfo/PaymentHistory">결제관리</a></li>
                             <li><a href="/MyInfo/Withdrawal">회원탈퇴</a></li>
-                        </ul>
+                        </ul>*@
                     </div>
                     <ul class="sign_wrap">
                         <!-- on 클래스 추가시 display -->
                         <li class="on"><a href="/Sign/Login" class="sign_btn sign_in_btn">로그인</a></li>
                         <li class="on"><a href="/Sign/SignUp" class="sign_btn sign_up_btn">회원가입</a></li>
-                        <li><a href="/" class="sign_btn log_out_btn">로그아웃</a></li>
+                        <li class="on"><a href="/" class="sign_btn log_out_btn">로그아웃</a></li>
                     </ul>
                     @*                   <div class="mobile_menu">
                     <button type="button" class="side_open_btn">
@@ -125,8 +123,8 @@
                     </p>
                 </div>
                 <div class="sub">
-                    <a href="#" class="telegram">
-                        <img src="~/images/icons/f_telegram.svg" />
+                    <a href="#" class="telegram" data-comming>
+                        <img src="~/images/icons/f_telegram.svg" alt="telegram" />
                     </a>
                     <div class="notice body_2 suit_r color_white_3">
                         <a href="#" class="body_2 suit_r color_white_3">개인정보취급방침</a>
@@ -146,20 +144,21 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     @await RenderSectionAsync("Scripts", required: false)
     <script>
-        console.log("%cAirDropper", "font-size: 120px; color: #cfffa5; border: 1px solid #fff; padding: 0 30px; border-radius: 12px;");
+        console.log("%c(۶•̀ᴗ•́)۶", "font-size: 50px; color: #cfffa5; padding: 0 30px; border-radius: 12px;");
     </script>
 
     <script>
+
         const comming = document.querySelectorAll('[data-comming]');
         comming.forEach(event => {
-            
+
             event.addEventListener('click', (e) => {
                 e.preventDefault();
                 Swal.fire({ icon: 'warning', text: "준비중입니다." })
             })
         })
     </script>
-
+    <link href="~/css/base/customSweetAlert.css" rel="stylesheet"/>
 
     @*<div class="side_menu">
     <button type="button" class="side_close_btn">

@@ -165,11 +165,11 @@
                 &.on {
                     color: $theme;
                     border-color: $theme;
-                }
 
-                &:not([disabled]):hover {
-                    color: $black3;
-                    background: $theme;
+                    &:not([disabled]):hover {
+                        color: $black3;
+                        background: $theme;
+                    }
                 }
             }
         }
@@ -194,6 +194,10 @@
             svg {
                 width: 40px;
                 margin-bottom: 16px;
+            }
+
+            &.move{
+                border: 1px dashed $theme;
             }
 
             &.error {
@@ -267,6 +271,31 @@
         max-width: 568px;
     }
 
+    &.list_modal {
+        max-width: 568px;
+
+        h3 {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .sub_title {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .table_wrap {
+            margin-bottom: 30px;
+
+            tbody {
+                td {
+                    color: $alert;
+                    text-align: center !important;
+                }
+            }
+        }
+    }
+
     &.on {
         display: block;
     }
@@ -313,6 +342,29 @@
         border-radius: 16px;
         padding: 10px;
         margin-bottom: 12px;
+        max-height: 400px;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: $white5;
+            border-radius: 20px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $theme;
+            border-radius: 20px;
+            background-clip: content-box;
+            border: 2px solid transparent;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background: $theme;
+        }
+
 
         .table {
             width: 100%;

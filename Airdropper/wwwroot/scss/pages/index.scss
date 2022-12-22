@@ -12,6 +12,13 @@
 //    display: none;
 //}
 
+body {
+    opacity: 0;
+}
+#wrap{
+    height: auto;
+}
+
 .cont {
     max-width: 1920px;
     margin: 0 auto;

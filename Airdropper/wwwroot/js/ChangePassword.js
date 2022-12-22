@@ -16,7 +16,7 @@ submitBtn.addEventListener('click', (e) => {
     } else if (!passwordRule.exec(pw.value)) {
         Swal.fire({ icon: 'error' })
         pw.focus();
-        Swal.fire({ icon: 'error', text: '비밀번호 양식이 올바르지 않습니다.' })
+        Swal.fire({ icon: 'error', text: '비밀번호 형식이 올바르지 않습니다.' })
         return;
 
     }
@@ -27,7 +27,7 @@ submitBtn.addEventListener('click', (e) => {
         return;
 
     } else if (!passwordRule.exec(rePw.value)) {
-        Swal.fire({ icon: 'error', text: '비밀번호 양식이 올바르지 않습니다.' })
+        Swal.fire({ icon: 'error', text: '비밀번호 형식이 올바르지 않습니다.' })
         rePw.focus();
         return;
     }

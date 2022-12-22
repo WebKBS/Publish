@@ -78,7 +78,7 @@
   left: -20px;
   width: 170px;
   display: none;
-  background: rgba(0, 0, 0, 0.3);
+  background: #1B1B1B;
 }
 .header .sub_gnb li a {
   padding: 12px 20px;
@@ -95,7 +95,6 @@
   display: block;
 }
 .header .my_page {
-  margin-right: 6px;
   position: relative;
   display: none;
 }
@@ -294,8 +293,7 @@ input[type=search]:focus {
   color: rgba(255, 255, 255, 0.55);
 }
 .sign_btn.log_out_btn:hover {
-  color: #212121;
-  background: rgba(255, 255, 255, 0.55);
+  color: #2ECDFF;
 }
 
 button[type=submit].login_btn {
@@ -371,6 +369,7 @@ button[type=submit].next_btn:hover {
 .button_160:hover {
   color: #2ECDFF;
   border-color: #2ECDFF;
+  transition: var(--hover-transition);
 }
 .button_160[disabled] {
   color: rgba(255, 255, 255, 0.25);
@@ -686,40 +685,6 @@ button[type=submit].next_btn:hover {
 .edit_pw .input_wrap .error_msg, .edit_email .input_wrap .error_msg {
   padding-left: 28px;
   background: url(../images/icons/attention.svg) no-repeat 0 center/20px auto;
-}
-.edit_pw .send_btn, .edit_email .send_btn {
-  border-radius: 8px;
-  max-width: 112px;
-  width: 100%;
-  padding: 10px 0;
-  text-align: center;
-}
-.edit_pw .send_btn:hover, .edit_email .send_btn:hover {
-  transition: var(--hover-transition);
-  color: #fff;
-}
-.edit_pw .check_btn, .edit_email .check_btn {
-  padding: 10px 30px;
-  text-align: center;
-  border-radius: 8px;
-  color: #fff;
-  text-align: center;
-}
-.edit_pw .check_btn:hover, .edit_email .check_btn:hover {
-  transition: var(--hover-transition);
-}
-.edit_pw .next_btn, .edit_email .next_btn {
-  max-width: 200px;
-  width: 100%;
-  border-radius: 8px;
-  padding: 16px 0;
-  color: #fff;
-}
-.edit_pw .next_btn:hover, .edit_email .next_btn:hover {
-  transition: var(--hover-transition);
-}
-.edit_pw .next_btn.on, .edit_email .next_btn.on {
-  color: #fff;
 }
 
 /*@media screen and (max-width: 1024px) {

@@ -27,29 +27,33 @@
                     <ul class="chain_list">
                         <li>
                             <button type="button">
-                                <img src="~/images/coin_icon/ethereum.svg" />
+                                <img src="~/images/coin_icon/ethereum.svg" alt="ethereum" />
                                 <span class="select">Ethereum</span>
                             </button>
                         </li>
                         <li>
                             <button type="button">
-                                <img src="~/images/coin_icon/polygon.svg" />
+                                <img src="~/images/coin_icon/polygon.svg" alt="polygon" />
                                 <span class="select">Polygon</span>
                             </button>
                         </li>
                         <li>
                             <button type="button">
-                                <img src="~/images/coin_icon/bsc.svg" />
+                                <img src="~/images/coin_icon/bsc.svg" alt="bsc" />
                                 <span class="select">Bsc</span>
                             </button>
                         </li>
                         <li>
                             <button type="button">
-                                <img src="~/images/coin_icon/klaytn.svg" />
+                                <img src="~/images/coin_icon/klaytn.svg" alt="klaytn" />
                                 <span class="select">Klaytn</span>
                             </button>
                         </li>
                     </ul>
+                </div>
+                <div class="invalid">
+                    <img src="~/images/icons/attention.svg" alt="네트워크를 선택하세요." />
+                    네트워크를 선택하세요.
                 </div>
             </div>
             <div class="box">
@@ -69,26 +73,46 @@
                         </li>
                     </ul>
                 </div>
+                <div class="invalid">
+                    <img src="~/images/icons/attention.svg" alt="토큰 형식을 선택하세요." />
+                    토큰 형식을 선택하세요.
+                </div>
             </div>
         </div>
         <div class="input_box">
             <div class="box">
                 <h3 class="body_2 suit_m color_white_2">토큰명</h3>
                 <input type="text" placeholder="영문 6자 이내 권장" />
+                <div class="invalid">
+                    <img src="~/images/icons/attention.svg" alt="토큰명을 입력하세요." />
+                    토큰명을 입력하세요.
+                </div>
             </div>
             <div class="box">
                 <h3 class="body_2 suit_m color_white_2">토큰티커</h3>
                 <input type="text" placeholder="영문 6자 이내 권장" />
+                <div class="invalid">
+                    <img src="~/images/icons/attention.svg" alt="토큰티커를 입력하세요." />
+                    토큰티커를 입력하세요.
+                </div>
             </div>
             <div class="box">
                 <h3 class="body_2 suit_m color_white_2">디시멀(Decimal)</h3>
                 <input type="tel" placeholder="1~99 사이" />
+                <div class="invalid">
+                    <img src="~/images/icons/attention.svg" alt="형식 불일치" />
+                    형식 불일치
+                </div>
             </div>
         </div>
         <div class="input_box">
             <div class="box">
                 <h3 class="body_2 suit_m color_white_2">총 발행량</h3>
                 <input type="text" placeholder="" />
+                <div class="invalid">
+                    <img src="~/images/icons/attention.svg" alt="총 발행량을 입력하세요." />
+                    총 발행량을 입력하세요.
+                </div>
             </div>
         </div>
         <div class="checkbox_wrap">
@@ -134,7 +158,7 @@
                         </div>
                     </li>
                     <li>
-                        <p class="title table_1 suit_r color_white_2">일반 락커 추가</p>
+                        <p class="title table_1 suit_r color_white_2">락커 추가</p>
                         <div class="text_wrap">
                             <input type="checkbox" id="check6" />
                             <label for="check6" class="text table_1 suit_l">락을 걸거나 해제 할 수 있는 주소를 지정 또는 추가</label>
@@ -160,7 +184,7 @@
         <div class="info_text_wrap">
             <h3 class="body_2 suit_m color_white_2">오너지갑</h3>
             <div class="text_box body_2 suit_r color_white_2">
-                락업이나 락 해제, 소각 등 스마트 컨트랙트를 관리자의 지갑 주소입니다. 비용 결제 지갑 주소와
+                락업이나 락 해제, 소각 등 스마트 컨트랙트를 관리할 지갑 주소입니다. 비용 결제 지갑 주소와
                 다른 지갑 주소로 오너 지갑을 지정하기를 원하시면, 비용 결제 후 토큰 발행 전에 메타 마스크 또는 카이 카스의 해당 지갑 주소로 변경하셔야 합니다.
             </div>
         </div>
@@ -238,28 +262,28 @@
     })
 
 
-                    // 체크박스
-                    //const checkBtn = document.querySelectorAll('input[type=checkbox]');
-                    //const paymentBtn = document.querySelector('.payment_btn');
+                            // 체크박스
+                            //const checkBtn = document.querySelectorAll('input[type=checkbox]');
+                            //const paymentBtn = document.querySelector('.payment_btn');
 
-                    //const updateCheck = () => {
-                    //    let checkCount = 0;
-                    //    for (let check of checkBtn) {
-                    //        if (check.checked) {
-                    //            checkCount++
-                    //        }
-                    //        console.log(checkCount)
-                    //    }
-                    //    if(checkCount === checkBtn.length){
-                    //        paymentBtn.disabled = false;
-                    //    }else{
-                    //        paymentBtn.disabled = true;
-                    //    }
-                    //}
+                            //const updateCheck = () => {
+                            //    let checkCount = 0;
+                            //    for (let check of checkBtn) {
+                            //        if (check.checked) {
+                            //            checkCount++
+                            //        }
+                            //        console.log(checkCount)
+                            //    }
+                            //    if(checkCount === checkBtn.length){
+                            //        paymentBtn.disabled = false;
+                            //    }else{
+                            //        paymentBtn.disabled = true;
+                            //    }
+                            //}
 
-                    //for (let check of checkBtn) {
-                    //    check.addEventListener('click', updateCheck)
-                    //}
+                            //for (let check of checkBtn) {
+                            //    check.addEventListener('click', updateCheck)
+                            //}
 
 </script>
 
@@ -275,7 +299,7 @@
         <div class="inner">
             <h4 class="h4 jost_m color_theme">Wallet Connection</h4>
             <p class="sub_title body_2 suit_m">
-                NFT 생성 시 사용하는 블록체인 네트워크에 해당하는<br />
+                토큰 발행 시 사용하고자 하는 블록체인 네트워크에 해당하는<br />
                 지갑을 선택해주세요.
             </p>
             <ul>

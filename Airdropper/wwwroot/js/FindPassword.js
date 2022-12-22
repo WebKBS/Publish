@@ -22,7 +22,7 @@ function checkFunc(e) {
         Swal.fire(
             {
                 icon: 'error',
-                text: '이메일 양식이 올바르지 않습니다.',
+                text: '이메일 형식이 올바르지 않습니다.',
             }
         )
         return;
@@ -66,7 +66,7 @@ document.querySelector('.resend').addEventListener('click', (e) => {
 });
 
 function timerStart() {
-    let time = 300; // 5분
+    let time = 299; // 5분
     let min;
     let sec;
 

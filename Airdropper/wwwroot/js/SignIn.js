@@ -19,7 +19,7 @@ const signFunc = (e) => {
         Swal.fire(
             {
                 icon: 'error',
-                text: '아이디 양식이 올바르지 않습니다.',
+                text: '아이디 형식이 올바르지 않습니다.',
             }
         )
         return;

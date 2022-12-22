@@ -1,12 +1,18 @@
 @charset "UTF-8";
 /* font color */
 /* family */
+html, body {
+  height: 100%;
+}
+
 #wrap {
   position: relative;
+  height: 100%;
 }
 
 .container {
   background: #282828;
+  min-height: calc(100% - 76px - 150px);
 }
 
 .top_title_wrap {
@@ -19,6 +25,24 @@
 }
 .top_title_wrap .sub_title {
   word-break: keep-all;
+}
+
+.invalid {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #FF962E;
+  position: absolute;
+  left: 0;
+  bottom: -26px;
+  display: none;
+}
+.invalid img {
+  width: auto;
+  height: 18px;
+  margin-right: 4px;
+}
+.invalid.on {
+  display: block;
 }
 
 .connection.modal {

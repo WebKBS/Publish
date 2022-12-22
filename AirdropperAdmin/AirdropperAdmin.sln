@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirdropperAdmin", "AirdropperAdmin.csproj", "{74739189-2D56-4DF4-9777-C53CD4CFD335}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74739189-2D56-4DF4-9777-C53CD4CFD335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74739189-2D56-4DF4-9777-C53CD4CFD335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74739189-2D56-4DF4-9777-C53CD4CFD335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74739189-2D56-4DF4-9777-C53CD4CFD335}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D8E6018-123F-4F8E-9C73-04397A116A31}
+	EndGlobalSection
+EndGlobal

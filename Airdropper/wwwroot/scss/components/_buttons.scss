@@ -31,8 +31,8 @@
         color: $white2;
 
         &:hover {
-            color: $black2;
-            background: $white2;
+            color: $theme;
+            
         }
     }
 }
@@ -118,6 +118,7 @@ button[type=submit] {
     &:hover {
         color: $theme;
         border-color: $theme;
+        transition: var(--hover-transition);
     }
 
     &[disabled] {

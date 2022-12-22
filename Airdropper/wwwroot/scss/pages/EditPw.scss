@@ -126,49 +126,30 @@
         }
     }
 
-    .send_btn {
-        border-radius: 8px;
-        max-width: 112px;
-        width: 100%;
-        padding: 10px 0;
-        text-align: center;
+    //.send_btn {
+    //    border-radius: 8px;
+    //    max-width: 112px;
+    //    width: 100%;
+    //    padding: 10px 0;
+    //    text-align: center;
 
-        &:hover {
-            transition: var(--hover-transition);
-            color: #fff;
-        }
-    }
+    //    &:hover {
+    //        transition: var(--hover-transition);
+    //        color: #fff;
+    //    }
+    //}
 
-    .check_btn {
-        padding: 10px 30px;
-        text-align: center;
-        border-radius: 8px;
-        color: #fff;
-        text-align: center;
+    //.check_btn {
+    //    padding: 10px 30px;
+    //    text-align: center;
+    //    border-radius: 8px;
+    //    color: #fff;
+    //    text-align: center;
 
-        &:hover {
-            transition: var(--hover-transition);
-        }
-    }
-
-    .next_btn {
-        max-width: 200px;
-        width: 100%;
-        border-radius: 8px;
-        padding: 16px 0;
-        color: #fff;
-
-        &:hover {
-            transition: var(--hover-transition);
-        }
-
-        &[disabled] {
-        }
-
-        &.on {
-            color: #fff;
-        }
-    }
+    //    &:hover {
+    //        transition: var(--hover-transition);
+    //    }
+    //}
 }
 
 

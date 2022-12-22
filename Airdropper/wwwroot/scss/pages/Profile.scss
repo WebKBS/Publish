@@ -59,16 +59,19 @@
         }
     }
 
-    .user_pw {
+    .user_pw, .history {
         background: $black3;
         border-radius: 16px;
         padding: 12px 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 80px;
+        margin-bottom: 12px;
     }
 
+    .history{
+        margin-bottom: 60px;
+    }
 
 }
 

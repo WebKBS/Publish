@@ -562,7 +562,7 @@ button[type=submit].next_btn:hover {
   padding: 16px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
-.faq .table_wrap > ul > li button p {
+.faq .table_wrap > ul > li button i {
   flex: 1;
   text-align: left;
   text-overflow: ellipsis;
@@ -573,7 +573,7 @@ button[type=submit].next_btn:hover {
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.55);
 }
-.faq .table_wrap > ul > li button p.on {
+.faq .table_wrap > ul > li button i.on {
   color: #fff;
 }
 .faq .table_wrap .content {

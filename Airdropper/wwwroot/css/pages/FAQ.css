@@ -362,6 +362,10 @@ button[type=submit].next_btn:hover {
   border-radius: 8px;
   text-align: center;
 }
+.send_btn[disabled] {
+  border-color: rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.25);
+}
 
 .download_btn {
   width: 152px;

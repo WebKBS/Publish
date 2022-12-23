@@ -1,0 +1,260 @@
+﻿@{
+    ViewData["title"] = "서비스 수수료 안내";
+}
+
+<section class="cont guide">
+    <div class="inner">
+        <h2 class="subtitle_3 suit_m">서비스 수수료 안내</h2>
+        <div class="tab_wrap">
+            <button type="button" class="body_1 suit_m on">토큰 발행 수수료 안내</button>
+            <button type="button" class="body_1 suit_m">에어드롭 이용 수수료 안내</button>
+        </div>
+        <div class="tab_content tab_1 on">
+            <div class="table_wrap">
+                <table class="table table1">
+                    <thead>
+                        <tr>
+                            <th>네트워크</th>
+                            <th>수수료</th>
+                            <th>참고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ETH</td>
+                            <td>0.5 ETH</td>
+                            <td rowspan="7">
+                                본 수수료는 토큰 발행 서비스에 대한 이용 수수료이며,
+                                토큰 발행 시 네트워크에 지급하는 가스비는 별도로 결제해야 합니다.
+                                <br /><br />
+                                가스비는 각 네트워크 상황에 따라 변동이 크므로 발행 진행 시 책정되는 예상 가스비를 확인 후 적정할 때 ‘확인’ 버튼을
+                                클릭하실 것을 권장합니다.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>BSC</td>
+                            <td>2 BNB</td>
+                        </tr>
+                        <tr>
+                            <td>Klaytn</td>
+                            <td>3,300 KLAY</td>
+                        </tr>
+                        <tr>
+                            <td>Polygon</td>
+                            <td>700 MATIC</td>
+                        </tr>
+                        <tr>
+                            <td>Solana</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Hedera</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Algorand</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- =====      tab 2     ===== -->
+        <div class="tab_2 tab_content">
+            <div class="table_wrap">
+                <table class="table table2">
+                    <thead>
+                        <tr>
+                            <th>네트워크</th>
+                            <th>수수료</th>
+                            <th>수수료</th>
+                            <th>참고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ETH</td>
+                            <td>1,000 Tx</td>
+                            <td>0.1 ETH</td>
+                            <td rowspan="7">
+                                1회 전송 할 Tx에서 1,000 Tx 당 0.1 ETH
+                                <br /><br />
+                                Ex) 5,000Tx 전송 시 0.5 ETH<br />
+                                &nbsp; &nbsp; &nbsp; &nbsp; 4,300Tx 전송 시 0.5 ETH<br />
+                                &nbsp; &nbsp; &nbsp; &nbsp; 3,900Tx 전송 시 0.4 ETH<br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>BSC</td>
+                            <td>1,000 Tx</td>
+                            <td>0.4 BNB</td>
+                        </tr>
+                        <tr>
+                            <td>Klaytn</td>
+                            <td>1,000 Tx</td>
+                            <td>700 KLAY</td>
+                        </tr>
+                        <tr>
+                            <td>Polygon</td>
+                            <td>1,000 Tx</td>
+                            <td>140 MATIC</td>
+                        </tr>
+                        <tr>
+                            <td>Solana</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Hedera</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Algorand</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="body_2 suit_r color_white_2 price_text">
+                <span>*</span> 수수료는 1회에 전송할 총 트랜잭션 수를 기준으로 하되, 1,000개 트랜잭션 단위로 과금합니다.
+            </p>
+            <h3 class="body_1 suit_m">수수료 계산기</h3>
+            <div class="box">
+                <div class="box_inner">
+                    <div class="select_list">
+                        <!-- on 추가시 style 변경 -->
+                        <div class="select_wrap default">
+                            <button type="button" id="selectChain">
+                                <img src="" />
+                                <span class="select">블록체인 네트워크 선택</span>
+                            </button>
+                        </div>
+                        <!-- on 추가시 display -->
+                        <ul class="chain_list">
+                            <li>
+                                <button type="button">
+                                    <img src="~/images/coin_icon/ethereum.svg" alt="ethereum" />
+                                    <span class="select">Ethereum</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button">
+                                    <img src="~/images/coin_icon/polygon.svg" alt="polygon" />
+                                    <span class="select">Polygon</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button">
+                                    <img src="~/images/coin_icon/bsc.svg" alt="bsc" />
+                                    <span class="select">Bsc</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button">
+                                    <img src="~/images/coin_icon/klaytn.svg" alt="klaytn" />
+                                    <span class="select">Klaytn</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <input type="tel" placeholder="에어드롭 받을 지갑 수(Tx)" />
+                </div>
+                <button type="button" class="send_btn" >계산하기</button>
+            </div>
+            <div class="value_wrap">
+                <!-- on 추가시 display -->
+                <div class="no_data body_2 suit_m color_white_3 on">정보를 입력하세요</div>
+                <!-- on 추가시 display -->
+                <div class="result_wrap">
+                    <h4 class="subtitle_2 suit_m color_theme">에어드롭 예상 서비스이용료</h4>
+                    <p>
+                        <span class="price subtitle_2 suit_m">99,9999</span>
+                        <span class="unit subtitle_2 suit_m">ETH</span>
+                    </p>
+                </div>
+            </div>
+            <p class="body_2 suit_r color_white_2 text_box">
+                <span>*</span> 수수료는 에어드롭 실행 시 거래 승인과 동시에 연결된 지갑에서 차감됩니다. 따라서, 연결된 지갑에는 에어드롭할 토큰은 물론, 가스비 및 이용 수수료에 해당하는 코인이 예치되어 있어야 합니다.
+            </p>
+            <p class="body_2 suit_r color_white_2 text_box">
+                <span>*</span> 가스비는 해당 메인 넷의 네트워크 상황에 따라 편차가 클 수 있으니, 전송 전 예상 가스비를 반드시 확인하신 후 진행하시기 바랍니다.
+            </p>
+        </div>
+    </div>
+    <div class=""></div>
+</section>
+
+
+
+
+<script>
+    const buttons = document.querySelectorAll('.tab_wrap button');
+    const tabs = document.querySelectorAll('.tab_content');
+
+    buttons.forEach((event, idx) => {
+        event.addEventListener('click', () => {
+            buttons.forEach(ev => {
+                ev.classList.remove('on');
+            })
+            tabs.forEach(ev => {
+                ev.classList.remove('on');
+            })
+            tabs[idx].classList.add('on');
+            event.classList.add('on');
+        })
+    })
+
+
+
+    const chainSelectBtn = document.getElementById('selectChain');
+
+    chainSelectBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openMenu(e);
+
+    });
+
+
+    const removeClassSelectList = () => {
+        document.querySelectorAll('.select_list > ul').forEach(ev => {
+            ev.classList.remove('on');
+        })
+    }
+
+    // select 열기
+    const openMenu = (event) => {
+        const target = event.currentTarget;
+        const nextElement = target.parentElement.nextElementSibling;
+
+        removeClassSelectList();
+
+        nextElement.classList.add('on');
+    }
+
+    // select 닫기
+    document.body.addEventListener('click', (e) => {
+        const target = e.target
+        const isSelect = target.classList.contains('select_list') || target.closest('.select_list');
+
+        if (isSelect) return;
+        removeClassSelectList();
+    })
+
+    document.querySelectorAll('.chain_list li button').forEach(ev => {
+        ev.addEventListener('click', (e) => {
+            removeClassSelectList();
+            chainSelectBtn.parentElement.classList.add('on');
+            chainSelectBtn.querySelector('img').src = ev.children[0].src;
+            chainSelectBtn.querySelector('.select').textContent = ev.children[1].textContent;
+        })
+    })
+</script>
+
+
+
+
+
+
+@section Heads{
+    <link rel="stylesheet" href="~/css/pages/Guide.css" />
+}

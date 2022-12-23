@@ -183,7 +183,7 @@
 /* font color */
 /* family */
 input:not([type=checkbox]) {
-  padding: 10px 16px;
+  padding: 7px 16px;
   font-size: 14px;
   line-height: 1.5;
   font-family: "suit_regular";
@@ -446,6 +446,10 @@ button[type=submit].next_btn:hover {
   border: 1px solid #2ECDFF;
   border-radius: 8px;
   text-align: center;
+}
+.send_btn[disabled] {
+  border-color: rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.25);
 }
 
 .download_btn {

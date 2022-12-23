@@ -200,6 +200,11 @@ button[type=submit] {
     border: 1px solid $theme;
     border-radius: 8px;
     text-align: center;
+
+    &[disabled]{
+        border-color: $white4;
+        color: $white4;
+    }
 }
 
 .download_btn {

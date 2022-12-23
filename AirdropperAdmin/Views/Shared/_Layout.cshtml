@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Airdropper_Admin</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="~/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/images/logo_icon.svg">
     @*<link rel="stylesheet" href="~/vendor/owl-carousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="~/vendor/owl-carousel/css/owl.theme.default.min.css">*@
     @*<link href="~/vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">*@
@@ -238,14 +238,18 @@
             console.log('resize!!!')
             if (window.innerWidth < 768) {
                 document.querySelector('#main-wrapper').classList.add('menu-toggle');
+                $(".brand-logo").addClass("on");
             } else {
                 document.querySelector('#main-wrapper').classList.remove('menu-toggle');
+                $(".brand-logo").removeClass("on");
             }
 
             if (window.innerWidth < 1200) {
                 document.querySelector('#main-wrapper').classList.add('menu-toggle');
+                $(".brand-logo").addClass("on");
             } else {
                 document.querySelector('#main-wrapper').classList.remove('menu-toggle');
+                $(".brand-logo").removeClass("on");
             }
 
 

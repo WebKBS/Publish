@@ -1,0 +1,29 @@
+﻿@charset "UTF-8";
+
+th{
+    color: #222;
+}
+
+.footer_info{
+
+    tbody{
+        th{
+            width: 176px;
+        }
+    }
+
+    input::placeholder{
+        color: #cbcbcb
+    }
+}
+
+textarea.form-control {
+    resize: none;
+    width: 100%;
+    height: 180px;
+}
+
+.amend {
+    display: block;
+    margin: 0 auto 60px;
+}

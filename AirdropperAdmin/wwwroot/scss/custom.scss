@@ -1,0 +1,161 @@
+﻿@charset "UTF-8";
+
+body {
+    color: #333;
+}
+
+select {
+    cursor: pointer;
+    border: 1px solid #eaeaea;
+    border-radius: 0.25rem;
+    box-sizing: content-box;
+    max-width: none !important;
+    width: auto !important;
+    flex: 0 0 10% !important;
+}
+
+.nav-header {
+    .logo-abbr {
+        max-width: 160px;
+
+        &:nth-child(2) {
+            display: none;
+            height: 30px;
+            width: auto;
+        }
+    }
+
+    .brand-logo {
+
+        &.on {
+            img:nth-child(1) {
+                display: none !important;
+            }
+
+            img:nth-child(2) {
+                display: block;
+            }
+        }
+    }
+}
+
+.quixnav .metismenu .has-arrow[aria-expanded=true]:after, .quixnav .metismenu .mm-active > .has-arrow:after {
+    display: none;
+}
+
+.custom_card {
+    .col-lg-2 {
+        flex: 0 0 20%;
+        max-width: 20%
+    }
+}
+
+.table thead th {
+    color: #222
+}
+
+.table tbody tr td {
+    color: #666
+}
+
+.pagination {
+    justify-content: center;
+}
+
+table {
+    thead {
+        th {
+            text-align: center;
+        }
+    }
+
+    tbody {
+        td {
+            text-align: center;
+
+            a {
+                text-decoration: underline;
+                color: #593bdb;
+            }
+        }
+    }
+}
+
+
+
+.pagination .page-item .page-link:hover i, .pagination .page-item .page-link span {
+    color: #222;
+}
+
+.pagination .page-item .page-link:hover span {
+    color: #fff;
+}
+
+.modal_flex {
+    display: flex;
+
+    > div {
+        flex: 1 1 50%;
+    }
+
+
+
+    .modal_title {
+        color: #222;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .modal-footer {
+        justify-content: center;
+    }
+}
+
+.card-body {
+    .flex {
+        width: 100%;
+        display: flex;
+
+        &.flex-end {
+            justify-content: flex-end
+        }
+    }
+}
+
+
+/* 테이블 */
+.custom_table {
+
+    tbody {
+        border-bottom: 1px solid #eaeaea;
+    }
+
+    th {
+        min-width: 160px;
+        width: 160px;
+        background: #eaeaea;
+        color: #222;
+
+        .msg {
+            font-size: 12px;
+            margin-top: 6px;
+            color: #ff0000;
+
+            span {
+                display: flex;
+                padding-left: 10px;
+            }
+        }
+    }
+
+    td {
+        text-align: left;
+    }
+
+    .img_wrap {
+
+        img {
+            max-height: 240px;
+        }
+    }
+}

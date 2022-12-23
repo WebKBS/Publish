@@ -376,6 +376,7 @@ button[type=submit].next_btn:hover {
   font-size: 14px;
   line-height: 1.5;
   font-family: "suit_medium";
+  text-align: center;
 }
 
 .modal_x_btn {

@@ -1,49 +1,266 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - AirdropperAdmin</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/AirdropperAdmin.styles.css" asp-append-version="true" />
+    <title>@ViewData["Title"] - Airdropper_Admin</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="~/images/favicon.png">
+    @*<link rel="stylesheet" href="~/vendor/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/vendor/owl-carousel/css/owl.theme.default.min.css">*@
+    @*<link href="~/vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">*@
+    @await RenderSectionAsync("SummerCssLink", required: false)
+    <link href="~/css/style.css" rel="stylesheet">
+
+    <!-- 커스텀 CSS -->
+    <link href="~/css/custom.css" rel="stylesheet">
+    @await RenderSectionAsync("Heads", required: false)
+    
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">AirdropperAdmin</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+    <div id="main-wrapper">
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <a href="/Home" class="brand-logo">
+                <img class="logo-abbr" src="~/images/logo.svg" alt="logo">
+                <img class="logo-abbr" src="~/images/logo_icon.svg" alt="logo">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                            @*<div class="search_bar dropdown">
+                            <span class="search_icon p-3 c-pointer" data-toggle="dropdown">
+                            <i class="mdi mdi-magnify"></i>
+                            </span>
+                            <div class="dropdown-menu p-0 m-0">
+                            <form>
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            </form>
+                            </div>
+                            </div>*@
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+                            @*<li class="nav-item dropdown notification_dropdown">
+                            <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                            <i class="mdi mdi-bell"></i>
+                            <div class="pulse-css"></div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                            <ul class="list-unstyled">
+                            <li class="media dropdown-item">
+                            <span class="success"><i class="ti-user"></i></span>
+                            <div class="media-body">
+                            <a href="#">
+                            <p>
+                            <strong>Martin</strong> has added a <strong>customer</strong> Successfully
+                            </p>
+                            </a>
+                            </div>
+                            <span class="notify-time">3:20 am</span>
+                            </li>
+                            <li class="media dropdown-item">
+                            <span class="primary"><i class="ti-shopping-cart"></i></span>
+                            <div class="media-body">
+                            <a href="#">
+                            <p><strong>Jennifer</strong> purchased Light Dashboard 2.0.</p>
+                            </a>
+                            </div>
+                            <span class="notify-time">3:20 am</span>
+                            </li>
+                            <li class="media dropdown-item">
+                            <span class="danger"><i class="ti-bookmark"></i></span>
+                            <div class="media-body">
+                            <a href="#">
+                            <p>
+                            <strong>Robin</strong> marked a <strong>ticket</strong> as unsolved.
+                            </p>
+                            </a>
+                            </div>
+                            <span class="notify-time">3:20 am</span>
+                            </li>
+                            <li class="media dropdown-item">
+                            <span class="primary"><i class="ti-heart"></i></span>
+                            <div class="media-body">
+                            <a href="#">
+                            <p><strong>David</strong> purchased Light Dashboard 1.0.</p>
+                            </a>
+                            </div>
+                            <span class="notify-time">3:20 am</span>
+                            </li>
+                            <li class="media dropdown-item">
+                            <span class="success"><i class="ti-image"></i></span>
+                            <div class="media-body">
+                            <a href="#">
+                            <p>
+                            <strong> James.</strong> has added a<strong>customer</strong> Successfully
+                            </p>
+                            </a>
+                            </div>
+                            <span class="notify-time">3:20 am</span>
+                            </li>
+                            </ul>
+                            <a class="all-notification" href="#">
+                            See all notifications <i class="ti-arrow-right"></i>
+                            </a>
+                            </div>
+                            </li>*@
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <i class="mdi mdi-account"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    @*<a href="./app-profile.html" class="dropdown-item">
+                                    <i class="icon-user"></i>
+                                    <span class="ml-2">Profile </span>
+                                    </a>
+                                    <a href="./email-inbox.html" class="dropdown-item">
+                                    <i class="icon-envelope-open"></i>
+                                    <span class="ml-2">Inbox </span>
+                                    </a>*@
+                                    <a href="/Login/Logout" class="dropdown-item">
+                                        <i class="icon-key"></i>
+                                        <span class="ml-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="quixnav">
+            <div class="quixnav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label first"></li>
+                    <li>
+                        <a class="has-arrow" href="/Home" aria-expanded="false">
+                            <i class="icon icon-single-04"></i><span class="nav-text">회원 관리</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="/Popup/Popup" aria-expanded="false">
+                            <i class="icon icon-app-store"></i><span class="nav-text">팝업 관리</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="/Banner/Banner" aria-expanded="false">
+                            <i class="icon icon-chart-bar-33"></i><span class="nav-text">슬라이드 배너관리</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="/Footer/Footer" aria-expanded="false">
+                            <i class="icon icon-world-2"></i><span class="nav-text">푸터 관리</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="/Collection/Collection" aria-expanded="false">
+                            <i class="icon icon-plug"></i><span class="nav-text">컬렉션 관리</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="/Notice/Notice" aria-expanded="false">
+                            <i class="icon icon-globe-2"></i><span class="nav-text">공지사항 관리</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="/FAQ/FAQ" aria-expanded="false">
+                            <i class="icon icon-form"></i><span class="nav-text">FAQ 관리</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="/Contact/Contact" aria-expanded="false">
+                            <i class="icon icon-layout-25"></i><span class="nav-text">문의하기 관리</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="/Payment/Payment" aria-expanded="false">
+                            <i class="icon icon-single-copy-06"></i><span class="nav-text">결제 관리</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+        <!--**********************************
+            Content body start
+        ***********************************-->
+
+        <main role="main">
             @RenderBody()
         </main>
+
+
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - AirdropperAdmin - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <!-- 리사이즈 조정 -->
+    <script>
+        window.addEventListener('resize', () => {
+            console.log('resize!!!')
+            if (window.innerWidth < 768) {
+                document.querySelector('#main-wrapper').classList.add('menu-toggle');
+            } else {
+                document.querySelector('#main-wrapper').classList.remove('menu-toggle');
+            }
+
+            if (window.innerWidth < 1200) {
+                document.querySelector('#main-wrapper').classList.add('menu-toggle');
+            } else {
+                document.querySelector('#main-wrapper').classList.remove('menu-toggle');
+            }
+
+
+        })
+    </script>
+
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+
+    <!-- sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        //console.log("%cNFT-MINTER", "font-size: 100px; color: #cfffa5; border: 1px solid #fff; padding: 0 30px; border-radius: 12px;");
+    </script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

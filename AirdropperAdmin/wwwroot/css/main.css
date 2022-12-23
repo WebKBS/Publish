@@ -1,0 +1,20 @@
+/* Error: expected "{".
+ *     ,
+ * 183 |         }*∕
+ *     |            ^
+ *     '
+ *   scss\layout\sidebar\_sidebar-global.scss 183:12  @import
+ *   scss\layout\sidebar\_sidebar.scss 2:9            @import
+ *   scss\layout\_layout.scss 4:9                     @import
+ *   scss\main.scss 85:9                              root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a     \2577 \a 183 \2502          }*/\d\a     \2502             ^\a     \2575 \a   scss\\layout\\sidebar\\_sidebar-global.scss 183:12  @import\a   scss\\layout\\sidebar\\_sidebar.scss 2:9            @import\a   scss\\layout\\_layout.scss 4:9                     @import\a   scss\\main.scss 85:9                              root stylesheet';
+}

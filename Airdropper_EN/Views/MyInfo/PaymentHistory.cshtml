@@ -1,25 +1,49 @@
 ﻿@{
-    ViewData["title"] = "결제내역";
+    ViewData["title"] = "Usage history";
 }
 
 
 <section class="cont payment_history">
     <div class="inner">
-        <h2 class="subtitle_1 suit_m">사용내역</h2>
+        <h2 class="subtitle_1 suit_m">Usage history</h2>
         <div class="table_wrap">
             <table class="table_1">
                 <thead class="suit_r">
                     <tr>
-                        <th>일시</th>
-                        <th>구분</th>
-                        <th>네트워크</th>
-                        <th>토큰형식</th>
-                        <th>토큰명</th>
-                        <th>스마트컨트랙트</th>
-                        <th>Tx 갯수</th>
-                        <th>Tx ID</th>
-                        <th>서비스 이용료</th>
-                        <th>보고서</th>
+                        <th>
+                            Date
+                        </th>
+                        <th>
+                            Category
+                        </th>
+                        <th>
+                            Network
+                        </th>
+                        <th>
+                            Token<br />
+                            format
+                        </th>
+                        <th>
+                            Token<br />
+                            name
+                        </th>
+                        <th>
+                            Smart<br />
+                            contract
+                        </th>
+                        <th>
+                            Txs
+                        </th>
+                        <th>
+                            TxID
+                        </th>
+                        <th>
+                            Service<br />
+                            fee
+                        </th>
+                        <th>
+                            Report
+                        </th>
                     </tr>
                 </thead>
                 <tbody class="suit_l color_white_2">
@@ -28,7 +52,7 @@
                             <time datetime="2022-11-11">22.11.11</time>
                             <time datetime="14:20">14:20</time>
                         </td>
-                        <td>에어드롭</td>
+                        <td>Airdrop</td>
                         <td>Ethereum</td>
                         <td>ERC20</td>
                         <td>ABCD</td>
@@ -41,7 +65,7 @@
                         </td>
                         <!-- on 클래스 추가시 display -->
                         <td class="on">
-                            <button type="button" class="font_hover print_modal_btn">출력</button>
+                            <button type="button" class="font_hover print_modal_btn">Print</button>
                         </td>
                     </tr>
                     <tr>
@@ -49,7 +73,7 @@
                             <time datetime="2022-11-11">22.12.28</time>
                             <time datetime="14:20">12:00</time>
                         </td>
-                        <td>토큰발행</td>
+                        <td>Issuing</td>
                         <td>Klaytn</td>
                         <td>ERC20</td>
                         <td>DFG</td>
@@ -62,7 +86,7 @@
                         </td>
                         <!-- on 클래스 추가시 display -->
                         <td>
-                            <button type="button" class="font_hover print_modal_btn">출력</button>
+                            <button type="button" class="font_hover print_modal_btn">Print</button>
                         </td>
                     </tr>
 
@@ -73,7 +97,7 @@
                 </tbody>
             </table>
         </div>
-        <button type="button" class="back_btn button_160" onclick="history.back()">이전으로</button>
+        <button type="button" class="back_btn button_160" onclick="history.back()">Previous</button>
     </div>
 </section>
 
@@ -89,52 +113,52 @@
                 <div class="modal_header">
                     <h3>
                         <img src="~/images/logo_icon.svg" />
-                        <span class="body_1 suit_m">에어드롭 결과 보고서</span>
+                        <span class="body_1 suit_m">Airdrop Report</span>
                     </h3>
-                    <a href="#" download="" class="download_btn">보고서 다운로드</a>
+                    <a href="#" download="" class="download_btn">Download Report</a>
                 </div>
                 <div class="modal_body">
                     <div class="table_wrap">
                         <table class="table">
                             <tbody>
                                 <tr>
-                                    <th>회원 ID</th>
+                                    <th>User ID</th>
                                     <td>airdropper2022</td>
                                 </tr>
                                 <tr>
-                                    <th>날짜</th>
+                                    <th>Date</th>
                                     <td>2022.11.27</td>
                                 </tr>
                                 <tr>
-                                    <th>네트워크</th>
+                                    <th>Network</th>
                                     <td>Ethereum</td>
                                 </tr>
                                 <tr>
-                                    <th>토큰형식</th>
+                                    <th>Token format</th>
                                     <td>ERC-20</td>
                                 </tr>
                                 <tr>
-                                    <th>토큰명</th>
+                                    <th>Token name</th>
                                     <td>DRP</td>
                                 </tr>
                                 <tr>
-                                    <th>전송요청 수</th>
+                                    <th>Number of transfer requests</th>
                                     <td>6,500 건</td>
                                 </tr>
                                 <tr>
-                                    <th>토큰 수</th>
+                                    <th>Number of tokens</th>
                                     <td>2,000,000 개</td>
                                 </tr>
                                 <tr>
-                                    <th>가스비</th>
+                                    <th>Gas fee</th>
                                     <td>1.54 ETH</td>
                                 </tr>
                                 <tr>
-                                    <th>서비스 이용료</th>
+                                    <th>Service fee</th>
                                     <td>0.7 ETH</td>
                                 </tr>
                                 <tr>
-                                    <th>거래 TxID</th>
+                                    <th>TxID</th>
                                     <td>
                                         <button type="button" class="tx_id color_theme">0x12e4a99d65fa91779905378b54bdd66f7b130de1f71354f78beb25618289f774</button>
                                     </td>
@@ -144,7 +168,7 @@
                     </div>
                 </div>
                 <div class="modal_footer">
-                    <button type="button" class="modal_close_btn" data-modal-close>닫기</button>
+                    <button type="button" class="modal_close_btn" data-modal-close>Close</button>
                 </div>
             </div>
         </div>

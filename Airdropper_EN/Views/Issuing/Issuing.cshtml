@@ -1,26 +1,26 @@
 ﻿@{
-    ViewData["title"] = "토큰 정보입력";
+    ViewData["title"] = "Enter Token Info";
 }
 
 <div class="top_title_wrap">
     <div class="inner">
-        <h2 class="subtitle_1 suit_m">토큰 발행</h2>
-        <p class="sub_title body_2 suit_r color_white_2">AIR DROPPER는 ‘Chrome’ 웹브라우저에 최적화 되어있으며, 모바일 서비스는 지원하지 않습니다.</p>
+        <h2 class="subtitle_1 suit_m">TOKEN ISSUANCE</h2>
+        <p class="sub_title body_2 suit_r color_white_2">AIR DROPPER is optimized for ‘Chrome’ web browser and does not support mobile service.</p>
     </div>
 </div>
 
 <section class="cont issuing">
     <div class="inner">
-        <h2 class="subtitle_3 suit_m">토큰 정보입력</h2>
+        <h2 class="subtitle_3 suit_m">Enter Token Info</h2>
         <div class="select_box">
             <div class="box">
-                <h3 class="body_2 suit_m color_white_2">블록체인 네트워크</h3>
+                <h3 class="body_2 suit_m color_white_2">Blockchain network</h3>
                 <div class="select_list">
                     <!-- on 추가시 style 변경 -->
                     <div class="select_wrap default">
                         <button type="button" id="selectChain">
                             <img src="" />
-                            <span class="select">블록체인 네트워크 선택</span>
+                            <span class="select">Select blockchain network</span>
                         </button>
                     </div>
                     <!-- on 추가시 display -->
@@ -52,17 +52,17 @@
                     </ul>
                 </div>
                 <div class="invalid">
-                    <img src="~/images/icons/attention.svg" alt="네트워크를 선택하세요." />
-                    네트워크를 선택하세요.
+                    <img src="~/images/icons/attention.svg" alt="Select Network" />
+                    Select Network
                 </div>
             </div>
             <div class="box">
-                <h3 class="body_2 suit_m color_white_2">토큰 형식</h3>
+                <h3 class="body_2 suit_m color_white_2">Token format</h3>
                 <div class="select_list">
                     <!-- default 클래스 삭제시 흰색 색상 -->
                     <div class="select_wrap default">
                         <button type="button" id="selectToken">
-                            <span class="select">토큰 형식 선택</span>
+                            <span class="select">Select token format</span>
                         </button>
                     </div>
                     <ul class="token_list">
@@ -74,122 +74,119 @@
                     </ul>
                 </div>
                 <div class="invalid">
-                    <img src="~/images/icons/attention.svg" alt="토큰 형식을 선택하세요." />
-                    토큰 형식을 선택하세요.
+                    <img src="~/images/icons/attention.svg" alt="Select the token format" />
+                    Select the token format
                 </div>
             </div>
         </div>
         <div class="input_box">
             <div class="box">
-                <h3 class="body_2 suit_m color_white_2">토큰명</h3>
-                <input type="text" placeholder="영문 6자 이내 권장" />
+                <h3 class="body_2 suit_m color_white_2">Token name</h3>
+                <input type="text" placeholder="Recommend less than 6 alphabets" />
                 <div class="invalid">
-                    <img src="~/images/icons/attention.svg" alt="토큰명을 입력하세요." />
-                    토큰명을 입력하세요.
+                    <img src="~/images/icons/attention.svg" alt="Enter the token name" />
+                    Enter the token name
                 </div>
             </div>
             <div class="box">
-                <h3 class="body_2 suit_m color_white_2">토큰티커</h3>
-                <input type="text" placeholder="영문 6자 이내 권장" />
+                <h3 class="body_2 suit_m color_white_2">Token ticker</h3>
+                <input type="text" placeholder="Recommend less than 6 alphabets" />
                 <div class="invalid">
-                    <img src="~/images/icons/attention.svg" alt="토큰티커를 입력하세요." />
-                    토큰티커를 입력하세요.
+                    <img src="~/images/icons/attention.svg" alt="Enter the token ticker" />
+                    Enter the token ticker
                 </div>
             </div>
             <div class="box">
-                <h3 class="body_2 suit_m color_white_2">디시멀(Decimal)</h3>
-                <input type="tel" placeholder="1~99 사이" />
+                <h3 class="body_2 suit_m color_white_2">Decimal</h3>
+                <input type="tel" placeholder="1~99" />
                 <div class="invalid">
-                    <img src="~/images/icons/attention.svg" alt="형식 불일치" />
-                    형식 불일치
+                    <img src="~/images/icons/attention.svg" alt="Format dismatch" />
+                    Format dismatch
                 </div>
             </div>
-        </div>
-        <div class="input_box">
             <div class="box">
-                <h3 class="body_2 suit_m color_white_2">총 발행량</h3>
-                <input type="text" placeholder="" aria-label="총 발행량"/>
+                <h3 class="body_2 suit_m color_white_2">Total supply</h3>
+                <input type="text" placeholder="" aria-label="Total supply" />
                 <div class="invalid">
-                    <img src="~/images/icons/attention.svg" alt="총 발행량을 입력하세요." />
-                    총 발행량을 입력하세요.
+                    <img src="~/images/icons/attention.svg" alt="Enter the total supply" />
+                    Enter the total supply
                 </div>
             </div>
         </div>
         <div class="checkbox_wrap">
-            <h3 class="body_2 suit_m color_white_2">기능 선택</h3>
+            <h3 class="body_2 suit_m color_white_2">Function selection</h3>
             <div class="box">
                 <ul>
                     <li>
-                        <p class="title table_1 suit_r color_white_2">일반 락</p>
+                        <p class="title table_1 suit_r color_white_2">General Lock</p>
                         <div class="text_wrap">
                             <input type="checkbox" id="check1" />
                             <label for="check1" class="text table_1 suit_l">
-                                해당 주소에서의 토큰 이동을 바로 잠금
-                                <span class="color_white_2">&#8251; 일반 락 미 설정 시 컨트랙트에 대한 신뢰도를 낮출 수 있습니다.</span>
+                                Instantly lock the movement of tokens from that address
+                                <span class="color_white_2">&#8251; Reliability of the contract may be lowered when no general lock function is set.</span>
                             </label>
                         </div>
                     </li>
                     <li>
-                        <p class="title table_1 suit_r color_white_2">타임 락</p>
+                        <p class="title table_1 suit_r color_white_2">Time Lock</p>
                         <div class="text_wrap">
                             <input type="checkbox" id="check2" />
-                            <label for="check2" class="text table_1 suit_l">정해진 일시에 락이 해제됨</label>
+                            <label for="check2" class="text table_1 suit_l">The lock is released at the specified date and time</label>
                         </div>
                     </li>
                     <li>
-                        <p class="title table_1 suit_r color_white_2">다기능 락</p>
+                        <p class="title table_1 suit_r color_white_2">Vesting Lock</p>
                         <div class="text_wrap">
                             <input type="checkbox" id="check3" />
-                            <label for="check3" class="text table_1 suit_l">정해진 일시부터 시작하여 특정 주기 및 회수로 나누어 락이 해제됨</label>
+                            <label for="check3" class="text table_1 suit_l">Starting from a set date and time, the lock is released by dividing it into specific cycles and times</label>
                         </div>
                     </li>
                     <li>
-                        <p class="title table_1 suit_r color_white_2">컨트랙트 정지</p>
+                        <p class="title table_1 suit_r color_white_2">Pause</p>
                         <div class="text_wrap">
                             <input type="checkbox" id="check4" />
-                            <label for="check4" class="text table_1 suit_l">일시에 스마트컨트랙트를 정지시켜 거래를 중단시킴 (해제 기능 포함)</label>
+                            <label for="check4" class="text table_1 suit_l">Suspend the transaction by temporarily stopping the smart contract (including release function)</label>
                         </div>
                     </li>
                     <li>
-                        <p class="title table_1 suit_r color_white_2">소각</p>
+                        <p class="title table_1 suit_r color_white_2">Burn</p>
                         <div class="text_wrap">
                             <input type="checkbox" id="check5" />
-                            <label for="check5" class="text table_1 suit_l">일정 수량의 토큰을 소각</label>
+                            <label for="check5" class="text table_1 suit_l">Burn a specific amount of tokens</label>
                         </div>
                     </li>
                     <li>
-                        <p class="title table_1 suit_r color_white_2">락커 추가</p>
+                        <p class="title table_1 suit_r color_white_2">Add Locker</p>
                         <div class="text_wrap">
                             <input type="checkbox" id="check6" />
-                            <label for="check6" class="text table_1 suit_l">락을 걸거나 해제 할 수 있는 주소를 지정 또는 추가</label>
+                            <label for="check6" class="text table_1 suit_l">Specify or add the address that can lock/unlock specific address</label>
                         </div>
                     </li>
                     <li>
-                        <p class="title table_1 suit_r color_white_2">버너 추가</p>
+                        <p class="title table_1 suit_r color_white_2">Add Burner</p>
                         <div class="text_wrap">
                             <input type="checkbox" id="check7" />
-                            <label for="check7" class="text table_1 suit_l">소각할 수 있는 주소를 지정 또는 추가</label>
+                            <label for="check7" class="text table_1 suit_l">Specify or add the address that can burn tokens</label>
                         </div>
                     </li>
                     <li>
-                        <p class="title table_1 suit_r color_white_2">오너 변경</p>
+                        <p class="title table_1 suit_r color_white_2">Transfer<br /> ownership</p>
                         <div class="text_wrap">
                             <input type="checkbox" id="check8" />
-                            <label for="check8" class="text table_1 suit_l">컨트랙트 오너를 다른 주소로 변경</label>
+                            <label for="check8" class="text table_1 suit_l">Change owner of the smartcontract to another address.</label>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="info_text_wrap">
-            <h3 class="body_2 suit_m color_white_2">오너지갑</h3>
+            <h3 class="body_2 suit_m color_white_2">Owner wallet address</h3>
             <div class="text_box body_2 suit_r color_white_2">
-                락업이나 락 해제, 소각 등 스마트 컨트랙트를 관리할 지갑 주소입니다. 비용 결제 지갑 주소와
-                다른 지갑 주소로 오너 지갑을 지정하기를 원하시면, 비용 결제 후 토큰 발행 전에 메타 마스크 또는 카이 카스의 해당 지갑 주소로 변경하셔야 합니다.
+                This is the wallet address of the administrator of smart contracts such as lock-up, unlock, and incineration. If you want to designate the owner's wallet with a wallet address different from the payment wallet address, you must change it to the corresponding wallet address through Metamask or Kai Cass after payment and before token issuance.
             </div>
         </div>
         <div class="button_wrap">
-            <button type="button" class="button_160 payment_btn" disabled>발행비용 결제</button>
+            <button type="button" class="button_160 payment_btn" disabled>ISSUING TOKENS</button>
         </div>
     </div>
 </section>
@@ -262,28 +259,28 @@
     })
 
 
-                            // 체크박스
-                            //const checkBtn = document.querySelectorAll('input[type=checkbox]');
-                            //const paymentBtn = document.querySelector('.payment_btn');
+                                // 체크박스
+                                //const checkBtn = document.querySelectorAll('input[type=checkbox]');
+                                //const paymentBtn = document.querySelector('.payment_btn');
 
-                            //const updateCheck = () => {
-                            //    let checkCount = 0;
-                            //    for (let check of checkBtn) {
-                            //        if (check.checked) {
-                            //            checkCount++
-                            //        }
-                            //        console.log(checkCount)
-                            //    }
-                            //    if(checkCount === checkBtn.length){
-                            //        paymentBtn.disabled = false;
-                            //    }else{
-                            //        paymentBtn.disabled = true;
-                            //    }
-                            //}
+                                //const updateCheck = () => {
+                                //    let checkCount = 0;
+                                //    for (let check of checkBtn) {
+                                //        if (check.checked) {
+                                //            checkCount++
+                                //        }
+                                //        console.log(checkCount)
+                                //    }
+                                //    if(checkCount === checkBtn.length){
+                                //        paymentBtn.disabled = false;
+                                //    }else{
+                                //        paymentBtn.disabled = true;
+                                //    }
+                                //}
 
-                            //for (let check of checkBtn) {
-                            //    check.addEventListener('click', updateCheck)
-                            //}
+                                //for (let check of checkBtn) {
+                                //    check.addEventListener('click', updateCheck)
+                                //}
 
 </script>
 
@@ -299,8 +296,7 @@
         <div class="inner">
             <h4 class="h4 jost_m color_theme">Wallet Connection</h4>
             <p class="sub_title body_2 suit_m">
-                토큰 발행 시 사용하고자 하는 블록체인 네트워크에 해당하는<br />
-                지갑을 선택해주세요.
+                Select a wallet that corresponds to the blockchain network you want to use when issuing tokens.
             </p>
             <ul>
                 <li>
@@ -319,21 +315,21 @@
         </div>
     </div>
 
-    <div class="modal issuing">
+    <div class="modal issuing on">
         <!--data-modal-close 모달 닫기 -->
         <div class="inner">
-            <h4 class="h1 jost_m color_theme">ISSUING</h4>
+            <h4 class="h4 jost_m color_theme">ISSUING</h4>
             <p class="sub_title body_2 suit_m">
-                현재 연결된 지갑 주소는<br />
+                The currently connected wallet address is <br />
                 <strong class="color_theme">0x7dE7bAa83766D413D7fE382e14c72178CC5695a3</strong><br />
-                입니다. 이 주소를 오너지갑으로 지정하신다면 ‘발행하기’를 클릭하시고, 다른 지갑주소로 오너지갑을 지정하고자 하시면 화면을 닫고 해당 지갑을 연결하시기 바랍니다.
+                If you want to designate this address as the owner's wallet, click 'Issue', and if you want to designate the owner's wallet with another wallet address, close the screen and connect the wallet.
             </p>
             <ul>
                 <li>
-                    <button type="button" class="button_140">발행하기</button>
+                    <button type="button" class="button_140">ISSUE</button>
                 </li>
                 <li>
-                    <button type="button" class="button_140" data-modal-close>닫기</button>
+                    <button type="button" class="button_140" data-modal-close>CLOSE</button>
                 </li>
             </ul>
         </div>

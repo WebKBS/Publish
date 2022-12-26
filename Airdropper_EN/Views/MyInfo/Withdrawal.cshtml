@@ -1,81 +1,75 @@
 ﻿@{
-    ViewData["title"] = "회원탈퇴";
+    ViewData["title"] = "Membership Withdrawal";
 }
 
 
 <section class="cont1 withdrawal">
     <div class="inner">
-        <h2 class="h4 suit_m">회원탈퇴</h2>
-        <p class="sub_title body_2 suit_r color_white_2">회원탈퇴에 대한 안내를 읽고, 동의를 진행해주세요.</p>
+        <h2 class="h4 suit_m">Membership Withdrawal</h2>
+        <p class="sub_title body_2 suit_r color_white_2">Please read the information on membership withdrawal and agree to it.</p>
         <div class="info_box">
             <div class="info_inner">
                 <div class="info_title">
-                    <p class="table_1 suit_m">아이디 재사용 및 복구 불가 안내</p>
+                    <p class="table_1 suit_m">Information on reuse of ID and non-recovery</p>
                 </div>
                 <div class="info_text">
                     <p class="table_1 suit_r color_white_2">
-                        회원 탈퇴 진행 시 본인을 포함한 타인 모두
-                        <strong>아이디 재사용이나 복구가 불가능</strong>합니다.
+                        After membership withdrawal, it is impossible to reuse or recover the ID for anyone else, including yourself.
                     </p>
                 </div>
             </div>
             <div class="check_wrap">
                 <input type="checkbox" id="check1" />
                 <label for="check1">
-                    <img src="~/images/icons/check-gray.svg" class="nocheck" alt="위 사항에 동의합니다." />
-                    <img src="~/images/icons/check-mark2.svg" class="check" alt="위 사항에 동의합니다." />
-                    <span class="body_2 suit_m">위 사항에 동의합니다.</span>
+                    <img src="~/images/icons/check-gray.svg" class="nocheck" alt="I agree to the above." />
+                    <img src="~/images/icons/check-mark2.svg" class="check" alt="I agree to the above." />
+                    <span class="body_2 suit_m">I agree to the above.</span>
                 </label>
             </div>
         </div>
         <div class="info_box">
             <div class="info_inner">
                 <div class="info_title">
-                    <p class="table_1 suit_m">내 정보, 마이 컬렉션 및 마이 갤러리 데이터 삭제 안내</p>
+                    <p class="table_1 suit_m">Information on deleting My Information, My usage history data</p>
                 </div>
                 <div class="info_text">
                     <p class="table_1 suit_r color_white_2">
-                        회원 탈퇴 진행 시 내 정보 및 이용 내역 내
-                        <strong>
-                            모든 데이터가 삭제되며, 삭제된
-                            데이터는 복구되지 않습니다.
-                        </strong>
+                        When you withdraw your membership, all data in My Information and My usage history, etc. will be deleted, and the deleted data will not be recovered.
                     </p>
                 </div>
             </div>
             <div class="check_wrap">
                 <input type="checkbox" id="check2" />
                 <label for="check2">
-                    <img src="~/images/icons/check-gray.svg" class="off" alt="위 사항에 동의합니다." />
-                    <img src="~/images/icons/check-mark2.svg" class="on" alt="위 사항에 동의합니다." />
-                    <span class="body_2 suit_m">위 사항에 동의합니다.</span>
+                    <img src="~/images/icons/check-gray.svg" class="off" alt="I agree to the above." />
+                    <img src="~/images/icons/check-mark2.svg" class="on" alt="I agree to the above." />
+                    <span class="body_2 suit_m">I agree to the above.</span>
                 </label>
             </div>
         </div>
         <div class="info_box">
             <div class="info_inner">
                 <div class="info_title">
-                    <p class="table_1 suit_m">게시글 삭제 불가 안내</p>
+                    <p class="table_1 suit_m">Information on the impossibility of deleting posts</p>
                 </div>
                 <div class="info_text">
                     <p class="table_1 suit_r color_white_2">
-                        탈퇴 후에는 회원정보가 삭제되어 본인 여부를 확인할 수 있는 방법이 없으므로 게시물 및 댓글, 문의, 의견 등은
-                        <strong>삭제가 불가능합니다.</strong>
+                        After membership withdrawal, member information is deleted and there is no way to verify identity, so posts, comments, inquiries, opinions, etc. cannot be deleted.
                     </p>
                 </div>
             </div>
             <div class="check_wrap">
                 <input type="checkbox" id="check3" />
                 <label for="check3">
-                    <img src="~/images/icons/check-gray.svg" class="off" alt="위 사항에 동의합니다." />
-                    <img src="~/images/icons/check-mark2.svg" class="on" alt="위 사항에 동의합니다." />
-                    <span class="body_2 suit_m">위 사항에 동의합니다.</span>
+                    <img src="~/images/icons/check-gray.svg" class="off" alt="I agree to the above." />
+                    <img src="~/images/icons/check-mark2.svg" class="on" alt="I agree to the above." />
+                    <span class="body_2 suit_m">I agree to the above.</span>
                 </label>
             </div>
         </div>
         <div class="button_wrap">
-            <button type="button" class="back_btn button_160">이전으로</button>
-            <button type="button" class="withdrawal_btn button_160" disabled>회원탈퇴</button>
+            <button type="button" class="back_btn button_160">Previous</button>
+            <button type="button" class="withdrawal_btn button_160" disabled>Withdrawal</button>
         </div>
     </div>
 </section>
@@ -101,9 +95,23 @@
         confirmBtn.disabled = false;
     }
 
+
+
     confirmBtn.addEventListener('click', () => {
-        location.href = "/MyInfo/WithdrawalComp";
-    })
+        Swal.fire({
+            title: 'CAUTION!',
+            text: "Are you sure you want membership withdrawal?",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'CONFIRM',
+            cancelButtonText: 'CANCEL',
+            reverseButtons: true
+        }).then((result) => {
+            if (result.isConfirmed) {
+                location.href = "/MyInfo/WithdrawalComp";
+            }
+        })
+    });
 
 </script>
 

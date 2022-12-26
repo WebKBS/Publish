@@ -625,7 +625,7 @@ button[type=submit].next_btn:hover {
 .guide .tab_wrap button.on {
   color: #2ECDFF;
 }
-.guide .guide_list li {
+.guide .guide_list .tab_content > li {
   margin-bottom: 60px;
 }
 .guide .text_wrap {
@@ -652,6 +652,49 @@ button[type=submit].next_btn:hover {
 }
 .guide .img_wrap {
   padding-left: 20px;
+}
+.guide .img_wrap img {
+  width: 820px;
+  image-rendering: -webkit-optimize-contrast;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+.guide .download_wrap {
+  margin-left: 20px;
+  width: 100%;
+  background: #1B1B1B;
+  border-radius: 12px;
+  padding: 12px 20px;
+}
+.guide .download_wrap > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.guide .download_wrap > ul > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.guide .download_wrap > ul > li a {
+  min-width: 186px;
+  color: #2ECDFF;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "suit_medium";
+  padding-left: 46px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  border: 1px solid #2ECDFF;
+  border-radius: 8px;
+  background: url(../../images/icons/download_icon.svg) no-repeat 10px center/auto 28px;
+}
+.guide .download_wrap > ul > li a:hover {
+  color: #1B1B1B;
+  background-image: url(../../images/icons/download_icon_hover.svg);
+  background-color: #2ECDFF;
+  transition: var(--hover-transition);
 }
 .guide .tab_1 {
   display: none;

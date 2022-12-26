@@ -1,0 +1,77 @@
+﻿@charset "UTF-8";
+@import "./Setting.scss";
+
+
+
+.top_title_wrap {
+    border-bottom: 1px solid $gray9;
+
+    .inner {
+        max-width: 1400px;
+        padding: 120px 20px 20px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 1.5;
+    }
+
+    .sub_title {
+        font-size: 14px;
+        line-height: 1.5;
+        word-break: keep-all;
+    }
+}
+
+/* 저장 버튼 */
+.save_btn {
+    width: 200px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #fff;
+    padding: 16px;
+    line-height: 1.5;
+
+    &:hover{
+        transition: var(--hover-transition);
+    }
+}
+
+.cont1{
+
+    .inner{
+        max-width: 708px;
+        padding: 80px 20px;
+        margin: 0 auto;
+    }
+
+    h2{
+        font-size: 24px;
+        line-height: 1.5;
+        margin-bottom: 40px;
+    }
+}
+
+
+.footer {
+    display: none;
+}
+
+
+
+
+/*@media screen and (max-width: 1024px) {
+    .top_title_wrap {
+        .inner {
+            padding: 80px 20px 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+    }
+}
+
+
+*/

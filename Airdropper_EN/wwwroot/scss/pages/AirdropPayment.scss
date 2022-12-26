@@ -1,0 +1,72 @@
+﻿@charset "UTF-8";
+@import "../base/_setting.scss";
+@import "../layout/_header.scss";
+@import "../layout/_footer.scss";
+@import "../components/_buttons.scss";
+
+
+.airdrop_payment {
+
+    .inner {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 60px 24px;
+
+        h2 {
+            margin-bottom: 40px;
+        }
+    }
+
+    .table_wrap {
+        background: $black3;
+        border-radius: 16px;
+        overflow: hidden;
+        padding: 10px;
+        margin-bottom: 12px;
+    }
+
+    .table {
+        width: 100%;
+
+        th {
+            padding: 10px 16px;
+            text-align: left;
+            font-size: 14px;
+            font-family: $suit_regular;
+        }
+
+        td {
+            text-align: center;
+            font-size: 14px;
+            font-family: $suit_light;
+            color: $white2;
+        }
+    }
+
+    .payment_table {
+        margin-bottom: 60px;
+        padding: 12px 20px;
+
+        .table {
+
+            td {
+                color: white;
+                width: 33.33333%;
+
+                &:nth-child(1){
+                    text-align: left;
+                }
+            }
+
+            button{
+                margin-left: auto;
+
+                &.on{
+                    &[disabled]{
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}

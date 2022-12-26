@@ -1,0 +1,142 @@
+﻿@{
+    ViewData["title"] = "공지사항";
+}
+
+
+<section class="cont notice">
+    <div class="inner">
+        <h2 class="subtitle_3 suit_m">공지사항</h2>
+        <div class="input_group">
+            <div class="select_list">
+                <!-- on 추가시 style 변경 -->
+                <div class="select_wrap default">
+                    <button type="button" id="selectChain">
+                        <img src="" />
+                        <span class="select">제목</span>
+                    </button>
+                </div>
+                <!-- on 추가시 display -->
+                <ul class="chain_list">
+                    <li>
+                        <button type="button">
+                            <span class="select">제목</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button">
+                            <span class="select">내용</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="search_wrap">
+                <input type="search" placeholder="검색어를 입력하세요." />
+                <button type="button" class="search_btn" aria-label="검색하기"><span class="visually_hidden">검색하기</span></button>
+            </div>
+        </div>
+        <div class="table_wrap">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>내용</th>
+                        <th>등록일</th>
+                        <th>조회수</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @*<tr class="no_data">
+                        <!-- 내용이 없을때 -->
+                        <td colspan="5">내용이 없습니다.</td>
+                    </tr>*@
+                    <tr onclick="location.href='/Notice/NoticeView'">
+                        <td>
+                            10
+                        </td>
+                        <td>오픈 기념 이벤트</td>
+                        <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gal</td>
+                        <td>2022-10-30</td>
+                        <td>123</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table_nav">
+            <!-- a태그 on 추가시 색 변경 -->
+            <a href="#" title="처음 페이지로"></a>
+            <a href="#" title="이전 페이지로"></a>
+            <ol>
+                <!-- li 태그 on 추가시 색 변경 -->
+                <li class="on">
+                    <a href="#">1</a>
+                </li>
+                <li>
+                    <a href="#">2</a>
+                </li>
+                <li>
+                    <a href="#">3</a>
+                </li>
+            </ol>
+            <a href="#" title="다음 페이지로" class="on"></a>
+            <a href="#" title="마지막 페이지로" class="on"></a>
+        </div>
+    </div>
+</section>
+
+<script>
+    const chainSelectBtn = document.getElementById('selectChain');
+
+    chainSelectBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openMenu(e);
+
+    });
+
+
+    const removeClassSelectList = () => {
+        document.querySelectorAll('.select_list > ul').forEach(ev => {
+            ev.classList.remove('on');
+        })
+    }
+
+    // select 열기
+    const openMenu = (event) => {
+        const target = event.currentTarget;
+        const nextElement = target.parentElement.nextElementSibling;
+
+        removeClassSelectList();
+
+        nextElement.classList.add('on');
+    }
+
+    // select 닫기
+    document.body.addEventListener('click', (e) => {
+        const target = e.target
+        const isSelect = target.classList.contains('select_list') || target.closest('.select_list');
+
+        if (isSelect) return;
+        removeClassSelectList();
+    })
+
+    document.querySelectorAll('.chain_list li button').forEach(ev => {
+        ev.addEventListener('click', (e) => {
+            removeClassSelectList();
+            chainSelectBtn.querySelector('.select').textContent = ev.children[0].textContent;
+        })
+    })
+</script>
+
+
+
+
+
+
+
+@section Heads{
+    <link rel="stylesheet" href="~/css/pages/Notice.css" />
+}
+
+@section scripts{
+
+        }

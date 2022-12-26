@@ -1,0 +1,209 @@
+﻿@charset "UTF-8";
+@import "../base/_setting.scss";
+@import "../layout/_header.scss";
+@import "../layout/_footer.scss";
+@import "../components/_inputs.scss";
+@import "../components/_buttons.scss";
+
+
+.contact {
+
+    .inner {
+        max-width: 564px;
+        margin: 0 auto;
+        padding: 80px 0;
+    }
+
+    h2 {
+        margin-bottom: 40px;
+    }
+
+    .table_wrap {
+        margin-bottom: 60px;
+    }
+
+    .input_wrap {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 30px;
+
+        input {
+            padding: 8px 16px;
+            flex: 1;
+        }
+
+        option:not(first-child) {
+            color: #000;
+        }
+    }
+
+    .textarea_wrap {
+        margin-bottom: 30px;
+
+        .note-editable {
+            height: 200px;
+        }
+    }
+
+    .file_wrap {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 16px;
+
+        input {
+            flex: 1;
+            border-radius: 8px;
+            padding: 10px 16px;
+
+
+            &[type=file] {
+                display: none;
+            }
+        }
+
+        .upload_btn {
+            min-width: 112px;
+            padding: 10px 0;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+
+            &:hover {
+                color: #fff;
+                transition: var(--hover-transition);
+            }
+        }
+    }
+
+    .email {
+        max-width: 240px !important;
+        width: 100%;
+        padding: 10px 16px;
+        border-radius: 8px;
+    }
+    // 썸머노트
+
+    .note-toolbar {
+        background: $white5;
+    }
+
+    .note-editable {
+        color: $white;
+        background: $white6;
+    }
+
+    .note-btn {
+        background: $white2;
+    }
+
+    .note-editor.note-airframe.fullscreen, .note-editor.note-frame.fullscreen {
+        background: #fff;
+
+        .note-editable {
+            color: #222;
+        }
+    }
+
+    .note-btn.active, .note-btn:active {
+        background: $white3;
+    }
+    // 썸머노트 끝
+}
+/*
+@media screen and (max-width: 426px) {
+    .contact {
+        .input_wrap {
+            flex-wrap: wrap;
+
+            select {
+                width: 100%;
+                min-width: 100%;
+                max-width: 100%;
+            }
+        }
+
+        .send_btn {
+            margin: 0 auto;
+        }
+    }
+}
+*/
+
+
+.select_wrap {
+    max-width: 140px;
+    height: 100%;
+    font-size: 14px;
+    font-family: $suit_regular;
+    border-radius: 8px;
+    background: $black3 url(../../images/icons/select_drop.svg) no-repeat right 12px center / 20px auto;
+    border: 1px solid transparent;
+
+    &.default {
+        .select {
+            color: $white2;
+        }
+    }
+
+    button {
+        width: 100%;
+        padding: 7px 24px 7px 14px;
+        height: 100%;
+        text-align: left;
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        font-size: 14px;
+        line-height: 1.5;
+
+        img {
+            display: none;
+            width: auto;
+            height: 24px;
+        }
+    }
+}
+
+
+.select_list {
+    width: 140px;
+    position: relative;
+    height: 40px;
+
+    ul {
+        display: none;
+        max-width: 140px;
+        width: 100%;
+        flex-direction: column;
+        background: $black3;
+        border-radius: 8px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, .6);
+        overflow: hidden;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        max-height: 164px;
+        overflow-y: auto;
+        z-index: 1;
+
+        &.on {
+            display: flex;
+        }
+    }
+
+    li {
+        width: 100%;
+
+        button {
+            width: 100%;
+            display: flex;
+            padding: 8px 14px;
+            align-items: center;
+            gap: 6px;
+
+            &:hover {
+                background: $theme2;
+            }
+        }
+    }
+}

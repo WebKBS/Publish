@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@import "../base/_setting.scss";
+
+html, body {
+    height: 100%;
+}
+
+#wrap {
+    position: relative;
+    height: 100%;
+}
+
+.container {
+    background: $background;
+    min-height: calc( 100% - 76px - 150px);
+}
+
+.top_title_wrap {
+    background: $gray2;
+
+    .inner {
+        max-width: 976px;
+        padding: 20px 24px;
+        margin: 0 auto;
+    }
+
+    .sub_title {
+        word-break: keep-all;
+    }
+}
+
+// 유효하지 않은
+.invalid {
+    font-size: 12px;
+    line-height: 1.5;
+    color: $alert;
+    position: absolute;
+    left: 0;
+    bottom: -26px;
+    display: none;
+
+    img {
+        width: auto;
+        height: 18px;
+        margin-right: 4px;
+    }
+
+    &.on{
+        display: block;
+    }
+}
+
+.connection.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 480px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+
+    &.on {
+        display: block;
+    }
+
+    .inner {
+        max-width: 480px;
+        width: 100%;
+        padding: 40px 40px 50px;
+        background: $gray2;
+        border-radius: 12px;
+    }
+
+    h4 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .sub_title {
+        text-align: center;
+        margin-bottom: 30px;
+        word-break: keep-all;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+
+        li {
+            max-width: 220px;
+            width: 100%;
+        }
+
+        button {
+            width: 100%;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            justify-content: center;
+            background: $black3;
+            border-radius: 8px;
+            padding: 13px 0;
+
+            img {
+                width: auto;
+                height: 22px;
+            }
+        }
+    }
+
+    .modal_x_btn {
+        .line {
+            background: $theme;
+        }
+    }
+}
+
+/* ======= 태블릿 ======= */
+/*@media screen and (max-width: 1024px) {
+
+    .mobile_h2 {
+        display: block;
+        margin-bottom: 40px;
+        font-size: 28px !important;
+        line-height: 1.3 !important;
+    }
+}
+*/

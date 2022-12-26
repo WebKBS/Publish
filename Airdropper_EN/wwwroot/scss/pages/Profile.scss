@@ -1,0 +1,124 @@
+﻿@charset "UFT-8";
+@import "../base/_setting.scss";
+@import "../layout/_header.scss";
+@import "../layout/_footer.scss";
+@import "../components/_inputs.scss";
+@import "../components/_buttons.scss";
+
+.profile {
+    .inner {
+        max-width: 668px;
+        padding: 80px 0;
+        margin: 0 auto;
+    }
+
+    h2 {
+        margin-bottom: 40px;
+    }
+
+    .info_wrap {
+        margin-bottom: 12px;
+        background: $black3;
+        border-radius: 16px;
+
+        .user_email {
+            padding: 16px 24px 0;
+        }
+
+        .join_date {
+            padding: 13px 24px 25px;
+        }
+
+        & > div:not(.user_email, .join_date) {
+            padding: 0 24px;
+        }
+
+        > div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            align-items: center;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .text_wrap {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .title {
+            min-width: 102px;
+        }
+
+        .join_date {
+            margin-bottom: 0;
+        }
+    }
+
+    .user_pw, .history {
+        background: $black3;
+        border-radius: 16px;
+        padding: 12px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    .history{
+        margin-bottom: 60px;
+    }
+
+}
+
+/*
+@media screen and (max-width: 768px) {
+    .profile {
+
+        .info_wrap {
+
+            > div {
+                margin-bottom: 40px;
+                align-items: flex-start;
+                position: relative;
+            }
+
+            .text_wrap {
+                flex-direction: column;
+                align-items: baseline;
+                gap: 16px;
+            }
+
+            .change_btn {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .user_email {
+
+                .change_btn {
+                    top: 30px;
+                }
+            }
+
+            .user_pw {
+                .change_btn {
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+
+        .btn_wrap{
+            justify-content: center;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+    }
+}
+*/

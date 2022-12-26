@@ -1,0 +1,98 @@
+﻿@charset "UTF-8";
+@import "../base/_setting.scss";
+
+input:not([type=checkbox]) {
+    padding: 7px 16px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: $suit_regular;
+    background: $white6;
+    color: $white;
+    outline: none;
+    border: 1px solid transparent;
+    transition: border .3s;
+    border-radius: 8px;
+    flex: 1;
+
+    &::placeholder {
+        color: $white4;
+    }
+
+    &:focus {
+        outline: 0;
+        border-color: $white;
+    }
+
+    &:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0 100px #494949 inset;
+        -webkit-text-fill-color: $white;
+    }
+
+    &[type=email] {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    &[type=password] {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    &[type=text] {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+    background: $gray3 url(../../images/icons/checkbox_icon.svg) no-repeat center center / auto 7px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:checked {
+        background: $theme url(../../images/icons/checkbox_icon.svg) no-repeat center center / auto 7px;
+    }
+
+    & + label{
+        cursor: pointer;
+    }
+}
+
+input[readonly]{
+    background: $black3;
+    color: $white2;
+
+    &:focus{
+        border-color: transparent;
+    }
+}
+
+.check_btn {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../../images/icons/check-mark2-off.svg) no-repeat center center / auto 20px;
+}
+
+
+.auto_label {
+    cursor: pointer;
+}
+
+
+
+input[type=search] {
+    max-width: 300px;
+    border-radius: 8px;
+    padding: 8.5px 42px 8.5px 16px;
+    background: $white6;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: $suit_regular;
+    
+    &:focus {
+        outline-width: 2px;
+    }
+}

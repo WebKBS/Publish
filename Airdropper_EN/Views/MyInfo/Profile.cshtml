@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["title"] = "내 정보";
+}
+
+
+<section class="cont1 profile">
+    <div class="inner">
+        <h2 class="subtitle_3 suit_m">내 정보</h2>
+        <div class="info_wrap">
+            <div class="user_email">
+                <div class="text_wrap">
+                    <p class="title body_2 suit_m color_white_2">아이디(Email)</p>
+                    <p class="info body_2 suit_r">airdropper@airdropper.com</p>
+                </div>
+                <a href="/Edit/Email" class="change_btn button_112">변경하기</a>
+            </div>
+            <div class="user_nickname">
+                <div class="text_wrap">
+                    <p class="title body_2 suit_m color_white_2">닉네임</p>
+                    <p class="info body_2 suit_r">airdropper</p>
+                </div>
+                <a href="/Edit/NickName" class="change_btn button_112">변경하기</a>
+            </div>
+            <div class="join_date">
+                <div class="text_wrap">
+                    <p class="title body_2 suit_m color_white_2">회원가입일</p>
+                    <p class="info body_2 suit_r">2022년 10월 10일</p>
+                </div>
+            </div>
+        </div>
+        <div class="user_pw">
+            <div class="text_wrap">
+                <p class="title body_2 suit_m color_white_2">비밀번호</p>
+            </div>
+            <a href="/Edit/EditPw" class="change_btn button_112">변경하기</a>
+        </div>
+        <div class="history">
+            <div class="text_wrap">
+                <p class="title body_2 suit_m color_white_2">사용내역 관리</p>
+            </div>
+            <a href="/MyInfo/PaymentHistory" class="change_btn button_112">확인하기</a>
+        </div>
+        <a href="/MyInfo/WithdrawalComp" class="button_160">회원탈퇴</a>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+@section Heads{
+    <link rel="stylesheet" href="~/css/pages/Profile.css" />
+}

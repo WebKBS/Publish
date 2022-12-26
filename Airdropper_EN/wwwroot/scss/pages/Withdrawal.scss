@@ -1,0 +1,115 @@
+﻿@charset "UTF-8";
+@import "../base/_setting.scss";
+@import "../layout/_header.scss";
+@import "../layout/_footer.scss";
+@import "../components/_inputs.scss";
+@import "../components/_buttons.scss";
+
+.withdrawal {
+    .inner {
+        max-width: 668px;
+        margin: 0 auto;
+        padding: 80px 0;
+    }
+
+    .sub_title {
+        margin-bottom: 40px;
+    }
+
+
+    .info_inner {
+        border-radius: 12px;
+        margin-bottom: 20px;
+        background: $black2;
+    }
+
+    .info_title {
+        padding: 10px 16px;
+        border-bottom: 1px solid $white6;
+
+        p {
+            word-break: keep-all;
+        }
+    }
+
+    .info_text {
+        padding: 20px;
+
+        p {
+            word-break: keep-all;
+
+            strong {
+                word-break: keep-all;
+                color: $theme;
+            }
+        }
+    }
+
+    .check_wrap {
+        margin-bottom: 60px;
+
+        input {
+            display: none;
+
+            + label {
+                display: inline-flex;
+                gap: 8px;
+                cursor: pointer;
+
+                img {
+                    width: 20px;
+                }
+
+                img:nth-child(2) {
+                    display: none;
+                }
+
+                span {
+                    color: $white2;
+                }
+            }
+
+            &:checked {
+
+                + label {
+                    img:nth-child(1) {
+                        display: none;
+                    }
+
+                    img:nth-child(2) {
+                        display: block;
+                    }
+
+                    span {
+                        color: $theme;
+                    }
+                }
+            }
+        }
+    }
+
+    .button_wrap {
+        display: flex;
+        gap: 8px;
+    }
+
+    .withdrawal_btn {
+
+        &[disabled] {
+        }
+    }
+}
+
+/*@media screen and (max-width: 768px){
+    .withdrawal {
+        .withdrawal_btn {
+            margin: 0 auto;
+        }
+
+        .info_text{
+            padding: 20px;
+        }
+    }
+    
+}
+*/

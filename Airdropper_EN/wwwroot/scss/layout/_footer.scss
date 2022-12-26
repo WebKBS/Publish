@@ -1,0 +1,50 @@
+﻿@charset "UTF-8";
+@import '../base/_setting.scss';
+
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    background: $black3;
+
+    .inner {
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 24px 20px;
+        display: flex;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .img_wrap {
+        width: 60px;
+    }
+
+    h2 {
+        margin-bottom: 12px;
+    }
+
+    .f_info{
+        p{
+            display: flex;
+            gap: 16px;
+        }
+    }
+
+    .sub {
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .telegram{
+            width: 44px;
+            margin-bottom: 14px;
+        }
+
+        .notice{
+            display: flex;
+            gap: 20px;
+        }
+    }
+}

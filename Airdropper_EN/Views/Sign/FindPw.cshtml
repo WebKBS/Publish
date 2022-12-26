@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["title"] = "Find Password";
+}
+
+
+<section class="cont findPw">
+    <div class="inner">
+        <div class="login_wrap">
+            <h2 class="subtitle_1 color_theme jost_m">FIND PW</h2>
+            <form>
+                <div class="box">
+                    <div class="input_wrap">
+                        <!-- error 클래스 색상변경 -->
+                        <input type="email" class="email" placeholder="ID(Email address)" />
+                    </div>
+                    <div class="pw_wrap">
+                        <!-- error 클래스 색상변경 -->
+                        <input type="text" class="certification" placeholder="Email verification code" />
+                        <button class="send_btn send on">Send</button>
+                        <button type="button" class="send_btn resend">Resend</button>
+                        <p class="timer send_btn" id="timer">5:00</p>
+                    </div>
+                    <div class="error_msg">
+                        <img src="~/images/icons/attention.svg" alt="alert" />
+                        <p>Input timed out.</p>
+                    </div>
+                </div>
+                <button type="submit" id="submitBtn" class="next_btn">Next</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+@section Heads{
+    <link rel="stylesheet" href="~/css/pages/FindPw.css" />
+    <script src="~/js/FindPassword.js" defer></script>
+}

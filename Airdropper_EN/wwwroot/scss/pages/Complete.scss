@@ -1,0 +1,73 @@
+﻿@charset "UTF-8";
+@import "../base/_setting.scss";
+@import "../layout/_header.scss";
+@import "../layout/_footer.scss";
+@import "../components/_buttons.scss";
+
+.complete, .withdrawal_comp {
+
+    .inner {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 174px 0;
+    }
+
+    h2 {
+        text-align: center;
+        padding-top: 88px;
+        background: url(../../images/icons/check_icon.svg) no-repeat center 0 / 68px auto;
+
+        span {
+            display: block;
+        }
+    }
+
+    .sub_title {
+        text-align: center;
+    }
+
+    .sub_text {
+        text-align: center;
+    }
+
+    .by_login {
+        margin: 0 auto;
+    }
+}
+
+.withdrawal_comp {
+    .inner {
+        gap: 4px;
+    }
+
+    .sub_title {
+        margin-bottom: 40px;
+    }
+
+    .sub_text {
+        margin-bottom: 40px;
+    }
+}
+
+/*@media screen and (max-width: 1024px) {
+    .complete {
+
+        .inner {
+            padding: 150px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .complete {
+        h2 {
+            font-size: 18px;
+        }
+
+        .sub_text {
+            font-size: 14px;
+        }
+    }
+}
+*/

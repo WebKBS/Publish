@@ -1,0 +1,198 @@
+﻿@charset "UTF-8";
+@import "../base/_setting.scss";
+@import "../layout/_header.scss";
+@import "../layout/_footer.scss";
+@import "../components/_inputs.scss";
+@import "../components/_buttons.scss";
+
+
+
+.edit_pw, .edit_email {
+
+    .inner {
+        max-width: 564px;
+        padding: 80px 0;
+        margin: 0 auto;
+    }
+
+    .sub_title {
+        margin-bottom: 40px;
+    }
+
+
+    .form_wrap {
+        margin-bottom: 40px;
+    }
+
+    .input_wrap {
+        position: relative;
+        padding-bottom: 40px;
+
+        label {
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .box {
+            display: flex;
+            gap: 12px;
+
+            input {
+                width: 100%;
+                flex: 1;
+                border-radius: 8px;
+                padding: 10px 16px;
+            }
+        }
+
+        .pos_box {
+
+            &:nth-of-type(1) {
+                margin-bottom: 12px;
+            }
+
+            input {
+                width: 100%;
+                flex: 1;
+                border-radius: 8px;
+                padding: 10px 38px 10px 16px;
+
+                &::placeholder {
+                }
+
+                img:nth-of-type(1) {
+                    display: block;
+                }
+            }
+
+
+            .view_btn {
+                position: absolute;
+                top: 50%;
+                right: 12px;
+                width: 20px;
+                transform: translateY(-50%);
+
+                &.on {
+                    .close {
+                        display: none;
+                    }
+
+                    .open {
+                        display: block;
+                    }
+                }
+            }
+
+            img {
+                width: 20px;
+            }
+
+            .open {
+                display: none;
+            }
+        }
+
+        .pos_box {
+            position: relative;
+        }
+
+        &.certification {
+            border-bottom: 1px solid $white5;
+            padding-bottom: 60px;
+
+            .box {
+                margin-bottom: 10px;
+            }
+        }
+
+        .success_msg, .error_msg {
+            display: none;
+            position: absolute;
+            left: 0;
+            bottom: -30px;
+
+            &.on {
+                display: block;
+            }
+        }
+
+        .success_msg {
+        }
+
+        .error_msg {
+            padding-left: 28px;
+            background: url(../images/icons/attention.svg) no-repeat 0 center / 20px auto;
+        }
+    }
+}
+
+
+
+/*@media screen and (max-width: 1024px) {
+
+    .cont1 {
+        .inner {
+            max-width: 520px;
+            padding: 120px 20px;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cont1 {
+
+        .next_btn {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .cont1 {
+        .input_wrap.id {
+
+            .box {
+                flex-wrap: wrap;
+
+                input {
+                    flex: auto;
+                }
+
+                .check_btn {
+                    max-width: 120px;
+                    width: 100%;
+                }
+            }
+        }
+
+        .input_wrap.certification {
+
+            .check_btn {
+                max-width: 120px;
+                width: 100%;
+                padding: 10px 0;
+            }
+        }
+
+        .input_wrap.nickname {
+            .box {
+                flex-wrap: wrap;
+
+                input {
+                    flex: auto;
+                }
+
+                .check_btn {
+                    max-width: 120px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+*/

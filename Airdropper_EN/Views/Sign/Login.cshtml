@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["title"] = "로그인";
+}
+
+<section class="cont login">
+    <div class="inner">
+        <div class="login_wrap">
+            <h2 class="subtitle_1 jost_m color_theme">LOGIN</h2>
+            <form>
+                <div class="input_wrap">
+                    <input type="email" class="email" name="email" placeholder="ID(Email address)" />
+                    <input type="password" class="password" name="password" placeholder="Password" />
+                </div>
+                <div class="auto_login">
+                    <input type="checkbox" id="auto_check" />
+                    <label class="auto_label" for="auto_check">
+                        <span class="check_btn"></span>
+                        <span class="color_theme suit_r body_2">Auto Login</span>
+                    </label>
+                </div>
+                <button type="submit" id="signInBtn" class="login_btn">LOGIN</button>
+            </form>
+            <div class="link_wrap">
+                <ul>
+                    <li>
+                        <a href="/Sign/FindPw" class="button_2 color_white_3 font_hover">Forgot Password</a>
+                    </li>
+                    <li>
+                        <a href="/Sign/SignUp" class="button_2 color_white_3 font_hover">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+@section Heads{ 
+    <link rel="stylesheet" href="~/css/pages/Login.css" />
+    <script src="~/js/SignIn.js" defer></script>
+}

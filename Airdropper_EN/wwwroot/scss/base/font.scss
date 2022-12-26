@@ -1,0 +1,220 @@
+@charset "utf-8";
+@import "../base/_setting.scss";
+
+/* Jost */
+@font-face {
+    src: url(../../font/Jost/Jost-Bold.ttf) format('TrueType');
+    font-family: $jost_bold;
+    font-display: swap;
+}
+
+@font-face {
+    src: url(../../font/Jost/Jost-SemiBold.ttf) format('TrueType');
+    font-family: $jost_semibold;
+    font-display: swap;
+}
+
+@font-face {
+    src: url(../../font/Jost/Jost-Medium.ttf) format('TrueType');
+    font-family: $jost_medium;
+    font-display: swap;
+}
+
+@font-face {
+    src: url(../../font/Jost/Jost-Regular.ttf) format('TrueType');
+    font-family: $jost_regular;
+    font-display: swap;
+}
+
+/*@font-face {
+    src: url(../../font/Jost/Jost-Bold.ttf) format('TrueType');
+    font-family: 'jost_bold';
+    font-display: swap;
+}
+*/
+
+
+// Suit
+@font-face {
+    src: url(../../font/suit/SUIT-Bold.woff2) format('woff2');
+    font-family: $suit_bold;
+    font-display: swap;
+}
+
+@font-face {
+    src: url(../../font/suit/SUIT-SemiBold.woff2) format('woff2');
+    font-family: $suit_semibold;
+    font-display: swap;
+}
+
+@font-face {
+    src: url(../../font/suit/SUIT-Medium.woff2) format('woff2');
+    font-family: $suit_medium;
+    font-display: swap;
+}
+
+@font-face {
+    src: url(../../font/suit/SUIT-Regular.woff2) format('woff2');
+    font-family: $suit_regular;
+    font-display: swap;
+}
+
+@font-face {
+    src: url(../../font/suit/SUIT-Light.woff2) format('woff2');
+    font-family: $suit_light;
+    font-display: swap;
+}
+
+
+
+
+// font family
+.jost_b {
+    font-family: $jost_bold;
+}
+
+.jost_sb {
+    font-family: $jost_semibold;
+}
+
+
+.jost_m {
+    font-family: $jost_medium;
+}
+
+.jost_r {
+    font-family: $jost_regular;
+}
+
+.suit_b {
+    font-family: $suit_bold;
+}
+
+.suit_sb {
+    font-family: $suit_semibold;
+}
+
+.suit_m {
+    font-family: $suit_medium;
+}
+
+.suit_r {
+    font-family: $suit_regular;
+}
+
+.suit_l {
+    font-family: $suit_light;
+}
+
+
+// title
+.h1 {
+    font-size: 38px;
+    line-height: 1.3;
+}
+
+.h2 {
+    font-size: 26px;
+    line-height: 1.3;
+}
+
+.h3 {
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+.h4 {
+    font-size: 22px;
+}
+
+.h5 {
+    font-size: 20px;
+}
+
+.h6 {
+    font-size: 18px;
+}
+
+// header font
+.navi_1 {
+    font-size: 14px;
+}
+
+
+// sub title
+.subtitle_1 {
+    font-size: 22px;
+}
+
+.subtitle_2 {
+    font-size: 20px;
+}
+
+.subtitle_3 {
+    font-size: 18px;
+}
+
+.subtitle_4 {
+    font-size: 16px;
+}
+
+.subtitle_5 {
+    font-size: 16px;
+}
+
+// body
+.body_1 {
+    font-size: 16px;
+}
+
+.body_2 {
+    font-size: 14px;
+}
+
+.body_3 {
+    font-size: 13px;
+}
+
+.table_1 {
+    font-size: 14px;
+}
+
+
+// button
+.button_2 {
+    font-size: 14px;
+}
+
+// caption
+
+.caption_2 {
+    font-size: 12px;
+}
+
+
+// font color
+.color_theme {
+    color: $theme !important;
+}
+
+.color_white_2 {
+    color: $white2 !important;
+}
+
+.color_white_3 {
+    color: $white3 !important;
+}
+
+
+.color_alert {
+    color: $alert !important;
+}
+
+
+.font_hover {
+
+    &:hover {
+        transition: color .2s;
+        color: $theme !important;
+    }
+}

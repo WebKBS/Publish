@@ -663,7 +663,7 @@ button[type=submit].next_btn:hover {
   transition: var(--hover-transition);
 }
 .contact .email {
-  max-width: 240px !important;
+  max-width: 382px !important;
   width: 100%;
   padding: 10px 16px;
   border-radius: 8px;
@@ -708,7 +708,7 @@ button[type=submit].next_btn:hover {
 }
 */
 .select_wrap {
-  max-width: 140px;
+  max-width: 192px;
   height: 100%;
   font-size: 14px;
   font-family: "suit_regular";
@@ -737,13 +737,13 @@ button[type=submit].next_btn:hover {
 }
 
 .select_list {
-  width: 140px;
+  width: 192px;
   position: relative;
   height: 40px;
 }
 .select_list ul {
   display: none;
-  max-width: 140px;
+  max-width: 192px;
   width: 100%;
   flex-direction: column;
   background: #1B1B1B;
@@ -759,6 +759,19 @@ button[type=submit].next_btn:hover {
 }
 .select_list ul.on {
   display: flex;
+}
+.select_list ul::-webkit-scrollbar {
+  width: 8px;
+}
+.select_list ul::-webkit-scrollbar-track {
+  background: #333;
+  border-radius: 20px;
+}
+.select_list ul::-webkit-scrollbar-thumb {
+  background-color: #2ECDFF;
+  border-radius: 20px;
+  background-clip: content-box;
+  border: 2px solid transparent;
 }
 .select_list li {
   width: 100%;

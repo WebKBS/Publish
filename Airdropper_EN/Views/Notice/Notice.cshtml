@@ -1,36 +1,36 @@
 ﻿@{
-    ViewData["title"] = "공지사항";
+    ViewData["title"] = "NOTICE";
 }
 
 
 <section class="cont notice">
     <div class="inner">
-        <h2 class="subtitle_3 suit_m">공지사항</h2>
+        <h2 class="subtitle_3 suit_m">NOTICE</h2>
         <div class="input_group">
             <div class="select_list">
                 <!-- on 추가시 style 변경 -->
                 <div class="select_wrap default">
                     <button type="button" id="selectChain">
                         <img src="" />
-                        <span class="select">제목</span>
+                        <span class="select">Title</span>
                     </button>
                 </div>
                 <!-- on 추가시 display -->
                 <ul class="chain_list">
                     <li>
                         <button type="button">
-                            <span class="select">제목</span>
+                            <span class="select">Title</span>
                         </button>
                     </li>
                     <li>
                         <button type="button">
-                            <span class="select">내용</span>
+                            <span class="select">Content</span>
                         </button>
                     </li>
                 </ul>
             </div>
             <div class="search_wrap">
-                <input type="search" placeholder="검색어를 입력하세요." />
+                <input type="search" placeholder="Enter a word to search for." />
                 <button type="button" class="search_btn" aria-label="검색하기"><span class="visually_hidden">검색하기</span></button>
             </div>
         </div>
@@ -38,11 +38,11 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th>번호</th>
-                        <th>제목</th>
-                        <th>내용</th>
-                        <th>등록일</th>
-                        <th>조회수</th>
+                        <th>No.</th>
+                        <th>Title</th>
+                        <th>Content</th>
+                        <th>Date</th>
+                        <th>View</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -54,7 +54,7 @@
                         <td>
                             10
                         </td>
-                        <td>오픈 기념 이벤트</td>
+                        <td>Lorem Ipsum is simply dummy text of the printing</td>
                         <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gal</td>
                         <td>2022-10-30</td>
                         <td>123</td>
@@ -64,8 +64,8 @@
         </div>
         <div class="table_nav">
             <!-- a태그 on 추가시 색 변경 -->
-            <a href="#" title="처음 페이지로"></a>
-            <a href="#" title="이전 페이지로"></a>
+            <a href="#" title="first Page"></a>
+            <a href="#" title="previous Page"></a>
             <ol>
                 <!-- li 태그 on 추가시 색 변경 -->
                 <li class="on">
@@ -78,8 +78,8 @@
                     <a href="#">3</a>
                 </li>
             </ol>
-            <a href="#" title="다음 페이지로" class="on"></a>
-            <a href="#" title="마지막 페이지로" class="on"></a>
+            <a href="#" title="next Page" class="on"></a>
+            <a href="#" title="last Page" class="on"></a>
         </div>
     </div>
 </section>

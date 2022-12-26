@@ -734,6 +734,7 @@ button[type=submit].next_btn:hover {
   background: #1B1B1B;
   border-radius: 12px;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 .guide .table {
   width: 100%;

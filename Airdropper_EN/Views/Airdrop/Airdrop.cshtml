@@ -1,26 +1,26 @@
 ﻿@{
-    ViewData["title"] = "에어드롭";
+    ViewData["title"] = "AIRDROP";
 }
 
 <div class="top_title_wrap">
     <div class="inner">
-        <h2 class="subtitle_1 suit_m">에어드롭</h2>
-        <p class="sub_title body_2 suit_r color_white_2">AIR DROPPER는 ‘Chrome’ 웹브라우저에 최적화 되어있으며, 모바일 서비스는 지원하지 않습니다.</p>
+        <h2 class="subtitle_1 suit_m">AIRDROP</h2>
+        <p class="sub_title body_2 suit_r color_white_2">AIR DROPPER is optimized for ‘Chrome’ web browser and does not support mobile service.</p>
     </div>
 </div>
 
 <section class="cont airdrop">
     <div class="inner">
-        <h2 class="subtitle_3 suit_m">정보 입력</h2>
+        <h2 class="subtitle_3 suit_m">Enter Info.</h2>
         <div class="select_box">
             <div class="box">
-                <h3 class="body_2 suit_m color_white_2">블록체인 네트워크</h3>
+                <h3 class="body_2 suit_m color_white_2">Blockchain network</h3>
                 <div class="select_list">
                     <!-- on 추가시 style 변경 -->
                     <div class="select_wrap default">
                         <button type="button" id="selectChain">
                             <img src="" />
-                            <span class="select">블록체인 네트워크 선택</span>
+                            <span class="select">Select blockchain network</span>
                         </button>
                     </div>
                     <!-- on 추가시 display -->
@@ -53,12 +53,12 @@
                 </div>
             </div>
             <div class="box">
-                <h3 class="body_2 suit_m color_white_2">토큰 형식</h3>
+                <h3 class="body_2 suit_m color_white_2">Token format</h3>
                 <div class="select_list">
                     <!-- default 클래스 삭제시 흰색 색상 -->
                     <div class="select_wrap default">
                         <button type="button" id="selectToken">
-                            <span class="select">토큰 형식 선택</span>
+                            <span class="select">Select the token format</span>
                         </button>
                     </div>
                     <ul class="token_list">
@@ -72,30 +72,33 @@
             </div>
         </div>
         <div class="input_box">
-            <h3 class="body_2 suit_m color_white_2">스마트 컨트랙트</h3>
+            <h3 class="body_2 suit_m color_white_2">Smart contract</h3>
             <div class="box">
-                <input type="text" placeholder="스마트 컨트랙트 주소 입력" />
-                <button type="button" class="button_112" data-comming>데이터 연동</button>
+                <input type="text" placeholder="Enter the Smart contract address" />
+                <button type="button" class="button_112" data-comming>Data interworking</button>
             </div>
         </div>
         <div class="token_box">
             <div class="box">
-                <h3 class="body_2 suit_m color_white_2">토큰명</h3>
-                <input type="text" readonly aria-label="토큰명"/>
+                <h3 class="body_2 suit_m color_white_2">Token name</h3>
+                <input type="text" readonly aria-label="Token name" />
             </div>
             <div class="box">
-                <h3 class="body_2 suit_m color_white_2">토큰티커</h3>
-                <input type="text" readonly aria-label="토큰티커"/>
+                <h3 class="body_2 suit_m color_white_2">Token ticker</h3>
+                <input type="text" readonly aria-label="Token ticker" />
             </div>
         </div>
         <div class="upload_wrap">
-            <h3 class="body_2 suit_m color_white_2">파일 업로드</h3>
+            <h3 class="body_2 suit_m color_white_2">File upload</h3>
             <div class="box">
-                <p class="body_2 suit_r color_white_2">* 설정한 토큰 형식에 따라 업로드 양식이 달라집니다.</p>
+                <p class="body_2 suit_r color_white_2">
+                    * Depending on the token format you set up,
+                    the upload form will be different.
+                </p>
                 <div class="button_wrap">
                     <!-- disabled 제거, on클래스 추가시 색상 변경 -->
-                    <a href="#" download="" class="button_112 on" data-comming>양식 다운로드</a>
-                    <button id="check_upload_btn" type="button" class="button_112" disabled>업로드 확인</button>
+                    <a href="#" download="" class="button_112 on" data-comming>Download form</a>
+                    <button id="check_upload_btn" type="button" class="button_112" disabled>Confirm Upload</button>
                 </div>
             </div>
             <div class="box">
@@ -110,25 +113,25 @@
                         </svg>
 
                         <span id="file_name">File Upload</span>
-                        <span id="file_msg">CSV 파일(.csv) 선택 or 드래그 앤 드랍</span>
+                        <span id="file_msg">Select CSV file (.csv) or drag and drop</span>
                     </label>
                 </div>
             </div>
             <div class="text_wrap body_2 suit_r color_white_2">
-                <p><span>*</span>파일은 지갑 주소와 전송할 토큰 수만으로 이루어진 리스트여야 합니다. (파일 형식: *.CSV)</p>
+                <p><span>*</span>The file should be a list of only wallet addresses and the amount of tokens to be transferred. (File format: *.CSV)</p>
                 <p>
-                    <span>*</span>NFT의 경우, ERC-721(BEP-721/KIP-17)은 토큰 1개당 1개의 주소가 정해져 있어야 하며, 토큰의 수량이 아닌 토큰 ID를 입력해야 합니다.<br />
-                    (예: 1개의 주소에 3개의 NFT를 전송하는 경우, 동일 주소가 적힌 3개의 행에 각 토큰 ID를 입력)
+                    <span>*</span>In the case of NFT, ERC-721 (BEP-721/KIP-17) requires one address per token, and you must enter the token ID, not the amount of tokens.<br />
+                    (Example: If you send 3 NFTs to 1 address, enter each token ID in 3 rows with the same address)
                 </p>
                 <p>
-                    <span>*</span>ERC-1155(BEP-1155/KIP-37)은 토큰ID당 1개의 주소가 정해져 있어야 하며, 주소 / 토큰ID / 토큰갯수를 입력해야 합니다.
+                    <span>*</span>ERC-1155 (BEP-1155/KIP-37) requires one address per token ID, and address / token ID / amount of tokens must be entered.
                 </p>
-                <p class="color_theme"><span>*</span>리스트의 수정은 수정된 파일의 업로드를 통해서만 가능합니다.</p>
-                <p><span>*</span>자세한 내용은 ‘Guide’ 참고</p>
+                <p class="color_theme"><span>*</span>Modification of the list is possible only through uploading the modified file.</p>
+                <p><span>*</span>For details, refer to the ‘Guide’</p>
             </div>
         </div>
         <div class="button_wrap">
-            <button type="button" class="button_160 payment_btn" disabled>다 음</button>
+            <button type="button" class="button_160 payment_btn" disabled>NEXT</button>
         </div>
     </div>
 </section>
@@ -219,7 +222,7 @@
     const fileHandler = (fileList, target) => {
         if (fileList[0].type === fileExtention[0]) {
             fileName.textContent = fileList[0].name;
-            fileMsg.textContent = "파일 업로드 완료"
+            fileMsg.textContent = "File upload completed"
             uploadLabel.classList.add('on');
             checkUploadBtn.disabled = false;
             checkUploadBtn.classList.add('on');
@@ -236,8 +239,8 @@
     const errorMsg = () => {
         uploadLabel.classList.remove('on');
         uploadLabel.classList.add('error');
-        fileName.textContent = '올바르지 않은 파일입니다.'
-        fileMsg.textContent = "다시 업로드 해주세요."
+        fileName.textContent = 'Invalid file.'
+        fileMsg.textContent = "Please re-upload."
         fileSelector.value = "";
     }
 
@@ -288,23 +291,23 @@
         <div class="inner">
             <h2 class="body_1 suit_m">
                 <img src="~/images/logo_icon.svg" class="logo" alt="logo" />
-                <span>파일 업로드 결과확인 : </span>
+                <span>Check the result of file upload:</span>
                 <span>ERC-20</span>
             </h2>
             <div class="info">
                 <div class="body_2 suit_r">
-                    전송할 Tx:
-                    <span>2,500</span> 개
+                    Txs to transfer
+                    <span>2,500</span> ea
                     /
-                    전송할 토큰:
+                    Token to transfer:
                     <span>100,000</span>
                     <span class="unit">MinTi</span>
                     <!-- on추가시 display -->
-                    <p class="info_text color_theme on">파일 이상 없음: 다음 단계를 진행하세요.</p>
-                    <p class="info_text color_alert">잘못된 정보가 존재합니다.</p>
+                    <p class="info_text color_theme on">No problem with the file: Proceed to the next step.</p>
+                    <p class="info_text color_alert">Incorrect information exists in 9,999 items.</p>
                 </div>
                 <div>
-                    <button type="button" class="button_112 error">오류 확인</button>
+                    <button type="button" class="button_112 error">Check errors</button>
                 </div>
             </div>
             <div class="table_wrap">
@@ -348,8 +351,8 @@
             </div>
             <div class="table_nav">
                 <!-- a태그 on 추가시 색 변경 -->
-                <a href="#" title="처음 페이지로"></a>
-                <a href="#" title="이전 페이지로"></a>
+                <a href="#" title="first Page"></a>
+                <a href="#" title="previous Page"></a>
                 <ol>
                     <!-- li 태그 on 추가시 색 변경 -->
                     <li class="on">
@@ -362,10 +365,10 @@
                         <a href="#">3</a>
                     </li>
                 </ol>
-                <a href="#" title="다음 페이지로" class="on"></a>
-                <a href="#" title="마지막 페이지로" class="on"></a>
+                <a href="#" title="next Page" class="on"></a>
+                <a href="#" title="last Page" class="on"></a>
             </div>
-            <button type="button" class="button_180" data-modal-close>확 인</button>
+            <button type="button" class="button_180" data-modal-close>CONFIRM</button>
         </div>
     </div>
 
@@ -373,8 +376,8 @@
         <div class="inner">
             <h3 class="h3 jost_m color_alert">Incorrect List</h3>
             <p class="sub_title body_2 suit_r">
-                아래의 항목에 올바르지 않은 정보가 존재합니다.<br />
-                지갑 주소, 총 발행량, 토큰 ID를 재확인하세요.
+                Invalid information exists in the items below.<br />
+                Double-check your wallet address, total supply, and token ID.
             </p>
 
             <div class="table_wrap">
@@ -389,37 +392,50 @@
                         <tr>
                             <td>99</td>
                             <td>
-                                지갑 주소 미입력
+                                Wallet address
+                                not entered
                             </td>
                         </tr>
                         <tr>
                             <td>999</td>
                             <td>
-                                지갑 주소 양식 불일치
+                                Wallet address
+                                format missmatiched
                             </td>
                         </tr>
                         <tr>
                             <td>9999</td>
                             <td>
-                                지갑 주소, 토큰 ID, 발행량 미입력
+                                Wallet address,
+                                Token ID,
+                                Total supply
+                                not entered
                             </td>
                         </tr>
                         <tr>
                             <td>99999</td>
                             <td>
-                                지갑 주소, 발행량 양식 불일치
+                                Wallet address,
+                                Total supply
+                                format missmatiched
                             </td>
                         </tr>
                         <tr>
                             <td>999999</td>
                             <td>
-                                지갑 주소, 토큰 ID, 발행량 미입력 / 지갑 주소, 발행량 양식 불일치
+                                Wallet address,
+                                Token ID,
+                                Total supply
+                                not entered
+                                Wallet address,
+                                Total supply
+                                format missmatiched
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <button type="button" class="button_180" data-modal-close>닫 기</button>
+            <button type="button" class="button_180" data-modal-close>CLOSE</button>
         </div>
     </div>
 }

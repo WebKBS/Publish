@@ -1,22 +1,22 @@
 ﻿@{
-    ViewData["title"] = "서비스 수수료 안내";
+    ViewData["title"] = "PRICE GUIDE";
 }
 
 <section class="cont guide">
     <div class="inner">
-        <h2 class="subtitle_3 suit_m">서비스 수수료 안내</h2>
+        <h2 class="subtitle_3 suit_m">PRICE GUIDE</h2>
         <div class="tab_wrap">
-            <button type="button" class="body_1 suit_m on">토큰 발행 수수료 안내</button>
-            <button type="button" class="body_1 suit_m">에어드롭 이용 수수료 안내</button>
+            <button type="button" class="body_1 suit_m on">Token issuing service fee</button>
+            <button type="button" class="body_1 suit_m">Airdrp service fee</button>
         </div>
         <div class="tab_content tab_1 on">
             <div class="table_wrap">
                 <table class="table table1">
                     <thead>
                         <tr>
-                            <th>네트워크</th>
-                            <th>수수료</th>
-                            <th>참고</th>
+                            <th>Network</th>
+                            <th>Service fee</th>
+                            <th>Note</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -24,11 +24,9 @@
                             <td>ETH</td>
                             <td>0.5 ETH</td>
                             <td rowspan="7">
-                                본 수수료는 토큰 발행 서비스에 대한 이용 수수료이며,
-                                토큰 발행 시 네트워크에 지급하는 가스비는 별도로 결제해야 합니다.
+                                This fee is a fee for the token issuing service, and the Gas fee paid to the network at the time of token issuance must be paid separately.
                                 <br /><br />
-                                가스비는 각 네트워크 상황에 따라 변동이 크므로 발행 진행 시 책정되는 예상 가스비를 확인 후 적정할 때 ‘확인’ 버튼을
-                                클릭하실 것을 권장합니다.
+                                Since the Gas fee fluctuates greatly depending on the network situation, we recommend to check the estimated Gas fee during issuance and click on the ‘Confirm’ button when it is appropriate.
                             </td>
                         </tr>
                         <tr>
@@ -58,6 +56,7 @@
                     </tbody>
                 </table>
             </div>
+            <p class="body_2 suit_r color_white_2">* Service fees are updated daily at ‘UTC 01:00’.</p>
         </div>
 
         <!-- =====      tab 2     ===== -->
@@ -66,10 +65,10 @@
                 <table class="table table2">
                     <thead>
                         <tr>
-                            <th>네트워크</th>
-                            <th>1회 전송 Tx 수</th>
-                            <th>서비스 수수료</th>
-                            <th>참고</th>
+                            <th>Network</th>
+                            <th>Unit of number of Txs</th>
+                            <th>Service fee</th>
+                            <th>Note</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -78,11 +77,11 @@
                             <td>1,000 Tx</td>
                             <td>0.1 ETH</td>
                             <td rowspan="7">
-                                1회 전송 할 Tx에서 1,000 Tx 당 0.1 ETH
+                                0.1 ETH per 1,000 Tx in a transaction to be transferred once
                                 <br /><br />
-                                Ex) 5,000Tx 전송 시 0.5 ETH<br />
-                                &nbsp; &nbsp; &nbsp; &nbsp; 4,300Tx 전송 시 0.5 ETH<br />
-                                &nbsp; &nbsp; &nbsp; &nbsp; 3,900Tx 전송 시 0.4 ETH<br />
+                                Ex) 0.5 ETH when transferring 5,000Txs<br />
+                                &nbsp; &nbsp; &nbsp; &nbsp; 0.5 ETH when transferring 4,300Txs<br />
+                                &nbsp; &nbsp; &nbsp; &nbsp; 0.5 ETH when transferring 3,900Txs<br />
                             </td>
                         </tr>
                         <tr>
@@ -116,11 +115,11 @@
                 </table>
             </div>
             <p class="body_2 suit_r color_white_2 price_text">
-                <span>*</span> 수수료는 1회에 전송할 총 트랜잭션 수를 기준으로 하되, 1,000개 트랜잭션 단위로 과금합니다.
+                <span>*</span> The fee is based on the total number of transactions to be sent at one time, but is charged in units of 1,000 transactions.
                 <br />
-                <span>*</span> 수수료는 매일 ‘UTC 01:00’에 갱신됩니다.
+                <span>*</span> Service fees are updated daily at ‘UTC 01:00’.
             </p>
-            <h3 class="body_1 suit_m">수수료 계산기</h3>
+            <h3 class="body_1 suit_m">Service Fee Calculator</h3>
             <div class="box">
                 <div class="box_inner">
                     <div class="select_list">
@@ -128,7 +127,7 @@
                         <div class="select_wrap default">
                             <button type="button" id="selectChain">
                                 <img src="" />
-                                <span class="select">블록체인 네트워크 선택</span>
+                                <span class="select">Select blockchain network</span>
                             </button>
                         </div>
                         <!-- on 추가시 display -->
@@ -159,16 +158,16 @@
                             </li>
                         </ul>
                     </div>
-                    <input type="tel" placeholder="에어드롭할 트랜잭션 수(Tx)를 입력하세요." />
+                    <input type="tel" placeholder="Enter the number of Txs to airdrop." />
                 </div>
-                <button type="button" class="send_btn" id="calcBtn">계산하기</button>
+                <button type="button" class="send_btn" id="calcBtn">Calculate</button>
             </div>
             <div class="value_wrap">
                 <!-- on 추가시 display -->
-                <div class="no_data body_2 suit_m color_white_3 on">상단의 정보를 입력하세요.</div>
+                <div class="no_data body_2 suit_m color_white_3 on">Please enter the information above.</div>
                 <!-- on 추가시 display -->
                 <div class="result_wrap">
-                    <h4 class="subtitle_2 suit_m color_theme">에어드롭 예상 서비스이용료</h4>
+                    <h4 class="subtitle_2 suit_m color_theme">Estimated Airdrop service fee</h4>
                     <p>
                         <span class="price subtitle_2 suit_m">99,9999</span>
                         <span class="unit subtitle_2 suit_m">ETH</span>
@@ -176,10 +175,10 @@
                 </div>
             </div>
             <p class="body_2 suit_r color_white_2 text_box">
-                <span>*</span> 수수료는 에어드롭 실행 시 거래 승인과 동시에 연결된 지갑에서 차감됩니다. 따라서, 연결된 지갑에는 에어드롭할 토큰은 물론, 가스비 및 이용 수수료에 해당하는 코인이 예치되어 있어야 합니다.
+                <span>*</span> The fee will be deducted from the connected wallet upon approval of the transaction when the airdrop is executed. Therefore, the tokens to be airdropped as well as the coins corresponding to the Gas fee and Service fee must be deposited in the connected wallet.
             </p>
             <p class="body_2 suit_r color_white_2 text_box">
-                <span>*</span> 가스비는 해당 메인 넷의 네트워크 상황에 따라 편차가 클 수 있으니, 전송 전 예상 가스비를 반드시 확인하신 후 진행하시기 바랍니다.
+                <span>*</span> The Gas fee may vary greatly depending on the network conditions of the main net, so please check the estimated Gas fee before proceeding.
             </p>
         </div>
     </div>
@@ -273,7 +272,7 @@
         },
     ]
 
-    
+
 
     const noData = document.querySelector('.no_data');
     const result = document.querySelector('.result_wrap');

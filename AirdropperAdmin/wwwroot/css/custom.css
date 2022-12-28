@@ -117,4 +117,12 @@ table tbody td a {
   max-height: 240px;
 }
 
+.table_text_ovf {
+  display: block;
+  max-width: 200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 /*# sourceMappingURL=custom.css.map */

@@ -102,21 +102,26 @@
             <div class="row col-3">
                 <div class="col-6">
                     <select class="form-control w-100 h-auto">
+                        <option value="">전체 기간</option>
                         <option value="">최근 7일</option>
                         <option value="">최근 1개월</option>
-                        <option value="">전체 기간</option>
                     </select>
                 </div>
                 <div class="col-6">
                     <select class="form-control w-100 h-auto">
-                        <option value="">닉네임</option>
+                        <option value="">가입일</option>
+                        <option value="">접속횟수</option>
+                        <option value="">토큰발행이용건수</option>
+                        <option value="">에어드롭이용횟수</option>
+                        <option value="">누적전송Tx</option>
+                        <option value="">누적이용수수료</option>
                     </select>
                 </div>
             </div>
             <div class="row col-auto justify-content-between">
                 <div class="col-auto mr-2">
                     <select class="form-control w-100 h-auto">
-                        <option value="">닉네임</option>
+                        <option value="">ID</option>
                     </select>
                 </div>
                 <div class="form-row col-auto">
@@ -241,19 +246,23 @@
         </div>
 
         <!-- Modal -->
-        <div class="modal fade" id="SetFreeImageModal">
+        <div class="modal fade" id="exampleModalCenter">
             <div style="display: none" class="Idx_User"></div>
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">추가 무료 이미지생성을 적용하시겠습니까?</h5>
+                        <h5 class="modal-title">
+                            무료 이용 회수를 적용하시겠습니까?
+                        </h5>
                         <button type="button" class="close" data-dismiss="modal">
                             <span>&times;</span>
                         </button>
                     </div>
                     <div class="modal_flex">
                         <div class="modal-body">
-                            <p class="modal_title">무료이미지생성</p>
+                            <p class="modal_title">
+                                무료이용 1회(1000Tx이하)
+                            </p>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-primary" onclick="SetCntFree(true, 0, event)">적용</button>
                                 <button type="button" class="btn btn-secondary" onclick="SetCntFree(false, 0, event)">미적용</button>

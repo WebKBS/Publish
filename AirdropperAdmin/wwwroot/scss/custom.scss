@@ -159,3 +159,12 @@ table {
         }
     }
 }
+
+
+.table_text_ovf{
+    display: block;
+    max-width: 200px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

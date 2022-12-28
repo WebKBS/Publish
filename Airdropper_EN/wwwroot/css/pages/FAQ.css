@@ -563,6 +563,10 @@ button[type=submit].next_btn:hover {
   padding: 16px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
+.faq .table_wrap > ul > li button:hover i {
+  color: #fff;
+  transition: var(--hover-transition);
+}
 .faq .table_wrap > ul > li button i {
   flex: 1;
   text-align: left;

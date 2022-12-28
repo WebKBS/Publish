@@ -75,7 +75,7 @@
                 <div class="card">
                     <div class="stat-widget-one card-body">
                         <div class="stat-icon d-inline-block">
-                            <i class="ti-user text-dark border-dark"></i>
+                            <i class="ti-user text-warning border-warning"></i>
                         </div>
                         <div class="stat-content d-inline-block">
                             <div class="stat-text">전일 사용자</div>
@@ -98,15 +98,35 @@
                 </div>
             </div>
         </div>
-        <div class="row p-3" style="gap: 14px">
-            <select class="col-md-1">
-                <option value="">닉네임</option>
-            </select>
-            <div class="col-md-3 p-0">
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search" id="SearchStr">
+        <div class="row p-3 justify-content-between">
+            <div class="row col-3">
+                <div class="col-6">
+                    <select class="form-control w-100 h-auto">
+                        <option value="">최근 7일</option>
+                        <option value="">최근 1개월</option>
+                        <option value="">전체 기간</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <select class="form-control w-100 h-auto">
+                        <option value="">닉네임</option>
+                    </select>
+                </div>
             </div>
-            <div class="col-md-2 p-0">
-                <button type="button" class="btn btn-primary" onclick="LoadUserTable()">조회</button>
+            <div class="row col-auto justify-content-between">
+                <div class="col-auto mr-2">
+                    <select class="form-control w-100 h-auto">
+                        <option value="">닉네임</option>
+                    </select>
+                </div>
+                <div class="form-row col-auto">
+                    <div class="mr-2">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" id="SearchStr">
+                    </div>
+                    <div class="">
+                        <button type="button" class="btn btn-primary" onclick="LoadUserTable()">조회</button>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-lg-12 p-0">

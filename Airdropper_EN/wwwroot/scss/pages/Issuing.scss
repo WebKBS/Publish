@@ -92,7 +92,7 @@
         &.default {
 
             &.on {
-                border-color: $white3;
+                //border-color: $white3;
 
                 img {
                     display: block;
@@ -142,6 +142,10 @@
                     width: 100%;
                 }
             }*/
+
+            input{
+                width: 100%;
+            }
         }
     }
 

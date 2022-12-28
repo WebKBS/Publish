@@ -200,7 +200,7 @@ input:not([type=checkbox])::placeholder {
 }
 input:not([type=checkbox]):focus {
   outline: 0;
-  border-color: #fff;
+  border-color: #A6A6A6;
 }
 input:not([type=checkbox]):-webkit-autofill {
   -webkit-box-shadow: 0 0 0 100px #494949 inset;
@@ -635,6 +635,7 @@ button[type=submit].next_btn:hover {
 .payment_history th {
   padding: 12px;
   text-align: center;
+  vertical-align: middle;
 }
 .payment_history td {
   padding: 12px;

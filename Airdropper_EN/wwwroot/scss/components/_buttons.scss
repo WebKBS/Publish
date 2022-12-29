@@ -153,6 +153,11 @@ button[type=submit] {
         border-color: $alert;
         color: $alert;
     }
+
+    &.active{
+        border-color: $theme;
+        color: $theme;
+    }
 }
 
 .button_180 {

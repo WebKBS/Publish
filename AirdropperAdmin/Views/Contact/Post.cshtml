@@ -1,0 +1,119 @@
+﻿@{
+    ViewData["Title"] = "공지사항 관리";
+}
+<div class="content-body">
+    <div class="container-fluid">
+        <div class="row page-titles mx-0">
+            <div class="col-sm-6 p-md-0">
+                <div class="welcome-text">
+                    <h4>문의 답변하기</h4>
+                </div>
+            </div>
+            <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="javascript:void(0)">관리자</a></li>
+                    <li class="breadcrumb-item active">
+                        <a href="javascript:void(0)">문의 답변하기</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <!-- row -->
+        <div class="row">
+            <div class="col-xl-12 col-xxl-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-responsive-sm custom_table">
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            제목
+                                        </th>
+                                        <td>
+                                            <input id="Idx_Contact" value="@ViewBag.tContact.Idx_Contact" hidden="hidden"/>
+                                            @ViewBag.tContact.Title
+                                        </td>
+                                        <th>문의일시</th>
+                                        <td>
+                                            <span class="year">@ViewBag.tContact.DateCreate.ToString("yyyy.MM.dd")</span>
+                                            <span class="time">@ViewBag.tContact.DateCreate.ToString("HH:mm")</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>문의내용</th>
+                                        <td colspan="3">
+                                            @ViewBag.tContact.Content
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>답변</th>
+                                        <td colspan="3">
+                                            <div id="summernote"></div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button_wrap justify-content-center d-flex">
+            <button type="button" class="btn btn-outline-primary mr-2" onclick="location.href='/Contact/Contact'">이전화면</button>
+            <button type="button" class="btn btn-primary" onclick="AddAnswer()">답변하기</button>
+        </div>
+    </div>
+</div>
+<!--**********************************
+    Content body end
+***********************************-->
+@section Heads{
+    <!-- Summernote -->
+    <!-- Daterange picker -->
+    <link href="~/vendor/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+    <link href="~/vendor/summernote/summernote.css" rel="stylesheet" />
+    <link href="~/css/Inquiry.css" rel="stylesheet" />
+}
+
+@section Scripts{
+    <!-- Required vendors -->
+    <script src="~/vendor/global/global.min.js"></script>
+    <script src="~/js/quixnav-init.js"></script>
+    <script src="~/js/custom.min.js"></script>
+
+
+    <!-- Summernote -->
+    <script src="~/vendor/summernote/js/summernote.min.js"></script>
+    <!-- Summernote init -->
+    <script src="~/js/plugins-init/summernote-init.js"></script>
+
+    <script>
+        function AddAnswer() {
+            if (!$("#summernote").summernote('code')) {
+                swal.fire("Error", "답변 내용 입력해주세요.", "error");
+            }
+
+            $.ajax({
+                url: "/Contact/AddAnswer",
+                type: 'post',
+                data: {
+                    Idx_Contact: document.getElementById("Idx_Contact").value,
+                    Answer: $("#summernote").summernote('code'),
+                },
+                success: function (data, textStatus, jQxhr) {
+                    if (data.result) {
+                        swal.fire("Success", data.sData, "success").then(() => {
+                            location.href = "@Url.Action("Contact", "Contact")";
+                        });
+                    } else {
+                        swal.fire("Error", data.sData, "error");
+                    }
+                },
+                error: function (jqXhr, textStatus, errorThrown) {
+                    swal("Error", 'Data Exception', 'error');
+                }
+            });
+        }
+    </script>
+}

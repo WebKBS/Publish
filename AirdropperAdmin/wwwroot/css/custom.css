@@ -125,4 +125,14 @@ table tbody td a {
   overflow: hidden;
 }
 
+.faq_table tbody td:first-child {
+  width: 5%;
+}
+.faq_table tbody td:nth-child(2) {
+  width: 20%;
+}
+.faq_table tbody td:nth-child(3) {
+  width: 60%;
+}
+
 /*# sourceMappingURL=custom.css.map */

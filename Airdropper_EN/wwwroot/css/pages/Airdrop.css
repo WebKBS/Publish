@@ -400,6 +400,10 @@ button[type=submit].next_btn:hover {
   border-color: #FF962E;
   color: #FF962E;
 }
+.button_112.active {
+  border-color: #2ECDFF;
+  color: #2ECDFF;
+}
 
 .button_180 {
   width: 180px;
@@ -913,12 +917,6 @@ button[type=submit].next_btn:hover {
   font-family: "suit_light";
   color: rgba(255, 255, 255, 0.55);
   padding: 10px;
-}
-.modal .table_wrap tbody td:nth-of-type(2) {
-  text-align: left;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .modal .table_wrap tbody td.error {
   color: #FF962E;

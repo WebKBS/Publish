@@ -168,3 +168,20 @@ table {
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
+.faq_table {
+    tbody {
+
+        td:first-child {
+            width: 5%;
+        }
+
+        td:nth-child(2) {
+            width: 20%;
+        }
+
+        td:nth-child(3){
+           width: 60%;
+        }
+    }
+}

@@ -1,0 +1,213 @@
+﻿@{
+    ViewData["Title"] = "수수료 관리";
+}
+
+<div class="content-body">
+    <!-- row -->
+    <div class="container-fluid">
+        <div class="row page-titles mx-0">
+            <div class="col-sm-6 p-md-0">
+                <div class="welcome-text">
+                    <h4>수수료 관리</h4>
+                </div>
+            </div>
+            <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="javascript:void(0)">관리자</a></li>
+                    <li class="breadcrumb-item active"><a href="javascript:void(0)">수수료 관리</a></li>
+                </ol>
+            </div>
+        </div>
+        <div class="col-lg-12 p-0">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">기준 수수료</h4>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-3 col-lg-6 col-sm-6 col-xxl-6 col-md-6">
+                            <div class="card mb-0">
+                                <div class="social-graph-wrapper widget-facebook">
+                                    <span>토큰 발행 수수료</span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="pt-3 pb-3 pl-0 pr-0 text-center">
+                                            <h4 class="m-1">
+                                                <span class="counter">89</span>
+                                                <span class="unit">USD</span>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-sm-6 col-xxl-6 col-md-6">
+                            <div class="card mb-0">
+                                <div class="social-graph-wrapper widget-linkedin">
+                                    <span>에어드롭 수수료</span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="pt-3 pb-3 pl-0 pr-0 text-center">
+                                            <h4 class="m-1">
+                                                <span class="counter">89</span>
+                                                <span class="unit">USD</span>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 p-0">
+            <div class="card">
+                <div class="card-body">
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered verticle-middle table-responsive-sm" id="InfoTable">
+                            <thead>
+                                <tr>
+                                    <th class="bg-google-plus text-white">구분</th>
+                                    <th colspan="4" class="bg-google-plus text-white">기준가격</th>
+                                    <th class="bg-google-plus text-white">토큰발행</th>
+                                    <th colspan="4" class="bg-google-plus text-white">에어드롭</th>
+                                </tr>
+                                <tr>
+                                    <th class="bg-google-plus text-white">네트워크</th>
+                                    <th class="bg-warning">코인명</th>
+                                    <th class="bg-warning" colspan="2">기준시세</th>
+                                    <th class="bg-warning" colspan="2">수수료</th>
+                                    <th class="bg-warning" colspan="2">1회 전송할 Tx 수</th>
+                                    <th class="bg-warning" colspan="2">수수료</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>이더리움</td>
+                                    <td>ETH</td>
+                                    <td>1,218.36</td>
+                                    <td>USD</td>
+                                    <td>0.5</td>
+                                    <td>ETH</td>
+                                    <td>1,000</td>
+                                    <td>Tx</td>
+                                    <td>0.1</td>
+                                    <td>ETH</td>
+                                </tr>
+                                <tr>
+                                    <td>바이낸스</td>
+                                    <td>BNB</td>
+                                    <td>246.63</td>
+                                    <td>USD</td>
+                                    <td>2.4</td>
+                                    <td>BNB</td>
+                                    <td>1,000</td>
+                                    <td>Tx</td>
+                                    <td>0.6</td>
+                                    <td>BNB</td>
+                                </tr>
+                                <tr>
+                                    <td>클레이튼</td>
+                                    <td>KLAY</td>
+                                    <td>0.1589</td>
+                                    <td>USD</td>
+                                    <td>3,780</td>
+                                    <td>KLAY</td>
+                                    <td>1,000</td>
+                                    <td>Tx</td>
+                                    <td>940</td>
+                                    <td>KLAY</td>
+                                </tr>
+                                <tr>
+                                    <td>폴리곤</td>
+                                    <td>MATIC</td>
+                                    <td>0.7946</td>
+                                    <td>USD</td>
+                                    <td>760</td>
+                                    <td>MATIC</td>
+                                    <td>1,000</td>
+                                    <td>Tx</td>
+                                    <td>190</td>
+                                    <td>MATIC</td>
+                                </tr>
+                                <tr>
+                                    <td>솔라나</td>
+                                    <td>SOL</td>
+                                    <td>12.13</td>
+                                    <td>USD</td>
+                                    <td>49</td>
+                                    <td>SOL</td>
+                                    <td>1,000</td>
+                                    <td>Tx</td>
+                                    <td>12</td>
+                                    <td>SOL</td>
+                                </tr>
+                                <tr>
+                                    <td>헤데라</td>
+                                    <td>HBAR</td>
+                                    <td>0.04314</td>
+                                    <td>USD</td>
+                                    <td>13910</td>
+                                    <td>HBAR</td>
+                                    <td>1,000</td>
+                                    <td>Tx</td>
+                                    <td>3480</td>
+                                    <td>HBAR</td>
+                                </tr>
+                                <tr>
+                                    <td>알고랜드</td>
+                                    <td>ALGO</td>
+                                    <td>0.1714</td>
+                                    <td>USD</td>
+                                    <td>3500</td>
+                                    <td>ALGO</td>
+                                    <td>1,000</td>
+                                    <td>Tx</td>
+                                    <td>880</td>
+                                    <td>ALGO</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination" id="PageNav">
+                                @*<li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">«</span>
+                                </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">»</span>
+                                </a>
+                                </li>*@
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<!--**********************************
+    Content body end
+***********************************-->
+@section Heads{
+    <!-- 커스텀 CSS -->
+    <link href="~/css/custom.css" rel="stylesheet">
+
+    <!-- Required vendors -->
+}
+
+@section Scripts{
+    <script src="~/vendor/global/global.min.js"></script>
+    <script src="~/js/quixnav-init.js"></script>
+    <script src="~/js/custom.min.js"></script>
+
+}

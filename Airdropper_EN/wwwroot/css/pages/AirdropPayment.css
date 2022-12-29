@@ -315,6 +315,10 @@ button[type=submit].next_btn:hover {
   border-color: #FF962E;
   color: #FF962E;
 }
+.button_112.active {
+  border-color: #2ECDFF;
+  color: #2ECDFF;
+}
 
 .button_180 {
   width: 180px;
@@ -559,11 +563,18 @@ button[type=submit].next_btn:hover {
   padding: 12px 20px;
 }
 .airdrop_payment .payment_table .table td {
+  vertical-align: middle;
   color: white;
   width: 33.33333%;
 }
 .airdrop_payment .payment_table .table td:nth-child(1) {
   text-align: left;
+}
+.airdrop_payment .payment_table .table td .comp_text {
+  display: none;
+}
+.airdrop_payment .payment_table .table td .comp_text.on {
+  display: block;
 }
 .airdrop_payment .payment_table .table button {
   margin-left: auto;

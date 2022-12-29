@@ -50,11 +50,20 @@
         .table {
 
             td {
+                vertical-align: middle;
                 color: white;
                 width: 33.33333%;
 
                 &:nth-child(1){
                     text-align: left;
+                }
+
+                .comp_text{
+                    display: none;
+
+                    &.on{
+                        display: block;
+                    }
                 }
             }
 

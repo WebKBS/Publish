@@ -1,0 +1,120 @@
+﻿@{
+    ViewData["Title"] = "FAQ 관리";
+}
+
+@section Heads{
+
+
+
+}
+
+<div class="content-body">
+    <!-- row -->
+    <div class="container-fluid">
+        <div class="row page-titles mx-0">
+            <div class="col-sm-6 p-md-0">
+                <div class="welcome-text">
+                    <h4>FAQ 관리</h4>
+                </div>
+            </div>
+            <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="javascript:void(0)">관리자</a></li>
+                    <li class="breadcrumb-item active"><a href="javascript:void(0)">FAQ 관리</a></li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="col-lg-12 p-0">
+            <div class="card">
+                <div class="card-body">
+                    <div class="flex flex-end mb-2">
+                        <button type="button" class="btn btn-primary" onclick="location.href='/FAQ/Post'">작성</button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table header-border table-responsive-sm faq_table" id="InfoTable">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>제목</th>
+                                    <th>내용</th>
+                                    <th>수정 / 삭제</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10</td>
+                                    <td>ERC-721과 ERC-1155의 차이</td>
+                                    <td></td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary">수정</button>
+
+                                        <!-- 삭제하시겠습니까? aleat은  sweetAlert 사용 -->
+                                        <button type="button" class="btn btn-danger delete_btn">삭제</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>메타마스크 지갑 연결</td>
+                                    <td></td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary">수정</button>
+                                        <button type="button" class="btn btn-danger delete_btn">삭제</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>비밀번호 변경</td>
+                                    <td></td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary">수정</button>
+                                        <button type="button" class="btn btn-danger delete_btn">삭제</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination" id="PageNav">
+                                @*<li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">«</span>
+                                </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">»</span>
+                                </a>
+                                </li>*@
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--**********************************
+    Content body end
+***********************************-->
+@section Scripts {
+    <!-- Required vendors -->
+    <script src="~/vendor/global/global.min.js"></script>
+    <script src="~/js/quixnav-init.js"></script>
+    <script src="~/js/custom.min.js"></script>
+
+}
+
+<script>
+    document.querySelectorAll('.delete_btn').forEach(ev => {
+        ev.addEventListener('click', () => {
+            Swal.fire({
+                icon: 'warning',
+                title: '해당 게시물을 삭제하시겠습니까?',
+                text: '삭제된 게시물은 복구가 불가능합니다.'
+            })
+        })
+    })
+</script>

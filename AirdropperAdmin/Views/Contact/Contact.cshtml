@@ -1,0 +1,139 @@
+﻿@{
+    ViewData["Title"] = "문의관리";
+}
+
+<div class="content-body">
+    <!-- row -->
+    <div class="container-fluid">
+        <div class="row page-titles mx-0">
+            <div class="col-sm-6 p-md-0">
+                <div class="welcome-text">
+                    <h4>문의하기 관리</h4>
+                </div>
+            </div>
+            <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="javascript:void(0)">관리자</a></li>
+                    <li class="breadcrumb-item active"><a href="javascript:void(0)">문의하기 관리</a></li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="col-lg-12 p-0">
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table header-border table-responsive-sm" id="InfoTable">
+                            <colgroup>
+                                <col width="6%" />
+                                <col width="10%" />
+                                <col width="20%" />
+                                <col width="*" />
+                                <col width="10%" />
+                                <col width="10%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>제출일시</th>
+                                    <th>제목</th>
+                                    <th>내용</th>
+                                    <th>작성자</th>
+                                    <th>답변</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10</td>
+                                    <td>
+                                        <span class="year">2022-11-20</span>
+                                        <span class="time">01:00</span>
+                                    </td>
+                                    <td>민팅시 에러</td>
+                                    <td></td>
+                                    <td>123123@gamil.com</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary" onclick="location.href='/Contact/Post'">답변하기</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>
+                                        <span class="year">2022-11-20</span>
+                                        <span class="time">01:00</span>
+                                    </td>
+                                    <td>지갑연결 안됨</td>
+                                    <td>내용 내용 내용</td>
+                                    <td>2323@gamil.com</td>
+                                    <td>
+                                        <button type="button" class="btn btn-light">답변완료</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination" id="PageNav">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">«</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">»</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--**********************************
+    Content body end
+***********************************-->
+
+@section Heads{
+
+    <!-- Required vendors -->
+}
+
+    @section Scripts{
+
+    <script src="~/vendor/global/global.min.js"></script>
+    <script src="~/js/quixnav-init.js"></script>
+    <script src="~/js/custom.min.js"></script>
+    <script src="/js/Pagination/PostJs.js"></script>
+    <script>
+        $(document).ready(function () {
+            //$('#InfoTable > tbody').empty();
+            LoadContactTable(0);
+        });
+
+        function LoadContactTable() {
+            LoadContactTable($("#PagePos").text());
+        }
+
+        function LoadContactTable(PagePos) {
+            $.ajax({
+                url: '@Url.Action("LoadContactTable", "Contact")',
+                type: 'post', dataType: 'text', data: {
+                    PagePos: PagePos,
+                    searchStr: $("#SearchStr").val(),
+                    //SearchIdx: Number(new URLSearchParams(window.location.search).get("subMenuIdx"))
+                }, success: TablePostSuccess,
+                error: PostPageError
+            });
+        }
+
+        function AnswerContact(Idx_Contact) {
+            location.href = `/Contact/Post?Idx_Contact=${Idx_Contact}`;
+        }
+
+    </script>
+}

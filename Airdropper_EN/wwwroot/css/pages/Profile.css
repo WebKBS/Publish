@@ -400,6 +400,10 @@ button[type=submit].next_btn:hover {
   border-color: #FF962E;
   color: #FF962E;
 }
+.button_112.active {
+  border-color: #2ECDFF;
+  color: #2ECDFF;
+}
 
 .button_180 {
   width: 180px;
@@ -626,15 +630,18 @@ button[type=submit].next_btn:hover {
   padding: 16px 24px 0;
 }
 .profile .info_wrap .join_date {
-  padding: 13px 24px 25px;
+  padding: 13px 24px !important;
 }
-.profile .info_wrap > div:not(.user_email, .join_date) {
+.profile .info_wrap > div:not(.user_email, .referral_code) {
   padding: 0 24px;
+}
+.profile .info_wrap .referral_code {
+  padding: 13px 24px 16px;
 }
 .profile .info_wrap > div {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   align-items: center;
 }
 .profile .info_wrap > div:last-child {
@@ -646,7 +653,7 @@ button[type=submit].next_btn:hover {
   align-items: center;
 }
 .profile .info_wrap .title {
-  min-width: 102px;
+  min-width: 114px;
 }
 .profile .info_wrap .join_date {
   margin-bottom: 0;

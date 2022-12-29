@@ -1,0 +1,206 @@
+﻿@{
+    ViewData["Title"] = "FAQ 관리";
+}
+
+@section Heads{
+    <!-- 커스텀 CSS -->
+    <link href="~/css/custom.css" rel="stylesheet">
+}
+
+<div class="content-body">
+
+    <!-- row -->
+    <div class="container-fluid">
+        <div class="row page-titles mx-0">
+            <div class="col-sm-6 p-md-0">
+                <div class="welcome-text">
+                    <h4>FAQ 작성 / 수정</h4>
+                </div>
+            </div>
+            <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="javascript:void(0)">FAQ 관리</a></li>
+                    <li class="breadcrumb-item active"><a href="javascript:void(0)">FAQ 작성 / 수정</a></li>
+                </ol>
+            </div>
+        </div>
+        <div class="col-lg-12 p-0">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title"></h4>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-responsive-sm custom_table">
+                            <tbody>
+                                <tr>
+                                    <th>제목</th>
+                                    <td>
+                                        <input id="Idx_PopUp" hidden="hidden" value="@(ViewBag.tPopUp is not null ? ViewBag.tPopUp.Idx_PopUp : 0)" />
+                                        <input class="form-control" type="text" name="title" id="Title" value="@(ViewBag.tPopUp is not null ? ViewBag.tPopUp.Title : "")">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>내용</th>
+                                    <td>
+                                        <div class="textarea">
+                                            <textarea class="form-control input-default" rows="6" id="TermsContent"></textarea>
+                                        </div>
+                                    </td>
+                                </tr>
+@*                                <tr>
+                                    <th>작성자</th>
+                                    <td>
+                                        <input class="form-control" type="text" name="" id="" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>파일첨부</th>
+                                    <td>
+                                        <div class="file_wrap mb-3">
+                                            <input type="file" class="file_input" id="UploadImage">
+                                        </div>
+                                        <div class="img_wrap">
+                                            <img />
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>공지순서</th>
+                                    <td>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="" value="" checked="">
+                                            <label class="form-check-label" for="">상단 고정</label>
+                                        </div>
+                                    </td>
+                                </tr>*@
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="button_wrap justify-content-center d-flex">
+                <button type="button" class="btn btn-primary mr-2" onclick="AddPopup()">저장 / 수정</button>
+                @*<button type="button" class="btn btn-primary mr-2">변경</button>*@
+                <button type="button" class="btn btn-outline-primary" onclick="location.href='@Url.Action("FAQ", "FAQ")'">취소</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--**********************************
+    Content body end
+***********************************-->
+<script>
+    const fileInput = document.querySelector('.file_input');
+    const viewImage = document.querySelector('.img_wrap img');
+    console.dir(fileInput)
+
+    fileInput.addEventListener('change', function () {
+        if (fileInput.files && fileInput.files[0]) {
+            let reader = new FileReader();
+            reader.onload = (e) => {
+                viewImage.src = e.target.result;
+            }
+            reader.readAsDataURL(fileInput.files[0]);
+        } else {
+            viewImage.src = "";
+        }
+    });
+
+
+</script>
+
+
+
+@section Scripts{
+    <!-- Required vendors -->
+    <script src="~/vendor/global/global.min.js"></script>
+    <script src="~/js/quixnav-init.js"></script>
+    <script src="~/js/custom.min.js"></script>
+
+    @*<script>
+        @if (ViewBag.tPopUp is not null)
+        {
+            @:loadURLToInputFiled("@(gDefine.POPUP_IMAGE_PATH_WEB + ViewBag.tPopUp.ImagePath)", "@ViewBag.tPopUp.ImagePath");
+        }
+
+            function AddPopup() {
+                if (!document.getElementById("Title").value) {
+                    swal.fire("Error", "팝업 제목을 입력해주세요.", "error");
+                    return;
+                }
+
+                if (!document.getElementById("DateStart").value) {
+                    swal.fire("Error", "게시 시작 날짜를 선택해주세요.", "error");
+                    return;
+                }
+
+                if (!document.getElementById("DateEnd").value) {
+                    swal.fire("Error", "게시 종료 날짜를 선택해주세요.", "error");
+                    return;
+                }
+
+                if (document.getElementById("DateStart").value >= document.getElementById("DateEnd").value) {
+                    swal.fire("Error", "게시 종료 날짜가 시작 날짜보다 같거나 빠릅니다.", "error");
+                    return;
+                }
+
+                if (!document.getElementById("UploadImage").files.length) {
+                    swal.fire("Error", "게시할 이미지를 업로드 해주세요.", "error");
+                    return;
+                }
+
+                let data = new FormData();
+                data.append("Idx_PopUp", document.getElementById("Idx_PopUp").value);
+                data.append("Title", document.getElementById("Title").value);
+                data.append("Activated", document.getElementById("Activated").checked);
+                data.append("DateStart", document.getElementById("DateStart").value);
+                data.append("DateEnd", document.getElementById("DateEnd").value);
+                data.append("URL", document.getElementById("URL").value ? document.getElementById("URL").value : "");
+                data.append("UploadImage", document.getElementById("UploadImage").files[0]);
+
+                $.ajax({
+                    url: "/Popup/AddPopup",
+                    type: 'post',
+                    contentType: false,
+                    processData: false,
+                    data: data,
+                    success: function (data, textStatus, jQxhr) {
+                        if (data.result) {
+                            swal.fire("Success", data.sData, "success").then(() => {
+                                location.href = "@Url.Action("Popup", "Popup")";
+                            });
+                        } else {
+                            swal.fire("Error", data.sData, "error");
+                        }
+                    },
+                    error: function (jqXhr, textStatus, errorThrown) {
+                        swal("Error", 'Data Exception', 'error');
+                    }
+                });
+            }
+
+        function loadURLToInputFiled(url, fileName) {
+            getImgURL(url, (imgBlob) => {
+                // Load img blob to input
+                // WIP: UTF8 character error
+                let file = new File([imgBlob], fileName, { type: imgBlob.type }, 'utf-8');
+                let container = new DataTransfer();
+                container.items.add(file);
+                document.querySelector('#UploadImage').files = container.files;
+                document.querySelector(".img_wrap img").src = url;
+            })
+        }
+
+        function getImgURL(url, callback) {
+            var xhr = new XMLHttpRequest();
+            xhr.onload = function () {
+                callback(xhr.response);
+            };
+            xhr.open('GET', url);
+            xhr.responseType = 'blob';
+            xhr.send();
+        }
+    </script>*@
+}
+

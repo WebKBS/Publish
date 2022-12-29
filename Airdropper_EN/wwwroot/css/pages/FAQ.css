@@ -315,6 +315,10 @@ button[type=submit].next_btn:hover {
   border-color: #FF962E;
   color: #FF962E;
 }
+.button_112.active {
+  border-color: #2ECDFF;
+  color: #2ECDFF;
+}
 
 .button_180 {
   width: 180px;

@@ -26,17 +26,21 @@
         }
 
         .join_date {
-            padding: 13px 24px 25px;
+            padding: 13px 24px !important;
         }
 
-        & > div:not(.user_email, .join_date) {
+        & > div:not(.user_email, .referral_code) {
             padding: 0 24px;
+        }
+
+        .referral_code {
+            padding: 13px 24px 16px;
         }
 
         > div {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             align-items: center;
 
             &:last-child {
@@ -51,7 +55,7 @@
         }
 
         .title {
-            min-width: 102px;
+            min-width: 114px;
         }
 
         .join_date {
@@ -69,10 +73,9 @@
         margin-bottom: 12px;
     }
 
-    .history{
+    .history {
         margin-bottom: 60px;
     }
-
 }
 
 /*

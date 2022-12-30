@@ -117,7 +117,7 @@
                                     <div class="custom upload_wrap">
                                         <ul>
                                             <li>
-                                                <input id="tax" type="file" hidden accept=".png" multiple />
+                                                <input id="tax" type="file" hidden accept=".png" />
                                                 <label for="tax" class="drop">
                                                     <span class="text_wrap">
                                                         <span class="title">세금 계산서</span>
@@ -132,7 +132,7 @@
                                                 </button>
                                             </li>
                                             <li>
-                                                <input id="specification" type="file" hidden accept=".png" multiple />
+                                                <input id="specification" type="file" hidden accept=".png" />
                                                 <label for="specification">
                                                     <span class="text_wrap">
                                                         <span class="title">거래 명세서</span>
@@ -147,7 +147,7 @@
                                                 </button>
                                             </li>
                                             <li>
-                                                <input type="file" hidden id="estimate" accept=".png, .pdf" multiple />
+                                                <input type="file" hidden id="estimate" accept=".png, .pdf" />
                                                 <label for="estimate">
                                                     <span class="text_wrap">
                                                         <span class="title">견적서</span>
@@ -162,7 +162,7 @@
                                                 </button>
                                             </li>
                                             <li>
-                                                <input id="contract" type="file" hidden accept=".png, .pdf" multiple />
+                                                <input id="contract" type="file" hidden accept=".png, .pdf" />
                                                 <label for="contract">
                                                     <span class="text_wrap">
                                                         <span class="title">계약서</span>
@@ -177,7 +177,7 @@
                                                 </button>
                                             </li>
                                             <li>
-                                                <input id="equipment" type="file" hidden accept=".png" multiple />
+                                                <input id="equipment" type="file" hidden accept=".png" />
                                                 <label for="equipment">
                                                     <span class="text_wrap">
                                                         <span class="title">장비사진</span>
@@ -192,7 +192,7 @@
                                                 </button>
                                             </li>
                                             <li>
-                                                <input id="place" type="file" hidden accept=".png" multiple />
+                                                <input id="place" type="file" hidden accept=".png" />
                                                 <label for="place">
                                                     <span class="text_wrap">
                                                         <span class="title">설치 장소 사진</span>
@@ -207,7 +207,7 @@
                                                 </button>
                                             </li>
                                             <li>
-                                                <input id="receipt" type="file" hidden accept=".png, .pdf" multiple />
+                                                <input id="receipt" type="file" hidden accept=".png, .pdf" />
                                                 <label for="receipt">
                                                     <span class="text_wrap">
                                                         <span class="title">영수증</span>
@@ -222,7 +222,7 @@
                                                 </button>
                                             </li>
                                             <li>
-                                                <input id="etc" type="file" hidden accept=".png, .pdf" multiple />
+                                                <input id="etc" type="file" hidden accept=".png, .pdf" />
                                                 <label for="etc">
                                                     <span class="text_wrap">
                                                         <span class="title">기타</span>
@@ -257,6 +257,7 @@
     </div>
 </div>
 
+
 <script>
     const fileInput = document.querySelectorAll('input[type=file]')
     const label = document.querySelectorAll('label');
@@ -267,8 +268,9 @@
             const input = btn.parentElement.querySelector('input[type=file]');
             const imgWrap = btn.parentElement.querySelector('.label_img_wrap');
             const textWrap = btn.parentElement.querySelector('.text_wrap');
-            
+
             input.value = "";
+            disabledFalse(input); // 파일 취소시 disabled 해제
 
             while (imgWrap.firstChild) {
                 imgWrap.removeChild(imgWrap.firstChild);
@@ -284,6 +286,7 @@
         ev.addEventListener('change', (event) => {
             const files = changeEvent(event);
             handleUpdate(files, event.target);
+            disabledTrue(ev); // 파일 추가시 input disabled
         })
     })
 
@@ -321,10 +324,10 @@
 
     document.addEventListener("drop", (event) => {
         event.preventDefault();
-        const files = event.dataTransfer?.files;
-        console.log("drop");
+        const files = event.dataTransfer.files;
         if (event.target.className === "label_img_wrap") {
             handleUpdate([...files], event.target);
+            event.target.parentElement.previousElementSibling.disabled = true;
         }
 
     });
@@ -336,20 +339,26 @@
 
     function handleUpdate(fileList, target) {
         fileList.forEach((file) => {
+            
             const reader = new FileReader();
             reader.addEventListener("load", (event) => {
                 const preview = createElement(event, file);
                 const ele = target.closest('li').querySelector('.label_img_wrap');
                 const textWrap = target.closest('li').querySelector('.text_wrap');
                 const button = target.closest('li').querySelector('.file_delete');
-                console.log(file)
 
                 if (file.type === "image/png") {
                     button.style.display = "block";
                     textWrap.style.display = "none";
                     ele.style.position = "static";
                     ele.appendChild(preview);
+                    for(let i = 1; i < ele.children.length; i++){
+                        ele.children[i].remove()
+                    }
+                    //ele.setAttribute('data') // 여기 이벤트 부터시작
+                    console.log(ele)
                     return;
+
                 } else if (file.type === "application/pdf") {
                     const createEle = document.createElement('i');
                     createEle.textContent = file.name;
@@ -358,7 +367,7 @@
                     ele.style.position = "static";
                     ele.appendChild(createEle);
                     return;
-                } else{
+                } else {
                     alert('지정된 파일형식이 아닙니다.');
                 }
 
@@ -377,6 +386,22 @@
         return fragment;
     }
 
+    // disabled True
+    function disabledTrue(target){
+        target.disabled = true;
+    }
+
+    function disabledFalse(target){
+        target.disabled = false;
+    }
+
+    function expandImage(target){
+        target.addEventListener('click', () => {
+
+        })
+    }
+
+
 
     // URL 주소 확인하고 네비게이션 클래스 넣기
     window.addEventListener('DOMContentLoaded', () => {
@@ -389,8 +414,32 @@
 </script>
 
 
+@section PostModal{
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" style="max-width: 1024px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">타이틀</h4>
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body text-center">
+                        <img src="" class="w-auto" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+};
+
 @section Heads{
-    
+
 }
 
 @section Scripts{

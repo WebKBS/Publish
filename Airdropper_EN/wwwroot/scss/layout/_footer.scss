@@ -20,12 +20,10 @@
         width: 60px;
     }
 
-    h2 {
-        margin-bottom: 12px;
-    }
+    
 
-    .f_info{
-        p{
+    .f_info {
+        p {
             display: flex;
             gap: 16px;
         }
@@ -37,14 +35,20 @@
         flex-direction: column;
         align-items: flex-end;
 
-        .telegram{
+        .telegram {
             width: 44px;
             margin-bottom: 14px;
         }
+    }
 
-        .notice{
-            display: flex;
-            gap: 20px;
-        }
+    address {
+        padding-left: 24px;
+        background: url(../../images/icons/email_btn.svg) no-repeat 0 center / auto 20px;
+        margin-bottom: 20px;
+    }
+
+    .notice {
+        display: flex;
+        gap: 20px;
     }
 }

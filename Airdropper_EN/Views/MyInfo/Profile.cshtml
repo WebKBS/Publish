@@ -14,13 +14,6 @@
                 </div>
                 <a href="/Edit/Email" class="change_btn button_112">Change</a>
             </div>
-            <div class="user_nickname">
-                <div class="text_wrap">
-                    <p class="title body_2 suit_m color_white_2">Nickname</p>
-                    <p class="info body_2 suit_r">airdropper</p>
-                </div>
-                <a href="/Edit/NickName" class="change_btn button_112">Change</a>
-            </div>
             <div class="join_date">
                 <div class="text_wrap">
                     <p class="title body_2 suit_m color_white_2">Registration date</p>
@@ -32,7 +25,7 @@
                     <p class="title body_2 suit_m color_white_2">Referral Code</p>
                     <p class="info body_2 suit_r">AD12403</p>
                 </div>
-                <a href="#" class="button_112 active">Create Link</a>
+                <a href="#" class="button_112 active" id="create_link">Create Link</a>
             </div>
         </div>
         <div class="user_pw">
@@ -42,10 +35,18 @@
             <a href="/Edit/EditPw" class="change_btn button_112">Change</a>
         </div>
         <div class="history">
-            <div class="text_wrap">
-                <p class="title body_2 suit_m color_white_2">Usage history management</p>
+            <div>
+                <div class="text_wrap">
+                    <p class="title body_2 suit_m color_white_2">Usage history management</p>
+                </div>
+                <a href="/MyInfo/PaymentHistory" class="change_btn button_112">View</a>
             </div>
-            <a href="/MyInfo/PaymentHistory" class="change_btn button_112">View</a>
+            <div>
+                <div class="text_wrap">
+                    <p class="title body_2 suit_m color_white_2">Referral Management</p>
+                </div>
+                <a href="/MyInfo/Referral" class="change_btn button_112">View</a>
+            </div>
         </div>
         <a href="/MyInfo/WithdrawalComp" class="button_160">WITHDRAWAL</a>
     </div>
@@ -57,11 +58,54 @@
 
 
 
+@section Modals{
+    <div class="modal referral_modal">
+        <div class="inner">
+            <h4 class="color_theme h4 jost_m">Referral Code</h4>
+            <p class="sub_title body_1 suit_r">Your referral code has been generated.</p><!-- 생성후 텍스트 변경  You can benefit from using referral codes. -->
+            <div class="input_wrap">
+                <input class="color_theme" type="text" id="copy_input" readonly value="https://airdropper.net/referral/AD12403" />
+                <button type="button" class="copy_btn" id="copy_btn">Copy<i class="copy_text">Copied!</i></button>
+            </div>
+            <button type="button" class="button_180" data-modal-close>CONFIRM</button>
+        </div>
+    </div>
 
 
 
+
+}
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+
+        // 복사 하기 이벤트
+        const copy = document.getElementById('copy_btn');
+        const inputValue = document.getElementById('copy_input').value;
+        console.log(inputValue)
+
+        copy.addEventListener('click', () => {
+            window.navigator.clipboard.writeText(inputValue).then(() => {
+                copy.querySelector('.copy_text').classList.add('on');
+                setTimeout(() => {
+                    copy.querySelector('.copy_text').classList.remove('on')
+                }, 700);
+            })
+        })
+    })
+
+
+    const createBtn = document.getElementById('create_link');
+    createBtn.addEventListener('click', () => {
+        document.querySelector('.referral_modal').classList.add('on');
+
+        // 링크가 만들어졌을때 텍스트 변경
+        createBtn.textContent = "View Link";
+    })
+</script>
 
 
 @section Heads{
     <link rel="stylesheet" href="~/css/pages/Profile.css" />
+
 }

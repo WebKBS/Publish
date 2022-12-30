@@ -158,9 +158,6 @@
 .footer .img_wrap {
   width: 60px;
 }
-.footer h2 {
-  margin-bottom: 12px;
-}
 .footer .f_info p {
   display: flex;
   gap: 16px;
@@ -175,7 +172,12 @@
   width: 44px;
   margin-bottom: 14px;
 }
-.footer .sub .notice {
+.footer address {
+  padding-left: 24px;
+  background: url(../../images/icons/email_btn.svg) no-repeat 0 center/auto 20px;
+  margin-bottom: 20px;
+}
+.footer .notice {
   display: flex;
   gap: 20px;
 }
@@ -404,6 +406,10 @@ button[type=submit].next_btn:hover {
   border-color: #2ECDFF;
   color: #2ECDFF;
 }
+.button_112.active:hover {
+  background: #2ECDFF;
+  color: #141414;
+}
 
 .button_180 {
   width: 180px;
@@ -413,6 +419,7 @@ button[type=submit].next_btn:hover {
   font-family: "suit_medium";
   background: #1B1B1B;
   border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .button_200 {
@@ -613,6 +620,56 @@ button[type=submit].next_btn:hover {
   transition: var(--hover-transition);
 }
 
+.copy_btn {
+  width: 64px;
+  color: #2ECDFF;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 8px;
+  border: 1px solid #2ECDFF;
+  padding: 10px 0;
+  position: relative;
+}
+.copy_btn:hover {
+  background: #2ECDFF;
+  color: #141414;
+  transition: var(--hover-transition);
+}
+.copy_btn .copy_text {
+  display: none;
+  position: absolute;
+  top: -44px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  background: #141414;
+  padding: 4px 8px;
+  border-radius: 8px;
+  animation: ani 0.3s forwards;
+}
+.copy_btn .copy_text.on {
+  display: block;
+}
+.copy_btn .copy_text:after {
+  content: "";
+  display: inline-block;
+  border-top: 6px solid #141414;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes ani {
+  from {
+    top: -30px;
+  }
+  to {
+    top: -44px;
+  }
+}
 .findPw {
   width: 100%;
   background: url(../../images/main/bg.png) no-repeat center 0/cover;

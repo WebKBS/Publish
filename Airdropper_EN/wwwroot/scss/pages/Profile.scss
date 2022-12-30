@@ -63,7 +63,7 @@
         }
     }
 
-    .user_pw, .history {
+    .user_pw {
         background: $black3;
         border-radius: 16px;
         padding: 12px 20px;
@@ -74,7 +74,60 @@
     }
 
     .history {
+        background: $black3;
+        border-radius: 16px;
+        padding: 12px 24px;
         margin-bottom: 60px;
+
+        > div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &:first-child{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.referral_modal {
+    display: none;
+    max-width: 436px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $gray1;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+
+    &.on {
+        display: block;
+    }
+
+    .inner {
+        padding: 40px 32px;
+    }
+
+    h4 {
+        margin-bottom: 10px;
+    }
+
+    .sub_title {
+        margin-bottom: 30px;
+    }
+
+    .input_wrap {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 30px;
+    }
+
+    .button_180 {
+        margin: 0 auto;
     }
 }
 

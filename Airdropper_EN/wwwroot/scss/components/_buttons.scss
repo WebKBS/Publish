@@ -32,7 +32,6 @@
 
         &:hover {
             color: $theme;
-            
         }
     }
 }
@@ -154,9 +153,14 @@ button[type=submit] {
         color: $alert;
     }
 
-    &.active{
+    &.active {
         border-color: $theme;
         color: $theme;
+
+        &:hover {
+            background: $theme;
+            color: $black1;
+        }
     }
 }
 
@@ -168,6 +172,7 @@ button[type=submit] {
     font-family: $suit_medium;
     background: $black3;
     border-radius: 8px;
+    border: 1px solid $white5;
 }
 
 .button_200 {
@@ -206,7 +211,7 @@ button[type=submit] {
     border-radius: 8px;
     text-align: center;
 
-    &[disabled]{
+    &[disabled] {
         border-color: $white4;
         color: $white4;
     }
@@ -394,5 +399,62 @@ button[type=submit] {
     &:hover {
         border-color: $white;
         transition: var(--hover-transition);
+    }
+}
+
+
+.copy_btn {
+    width: 64px;
+    color: $theme;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 8px;
+    border: 1px solid $theme;
+    padding: 10px 0;
+    position: relative;
+
+    &:hover {
+        background: $theme;
+        color: $black1;
+        transition: var(--hover-transition);
+    }
+
+    .copy_text {
+        display: none;
+        position: absolute;
+        top: -44px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $white;
+        background: $black1;
+        padding: 4px 8px;
+        border-radius: 8px;
+        animation: ani .3s forwards;
+
+        &.on{
+            display: block;
+        }
+
+        &:after {
+            content: "";
+            display: inline-block;
+            border-top: 6px solid $black1;
+            border-right: 6px solid transparent;
+            border-left: 6px solid transparent;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@keyframes ani {
+    from {
+        top: -30px;
+    }
+
+    to {
+        top: -44px;
     }
 }

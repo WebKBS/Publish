@@ -19,12 +19,12 @@
         <div class="count_wrap">
             <div class="issuing">
                 <span class="name sub1 jost_r">ISSUING</span>
-                <span class="count subtitle_3 suit_m">1234</span>
+                <span class="count subtitle_3 suit_m" id="issuingNum">0</span>
                 <span class="unit body_3 suit_r">Cases</span>
             </div>
             <div class="airdrop">
                 <span class="name sub1 jost_r">AIRDROP</span>
-                <span class="count subtitle_3 suit_m">1234</span>
+                <span class="count subtitle_3 suit_m" id="airdropNum">0</span>
                 <span class="unit body_3 suit_r">Txs</span>
             </div>
         </div>
@@ -161,6 +161,42 @@
         </ul>
     </div>
 </section>
+
+<script>
+    const counter = (count, max) => {
+        let now = max;
+
+        const handle = setInterval(() => {
+            count.innerHTML = Math.ceil(max - now).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
+            // 최대 도착후 정지
+            if (now < 1) {
+                clearInterval(handle);
+            }
+           
+
+            // 증가값이 커질수록 속도가 느려짐
+            const step = now / 10;
+            
+            //now의 최대값이 줄어듦과 동시에 10분의 1인 step의 값을 뺀다.
+            now -= step;
+        }, 40);
+    }
+
+    window.addEventListener('load', () => {
+        // 카운트를 적용시킬 요소
+        const issuingCounter = document.getElementById("issuingNum");
+        const airdropCounter = document.getElementById("airdropNum");
+
+        // Max 수치
+        const issuingMax = 12162;
+        const airdropMax = 13242;
+
+        setTimeout(() => counter(issuingCounter, issuingMax), 500);
+        setTimeout(() => counter(airdropCounter, airdropMax), 500);
+    })
+
+</script>
 
 @section Heads{
     <link rel="stylesheet" href="~/css/pages/index.css" />

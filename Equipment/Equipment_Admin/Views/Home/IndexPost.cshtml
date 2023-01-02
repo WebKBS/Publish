@@ -279,6 +279,8 @@
             textWrap.style.display = "flex";
             btn.style.display = "none";
             imgWrap.style.position = "absolute";
+            imgWrap.removeAttribute('data-toggle');
+            imgWrap.removeAttribute('data-target');
         })
     })
 
@@ -339,7 +341,7 @@
 
     function handleUpdate(fileList, target) {
         fileList.forEach((file) => {
-            
+            console.dir(target)
             const reader = new FileReader();
             reader.addEventListener("load", (event) => {
                 const preview = createElement(event, file);
@@ -352,11 +354,13 @@
                     textWrap.style.display = "none";
                     ele.style.position = "static";
                     ele.appendChild(preview);
-                    for(let i = 1; i < ele.children.length; i++){
-                        ele.children[i].remove()
+                    for (let i = 1; i < ele.children.length; i++) {
+                        ele.children[i].remove();
                     }
-                    //ele.setAttribute('data') // 여기 이벤트 부터시작
-                    console.log(ele)
+                    ele.setAttribute('data-toggle', 'modal');
+                    ele.setAttribute('data-target', '.bd-example-modal-lg');
+
+                    expandImage(ele); // 이미지 클릭시 모달 주소 변경해주는 함수
                     return;
 
                 } else if (file.type === "application/pdf") {
@@ -387,17 +391,22 @@
     }
 
     // disabled True
-    function disabledTrue(target){
+    function disabledTrue(target) {
         target.disabled = true;
     }
 
-    function disabledFalse(target){
+    function disabledFalse(target) {
         target.disabled = false;
     }
 
-    function expandImage(target){
+    function expandImage(target) {
+        //console.log(target.children.length)
         target.addEventListener('click', () => {
-
+            if (target.children.length < 1) {
+                return
+            }
+            const eleChildImage = target.children[0].src;
+            document.getElementById('view_image').src = eleChildImage;
         })
     }
 
@@ -424,7 +433,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="card-body text-center">
-                        <img src="" class="w-auto" />
+                        <img src="" class="w-auto" id="view_image" />
                     </div>
                 </div>
                 <div class="modal-footer">

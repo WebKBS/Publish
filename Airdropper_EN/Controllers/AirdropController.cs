@@ -18,5 +18,14 @@ namespace Airdropper.Controllers
         {
             return View();
         }
+
+        public IActionResult Snapshot()
+        {
+            return View();
+        }
+        public IActionResult SnapComplete()
+        {
+            return View();
+        }
     }
 }

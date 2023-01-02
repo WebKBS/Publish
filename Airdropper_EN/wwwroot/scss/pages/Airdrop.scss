@@ -30,7 +30,11 @@
     }
 
     h3 {
-        margin-bottom: 12px;
+        margin-bottom: 10px;
+    }
+
+    .ticker_btn {
+        max-width: 268px !important;
     }
 
     .select_list {
@@ -196,7 +200,7 @@
                 margin-bottom: 16px;
             }
 
-            &.move{
+            &.move {
                 border: 1px dashed $theme;
             }
 
@@ -404,7 +408,7 @@
                 color: $white2;
                 padding: 10px;
 
-                
+
 
                 &.error {
                     color: $alert;

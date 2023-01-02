@@ -688,7 +688,10 @@ button[type=submit].next_btn:hover {
   flex: 1;
 }
 .airdrop h3 {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+}
+.airdrop .ticker_btn {
+  max-width: 268px !important;
 }
 .airdrop .select_list {
   position: relative;

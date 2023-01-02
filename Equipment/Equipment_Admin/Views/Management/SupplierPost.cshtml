@@ -223,10 +223,7 @@
                     for (let i = 1; i < ele.children.length; i++) {
                         ele.children[i].remove()
                     }
-                    ele.setAttribute('data-toggle', 'modal');
-                    ele.setAttribute('data-target', '.bd-example-modal-lg');
 
-                    expandImage(ele); // 이미지 클릭시 모달 주소 변경해주는 함수
                     return;
                 } else {
                     alert('지정된 파일형식이 아닙니다.');
@@ -255,16 +252,7 @@
         target.disabled = false;
     }
 
-    function expandImage(target) {
-        //console.log(target.children.length)
-        target.addEventListener('click', () => {
-            if (target.children.length < 1) {
-                return
-            }
-            const eleChildImage = target.children[0].src;
-            document.getElementById('view_image').src = eleChildImage;
-        })
-    }
+
 
 
 </script>

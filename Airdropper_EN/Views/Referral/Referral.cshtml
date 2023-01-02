@@ -1,0 +1,244 @@
+﻿@{
+    ViewData["title"] = "Referral Management";
+}
+
+<section class="cont referral">
+    <div class="inner">
+        <h2 class="subtitle_3 suit_m">Referral Management</h2>
+        <div class="tab_wrap">
+            <button type="button" class="body_1 suit_m color_white_2 on">Referral Fee Management</button>
+            <button type="button" class="body_1 suit_m color_white_2">Recommendation History</button>
+        </div>
+        <div class="tab_content tab_1 on">
+            <div class="table_wrap">
+                <table class="table table2">
+                    <thead>
+                        <tr>
+                            <th>Cryptocurrency</th>
+                            <th>Cumulative Fee</th>
+                            <th>Whether Withdrawal is Possible</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ETH</td>
+                            <td>
+                                <span class="price">0.03</span>
+                                <span class="unit">ETH</span>
+                            </td>
+                            <td>Impossible</td>
+                        </tr>
+                        <tr>
+                            <td>BNB</td>
+                            <td>
+                                <span class="price">0</span>
+                                <span class="unit">BNB</span>
+                            </td>
+                            <td>Impossible</td>
+                        </tr>
+                        <tr>
+                            <td>MATIC</td>
+                            <td>
+                                <span class="price">0</span>
+                                <span class="unit">MATIC</span>
+                            </td>
+                            <td>Impossible</td>
+                        </tr>
+                        <tr>
+                            <td>KLAY</td>
+                            <td>
+                                <span class="price">1000</span>
+                                <span class="unit">Klay</span>
+                            </td>
+                            <td class="on">Possible</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="body_2 suit_r color_white_2 price_text">
+                <span>*</span> [Minimum withdrawal amount] -
+                <span class="suit_l">ETH: 0.1 / BNB: 0.5 / MATIC: 100 / KLAY: 500</span>
+            </div>
+            <h3 class="body_1 suit_m">Cumulative Fee Withdrawal</h3>
+            <div class="box">
+                <div class="box_inner">
+                    <div class="select_list">
+                        <!-- on 추가시 style 변경 -->
+                        <div class="select_wrap default">
+                            <button type="button" id="selectChain">
+                                <img src="" />
+                                <span class="select">Select Cryptocurrency</span>
+                            </button>
+                        </div>
+                        <!-- on 추가시 display -->
+                        <ul class="chain_list">
+                            <li>
+                                <button type="button">
+                                    <img src="~/images/coin_icon/ethereum.svg" alt="ETH" />
+                                    <span class="select">ETH</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button">
+                                    <img src="~/images/coin_icon/polygon.svg" alt="MATIC" />
+                                    <span class="select">MATIC</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button">
+                                    <img src="~/images/coin_icon/bsc.svg" alt="BNB" />
+                                    <span class="select">BNB</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button">
+                                    <img src="~/images/coin_icon/klaytn.svg" alt="KLAY" />
+                                    <span class="select">KLAY</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="input_box">
+                        <input type="tel" placeholder="Withdrawal Amount" />
+                        <span class="unit body_2 suit_r">ETH</span>
+                        <span class="invalid_msg suit_r on">Withdrawal impossible</span>
+                    </div>
+                </div>
+                <button type="button" class="send_btn" id="" disabled>Request</button>
+            </div>
+        </div>
+
+        <!-- =====      tab 2     ===== -->
+        <div class="tab_content tab_2">
+            <div class="table_wrap">
+                <table class="table table1">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Nickname</th>
+                            <th>Division</th>
+                            <th>Token Name</th>
+                            <th>Usage Amount</th>
+                            <th>Referral Fee</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="date">11.11.22</span>
+                                <span class="time">14:20</span>
+                            </td>
+                            <td>Babari</td>
+                            <td>Airdrop</td>
+                            <td>MinTi</td>
+                            <td>
+                                <span class="price">0.3</span>
+                                <span class="unit">ETH</span>
+                            </td>
+                            <td>
+                                <span class="price">0.3</span>
+                                <span class="unit">ETH</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="date">28.12.22</span>
+                                <span class="time">12:00</span>
+                            </td>
+                            <td>rosemary</td>
+                            <td>Airdrop</td>
+                            <td>BAYC</td>
+                            <td>
+                                <span class="price">1,700</span>
+                                <span class="unit">Klay</span>
+                            </td>
+                            <td>
+                                <span class="price">170</span>
+                                <span class="unit">Klay</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <a href="~/Myinfo/Profile" class="button_160">Previous</a>
+
+    </div>
+</section>
+
+
+
+
+<script>
+    const buttons = document.querySelectorAll('.tab_wrap button');
+    const tabs = document.querySelectorAll('.tab_content');
+
+    buttons.forEach((event, idx) => {
+        event.addEventListener('click', () => {
+            buttons.forEach(ev => {
+                ev.classList.remove('on');
+            })
+            tabs.forEach(ev => {
+                ev.classList.remove('on');
+            })
+            tabs[idx].classList.add('on');
+            event.classList.add('on');
+        })
+    })
+
+
+
+    const chainSelectBtn = document.getElementById('selectChain');
+
+    chainSelectBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openMenu(e);
+
+    });
+
+
+    const removeClassSelectList = () => {
+        document.querySelectorAll('.select_list > ul').forEach(ev => {
+            ev.classList.remove('on');
+        })
+    }
+
+    // select 열기
+    const openMenu = (event) => {
+        const target = event.currentTarget;
+        const nextElement = target.parentElement.nextElementSibling;
+
+        removeClassSelectList();
+
+        nextElement.classList.add('on');
+    }
+
+    // select 닫기
+    document.body.addEventListener('click', (e) => {
+        const target = e.target
+        const isSelect = target.classList.contains('select_list') || target.closest('.select_list');
+
+        if (isSelect) return;
+        removeClassSelectList();
+    })
+
+    document.querySelectorAll('.chain_list li button').forEach(ev => {
+        ev.addEventListener('click', (e) => {
+            removeClassSelectList();
+            chainSelectBtn.parentElement.classList.add('on');
+            chainSelectBtn.querySelector('img').src = ev.children[0].src;
+            chainSelectBtn.querySelector('.select').textContent = ev.children[1].textContent;
+        })
+    })
+
+
+</script>
+
+
+
+
+
+
+@section Heads{
+    <link rel="stylesheet" href="~/css/pages/Referral.css" />
+}

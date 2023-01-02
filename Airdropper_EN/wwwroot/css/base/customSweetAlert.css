@@ -1,5 +1,11 @@
+/* font color */
+/* family */
 body.swal2-height-auto {
   height: 100% !important;
+}
+
+.swal2-popup {
+  background: #2D2D2D !important;
 }
 
 /*# sourceMappingURL=customSweetAlert.css.map */

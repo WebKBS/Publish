@@ -45,7 +45,15 @@
                             <a href="/Issuing/Issuing" class="navi_1 jost_r">ISSUING</a>
                         </li>
                         <li>
-                            <a href="/Airdrop/Airdrop" class="navi_1 jost_r">AIRDROP</a>
+                            <a href="#" class="navi_1 jost_r">AIRDROP</a>
+                            <ul class="sub_gnb">
+                                <li>
+                                    <a href="/Airdrop/Snapshot" class="navi_1 jost_l">Snapshot</a>
+                                </li>
+                                <li>
+                                    <a href="/Airdrop/Airdrop" class="navi_1 jost_l">Airdrop</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#" class="navi_1 jost_r">GUIDE</a>
@@ -119,7 +127,7 @@
                     <img src="~/images/logo_icon.svg" alt="Airdropper" />
                 </div>
                 <div class="f_info">
-                    <h2 class="body_2 suit_r">AIR DROPPER</h2>
+                    <h2 class="body_2 suit_r color_white_2">AIR DROPPER</h2>
                     @*                    <address class="body_2 suit_r color_white_3">주소 : 서울특별시 강남구 도산대로25길 27 2층</address>
                     <p class="body_2 suit_r color_white_3">
                     <span>대표이사 김덕중</span>
@@ -150,7 +158,8 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>*@
     <script src="/lib/jquery/dist/jquery.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@@sweetalert2/theme-dark@5/dark.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
     <script>
         console.log("%c(۶•̀ᴗ•́)۶", "font-size: 50px; color: #cfffa5; padding: 0 30px; border-radius: 12px;");

@@ -1,0 +1,181 @@
+﻿@{
+    ViewData["title"] = "Take a Snapshot";
+}
+
+<div class="top_title_wrap">
+    <div class="inner">
+        <h2 class="subtitle_1 suit_m">AIRDROP</h2>
+        <p class="sub_title body_2 suit_r color_white_2">AIR DROPPER is optimized for ‘Chrome’ web browser and does not support mobile service.</p>
+    </div>
+</div>
+
+<section class="cont snapshot">
+    <div class="inner">
+        <h2 class="subtitle_3 suit_m">Take a Snapshot</h2>
+        <div class="text_wrap body_2 suit_r color_white_2">
+            <p><span>*</span>This is a service that extracts a list of token holders at a specific time for airdrop.</p>
+            <p>
+                <span>*</span>Snapshots of general tokens (ERC20/BEP20/KIP7, etc.) can be easily extracted from the explorer provided by each blockchain network.
+            </p>
+            <p>
+                <span>*</span>This service is necessary when extracting a list of holders by token ID from the NFT project.
+            </p>
+            <p class="color_theme"><span>*</span>However, the ‘ownerof’ function must be present in the smart contract to extract the list of holders by token ID. Please make sure you have an 'ownerof' function in your smart contract.</p>
+        </div>
+        <div class="select_box">
+            <div class="box">
+                <h3 class="body_2 suit_m color_white_2">Blockchain Network</h3>
+                <div class="select_list">
+                    <!-- on 추가시 style 변경 -->
+                    <div class="select_wrap default">
+                        <button type="button" id="selectChain">
+                            <img src="" />
+                            <span class="select">Select blockchain network</span>
+                        </button>
+                    </div>
+                    <!-- on 추가시 display -->
+                    <ul class="chain_list">
+                        <li>
+                            <button type="button">
+                                <img src="~/images/coin_icon/ethereum.svg" alt="ethereum" />
+                                <span class="select">Ethereum</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <img src="~/images/coin_icon/polygon.svg" alt="polygon" />
+                                <span class="select">Polygon</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <img src="~/images/coin_icon/bsc.svg" alt="bsc" />
+                                <span class="select">Bsc</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button">
+                                <img src="~/images/coin_icon/klaytn.svg" alt="klaytn" />
+                                <span class="select">Klaytn</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box">
+                <h3 class="body_2 suit_m color_white_2">Token Format</h3>
+                <div class="select_list">
+                    <!-- default 클래스 삭제시 흰색 색상 -->
+                    <div class="select_wrap default">
+                        <button type="button" id="selectToken">
+                            <span class="select">Select the token format</span>
+                        </button>
+                    </div>
+                    <ul class="token_list">
+                        <li>
+                            <button type="button">
+                                <span class="select">ERC-20</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="input_box">
+            <h3 class="body_2 suit_m color_white_2">Smart Contract</h3>
+            <div class="box">
+                <input type="text" placeholder="Enter the Smart contract address" />
+                <button type="button" class="button_112" data-comming>Apply</button>
+            </div>
+        </div>
+        <div class="token_box">
+            <div class="box">
+                <h3 class="body_2 suit_m color_white_2">Token Ticker</h3>
+                <input type="text" readonly aria-label="Token ticker" class="ticker_btn"/>
+            </div>
+        </div>
+        <div class="button_wrap">
+            <button type="button" class="button_160 payment_btn" disabled>SNAPSHOT</button>
+        </div>
+    </div>
+</section>
+
+<select hidden>
+    <option value="Ethereum">Ethereum</option>
+    <option value="Polygon">Polygon</option>
+    <option value="BSC">BSC</option>
+    <option value="Klaytn">Klaytn</option>
+</select>
+<select hidden>
+    <option>ERC-20</option>
+</select>
+
+<script>
+    const chainSelectBtn = document.getElementById('selectChain');
+    const tokenSelectBtn = document.getElementById('selectToken');
+
+
+    chainSelectBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openMenu(e);
+
+    });
+    tokenSelectBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openMenu(e);
+    });
+
+    const removeClassSelectList = () => {
+        document.querySelectorAll('.select_list > ul').forEach(ev => {
+            ev.classList.remove('on');
+        })
+    }
+
+    // select 열기
+    const openMenu = (event) => {
+        const target = event.currentTarget;
+        const nextElement = target.parentElement.nextElementSibling;
+
+        removeClassSelectList();
+
+        nextElement.classList.add('on');
+    }
+
+    // select 닫기
+    document.body.addEventListener('click', (e) => {
+        const target = e.target
+        const isSelect = target.classList.contains('select_list') || target.closest('.select_list');
+
+        if (isSelect) return;
+        removeClassSelectList();
+    })
+
+    document.querySelectorAll('.chain_list li button').forEach(ev => {
+        ev.addEventListener('click', (e) => {
+            removeClassSelectList();
+            chainSelectBtn.parentElement.classList.add('on');
+            chainSelectBtn.querySelector('img').src = ev.children[0].src;
+            chainSelectBtn.querySelector('.select').textContent = ev.children[1].textContent;
+        })
+    })
+
+    document.querySelectorAll('.token_list li button').forEach(ev => {
+        ev.addEventListener('click', (e) => {
+            removeClassSelectList();
+            tokenSelectBtn.parentElement.classList.add('on');
+            tokenSelectBtn.querySelector('.select').textContent = ev.children[0].textContent;
+        })
+    })
+
+
+
+</script>
+
+
+@section Heads{
+    <link rel="stylesheet" href="~/css/pages/Snapshot.css" />
+}
+
+@section Scripts{
+
+}

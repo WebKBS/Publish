@@ -66,7 +66,7 @@ sendBtn.addEventListener('click', () => {
     if (title.value === "") {
         Swal.fire({
             icon: 'error',
-            text: '문의제목을 입력해주세요.',
+            text: 'Please enter the subject of your inquiry.',
         }).then(e => {
             title.focus();
         });
@@ -74,18 +74,18 @@ sendBtn.addEventListener('click', () => {
     } else if (chainSelectBtn.dataset.select !== "true") {
         Swal.fire({
             icon: 'error',
-            text: '문의유형을 선택해주세요.',
+            text: 'Please select an inquiry type.',
         });
     } else if ($("#summernote").summernote('code') === "<p><br></p>") {
         Swal.fire({
             icon: 'error',
-            text: '내용을 입력해 주세요.',
+            text: 'Please enter your inquiry details.',
         });
 
     } else if (emailInput.value === "") {
         Swal.fire({
             icon: 'error',
-            text: '이메일을 입력해 주세요.',
+            text: 'Please enter your e-mail.',
         }).then(e => {
             emailInput.focus();
         });

@@ -17,7 +17,7 @@ for (btn of accordionBtn) {
             })
         }
         nextElement.classList.toggle("on");
-        target.querySelector('p').classList.toggle('on');
+        //target.querySelector('p').classList.toggle('on');
     })
 
 }

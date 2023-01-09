@@ -3,7 +3,7 @@
 }
 
 
-<section class="cont payment_history">
+<section class="cont usage_history">
     <div class="inner">
         <h2 class="subtitle_1 suit_m">Usage History</h2>
         <div class="table_wrap">
@@ -92,7 +92,7 @@
 
                     <!-- on 클래스 추가시 display -->
                     <tr class="no_data">
-                        <td colspan="10">결제 내역이 존재하지 않습니다. </td>
+                        <td colspan="10">Payment history does not exist.</td>
                     </tr>
                 </tbody>
             </table>
@@ -113,7 +113,7 @@
                 <div class="modal_header">
                     <h3>
                         <img src="~/images/logo_icon.svg" />
-                        <span class="body_1 suit_m">Airdrop Report</span>
+                        <span class="body_1 suit_m">Airdrop Report</span> <!--리포트 모달시 텍스트: Token Issuing Report -->
                     </h3>
                     <a href="#" download="" class="download_btn">Download Report</a>
                 </div>
@@ -134,7 +134,7 @@
                                     <td>Ethereum</td>
                                 </tr>
                                 <tr>
-                                    <th>Token format</th>
+                                    <th>Token format</th> <!--리포트 모달시 텍스트: Token type -->
                                     <td>ERC-20</td>
                                 </tr>
                                 <tr>
@@ -142,27 +142,31 @@
                                     <td>DRP</td>
                                 </tr>
                                 <tr>
-                                    <th>Number of transfer requests</th>
-                                    <td>6,500 건</td>
+                                    <th>Number of transfer requests</th> <!--리포트 모달시 텍스트: Token ticker -->
+                                    <td>6,500 Cases</td>
                                 </tr>
                                 <tr>
-                                    <th>Number of tokens</th>
-                                    <td>2,000,000 개</td>
+                                    <th>Number of tokens</th> <!--리포트 모달시 텍스트: Decimal -->
+                                    <td>2,000,000</td>
                                 </tr>
                                 <tr>
-                                    <th>Gas fee</th>
+                                    <th>Gas fee</th> <!--리포트 모달시 텍스트: Total Supply -->
                                     <td>1.54 ETH</td>
                                 </tr>
                                 <tr>
-                                    <th>Service fee</th>
+                                    <th>Service fee</th> <!--리포트 모달시 텍스트: Smart contract -->
                                     <td>0.7 ETH</td>
                                 </tr>
                                 <tr>
-                                    <th>TxID</th>
+                                    <th>TxID</th> <!--리포트 모달시 텍스트: Gas fee -->
                                     <td>
                                         <button type="button" class="tx_id color_theme">0x12e4a99d65fa91779905378b54bdd66f7b130de1f71354f78beb25618289f774</button>
                                     </td>
                                 </tr>
+                                @*<tr>
+                            <th>Service fee</th>
+                            <td>0.5 ETH</td>
+                            </tr>*@
                             </tbody>
                         </table>
                     </div>
@@ -182,7 +186,7 @@
 
 
 @section Heads{
-    <link rel="stylesheet" href="~/css/pages/PaymentHistory.css" />
+    <link rel="stylesheet" href="~/css/pages/UsageHistory.css" />
 }
 
 

@@ -5,7 +5,7 @@
 @import "../components/_inputs.scss";
 @import "../components/_buttons.scss";
 
-.payment_history {
+.usage_history {
 
     .inner {
         max-width: 976px;
@@ -168,6 +168,7 @@
                 color: $white2;
                 text-align: center;
                 padding: 10px 16px;
+                vertical-align: middle;
             }
 
             .tx_id {

@@ -670,15 +670,15 @@ button[type=submit].next_btn:hover {
     top: -44px;
   }
 }
-.payment_history .inner {
+.usage_history .inner {
   max-width: 976px;
   margin: 0 auto;
   padding: 80px 0;
 }
-.payment_history h2 {
+.usage_history h2 {
   margin-bottom: 40px;
 }
-.payment_history .table_wrap {
+.usage_history .table_wrap {
   overflow: hidden;
   background: #1B1B1B;
   border-radius: 8px;
@@ -686,51 +686,51 @@ button[type=submit].next_btn:hover {
   min-height: 236px;
   margin-bottom: 80px;
 }
-.payment_history table {
+.usage_history table {
   width: 100%;
   text-align: center;
 }
-.payment_history thead {
+.usage_history thead {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.payment_history th {
+.usage_history th {
   padding: 12px;
   text-align: center;
   vertical-align: middle;
 }
-.payment_history td {
+.usage_history td {
   padding: 12px;
 }
-.payment_history td time:nth-child(1) {
+.usage_history td time:nth-child(1) {
   margin-right: 4px;
 }
-.payment_history td button {
+.usage_history td button {
   color: inherit;
   margin: 0 auto;
 }
-.payment_history td.on button {
+.usage_history td.on button {
   color: #fff;
 }
-.payment_history .contract {
+.usage_history .contract {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   width: 120px;
   color: inherit;
 }
-.payment_history .tx_id {
+.usage_history .tx_id {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   width: 120px;
 }
-.payment_history .no_data {
+.usage_history .no_data {
   display: none;
 }
-.payment_history .no_data td {
+.usage_history .no_data td {
   padding: 72px 0;
 }
-.payment_history .no_data.on {
+.usage_history .no_data.on {
   display: block;
 }
 
@@ -803,6 +803,7 @@ button[type=submit].next_btn:hover {
   color: rgba(255, 255, 255, 0.55);
   text-align: center;
   padding: 10px 16px;
+  vertical-align: middle;
 }
 .modal .modal_body .table .tx_id {
   white-space: nowrap;
@@ -833,4 +834,4 @@ button[type=submit].next_btn:hover {
 }
 */
 
-/*# sourceMappingURL=PaymentHistory.css.map */
+/*# sourceMappingURL=UsageHistory.css.map */

@@ -10,7 +10,7 @@ namespace Airdropper.Controllers
         }
 
 
-        public IActionResult PaymentHistory()
+        public IActionResult UsageHistory()
         {
             return View();
         }

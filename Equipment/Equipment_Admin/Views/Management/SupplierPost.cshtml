@@ -150,10 +150,14 @@
     })
 
     fileInput.forEach(ev => {
-        ev.addEventListener('change', (event) => {
+        ev.addEventListener('change', async (event) => {
+
             const files = changeEvent(event);
             handleUpdate(files, event.target);
             disabledTrue(ev); // 파일 추가시 input disabled
+
+            await addFunc(false, "block", "asdasd")
+
         })
 
     })
@@ -253,6 +257,19 @@
     }
 
 
+    // addFunc(boolean, "block", src)
+    async function addFunc(isDisable, style = "none", img) {
+        const input = document.getElementById('upload');
+        const button = document.querySelector('.file_delete');
+        const image = await document.querySelector('.label_img_wrap img');
 
+        input.disabled = isDisable;
+        button.style.display = style;
+        await image.classList.add('asdasd')
+    }
 
 </script>
+
+@section PostModal{
+    @await Html.PartialAsync("~/Views/Home/Post.cshtml")
+};

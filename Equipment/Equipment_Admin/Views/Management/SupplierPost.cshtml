@@ -156,8 +156,6 @@
             handleUpdate(files, event.target);
             disabledTrue(ev); // 파일 추가시 input disabled
 
-            await addFunc(false, "block", "asdasd")
-
         })
 
     })
@@ -227,7 +225,6 @@
                     for (let i = 1; i < ele.children.length; i++) {
                         ele.children[i].remove()
                     }
-
                     return;
                 } else {
                     alert('지정된 파일형식이 아닙니다.');
@@ -258,18 +255,60 @@
 
 
     // addFunc(boolean, "block", src)
-    async function addFunc(isDisable, style = "none", img) {
+    function addFunc(isDisable, style = "none", img) {
         const input = document.getElementById('upload');
         const button = document.querySelector('.file_delete');
-        const image = await document.querySelector('.label_img_wrap img');
+        const image = document.querySelector('.label_img_wrap');
+        const imgElement = document.createElement('img');
+        const textWrap = document.querySelector('.text_wrap');
 
+        image.setAttribute('data-toggle', 'modal');
+        image.setAttribute('data-target', '.bd-example-modal-lg');
         input.disabled = isDisable;
         button.style.display = style;
-        await image.classList.add('asdasd')
+        textWrap.style.display = "none";
+        image.append(imgElement);
+        image.querySelector("img").src = img;
     }
+
+
+    expandImage();
+    function expandImage() {
+        const labelImage = document.querySelector('.label_img_wrap');
+        labelImage.addEventListener('click', () => {
+            if (labelImage.children.length < 1) {
+                return
+            }
+            const eleChildImage = labelImage.children[0].src;
+            const div = document.createElement('div');
+            const img = document.createElement('img');
+            img.src = eleChildImage;
+            div.append(img);
+            div.classList.add('view_modal');
+            div.style.position = "fixed";
+            div.style.top = "0px";
+            div.style.left = "0px";
+            div.style.backgroundColor = "rgba(0, 0, 0, .7)";
+            div.style.width = "100%";
+            div.style.height = "100%";
+            div.style.zIndex = "2000";
+            img.style.maxWidth = "80%";
+            img.style.position = "absolute";
+            img.style.top = "50%";
+            img.style.left = "50%";
+            img.style.transform = "translate(-50%, -50%)";
+
+            document.body.append(div);
+
+            document.querySelector('.view_modal').addEventListener('click', (ev) => {
+
+                if (ev.target === document.querySelector('.view_modal')) {
+                    document.querySelector('.view_modal').remove();
+                }
+            })
+        })
+    }
+
 
 </script>
 
-@section PostModal{
-    @await Html.PartialAsync("~/Views/Home/Post.cshtml")
-};
